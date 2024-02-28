@@ -148,3 +148,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+
+var btn = document.querySelector('.toggle');
+var btnst = true;
+btn.onclick = function () {
+    if (btnst == true) {
+        document.querySelector('.toggle span').classList.add('toggle');
+        document.getElementById('sidebar').classList.add('sidebarshow');
+        btnst = false;
+    } else if (btnst == false) {
+        document.querySelector('.toggle span').classList.remove('toggle');
+        document.getElementById('sidebar').classList.remove('sidebarshow');
+        btnst = true;
+    }
+}
+
+
+
+// sidebar dropdown
+
+document.addEventListener("DOMContentLoaded", function () {
+    const categoryDropdown = document.getElementById("categoryDropdown");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const categoryMenu = document.getElementById("cliked-id");
+
+    categoryDropdown.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+        categoryMenu.classList.toggle("clicked");
+    });
+});

@@ -46,8 +46,15 @@
 
     <header>
         <nav>
-            <div class="custom-container  flex lg:justify-between  py-6">
-                <div class="logo w-[50%] lg:w-[15%]">
+            <div class="custom-container  flex lg:justify-between py-4  ">
+                <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[15%]">
+                    <div class="header lg:hidden ">
+                        <div class="header_in">
+                            <button type="button" class="toggle" id="toggle">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
                     <a href="#"> <img src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
@@ -194,7 +201,8 @@
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
                                 <div class="grid grid-cols-3 font-normal">
                                     <div>
-                                        <a class="block px-4 py-2 font-bold text-black text-[12px]   no-underline"> PRODUCTS
+                                        <a class="block px-4 py-2 font-bold text-black text-[12px]   no-underline">
+                                            PRODUCTS
                                             PAGE</a>
                                         <a href="#"
                                             class="block px-4 py-2 text-gray-500 text-[12px] font-bold no-underline hover:underline">PRODUCT
@@ -226,7 +234,8 @@
                                             STICKY</a>
                                     </div>
                                     <div>
-                                        <a class="block px-4 py-2 font-bold text-black text-[12px] -[12px]   no-underline">PRODUCTS
+                                        <a
+                                            class="block px-4 py-2 font-bold text-black text-[12px] -[12px]   no-underline">PRODUCTS
                                             LAYOUTS</a>
                                         <a href="#"
                                             class="block px-4 py-2 text-gray-500 text-[12px] font-bold no-underline hover:underline">PRODUCT
@@ -275,7 +284,8 @@
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
                                 <div class=" font-normal">
                                     <div>
-                                        <a class="block px-4 py-2 font-bold text-black text-[12px]  no-underline"> PRODUCTS
+                                        <a class="block px-4 py-2 font-bold text-black text-[12px]  no-underline">
+                                            PRODUCTS
                                             PAGE</a>
                                         <a href="#"
                                             class="block px-4 py-2 text-gray-500 text-[12px] font-bold no-underline hover:underline">PRODUCT
@@ -324,7 +334,8 @@
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
                                 <div class="font-normal ">
                                     <div>
-                                        <a class="block px-4 py-2 font-bold text-black text -[12px]   no-underline"> PRODUCTS
+                                        <a class="block px-4 py-2 font-bold text-black text -[12px]   no-underline">
+                                            PRODUCTS
                                             PAGE</a>
                                         <a href="#"
                                             class="block px-4 py-2 text-gray-500 text-[12px] font-bold no-underline hover:underline">PRODUCT
@@ -390,6 +401,52 @@
 
 
 
+    <!-- <section class="lg:hidden">
+        <div style="background-color: #1d1e20 " class="sidebar " id='sidebar'>
+
+            <ul>
+                <li><a class="text-gray-200 text-[12px]" href="">HOME</a></li>
+                <li><a class="text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="">CATEGORY</a></li>
+                <li><a class="text-gray-200 text-[12px]" href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </section> -->
+
+    <section class="lg:hidden">
+        <div style="background-color: #1d1e20" class="sidebar" id='sidebar'>
+            <ul>
+                <li><a class="text-gray-200 text-[12px]" href="">HOME</a></li>
+                <li class="relative" id="categoryDropdown">
+                    <a id="cliked-id" class="text-gray-200 border-1 border-solid border-gray-800 text-[12px] dropdown-toggle"
+                        href="#">CATEGORY</a>
+                    <ul class=" ps-4  mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
+
+                        <li><a class="text-gray-200  text-[12px]" href="#">Full Width Banner</a>  </li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Boxed Slider Banner</a> </li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Boxed Image Banner</a>  </li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Left Sidebar</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Right Sidebar</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Off Canvas Filter</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Horizontal Filter 1</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Horizontal Filter 2</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">List Types</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">Ajax Infinite Scroll</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">3 Columns Products</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">4 Columns Products</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">5 Columns Products</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">6 Columns Products</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">7 Columns Products</a></li>
+                        <li><a class="text-gray-200  text-[12px]" href="#">8 Columns Products</a></li>
+
+                    </ul>
+                </li>
+                <li><a class="text-gray-200 text-[12px]" href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
 
     <!--#################################################
 ####                                            ####
@@ -429,7 +486,7 @@
         <div id='footer' class='mt-[1000px]   bottom-0 w-full'>
             <div style="background-color: #222529;" class='  xs:h-[540px]  md:h-auto sm:h-auto  w-full h-auto'>
                 <div
-                    class='container pb-4 grid grid-cols-1   xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4     '>
+                    class='custom-container pb-4 grid grid-cols-1   xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4     '>
                     <div class='w-full  h-full   flex flex-col    overflow-hidden'>
                         <p class="text-white pt-12 pb-6 text-[17px] font-bold">CONTACT INFO</p>
                         <p class="text-gray-300 text-[15px] font-bold">ADDRESS:</p>
