@@ -180,3 +180,5 @@ document.addEventListener("DOMContentLoaded", function () {
         categoryMenu.classList.toggle("clicked");
     });
 });
+
+
