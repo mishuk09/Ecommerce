@@ -1,3 +1,19 @@
+/* styles.css (or any other name you prefer) */
+
+@layer utilities {
+    .custom-container {
+        max-width: 1200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Other styles can go here */
+
+
+
 #goToTopButton {
     display: none;
     position: fixed;
@@ -10,12 +26,14 @@
     padding: 5px 8px;
     cursor: pointer;
 }
+
 #goToTopButton.show {
     display: block;
 }
 
 .dropdown-div {
-    transition: top 0.3s ease; /* Adjust the transition duration as needed */
+    transition: top 0.3s ease;
+    /* Adjust the transition duration as needed */
 }
 
 .fixed {

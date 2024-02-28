@@ -10,9 +10,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="index.js"></script>
 </head>
 
@@ -46,21 +46,21 @@
 
     <header>
         <nav>
-            <div class=" container flex lg:justify-between  py-6">
+            <div class="custom-container  flex lg:justify-between  py-6">
                 <div class="logo w-[50%] lg:w-[15%]">
                     <a href="#"> <img src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
                     <div class=" border-r-2  border-r-white">
                         <input placeholder="Search..." type="text"
-                            class="outline-none h-11 bg-gray-100 w-[400px] pt-2 pb-2 px-4 rounded-l-full">
+                            class="outline-none h-10 text-gray-400 text-[14px] bg-gray-100 w-[400px] pt-2 pb-2 px-4 rounded-l-full">
                     </div>
                     <div
-                        class="h-11 w-[160px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
+                        class="h-10 w-[160px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
                         <select id="cat" name="cat"
-                            class="w-full bg-gray-100 text-gray-600 text-[15px] outline-none   px-3 me-2">
-                            <option value=""  ">All Categories</option>
-                            <option value="4">Fashion</option>
+                            class="w-full bg-gray-100 text-gray-500 text-[15px] outline-none   px-3 me-2">
+                            <option value="" ">All Categories</option>
+                            <option value=" 4">Fashion</option>
                             <option value="12">- Women</option>
                             <option value="13">- Men</option>
                             <option value="66">- Jewellery</option>
@@ -78,80 +78,45 @@
                             <option value="57">- Auto Tools & Supplies</option>
                         </select>
                     </div>
-                    <div class="h-11 bg-gray-100 w-[70px] flex rounded-r-full  items-center text-center justify-center">
+                    <div class="h-10 bg-gray-100 w-[70px] flex rounded-r-full  items-center text-center justify-center">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
                 <div
-                    class="logo flex gap-6 items-center   text-end justify-end lg:justify-end  w-[100%] lg:w-[30%]  mx:2 lg:mx-10">
+                    class="logo flex gap-6 items-center   text-end justify-end lg:justify-end  w-[100%] lg:w-[15%]  mx:2 lg:mx-2">
 
-                    <!-- <div class="logo  absolute logo hidden sm:flex lg:hidden   w-full logoss mt-[250px] bg-green-300 flex-col items-center text-center justify-center  "
-                        id="logoss" style="display: none;">
-                        <div class="   flex justify-center items-center">
-                            <input placeholder="Search..." type="text"
-                                class="outline-none h-11 bg-gray-100 w-[200px] pt-2 pb-2 px-4 rounded-l-full">
-                        </div>
-                        <div
-                            class="h-11 w-[140px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
-                            <select id="cat" name="cat"
-                                class="w-full text-[14px] bg-gray-100 text-gray-600 text-base outline-none  px-3 me-2">
-                                <option value="">All Categories</option>
-                                <option value="4">Fashion</option>
-                                <option value="12">- Women</option>
-                                <option value="13">- Men</option>
-                                <option value="66">- Jewellery</option>
-                                <option value="67">- Kids Fashion</option>
-                                <option value="5">Electronics</option>
-                                <option value="21">- Smart TVs</option>
-                                <option value="22">- Cameras</option>
-                                <option value="63">- Games</option>
-                                <option value="7">Home & Garden</option>
-                                <option value="11">Motors</option>
-                                <option value="31">- Cars and Trucks</option>
-                                <option value="32">- Motorcycles & Powersports</option>
-                                <option value="33">- Parts & Accessories</option>
-                                <option value="34">- Boats</option>
-                                <option value="57">- Auto Tools & Supplies</option>
-                            </select>
-                        </div>
-                        <div
-                            class="h-11 bg-gray-100 w-[50px] flex rounded-r-full  items-center text-center justify-center">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div> -->
                     <div class="hidden   sm:flex lg:hidden   " onclick="toggleSearch()">
                         <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
                     </div>
-                    <div class="ms-0 hidden   items-center">
-                        <div>
-                            <img src="/images/phone.png" alt="">
-                        </div>
-                        <div>
-                            <div class="text-sm text-gray-600">CALL US NOW</div>
-                            <div class="font-bold"> +123 5678 890</div>
-                        </div>
+
+                    <div>
+                        <!-- <i class="fa-regular fa-user text-3xl"></i> -->
+                        <img class="w-7" src="/images/user.png" alt="">
                     </div>
                     <div>
-                        <i class="fa-regular fa-user text-3xl"></i>
+                        <!-- <i class="fa-regular fa-heart text-3xl"></i> -->
+                        <img class="w-7" src="/images/love.png" alt="">
                     </div>
-                    <div><i class="fa-regular fa-heart text-3xl"></i></div>
-                    <div> <i class="fa-solid fa-bag-shopping text-3xl"></i></div>
+                    <div>
+                        <!-- <i class="fa-solid fa-bag-shopping text-3xl"></i> -->
+                        <img class="w-7" src="/images/cart.png" alt="">
+                    </div>
                 </div>
             </div>
-            <hr>
+            <hr class="text-gray-300 ">
 
             <div class="dropdown-div  shadow-sm ">
-                <div class="container  hidden pt-1 mx-auto lg:flex justify-between">
+                <div class="custom-container  hidden pt-1 mx-auto lg:flex justify-between">
                     <div class="flex gap-8 pb-6 font-bold text-gray-600 text-sm">
 
-                        <div class="mt-6">
+                        <div class="mt-4">
                             <a href="#"
-                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">HOME</a>
+                                class=" pt-[27px]  hover:border-t-4 border-blue-500  text-[12px]  duration-300 transition-colors  hover:text-blue-500">HOME</a>
 
                         </div>
                         <div class="relative mt-6  inline-block">
                             <a id="dropdownButton1" href="#"
-                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4  duration-75  hover:text-blue-500">CATEGORIES
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-[27px]  text-[12px]  duration-300 transition-colors  hover:text-blue-500">CATEGORIES
                                 <i class="fas fa-angle-down"></i></a>
                             <div id="dropdownContent1 "
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
@@ -223,7 +188,7 @@
                         </div>
                         <div class="relative mt-6  inline-block">
                             <a id="dropdownButton1" href="#"
-                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">PRODUCTS
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-[27px] duration-300 transition-colors  text-[12px]   hover:text-blue-500">PRODUCTS
                                 <i class="fas fa-angle-down"></i></a>
                             <div id="dropdownContent1"
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
@@ -261,7 +226,7 @@
                                             STICKY</a>
                                     </div>
                                     <div>
-                                        <a class="block px-4 py-2 font-bold text-black text no-underline">PRODUCTS
+                                        <a class="block px-4 py-2 font-bold text-black text-[12px]  no-underline">PRODUCTS
                                             LAYOUTS</a>
                                         <a href="#"
                                             class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
@@ -304,7 +269,7 @@
 
                         <div class="relative mt-6  inline-block">
                             <a id="dropdownButton1" href="#"
-                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">PAGES
+                                class="dropdown-button hover:border-t-4 border-blue-500 text-[12px] pt-[27px] duration-300 transition-colors  hover:text-blue-500">PAGES
                                 <i class="fas fa-angle-down"></i></a>
                             <div id="dropdownContent1"
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
@@ -348,12 +313,12 @@
                         </div>
                         <div class="mt-6">
                             <a href="#"
-                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">BLOG</a>
+                                class=" pt-[27px]   hover:border-t-4 border-blue-500  text-[12px]  duration-300 transition-colors   hover:text-blue-500">BLOG</a>
 
                         </div>
                         <div class="relative mt-6  inline-block">
                             <a id="dropdownButton1" href="#"
-                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">ELEMENTS
+                                class="dropdown-button hover:border-t-4 border-blue-500 duration-300 transition-colors  text-[12px] pt-[27px]     hover:text-blue-500">ELEMENTS
                                 <i class="fas fa-angle-down"></i></a>
                             <div id="dropdownContent1"
                                 class="dropdown-content pt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
@@ -397,15 +362,16 @@
                         </div>
                         <div class="mt-6">
                             <a href="#"
-                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">CONTSCT
+                                class="pt-[27px] text-[12px] duration-300 transition-colors  hover:border-blue-500  hover:border-t-4 hover:text-blue-500">CONTACT
                                 US</a>
-
                         </div>
+
+
                     </div>
                     <div class="text-gray-600 text-sm font-bold flex gap-8">
 
-                        <a href="#" class=" mt-6 duration-75  hover:text-blue-500">SPECIAL OFFER!</a>
-                        <a href="#" class=" mt-6 duration-75  hover:text-blue-500">BUY PORTO!</a>
+                        <a href="#" class=" mt-6 duration-75 text-[12px]  hover:text-blue-500">SPECIAL OFFER!</a>
+                        <a href="#" class=" mt-6 duration-75 text-[12px]  hover:text-blue-500">BUY PORTO!</a>
                     </div>
                 </div>
             </div>
@@ -482,33 +448,33 @@
                                 class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12 pb-6 text-[17px] font-bold">CUSTOMER
                                 SERVICE</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Help
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Help
                                 & FAQs</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Order
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Order
                                 Tracking</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Shiping
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Shiping
                                 & Delivery</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">
                                 Order History</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">
                                 Advanched Search</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">My
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">My
                                 Account</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Careers</a>
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Careers</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">About
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">About
                                 Us</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Corporate
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Corporate
                                 Sales</a>
                             <a href="#"
-                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Privacy</a>
+                                class="text-gray-400 font-sans text-[13px] hover:text-blue-600 duration-300 cursor-pointer  pb-1">Privacy</a>
                         </div>
 
 
@@ -523,37 +489,37 @@
                             <div class="grid grid-cols-4 gap-2  me-6 items-center text-center justify-center text-sm ">
 
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Bag
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Bag
                                 </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">
                                     Black</a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">
                                     Blue</a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">
                                     Clothes </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">
                                     Fashion </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">
                                     Hub</a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Shirt
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Shirt
                                 </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Shoes
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Shoes
                                 </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Skirt
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Skirt
                                 </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Sports
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Sports
                                 </a>
                                 <a href="#"
-                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Sweater
+                                    class="text-gray-400 border  py-1 font-sans text-[11px] hover:text-white duration-200 cursor-pointer  pb-1">Sweater
                                 </a>
                             </div>
                         </div>
@@ -565,9 +531,11 @@
 
                         <div class='w-full  h-full   flex flex-col      overflow-hidden'>
                             <a
-                                class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12  pb-6 text-[17px] font-bold">SUBSCRIBE NEWSLETTER</a>
+                                class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12  pb-6 text-[17px] font-bold">SUBSCRIBE
+                                NEWSLETTER</a>
                             <div class="grid     text-sm ">
-                                <p class="text-gray-300 pb-6 text-justify">Get all the latest information on events,
+                                <p class="text-gray-300 pb-6 text-[13px] text-justify">Get all the latest information on
+                                    events,
                                     sales and offers.
                                     Sign up for newsletter:
                                 </p>
