@@ -1,0 +1,25 @@
+#goToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 999;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+#goToTopButton.show {
+    display: block;
+}
+
+.dropdown-div {
+    transition: top 0.3s ease; /* Adjust the transition duration as needed */
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+}

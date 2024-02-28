@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porto</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
+
+
+
+
+
+    <!--#################################################
+####                                            ####
+####          GO TO TOP start                ####
+####                                            ####
+##################################################-->
+
+
+    <section>
+        <button id="goToTopButton">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+    </section>
+
 
 
     <!--#################################################
@@ -23,11 +46,11 @@
 
     <header>
         <nav>
-            <div class="container mx-auto flex justify-between py-6">
-                <div class="logo w-[15%]">
+            <div class=" container flex lg:justify-between  py-6">
+                <div class="logo w-[50%] lg:w-[15%]">
                     <a href="#"> <img src="/images/logo.png" alt=""></a>
                 </div>
-                <div class="logo     flex items-center text-center justify-center w-[55%]">
+                <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
                     <div class=" border-r-2  border-r-white">
                         <input placeholder="Search..." type="text"
                             class="outline-none h-11 bg-gray-100 w-[400px] pt-2 pb-2 px-4 rounded-l-full">
@@ -59,9 +82,47 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="logo flex items-center text-center justify-between w-[30%] lg:w-[30%] sm:w-[50%] mx-10">
+                <div
+                    class="logo flex gap-6 items-center   text-end justify-end lg:justify-end  w-[100%] lg:w-[30%]  mx:2 lg:mx-10">
 
-                    <div class="ms-0 flex items-center">
+                    <!-- <div class="logo  absolute logo hidden sm:flex lg:hidden   w-full logoss mt-[250px] bg-green-300 flex-col items-center text-center justify-center  "
+                        id="logoss" style="display: none;">
+                        <div class="   flex justify-center items-center">
+                            <input placeholder="Search..." type="text"
+                                class="outline-none h-11 bg-gray-100 w-[200px] pt-2 pb-2 px-4 rounded-l-full">
+                        </div>
+                        <div
+                            class="h-11 w-[140px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
+                            <select id="cat" name="cat"
+                                class="w-full text-[14px] bg-gray-100 text-gray-600 text-base outline-none  px-3 me-2">
+                                <option value="">All Categories</option>
+                                <option value="4">Fashion</option>
+                                <option value="12">- Women</option>
+                                <option value="13">- Men</option>
+                                <option value="66">- Jewellery</option>
+                                <option value="67">- Kids Fashion</option>
+                                <option value="5">Electronics</option>
+                                <option value="21">- Smart TVs</option>
+                                <option value="22">- Cameras</option>
+                                <option value="63">- Games</option>
+                                <option value="7">Home & Garden</option>
+                                <option value="11">Motors</option>
+                                <option value="31">- Cars and Trucks</option>
+                                <option value="32">- Motorcycles & Powersports</option>
+                                <option value="33">- Parts & Accessories</option>
+                                <option value="34">- Boats</option>
+                                <option value="57">- Auto Tools & Supplies</option>
+                            </select>
+                        </div>
+                        <div
+                            class="h-11 bg-gray-100 w-[50px] flex rounded-r-full  items-center text-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div> -->
+                    <div class="hidden   sm:flex lg:hidden   " onclick="toggleSearch()">
+                        <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
+                    </div>
+                    <div class="ms-0 hidden   items-center">
                         <div>
                             <img src="/images/phone.png" alt="">
                         </div>
@@ -76,262 +137,276 @@
                     <div><i class="fa-regular fa-heart text-3xl"></i></div>
                     <div> <i class="fa-solid fa-bag-shopping text-3xl"></i></div>
                 </div>
-
             </div>
             <hr>
 
+            <div class="dropdown-div  shadow-sm ">
+                <div class="container  hidden pt-1 mx-auto lg:flex justify-between">
+                    <div class="flex gap-8 pb-6 font-bold text-gray-600 text-sm">
 
-            <div class="container pt-1 mx-auto flex justify-between">
-                <div class="flex gap-8 font-bold text-gray-600 text-sm">
+                        <div class="mt-6">
+                            <a href="#"
+                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">HOME</a>
 
-                    <div class="mt-6">
-                        <a href="#"
-                            class=" pt-5  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">HOME</a>
+                        </div>
+                        <div class="relative mt-6  inline-block">
+                            <a id="dropdownButton1" href="#"
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4  duration-75  hover:text-blue-500">CATEGORIES
+                                <i class="fas fa-angle-down"></i></a>
+                            <div id="dropdownContent1 "
+                                class="dropdown-content mt-4 absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
+                                <div class="grid grid-cols-3 font-normal">
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text no-underline">VARIATION
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FULLWIDTH
+                                            BANNER</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BOXED
+                                            SLIDER BANNER</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BOXED
+                                            IMAGE BANNER</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LEFT
+                                            SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">RIGHT
+                                            SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">OFF
+                                            CANVAS FILTER</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">HORIZONTAL
+                                            FILTER1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">HORIZONTAL
+                                            FILTER2</a>
+                                    </div>
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text no-underline">VARIATION
+                                            2</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LIST
+                                            TYPES</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">AJAX
+                                            INFINITE SCROLL</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
+                                            COLUMNS PRODUCTS</a>
+                                    </div>
 
-                    </div>
-                    <div class="relative mt-6  inline-block">
-                        <a id="dropdownButton1" href="#"
-                            class="dropdown-button hover:border-t-4 border-blue-500 pt-5  duration-75  hover:text-blue-500">CATEGORIES
-                            <i class="fas fa-angle-down"></i></a>
-                        <div id="dropdownContent1"
-                            class="dropdown-content absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
-                            <div class="grid grid-cols-3 font-normal">
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text no-underline">VARIATION 1</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FULLWIDTH
-                                        BANNER</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BOXED
-                                        SLIDER BANNER</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BOXED
-                                        IMAGE BANNER</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LEFT
-                                        SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">RIGHT
-                                        SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">OFF
-                                        CANVAS FILTER</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">HORIZONTAL
-                                        FILTER1</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">HORIZONTAL
-                                        FILTER2</a>
-                                </div>
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text no-underline">VARIATION 2</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LIST
-                                        TYPES</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">AJAX
-                                        INFINITE SCROLL</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                    <a href="#" class="block px-4 py-2 text-gray-500 text no-underline hover:underline">
-                                        COLUMNS PRODUCTS</a>
-                                </div>
-
-                                <div>
-                                    <img class="h-full"
-                                        src="https://www.portotheme.com/html/porto_ecommerce/assets/images/menu-banner.jpg"
-                                        alt="">
+                                    <div>
+                                        <img class="h-full"
+                                            src="https://www.portotheme.com/html/porto_ecommerce/assets/images/menu-banner.jpg"
+                                            alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="relative mt-6  inline-block">
-                        <a id="dropdownButton1" href="#"
-                            class="dropdown-button hover:border-t-4 border-blue-500 pt-5 duration-75  hover:text-blue-500">PRODUCTS
-                            <i class="fas fa-angle-down"></i></a>
-                        <div id="dropdownContent1"
-                            class="dropdown-content absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
-                            <div class="grid grid-cols-3 font-normal">
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text no-underline"> PRODUCTS PAGE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
-                                        PAGES</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
-                                        & ON SALE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        CUSTOM TAB</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        LEFT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        RIGHT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD CART
-                                        STICKY</a>
-                                </div>
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text no-underline">PRODUCTS
-                                        LAYOUTS</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
-                                        LAYOUTS</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">EXTENDED
-                                        LAYOUT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">GRID
-                                        IMAGE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FULL
-                                        WIDTH LAYOUT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">STICKY
-                                        INFO</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LEFT &
-                                        RIGHT STICKY</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">TRANSPARENT
-                                        IMAGE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">CENTER
-                                        VERTICAL</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BUILD
-                                        YOUR OWN</a>
-                                </div>
+                        <div class="relative mt-6  inline-block">
+                            <a id="dropdownButton1" href="#"
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">PRODUCTS
+                                <i class="fas fa-angle-down"></i></a>
+                            <div id="dropdownContent1"
+                                class="dropdown-content mt-4 absolute hidden bg-white w-[700px] py-2 shadow-md z-10">
+                                <div class="grid grid-cols-3 font-normal">
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text no-underline"> PRODUCTS
+                                            PAGE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
+                                            PAGES</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
+                                            & ON SALE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            CUSTOM TAB</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            LEFT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            RIGHT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD
+                                            CART
+                                            STICKY</a>
+                                    </div>
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text no-underline">PRODUCTS
+                                            LAYOUTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
+                                            LAYOUTS</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">EXTENDED
+                                            LAYOUT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">GRID
+                                            IMAGE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FULL
+                                            WIDTH LAYOUT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">STICKY
+                                            INFO</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">LEFT
+                                            &
+                                            RIGHT STICKY</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">TRANSPARENT
+                                            IMAGE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">CENTER
+                                            VERTICAL</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">BUILD
+                                            YOUR OWN</a>
+                                    </div>
 
-                                <div>
-                                    <img class="h-full"
-                                        src="https://www.portotheme.com/html/porto_ecommerce/assets/images/menu-banner.jpg"
-                                        alt="">
+                                    <div>
+                                        <img class="h-full"
+                                            src="https://www.portotheme.com/html/porto_ecommerce/assets/images/menu-banner.jpg"
+                                            alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="relative mt-6  inline-block">
-                        <a id="dropdownButton1" href="#"
-                            class="dropdown-button hover:border-t-4 border-blue-500 pt-5 duration-75  hover:text-blue-500">PAGES
-                            <i class="fas fa-angle-down"></i></a>
-                        <div id="dropdownContent1"
-                            class="dropdown-content absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
-                            <div class=" font-normal">
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text no-underline"> PRODUCTS PAGE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
-                                        PAGES</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
-                                        & ON SALE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        CUSTOM TAB</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        LEFT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        RIGHT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD CART
-                                        STICKY</a>
+                        <div class="relative mt-6  inline-block">
+                            <a id="dropdownButton1" href="#"
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">PAGES
+                                <i class="fas fa-angle-down"></i></a>
+                            <div id="dropdownContent1"
+                                class="dropdown-content mt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
+                                <div class=" font-normal">
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text no-underline"> PRODUCTS
+                                            PAGE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
+                                            PAGES</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
+                                            & ON SALE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            CUSTOM TAB</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            LEFT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            RIGHT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD
+                                            CART
+                                            STICKY</a>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class=" pt-5  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">BLOG</a>
+                        <div class="mt-6">
+                            <a href="#"
+                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">BLOG</a>
 
-                    </div>
-                    <div class="relative mt-6  inline-block">
-                        <a id="dropdownButton1" href="#"
-                            class="dropdown-button hover:border-t-4 border-blue-500 pt-5 duration-75  hover:text-blue-500">ELEMENTS
-                            <i class="fas fa-angle-down"></i></a>
-                        <div id="dropdownContent1"
-                            class="dropdown-content absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
-                            <div class="font-normal ">
-                                <div>
-                                    <a class="block px-4 py-2 font-bold text-black text  no-underline"> PRODUCTS
-                                        PAGE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
-                                        PAGES</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
-                                        PRODUCT</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
-                                        & ON SALE</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        CUSTOM TAB</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        LEFT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
-                                        RIGHT SIDEBAR</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD CART
-                                        STICKY</a>
+                        </div>
+                        <div class="relative mt-6  inline-block">
+                            <a id="dropdownButton1" href="#"
+                                class="dropdown-button hover:border-t-4 border-blue-500 pt-4 duration-75  hover:text-blue-500">ELEMENTS
+                                <i class="fas fa-angle-down"></i></a>
+                            <div id="dropdownContent1"
+                                class="dropdown-content mt-4 absolute hidden bg-white w-[250px] py-2 shadow-md z-10">
+                                <div class="font-normal ">
+                                    <div>
+                                        <a class="block px-4 py-2 font-bold text-black text  no-underline"> PRODUCTS
+                                            PAGE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">PRODUCT
+                                            PAGES</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SIMPLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">VARIABLE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">SALE
+                                            PRODUCT</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">FEATURED
+                                            & ON SALE</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            CUSTOM TAB</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            LEFT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">WITH
+                                            RIGHT SIDEBAR</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-500 text no-underline hover:underline">ADD
+                                            CART
+                                            STICKY</a>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class=" pt-5  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">CONTSCT
-                            US</a>
+                        <div class="mt-6">
+                            <a href="#"
+                                class=" pt-4  hover:border-t-4 border-blue-500    duration-75  hover:text-blue-500">CONTSCT
+                                US</a>
 
+                        </div>
                     </div>
-                </div>
-                <div class="text-gray-600 text-sm font-bold flex gap-8">
+                    <div class="text-gray-600 text-sm font-bold flex gap-8">
 
-                    <a href="#" class=" mt-6 duration-75  hover:text-blue-500">SPECIAL OFFER!</a>
-                    <a href="#" class=" mt-6 duration-75  hover:text-blue-500">BUY PORTO!</a>
+                        <a href="#" class=" mt-6 duration-75  hover:text-blue-500">SPECIAL OFFER!</a>
+                        <a href="#" class=" mt-6 duration-75  hover:text-blue-500">BUY PORTO!</a>
+                    </div>
                 </div>
             </div>
 
@@ -374,7 +449,156 @@
 
 
 
+    <!--#################################################
+####                                            ####
+####          Footer section Start                 ####
+####                                            ####
+##################################################-->
 
+
+    <section>
+
+
+
+        <div id='footer' class='mt-[1000px]   bottom-0 w-full'>
+            <div style="background-color: #222529;" class='  xs:h-[540px]  md:h-auto sm:h-auto  w-full h-auto'>
+                <div
+                    class='container pb-4 grid grid-cols-1   xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4     '>
+                    <div class='w-full  h-full   flex flex-col    overflow-hidden'>
+                        <p class="text-white pt-12 pb-6 text-[17px] font-bold">CONTACT INFO</p>
+                        <p class="text-gray-300 text-[15px] font-bold">ADDRESS:</p>
+                        <p class="text-gray-400 text-sm pb-3">123 Street Name,City,England</p>
+                        <p class="text-gray-300 text-[15px] font-bold">PHONE:</p>
+                        <p class="text-gray-400 text-sm pb-3">123456789</p>
+                        <p class="text-gray-300 text-[15px] font-bold">EMAIL:</p>
+                        <p class="text-gray-400 text-sm pb-3">mail@gmial.com</p>
+                        <p class="text-gray-300 text-[15px] font-bold ">WORKING DAYS/HOUR:</p>
+                        <p class="text-gray-400 text-sm">Mon-Sun /9:00-8:00 PM</p>
+                    </div>
+                    <div class='grid xs:grid-cols-2 '>
+
+                        <div class='w-full  h-full   flex flex-col   justify-center overflow-hidden'>
+                            <a
+                                class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12 pb-6 text-[17px] font-bold">CUSTOMER
+                                SERVICE</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Help
+                                & FAQs</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Order
+                                Tracking</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Shiping
+                                & Delivery</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">
+                                Order History</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">
+                                Advanched Search</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">My
+                                Account</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Careers</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">About
+                                Us</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Corporate
+                                Sales</a>
+                            <a href="#"
+                                class="text-gray-400 font-sans hover:text-blue-500 duration-200 cursor-pointer  pb-1">Privacy</a>
+                        </div>
+
+
+
+                    </div>
+                    <div class='grid xs:grid-cols-2 '>
+
+                        <div class='w-full  h-full   flex flex-col      overflow-hidden'>
+                            <a
+                                class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12  pb-6 text-[17px] font-bold">POPULAR
+                                TAGS</a>
+                            <div class="grid grid-cols-4 gap-2  me-6 items-center text-center justify-center text-sm ">
+
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Bag
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    Black</a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    Blue</a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    Clothes </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    Fashion </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">
+                                    Hub</a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Shirt
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Shoes
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Skirt
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Sports
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 border  py-1 font-sans hover:text-white duration-200 cursor-pointer  pb-1">Sweater
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class='grid xs:grid-cols-2 w-[100%]'>
+
+                        <div class='w-full  h-full   flex flex-col      overflow-hidden'>
+                            <a
+                                class="text-white    hover:text-blue-500 duration-200 cursor-pointer pt-12  pb-6 text-[17px] font-bold">SUBSCRIBE NEWSLETTER</a>
+                            <div class="grid     text-sm ">
+                                <p class="text-gray-300 pb-6 text-justify">Get all the latest information on events,
+                                    sales and offers.
+                                    Sign up for newsletter:
+                                </p>
+                                <input type="text "
+                                    class="bg-slate-700 rounded-full h-10 outline-none px-4 text-gray-300"
+                                    placeholder="Email Address">
+                                <button class="  h-10 px-4 bg-blue-400 text-white font-bold rounded-full mt-4">
+                                    SUBSCRIBE</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--#################################################
+####                                            ####
+####          Footer section END                 ####
+####                                            ####
+##################################################-->
 
 
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
