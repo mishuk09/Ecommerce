@@ -180,8 +180,17 @@ button {
 
 
 
- 
+
 .rotate-down {
     transform: rotate(90deg);
     transition: transform 0.3s ease;
+}
+
+
+ 
+/* Add transition property to smoothly animate height changes */
+#dropdownMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
 }

@@ -176,9 +176,57 @@ document.addEventListener("DOMContentLoaded", function () {
     const categoryMenu = document.getElementById("cliked-id");
 
     categoryDropdown.addEventListener("click", function () {
+        // Toggle the 'hidden' class for smooth animation
         dropdownMenu.classList.toggle("hidden");
+        // Get the height of the menu after the 'hidden' class is toggled
+        const newHeight = dropdownMenu.scrollHeight;
+        // Set the max-height to the new height for smooth transition
+        dropdownMenu.style.maxHeight = dropdownMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+        // Toggle the 'clicked' class if needed
         categoryMenu.classList.toggle("clicked");
     });
 });
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const productsDropdown = document.getElementById("categoryDropdowntwo"); // Changed ID
+    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+
+    productsDropdown.addEventListener("click", function () {
+        // Toggle the 'hidden' class for smooth animation
+        productsMenu.classList.toggle("hidden");
+        // Get the height of the menu after the 'hidden' class is toggled
+        const newHeight = productsMenu.scrollHeight;
+        // Set the max-height to the new height for smooth transition
+        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const productsDropdown = document.getElementById("categoryDropdownthree"); // Changed ID
+    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+
+    productsDropdown.addEventListener("click", function () {
+        // Toggle the 'hidden' class for smooth animation
+        productsMenu.classList.toggle("hidden");
+        // Get the height of the menu after the 'hidden' class is toggled
+        const newHeight = productsMenu.scrollHeight;
+        // Set the max-height to the new height for smooth transition
+        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const productsDropdown = document.getElementById("categoryDropdownfour"); // Changed ID
+    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+
+    productsDropdown.addEventListener("click", function () {
+        // Toggle the 'hidden' class for smooth animation
+        productsMenu.classList.toggle("hidden");
+        // Get the height of the menu after the 'hidden' class is toggled
+        const newHeight = productsMenu.scrollHeight;
+        // Set the max-height to the new height for smooth transition
+        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+    });
+});
