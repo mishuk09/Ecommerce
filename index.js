@@ -102,7 +102,7 @@ function toggleSearch() {
 };
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var sidebar = document.getElementById('sidebar');
     var topPos = sidebar.getBoundingClientRect().top;
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -112,7 +112,7 @@ window.addEventListener('scroll', function() {
     } else {
         sidebar.classList.remove('fixed-sidebar');
     }
-}); 
+});
 
 
 
@@ -241,4 +241,22 @@ arrowLeft.addEventListener('click', () => {
 
 arrowRight.addEventListener('click', () => {
     items.style.transform = `translateX(${Math.max(-(items.scrollWidth - containerr.offsetWidth), items.getBoundingClientRect().left - itemWidth)}px)`;
+});
+
+
+
+
+
+// hover 
+
+// JavaScript to handle hover functionality
+const parentDiv = document.querySelector('.parent-div');
+const textOverlay = parentDiv.querySelector('.text-overlay');
+
+parentDiv.addEventListener('mouseenter', () => {
+    textOverlay.classList.remove('hidden');
+});
+
+parentDiv.addEventListener('mouseleave', () => {
+    textOverlay.classList.add('hidden');
 });

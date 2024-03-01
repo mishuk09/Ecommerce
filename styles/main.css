@@ -213,3 +213,29 @@ button {
     z-index: 1000;
     /* Adjust z-index as needed */
 }
+
+
+
+
+/* card style  */
+.text-overlayy {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+ 
+
+.parent-divv:hover .image-container img {
+    opacity: 1;
+}
+
+.parent-divv:hover .text-overlayy {
+    opacity: 0.5;
+    border-top: 20px;
+}
+
+
+.image-container {
+    position: relative;
+}
+ 
