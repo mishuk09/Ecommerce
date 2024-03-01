@@ -230,3 +230,20 @@ document.addEventListener("DOMContentLoaded", function () {
         productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
     });
 });
+// ahgfjkagsfdjkasgdjasdgf
+
+
+const containerr = document.getElementById('containerr');
+const items = document.getElementById('items');
+const arrowLeft = document.querySelector('.arrow.left');
+const arrowRight = document.querySelector('.arrow.right');
+
+const itemWidth = document.querySelector('.item').offsetWidth;
+
+arrowLeft.addEventListener('click', () => {
+    items.style.transform = `translateX(${Math.min(0, items.getBoundingClientRect().left + itemWidth)}px)`;
+});
+
+arrowRight.addEventListener('click', () => {
+    items.style.transform = `translateX(${Math.max(-(items.scrollWidth - containerr.offsetWidth), items.getBoundingClientRect().left - itemWidth)}px)`;
+});
