@@ -89,6 +89,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
+
+
+
                 <div
                     class="logo flex gap-6 items-center   text-end justify-end lg:justify-end  w-[100%] lg:w-[15%]  mx:2 lg:mx-2">
 
@@ -112,7 +115,7 @@
             </div>
             <hr class="text-gray-300 ">
 
-            <div class="dropdown-div  shadow-sm ">
+            <div class="dropdown-div    shadow-sm " id="sidebar">
                 <div class="custom-container  hidden pt-1 mx-auto lg:flex justify-between">
                     <div class="flex gap-8 pb-6 font-bold text-gray-600 text-sm">
 
@@ -422,7 +425,7 @@
                         href="#">CATEGORY </a>
                     <ul class="  ps-4 mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
 
-                        <li "><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
+                        <li ><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
                             Width Banner</a> </li>
                         <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
                                 Slider Banner</a> </li>
@@ -623,12 +626,12 @@
 
 
 
-    <section>
+    <section class="">
         <div>
 
             <!-- slider section -->
 
-            <div class="  mx-auto">
+            <div class="   mx-auto">
 
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
@@ -655,28 +658,16 @@
                     <button type="button"
                         class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-prev>
-                        <span
-                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7"></path>
-                            </svg>
-                            <span class="hidden">Previous</span>
-                        </span>
+                        <i class="fa-solid fa-chevron-left text-xl"></i>
+                        
+                      
                     </button>
                     <button type="button"
                         class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-next>
-                        <span
-                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
-                            </svg>
-                            <!-- <span class="hidden">Next</span> -->
-                        </span>
+                        <i class="fa-solid fa-chevron-right text-xl"></i>
+                      
+                      
                     </button>
                 </div>
 
@@ -684,10 +675,10 @@
 
 
 
-            <!-- Secon Portion of HOME -->
+            <!-- Section Portion of HOME -->
 
             <div class="grid grid-cols-3 mt-4 mb-10 custom-container gap-3">
-                <div class="w-full flex  h-[150px] rounded-md  bg-pink-700">
+                <div class="w-full flex  h-[150px] rounded-xl  bg-pink-700">
                     <div class="w-[60%] ps-4 text-white items-center  pt-4    justify-center">
                         <p class="text-2xl mb-2 font-bold">Ultimate 3D Blutooth</p>
                         <a class="  border-b-2 cursor-pointer">Shop Details</a>
@@ -696,7 +687,7 @@
                         <img class="w-[150px] p-2" src="/images/home/ll.png" alt="">
                     </div>
                 </div>
-                <div class="w-full flex h-[150px] rounded-md  bg-purple-700">
+                <div class="w-full flex h-[150px] rounded-xl  bg-purple-700">
                     <div class="w-[60%] ps-4 text-white items-center  pt-4    justify-center">
                         <p class="text-2xl mb-2 font-bold">Ultimate 3D Blutooth</p>
                         <a class="  border-b-2 cursor-pointer">Shop Details</a>
@@ -705,7 +696,7 @@
                         <img class="w-[150px] p-2" src="/images/home/hh.png" alt="">
                     </div>
                 </div>
-                <div class="w-full flex h-[150px] rounded-md  bg-teal-500">
+                <div class="w-full flex h-[150px] rounded-xl  bg-teal-500">
                     <div class="w-[60%] ps-4 text-white items-center  pt-4    justify-center">
                         <p class="text-2xl mb-2 font-bold">Ultimate 3D Blutooth</p>
                         <a class="  border-b-2 cursor-pointer">Shop Details</a>
@@ -730,7 +721,7 @@
                             class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
                 </div>
 
-                <section class="px-3 grid grid-cols-5 justify-items-center justify-center gap-3 mt-10 mb-5">
+                <section class=" grid grid-cols-5 justify-items-center justify-center gap-3 mt-10 mb-5">
 
 
 
@@ -1077,396 +1068,7 @@
 
             <!-- Features Products Section  -->
 
-            <!-- <div class="custom-container">
-                <div class="flex justify-between">
-                    <p class=" font-bold text-xl">Feature Products</p>
-                    <button class="me-4 w-[100px] text-sm">View All <i
-                            class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
-                </div>
-
-
-                <section
-                    class="px-3 bg-white py-3 grid grid-cols-5 justify-items-center justify-center gap-3 mt-10 mb-5">
-
-                    <div class="w-full bg-white shadow-sm  hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="w-full bg-white shadow-sm hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="w-full bg-white shadow-sm hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="w-full bg-white shadow-sm hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="w-full bg-white shadow-sm hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="w-full bg-white shadow-sm hover:shadow-md duration-300 h-auto rounded-xl">
-                        <a href="#">
-                            <div alt="Product"
-                                class="px-3 pt-3 flex items-center text-center justify-center mb-2 object-cover rounded-t-xl"
-                                style="height: 180px;  ">
-                                <img class="w-full h-full object-contain" 
-                                src="https://rukminim2.flixcart.com/image/612/612/l27wtjk0/speaker/i/4/e/-original-imagdhhg2f7zjbt7.jpeg?q=70"
-                                alt="">
-                            </div>
-                            <div class="px-3 pt-1 hover:bg-slate-50 duration-150 grid w-full">
-                                <span class="text-gray-400 uppercase text-[10px]">Brand</span>
-                                <p class="text- my-0 py-0 font-bold text-black truncate block capitalize">Product Name
-                                </p>
-                                <span class="text-gray-400 text-[13px]">Description</span>
-                                <span class="text-sm mt-2">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                    </div>
-
-                                </span>
-                                <div class="flex items-center">
-                                    <p class="text-lg font-semibold text-black cursor-auto my-2">$149</p>
-                                    <del>
-                                        <p class="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                    </del>
-                                </div>
-                                <div class="w-full flex mb-4 items-center text-center justify-center h-full">
-                                    <a href=""
-                                        class="border flex items-center text-center justify-between w-full h-6 text-sm rounded-full px-3">
-                                        <p>Add</p>
-                                        <p>+</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                   
-
-
-                </section>
-            </div> -->
+             
             <div class="custom-container">
                 <div class="flex justify-between">
                     <p class=" font-bold text-xl">Features Products</p>
@@ -1476,7 +1078,7 @@
 
 
                 <section
-                    class="mx-auto bg-white grid grid-cols-5 px-3 py-3 justify-items-center justify-center gap-3 mt-10 mb-5">
+                    class="mx-auto   grid grid-cols-5    justify-items-center justify-center gap-3 mt-10 mb-5">
 
 
 
@@ -1869,7 +1471,7 @@
             <!-- Random  Card Section  -->
 
             <div class="custom-container flex gap-3 mb-10">
-                <div class="rounded-md flex items-center w-[100%] h-[150px]"
+                <div class="rounded-xl flex items-center w-[100%] h-[150px]"
                     style="background-image: url('/images/home/1.png'); background-size: cover; background-position: center;">
                     <div class="px-5">
                         <p class="text-white font-nunito font-bold text-xl">
@@ -1881,7 +1483,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="rounded-md  flex items-center w-[100%] h-[150px]"
+                <div class="rounded-xl  flex items-center w-[100%] h-[150px]"
                     style="background-image: url('/images/home/2.png'); background-size: cover; background-position: center;">
                     <div class="px-5">
                         <p class="text-white font-nunito font-bold text-xl">
@@ -1908,7 +1510,7 @@
 
 
                 <section
-                    class="mx-auto bg-white grid grid-cols-5 px-3 py-3 justify-items-center justify-center gap-3 mt-10 mb-5">
+                    class="mx-auto   grid grid-cols-5   justify-items-center justify-center gap-3 mt-10 mb-5">
 
 
 

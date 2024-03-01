@@ -102,22 +102,17 @@ function toggleSearch() {
 };
 
 
+window.addEventListener('scroll', function() {
+    var sidebar = document.getElementById('sidebar');
+    var topPos = sidebar.getBoundingClientRect().top;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-document.addEventListener('DOMContentLoaded', function () {
-    const navMenu = document.querySelector('.dropdown-div');
-    const navMenuHeight = navMenu.clientHeight;
-    const scrollThreshold = navMenu.offsetTop; // or set your own threshold
-
-    function handleScroll() {
-        if (window.pageYOffset > scrollThreshold) {
-            navMenu.classList.add('fixed', 'top-0');
-        } else {
-            navMenu.classList.remove('fixed', 'top-0');
-        }
+    if (topPos <= 0 && scrollTop > 0) {
+        sidebar.classList.add('fixed-sidebar');
+    } else {
+        sidebar.classList.remove('fixed-sidebar');
     }
-
-    window.addEventListener('scroll', handleScroll);
-});
+}); 
 
 
 

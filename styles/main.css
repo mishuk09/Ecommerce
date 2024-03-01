@@ -200,3 +200,16 @@ button {
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+
+
+
+
+
+.fixed-sidebar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Adjust z-index as needed */
+}
