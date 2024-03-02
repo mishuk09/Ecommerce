@@ -220,12 +220,12 @@ button {
 /* card style  */
 .text-overlayy {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    /* transition: opacity 0.3s ease; */
 }
 
-.parent-divv:hover .image-container img {
+/* .parent-divv:hover .image-container img {
     opacity: 1;
-}
+} */
 
 .parent-divv:hover .cart-items{
     background-color: rgb(82, 82, 241);
@@ -234,11 +234,15 @@ button {
      
 }
 
+.parent-divv .text-overlayy {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.3s, height 0.3s;
+}
+
 .parent-divv:hover .text-overlayy {
-    opacity: 0.75;
-    /* Adjust opacity as needed */
-    border-top: 2px solid white;
-    /* Example border, adjust as needed */
+    opacity: 1;
+    height: 40px;
 }
 
 .image-container {
