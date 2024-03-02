@@ -10,10 +10,18 @@
 
     .custom-font {
         color: #225487;
-        /* Replace 'your-color-here' with your desired color code */
-    }
+     }
 }
 
+
+
+
+:root {
+    --primary-color: #1d70ba;
+     
+    --primary-text: #225487;
+     
+}
 
 
 /* Other styles can go here */
@@ -220,6 +228,7 @@ button {
 /* card style  */
 .text-overlayy {
     opacity: 0;
+    background-color: var(--primary-color);
     /* transition: opacity 0.3s ease; */
 }
 
@@ -234,7 +243,7 @@ button {
 
 
 .parent-divv:hover .cart-items {
-    background-color: rgb(87, 87, 255);
+    background-color: var(--primary-color);
     color: white;
     transition: 0.5s;
 
@@ -403,17 +412,22 @@ button {
     display: block;
     /* Show the hover image on hover */
 }
+
 .new-div .hover-img {
-    opacity: 0; /* Initially set the hover image to be transparent */
-    transition: opacity 0.3s ease; /* Apply a smooth transition effect */
+    opacity: 0;
+    /* Initially set the hover image to be transparent */
+    transition: opacity 0.3s ease;
+    /* Apply a smooth transition effect */
 }
 
 .new-div:hover .main-img {
-    opacity: 0; /* Hide the main image on hover */
+    opacity: 0;
+    /* Hide the main image on hover */
 }
 
 .new-div:hover .hover-img {
-    opacity: 1; /* Show the hover image on hover */
+    opacity: 1;
+    /* Show the hover image on hover */
 }
 
 
@@ -426,6 +440,6 @@ button {
    
  } */
 
- .font-head{
+.font-head {
     font-family: 'Roboto';
- }
+}
