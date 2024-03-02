@@ -223,15 +223,21 @@ button {
     /* transition: opacity 0.3s ease; */
 }
 
-/* .parent-divv:hover .image-container img {
-    opacity: 1;
-} */
+.parent-divv .image-container img {
+    /* opacity: 0; */
+    transition: opacity 0.5s;
+}
 
-.parent-divv:hover .cart-items{
+.parent-divv:hover .image-container img {
+    opacity: 1;
+}
+
+
+.parent-divv:hover .cart-items {
     background-color: rgb(82, 82, 241);
     color: white;
     transition: 0.5s;
-     
+
 }
 
 .parent-divv .text-overlayy {
@@ -253,4 +259,33 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.parent-divv .hover-img {
+    display: none;
+    /* Initially hide the hover image */
+
+}
+
+.parent-divv:hover .main-img {
+    display: none;
+    /* Hide the main image on hover */
+}
+
+.parent-divv:hover .hover-img {
+    display: block;
+    /* Show the hover image on hover */
+}
+.parent-divv .hover-img {
+    opacity: 0; /* Initially hide the hover image */
+    transition: opacity 0.3s ease; /* Add transition for opacity change */
+}
+
+.parent-divv:hover .main-img {
+    opacity: 0; /* Hide the main image on hover */
+}
+
+.parent-divv:hover .hover-img {
+    opacity: 1; /* Show the hover image on hover */
 }
