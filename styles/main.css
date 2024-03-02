@@ -255,11 +255,6 @@ button {
     position: relative;
 }
 
-.cart-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -420,3 +415,13 @@ button {
 .new-div:hover .hover-img {
     opacity: 1; /* Show the hover image on hover */
 }
+
+
+/* 
+
+.border-custom-height {
+   
+    
+    border-right: 2px solid green;
+   
+ } */
