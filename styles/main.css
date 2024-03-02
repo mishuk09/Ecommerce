@@ -223,19 +223,17 @@ button {
     transition: opacity 0.3s ease;
 }
 
- 
-
 .parent-divv:hover .image-container img {
     opacity: 1;
 }
 
 .parent-divv:hover .text-overlayy {
-    opacity: 0.5;
-    border-top: 20px;
+    opacity: 0.75;
+    /* Adjust opacity as needed */
+    border-top: 2px solid white;
+    /* Example border, adjust as needed */
 }
-
 
 .image-container {
     position: relative;
 }
- 
