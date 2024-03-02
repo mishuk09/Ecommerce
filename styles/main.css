@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* styles.css (or any other name you prefer) */
+
 @layer utilities {
     .custom-container {
         max-width: 1200px;
@@ -20,6 +23,7 @@
     --primary-color: #1d70ba;
 
     --primary-text: #225487;
+    --primary-font: 'Roboto', sans-serif;
 
 }
 
@@ -404,33 +408,39 @@ button {
     /* Move icon 5px to the right on hover */
 }
 
- 
+
 
 .border-custom-height {
-   
-    
+
+
     border-right: 1px solid rgb(227, 227, 227);
     color: var(--primary-text);
-   
- }  
+
+}
+
 .border-custom-heigh {
     color: var(--primary-text);
-   
- }  
+
+}
 
 .font-head {
     font-family: 'Roboto';
 }
 
 
+.number {
+    color: var(--primary-text);
+    font-family:sans-serif
+}
 
-
+ 
 /* ... */
 
 
 .parent-div {
     position: relative;
-    overflow: hidden; /* Ensures that the pseudo-element doesn't overflow its container */
+    overflow: hidden;
+    /* Ensures that the pseudo-element doesn't overflow its container */
 }
 
 .parent-div::before {
@@ -443,16 +453,21 @@ button {
     background-image: url('/images/home/1.png');
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Ensure the pseudo-element is behind the content */
-    transition: transform 0.3s ease; /* Transition effect for smooth animation */
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
 }
 
 .parent-div:hover::before {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
+    /* Zoom effect on hover */
 }
+
 .parent-div2 {
     position: relative;
-    overflow: hidden; /* Ensures that the pseudo-element doesn't overflow its container */
+    overflow: hidden;
+    /* Ensures that the pseudo-element doesn't overflow its container */
 }
 
 .parent-div2::before {
@@ -465,10 +480,13 @@ button {
     background-image: url('/images/home/2.png');
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Ensure the pseudo-element is behind the content */
-    transition: transform 0.3s ease; /* Transition effect for smooth animation */
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
 }
 
 .parent-div2:hover::before {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
+    /* Zoom effect on hover */
 }
