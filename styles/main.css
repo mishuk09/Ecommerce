@@ -60,7 +60,9 @@
 
 
 
-
+.navbar-main{
+    background-color: var(--primary-color);
+}
 
 .header {
     /* background: #fff; */

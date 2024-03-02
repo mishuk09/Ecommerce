@@ -27,7 +27,6 @@
 
 
 
-
     <!--#################################################
 ####                                            ####
 ####          GO TO TOP start                ####
@@ -52,70 +51,86 @@
 
     <header>
         <nav>
-            <div class="custom-container  flex lg:justify-between py-4  ">
-                <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[15%]">
-                    <!-- <div class="header lg:hidden ">
-                        <div class="header_in">
-                            <button type="button" class="toggle" id="toggle">
-                                <span></span>
-                            </button>
+            <div class=" navbar-main ">
+
+
+                <div class="custom-container  flex lg:justify-between py-4  ">
+                    <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[15%]">
+                        <div class="header lg:hidden ">
+                            <div class="header_in">
+                                <button type="button" class="toggle" id="toggle">
+                                    <span></span>
+                                </button>
+                            </div>
                         </div>
-                    </div> -->
-                    <a href="#"> <img src="/images/logo.png" alt=""></a>
-                </div>
-                <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
-                    <div class=" border-r-2  border-r-white">
-                        <input placeholder="Search..." type="text"
-                            class="outline-none h-10 text-gray-400 text-[14px] bg-gray-100 xl:w-[400px] lg:w-[320px] pt-2 pb-2 px-4 rounded-l-full">
+                        <a href="#"> <img src="/images/logo.png" alt=""></a>
                     </div>
-                    <div
-                        class="h-10 w-[160px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
-                        <select id="cat" name="cat"
-                            class="w-full bg-gray-100 text-gray-500 text-[15px] outline-none   px-3 me-2">
-                            <option value="" ">All Categories</option>
+                    <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
+                        <div class=" border-r-2  border-r-white">
+                            <input placeholder="Search..." type="text"
+                                class="outline-none h-10 text-gray-400 text-[14px] bg-gray-100 xl:w-[400px] lg:w-[320px] pt-2 pb-2 px-4 rounded-l-full">
+                        </div>
+                        <div
+                            class="h-10 w-[160px] border-r-2 flex bg-gray-100 border-r-white items-center text-center justify-center">
+                            <select id="cat" name="cat"
+                                class="w-full bg-gray-100 text-gray-500 text-[15px] outline-none   px-3 me-2">
+                                <option value="" ">All Categories</option>
                             <option value=" 4">Fashion</option>
-                            <option value="12">- Women</option>
-                            <option value="13">- Men</option>
-                            <option value="66">- Jewellery</option>
-                            <option value="67">- Kids Fashion</option>
-                            <option value="5">Electronics</option>
-                            <option value="21">- Smart TVs</option>
-                            <option value="22">- Cameras</option>
-                            <option value="63">- Games</option>
-                            <option value="7">Home & Garden</option>
-                            <option value="11">Motors</option>
-                            <option value="31">- Cars and Trucks</option>
-                            <option value="32">- Motorcycles & Powersports</option>
-                            <option value="33">- Parts & Accessories</option>
-                            <option value="34">- Boats</option>
-                            <option value="57">- Auto Tools & Supplies</option>
-                        </select>
-                    </div>
-                    <div class="h-10 bg-gray-100 w-[70px] flex rounded-r-full  items-center text-center justify-center">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-
-
-
-                <div
-                    class="logo flex gap-6 items-center   text-end justify-end lg:justify-end  w-[100%] lg:w-[15%]  mx:2 lg:mx-2">
-
-                    <div class="hidden   sm:flex lg:hidden   " onclick="toggleSearch()">
-                        <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
+                                <option value="12">- Women</option>
+                                <option value="13">- Men</option>
+                                <option value="66">- Jewellery</option>
+                                <option value="67">- Kids Fashion</option>
+                                <option value="5">Electronics</option>
+                                <option value="21">- Smart TVs</option>
+                                <option value="22">- Cameras</option>
+                                <option value="63">- Games</option>
+                                <option value="7">Home & Garden</option>
+                                <option value="11">Motors</option>
+                                <option value="31">- Cars and Trucks</option>
+                                <option value="32">- Motorcycles & Powersports</option>
+                                <option value="33">- Parts & Accessories</option>
+                                <option value="34">- Boats</option>
+                                <option value="57">- Auto Tools & Supplies</option>
+                            </select>
+                        </div>
+                        <div
+                            class="h-10 bg-gray-100 w-[70px] flex rounded-r-full  items-center text-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                     </div>
 
-                    <div>
-                        <!-- <i class="fa-regular fa-user text-3xl"></i> -->
-                        <img class="w-7" src="/images/user.png" alt="">
-                    </div>
-                    <div>
-                        <!-- <i class="fa-regular fa-heart text-3xl"></i> -->
-                        <img class="w-7" src="/images/love.png" alt="">
-                    </div>
-                    <div>
-                        <!-- <i class="fa-solid fa-bag-shopping text-3xl"></i> -->
-                        <img class="w-7" src="/images/cart.png" alt="">
+
+
+                    <div
+                        class="logo flex gap-3 sm:gap-6 items-center   text-end justify-end lg:justify-end  w-[80%] lg:w-[25%]  mx:2 lg:mx-2">
+
+                        <div class="hidden   sm:flex lg:hidden   " onclick="toggleSearch()">
+                            <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
+                        </div>
+ 
+                        <div class="flex items-center text-center justify-center">
+                            <div>
+                                <img class="w-7" src="/images/user.png" alt="">
+                            </div>
+                            <div class="text-start hidden sm:block ms-2 text-white leading-4">
+                                <p class="text-[12px]">Log in</p>
+                                <p class="font-bold text-[14px]">Account</p>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- <i class="fa-regular fa-heart text-3xl"></i> -->
+                            <img class="w-7" src="/images/love.png" alt="">
+                        </div>
+                        <div class="flex items-center text-center justify-center">
+                            <div class="w-7">
+                                <img class="w-7 " src="/images/cart.png" alt="">
+                            </div>
+                            <div class="text-start ms-2 text-white leading-4">
+                                <p class="text-[12px]">Cart</p>
+                                <p class="font-bold text-[14px]">$50.00</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -410,24 +425,8 @@
 
 
 
-    <!-- <section class="lg:hidden">
-        <div style="background-color: #1d1e20 " class="sidebar " id='sidebar'>
 
-            <ul>
-                <li><a class="text-gray-200 text-[12px]" href="">HOME</a></li>
-                <li><a class="text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="">CATEGORY</a></li>
-                <li><a class="text-gray-200 text-[12px]" href="">CONTACT</a></li>
-            </ul>
-        </div>
-    </section> -->
 
-    <div class="header lg:hidden ">
-        <div class="header_in">
-            <button type="button" class="toggle" id="toggle">
-                <span></span>
-            </button>
-        </div>
-    </div>
     <section class="lg:hidden">
         <div style="background-color: #1d1e20" class="sidebar h-auto" id='sidebar'>
             <ul>
@@ -649,14 +648,14 @@
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-80   sm:h-80 xl:h-80 2xl:h-96">
-                        <!-- Item 1 -->
+
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
 
                             <img src="/images/home/slide-1.jpg"
                                 class="block absolute top-1/2 left-1/2 w-full  -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
-                        <!-- Item 2 -->
+
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="/images/home/slide-2.jpg"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"

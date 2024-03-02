@@ -147,6 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// toggle small button 
+
 var btn = document.querySelector('.toggle');
 var btnst = true;
 btn.onclick = function () {
