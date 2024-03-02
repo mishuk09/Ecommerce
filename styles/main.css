@@ -32,7 +32,7 @@
 
 /* slider  */
 
- 
+
 
 
 
@@ -263,15 +263,16 @@ button {
 
 .parent-divv:hover .image-container img {
     opacity: 1;
+
 }
 
 
-.parent-divv:hover .cart-items {
+/* .parent-divv:hover .cart-items {
     background-color: var(--primary-color);
     color: white;
     transition: 0.5s;
 
-}
+} */
 
 .parent-divv .text-overlayy {
     opacity: 0;
@@ -331,36 +332,19 @@ button {
 /* img hover  */
 
 
-.parent-divs .hover-img {
-    display: none;
-    /* Initially hide the hover image */
+.parent-divs {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main-img {
+    transition: transform 0.3s ease;
 }
 
 .parent-divs:hover .main-img {
-    display: none;
-    /* Hide the main image on hover */
-}
-
-.parent-divs:hover .hover-img {
-    display: block;
-    /* Show the hover image on hover */
-}
-
-.parent-divs .hover-img {
-    opacity: 0;
-    /* Initially hide the hover image */
-    transition: opacity 0.3s ease;
-    /* Add transition for opacity change */
-}
-
-.parent-divs:hover .main-img {
-    opacity: 0;
-    /* Hide the main image on hover */
-}
-
-.parent-divs:hover .hover-img {
-    opacity: 1;
-    /* Show the hover image on hover */
+    transform: scale(1.1);
+    /* Zoom in effect */
 }
 
 
@@ -422,39 +406,6 @@ button {
 
 
 
-.new-div .hover-img {
-    display: none;
-    /* Initially hide the hover image */
-}
-
-.new-div:hover .main-img {
-    display: none;
-    /* Hide the main image on hover */
-}
-
-.new-div:hover .hover-img {
-    display: block;
-    /* Show the hover image on hover */
-}
-
-.new-div .hover-img {
-    opacity: 0;
-    /* Initially set the hover image to be transparent */
-    transition: opacity 0.3s ease;
-    /* Apply a smooth transition effect */
-}
-
-.new-div:hover .main-img {
-    opacity: 0;
-    /* Hide the main image on hover */
-}
-
-.new-div:hover .hover-img {
-    opacity: 1;
-    /* Show the hover image on hover */
-}
-
-
 /* 
 
 .border-custom-height {
@@ -466,4 +417,55 @@ button {
 
 .font-head {
     font-family: 'Roboto';
+}
+
+
+
+
+/* ... */
+
+
+.parent-div {
+    position: relative;
+    overflow: hidden; /* Ensures that the pseudo-element doesn't overflow its container */
+}
+
+.parent-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease; /* Transition effect for smooth animation */
+}
+
+.parent-div:hover::before {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.parent-div2 {
+    position: relative;
+    overflow: hidden; /* Ensures that the pseudo-element doesn't overflow its container */
+}
+
+.parent-div2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease; /* Transition effect for smooth animation */
+}
+
+.parent-div2:hover::before {
+    transform: scale(1.1); /* Zoom effect on hover */
 }
