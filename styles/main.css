@@ -404,16 +404,19 @@ button {
     /* Move icon 5px to the right on hover */
 }
 
-
-
-/* 
+ 
 
 .border-custom-height {
    
     
-    border-right: 2px solid green;
+    border-right: 1px solid rgb(227, 227, 227);
+    color: var(--primary-text);
    
- } */
+ }  
+.border-custom-heigh {
+    color: var(--primary-text);
+   
+ }  
 
 .font-head {
     font-family: 'Roboto';
