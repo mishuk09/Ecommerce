@@ -262,6 +262,9 @@ button {
 }
 
 
+
+/* img hover  */
+
 .parent-divv .hover-img {
     display: none;
     /* Initially hide the hover image */
@@ -287,5 +290,35 @@ button {
 }
 
 .parent-divv:hover .hover-img {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+
+
+/* img hover  */
+
+
+.parent-divs .hover-img {
+    display: none; /* Initially hide the hover image */
+}
+
+.parent-divs:hover .main-img {
+    display: none; /* Hide the main image on hover */
+}
+
+.parent-divs:hover .hover-img {
+    display: block; /* Show the hover image on hover */
+}
+
+.parent-divs .hover-img {
+    opacity: 0; /* Initially hide the hover image */
+    transition: opacity 0.3s ease; /* Add transition for opacity change */
+}
+
+.parent-divs:hover .main-img {
+    opacity: 0; /* Hide the main image on hover */
+}
+
+.parent-divs:hover .hover-img {
     opacity: 1; /* Show the hover image on hover */
 }
