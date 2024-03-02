@@ -10,7 +10,7 @@
 
     .custom-font {
         color: #225487;
-     }
+    }
 }
 
 
@@ -18,13 +18,35 @@
 
 :root {
     --primary-color: #1d70ba;
-     
+
     --primary-text: #225487;
-     
+
 }
 
 
 /* Other styles can go here */
+
+
+
+/* sidebar  */
+
+/* slider  */
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,7 +82,7 @@
 
 
 
-.navbar-main{
+.navbar-main {
     background-color: var(--primary-color);
 }
 

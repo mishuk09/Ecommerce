@@ -51,6 +51,8 @@
 
     <header>
         <nav>
+
+
             <div class=" navbar-main ">
 
 
@@ -104,10 +106,10 @@
                     <div
                         class="logo flex gap-3 sm:gap-6 items-center   text-end justify-end lg:justify-end  w-[80%] lg:w-[25%]  mx:2 lg:mx-2">
 
-                        <div class="hidden   sm:flex lg:hidden   " onclick="toggleSearch()">
+                        <div class="hidden   sm:hidded lg:hidden   " onclick="toggleSearch()">
                             <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
                         </div>
- 
+
                         <div class="flex items-center text-center justify-center">
                             <div>
                                 <img class="w-7" src="/images/user.png" alt="">
@@ -118,7 +120,7 @@
                             </div>
                         </div>
                         <div>
-                            <!-- <i class="fa-regular fa-heart text-3xl"></i> -->
+
                             <img class="w-7" src="/images/love.png" alt="">
                         </div>
                         <div class="flex items-center text-center justify-center">
@@ -638,16 +640,74 @@
 
 
 
-    <section class="">
+
+    <div id="animation-carousel" class="relative w-full" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[500px] overflow-hidden rounded-lg  ">
+            <!-- Item 1 -->
+            <div class="hidden duration-200 ease-linear  " data-carousel-item>
+                <img src="/images/home/slide-1.jpg"
+                    class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <img src="/images/home/slide-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                <img src="/images/home/slide-2.jpg"
+                    class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <img src="/images/home/slide-2.jpg"
+                    class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <img src="/images/home/slide-2.jpg"
+                    class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <i class="fa-solid fa-chevron-left text-xl"></i>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <i class="fa-solid fa-chevron-right text-xl"></i>
+        </button>
+    </div>
+
+
+
+
+    <section>
         <div>
 
             <!-- slider section -->
 
-            <div class="   mx-auto">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="   mx-auto">
 
                 <div id="default-carousel" class="relative" data-carousel="static">
-                    <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-80   sm:h-80 xl:h-80 2xl:h-96">
+                     <div class="overflow-hidden relative h-80   sm:h-80 xl:h-80 2xl:h-96">
 
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
 
@@ -681,7 +741,7 @@
                     </button>
                 </div>
 
-            </div>
+            </div> -->
 
 
 
@@ -2404,7 +2464,8 @@
                         class="w-full   border-custom-height h-auto py-3 flex flex-col items-center justify-center text-center relative">
 
                         <p class="mb-2"><img class="w-8 flex items-center text-center" src="/images/home/deli.png"
-                                alt=""></p>
+                                alt="">
+                        </p>
                         <p class="text-[13px] pt-1 font-bold text-gray-600">Fast Delivery</p>
                         <p class="text-[11px] pt-1 font-bold text-gray-400">Delivery in 24 hours max!</p>
                     </div>
@@ -2420,7 +2481,8 @@
                         class="w-full   border-custom-height h-auto py-3 flex flex-col items-center justify-center text-center relative">
 
                         <p class="mb-2"><img class="w-8 flex items-center text-center" src="/images/home/return.png"
-                                alt=""></p>
+                                alt="">
+                        </p>
                         <p class="text-[13px] pt-1 font-bold text-gray-600">Free Returns</p>
                         <p class="text-[11px] pt-1 font-bold text-gray-400">Free returns within 15 days</p>
                     </div>
@@ -2428,7 +2490,8 @@
                         class="w-full   border-custom-height h-auto py-3 flex flex-col items-center justify-center text-center relative">
 
                         <p class="mb-2"><img class="w-8 flex items-center text-center" src="/images/home/help.png"
-                                alt=""></p>
+                                alt="">
+                        </p>
                         <p class="text-[13px] pt-1 font-bold text-gray-600">Help Center</p>
                         <p class="text-[11px] pt-1 font-bold text-gray-400"> Dedicated 24/7 support</p>
                     </div>
