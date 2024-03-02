@@ -56,7 +56,8 @@ select {
     background-position: right center;
     background-repeat: no-repeat;
     /* Adjust padding to make space for the arrow */
-    padding-right: 20px; /* Adjust the value as needed */
+    padding-right: 20px;
+    /* Adjust the value as needed */
 }
 
 
@@ -107,9 +108,11 @@ select {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
 }
-.dropdown-div2{
-font-family: var(--primary-font);
+
+.dropdown-div2 {
+    font-family: var(--primary-font);
 }
+
 .header {
     /* background: #fff; */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
@@ -359,6 +362,7 @@ button {
 .parent-divs {
     position: relative;
     overflow: hidden;
+    font-family: var(--primary-font);
 
 }
 
@@ -509,4 +513,11 @@ button {
 .parent-div2:hover::before {
     transform: scale(1.1);
     /* Zoom effect on hover */
+}
+
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
 }
