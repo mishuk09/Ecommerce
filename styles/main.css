@@ -280,17 +280,22 @@ button {
     display: block;
     /* Show the hover image on hover */
 }
+
 .parent-divv .hover-img {
-    opacity: 0; /* Initially hide the hover image */
-    transition: opacity 0.3s ease; /* Add transition for opacity change */
+    opacity: 0;
+    /* Initially hide the hover image */
+    transition: opacity 0.3s ease;
+    /* Add transition for opacity change */
 }
 
 .parent-divv:hover .main-img {
-    opacity: 0; /* Hide the main image on hover */
+    opacity: 0;
+    /* Hide the main image on hover */
 }
 
 .parent-divv:hover .hover-img {
-    opacity: 1; /* Show the hover image on hover */
+    opacity: 1;
+    /* Show the hover image on hover */
 }
 
 
@@ -299,26 +304,119 @@ button {
 
 
 .parent-divs .hover-img {
-    display: none; /* Initially hide the hover image */
+    display: none;
+    /* Initially hide the hover image */
 }
 
 .parent-divs:hover .main-img {
-    display: none; /* Hide the main image on hover */
+    display: none;
+    /* Hide the main image on hover */
 }
 
 .parent-divs:hover .hover-img {
-    display: block; /* Show the hover image on hover */
+    display: block;
+    /* Show the hover image on hover */
 }
 
 .parent-divs .hover-img {
-    opacity: 0; /* Initially hide the hover image */
-    transition: opacity 0.3s ease; /* Add transition for opacity change */
+    opacity: 0;
+    /* Initially hide the hover image */
+    transition: opacity 0.3s ease;
+    /* Add transition for opacity change */
 }
 
 .parent-divs:hover .main-img {
-    opacity: 0; /* Hide the main image on hover */
+    opacity: 0;
+    /* Hide the main image on hover */
 }
 
 .parent-divs:hover .hover-img {
+    opacity: 1;
+    /* Show the hover image on hover */
+}
+
+
+
+/* new product */
+.features-link {
+    color: #3182ce;
+    /* Link color */
+    text-decoration: none;
+    /* Remove default underline */
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+.new-div:hover .features-link {
+    color: #2c5282;
+    /* Color change on hover */
+}
+
+.features-link i {
+    margin-left: 5px;
+    /* Add some space between text and icon */
+    transition: transform 0.3s ease;
+    /* Smooth transition for transform */
+}
+
+.new-div:hover .features-link i {
+    transform: translateX(5px);
+    /* Move icon 5px to the right on hover */
+}
+
+.arrow-btn {
+    border: none;
+    background: transparent;
+    color: #3182ce;
+    /* Button color */
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+.arrow-btn:hover {
+    color: #2c5282;
+    /* Color change on hover */
+}
+
+.arrow-btn i {
+    margin-left: 5px;
+    /* Add some space between text and icon */
+    transition: transform 0.3s ease;
+    /* Smooth transition for transform */
+}
+
+.arrow-btn:hover i {
+    transform: translateX(5px);
+    /* Move icon 5px to the right on hover */
+}
+
+
+
+.new-div .hover-img {
+    display: none;
+    /* Initially hide the hover image */
+}
+
+.new-div:hover .main-img {
+    display: none;
+    /* Hide the main image on hover */
+}
+
+.new-div:hover .hover-img {
+    display: block;
+    /* Show the hover image on hover */
+}
+.new-div .hover-img {
+    opacity: 0; /* Initially set the hover image to be transparent */
+    transition: opacity 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.new-div:hover .main-img {
+    opacity: 0; /* Hide the main image on hover */
+}
+
+.new-div:hover .hover-img {
     opacity: 1; /* Show the hover image on hover */
 }
