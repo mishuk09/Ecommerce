@@ -227,6 +227,13 @@ button {
     opacity: 1;
 }
 
+.parent-divv:hover .cart-items{
+    background-color: rgb(82, 82, 241);
+    color: white;
+    transition: 0.5s;
+     
+}
+
 .parent-divv:hover .text-overlayy {
     opacity: 0.75;
     /* Adjust opacity as needed */
@@ -236,4 +243,10 @@ button {
 
 .image-container {
     position: relative;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
