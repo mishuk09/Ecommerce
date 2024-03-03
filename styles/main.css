@@ -358,6 +358,15 @@ button {
     font-weight: 500;
 }
 
+.center-option {
+    text-align: center;
+    color: var(--input-color);
+}
+#cat{
+    color: var(--input-color);
+}
+
+
 
 /*#################################################
 ####                                            ####
