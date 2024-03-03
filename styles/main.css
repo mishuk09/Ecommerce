@@ -118,8 +118,18 @@ select {
     font-family: var(--primary-font);
     display: flex;
     align-items: center;
-    gap: 70px;
-    /* justify-content: space-between; */
+    gap: 60px;
+    font-weight: 500;
+    /* font-family: "Noto Sans", sans-serif; */
+
+}
+
+.women-colth {
+    font-weight: 500;
+}
+
+#dropdown-content {
+    font-family: "Noto Sans", sans-serif;
 }
 
 
