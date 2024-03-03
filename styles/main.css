@@ -116,7 +116,12 @@ select {
 
 .dropdown-div2 {
     font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    /* justify-content: space-between; */
 }
+
 
 .header {
     /* background: #fff; */
