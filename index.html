@@ -57,7 +57,7 @@
 
 
                 <div class="custom-container  flex lg:justify-between py-4  ">
-                    <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[15%]">
+                    <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[25%]">
                         <div class="header lg:hidden ">
                             <div class="header_in">
                                 <button type="button" class="toggle" id="toggle">
@@ -121,9 +121,9 @@
 
                         <div class="flex items-center text-center justify-center">
                             <div>
-                                <img class="w-7" src="/images/user.png" alt="">
+                                <img class="w-9" src="/images/user.png" alt="">
                             </div>
-                            <div class="text-start hidden sm:block ms-3 text-white leading-4">
+                            <div class="text-start hidden sm:block ms-1 text-white leading-4">
                                 <p class="text-[12px]">Log in</p>
                                 <p class="font-bold text-[14px]">Account</p>
                             </div>
@@ -925,51 +925,55 @@
 
 
 
-    <div id="animation-carousel" class="  z-10  w-full" data-carousel="static">
+
+    <div id="animation-carousel" class="z-10 w-full relative" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="relative h-[500px] overflow-hidden rounded-lg  ">
+        <div class="relative h-[500px] overflow-hidden rounded-lg">
+            <!-- Item slides -->
             <!-- Item 1 -->
-            <div class="hidden duration-200 ease-linear  " data-carousel-item>
+            <div class="hidden duration-200 ease-linear" data-carousel-item>
                 <img src="/images/home/slide-1.jpg"
                     class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="...">
+                    alt="Slide 1">
             </div>
             <!-- Item 2 -->
-            <div class="hidden duration-200 ease-linear" data-carousel-item>
+            <div class="hidden duration-200 ease-   " data-carousel-item>
                 <img src="/images/home/slide-2.jpg"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-                <img src="/images/home/slide-2.jpg"
+                <img src="/images/home/slide-3.jpg"
                     class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="...">
+                    alt="Slide 3">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-200 ease-linear" data-carousel-item>
-                <img src="/images/home/slide-2.jpg"
+                <img src="/images/home/slide-4.jpg"
                     class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="...">
+                    alt="Slide 4">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-200 ease-linear" data-carousel-item>
-                <img src="/images/home/slide-2.jpg"
+                <img src="/images/home/slide-5.jpg"
                     class="absolute block w-full h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="...">
+                    alt="Slide 5">
             </div>
         </div>
         <!-- Slider controls -->
-        <button type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev>
-            <i class="fa-solid fa-chevron-left text-xl"></i>
-        </button>
-        <button type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next>
-            <i class="fa-solid fa-chevron-right text-xl"></i>
-        </button>
+        <div class="absolute top-0 left-0 flex items-center h-full">
+            <button type="button" class="px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left text-xl"></i>
+            </button>
+        </div>
+        <div class="absolute top-0 right-0 flex items-center h-full">
+            <button type="button" class="px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <i class="fa-solid fa-chevron-right text-xl"></i>
+            </button>
+        </div>
     </div>
+
+
 
 
 
