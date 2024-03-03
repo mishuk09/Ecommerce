@@ -58,7 +58,7 @@
 
 
                 <div class="custom-container  flex lg:justify-between py-4  ">
-                    <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[25%]">
+                    <div class="logo w-[70%] flex items-center text-start justify-start lg:w-[21%]">
                         <div class="header lg:hidden ">
                             <div class="header_in">
                                 <button type="button" class="toggle" id="toggle">
@@ -68,22 +68,21 @@
                         </div>
                         <a href="#"> <img class="main-logo" src="/images/logo.png" alt=""></a>
                     </div>
-                    <div class="logo hidden    lg:flex items-center text-center justify-center w-[55%]">
+                    <div class="logo hidden    lg:flex items-center text-end justify-end  ">
 
                         <div
-                            class="h-10 bg-white ps-6 flex rounded-l-full  items-center text-center justify-center text-gray-400 text-[14px]">
-                            <i class="fa-solid fa-magnifying-glass "></i>
+                            class="h-11 bg-white ps-6 flex rounded-l-full font-thin  items-center text-center justify-center text-gray-400 text-[18px]">
+                            <i class="fa-solid fa-magnifying-glass font-thin"></i>
 
                         </div>
                         <div class=" border-r-2  border-r-white">
 
-                            <input placeholder="I'm looking for.." type="text"
-                                class="outline-none h-10 text-gray-400 text-[14px] bg-white xl:w-[400px] lg:w-[320px] pt-2 pb-2 px-3 ">
+                            <input placeholder="I'm looking for..." type="text"
+                                class="outline-none h-11 input-nav     bg-white  w-[490px] pt-2 pb-2 px-3 ">
                         </div>
                         <div
-                            class="h-10 w-[120px] navbar-cate border-r-2 flex bg-white border-r-white items-center text-center justify-center">
-                            <select id="cat" name="cat"
-                                class="w-full bg-white text-gray-500 text-[14px] outline-none px-2">
+                            class="h-11 w-[120px] navbar-cate border-r-2 flex bg-white border-r-white items-center text-center justify-center">
+                            <select id="cat" name="cat" class="w-full bg-white   text-[14px] outline-none px-2">
                                 <option value="" class="center-option">All Categories</option>
                                 <option value="4">Fashion</option>
                                 <option value="12">- Women</option>
@@ -104,17 +103,47 @@
                             </select>
                         </div>
                         <div
-                            class="h-10 bg-cyan-500 w-[90px] flex rounded-r-full justify-center items-center text-white text-[14px]">
+                            class="h-11 search-name bg-cyan-500 w-[90px] flex  rounded-r-full justify-center items-center text-white text-[14px]">
                             <button class="w-full">Search</button>
                         </div>
 
 
                     </div>
 
+                    <div class="logo flex gap-7 items-center text-end justify-end lg:justify-end lg:w-[25%]">
 
+                        <div class="hidden sm:hidden lg:hidden" onclick="toggleSearch()">
+                            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                        </div>
+                    
+                        <div class="flex items-center me-1 text-center justify-center">
+                            <div>
+                                <img class="w-8 mx-auto" src="/images/user.png" alt="">
+                            </div>
+                            <div class="text-start hidden sm:block ms-1 text-white leading-4">
+                                <p class="text-[12px] text-gray-300">Log in</p>
+                                <p class="font-bold text-[14px]">Account</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center text-center justify-center">
+                            <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
+                        </div>
+                    
+                        <div class="flex gap-2 items-center text-center justify-center">
+                            <div class="py-1 ">
+                                <img class="w-7 mx-auto" src="/images/cart.png" alt="">
+                            </div>
+                            <div class="text-start ms-2 text-white leading-4">
+                                <p class="text-[12px] text-gray-300">Cart</p>
+                                <p class="font-semibold text-[14px]">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
 
-                    <div
-                        class="logo flex gap-4 sm:gap-6 items-center   text-end justify-end lg:justify-end  w-[80%] lg:w-[25%]  mx:2 lg:mx-2">
+                    <!-- <div
+                        class="logo flex gap-4 sm:gap-6 items-center   text-end justify-end lg:justify-end   lg:w-[25%]   ">
 
                         <div class="hidden   sm:hidded lg:hidden   " onclick="toggleSearch()">
                             <i class="fa-solid fa-magnifying-glass   text-3xl"></i>
@@ -125,25 +154,26 @@
                                 <img class="w-8" src="/images/user.png" alt="">
                             </div>
                             <div class="text-start hidden sm:block ms-1 text-white leading-4">
-                                <p class="text-[12px]">Log in</p>
+                                <p class="text-[12px] text-gray-300">Log in</p>
                                 <p class="font-bold text-[14px]">Account</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="flex items-center text-center justify-center">
 
-                            <img class="w-6" src="/images/love.png" alt="">
+                            <img class="w-6 flex items-center text-center justify-center" src="/images/love.png" alt="">
                         </div>
                         <div class="flex items-center text-center justify-center">
-                            <div class="w-7">
-                                <img class="w-6 " src="/images/cart.png" alt="">
+                            <div class="flex items-center justify-center">
+                                <img class="w-6" src="/images/cart.png" alt="">
                             </div>
                             <div class="text-start ms-2 text-white leading-4">
-                                <p class="text-[12px]">Cart</p>
-                                <p class="font-bold text-[14px]">$50.00</p>
+                                <p class="text-[12px] text-gray-300">Cart</p>
+                                <p class="font-semibold text-[14px]">$0.00</p>
                             </div>
                         </div>
 
-                    </div>
+
+                    </div> -->
                 </div>
             </div>
             <hr class="text-gray-300 ">
@@ -2887,7 +2917,7 @@
                     <div class='grid xs:grid-cols-2 w-[100%]'>
                         <div class='w-full h-full flex flex-col overflow-hidden'>
                             <a
-                                class="text-black hover:text-blue-500 duration-200 cursor-pointer pt-12 pb-6 text-[17px] font-bold">Sign
+                                class="text-black hover:text-blue-500 duration-200 cursor-pointer pt-12 pb-3 text-[17px] font-bold">Sign
                                 Up to Newsletter</a>
                             <div class="grid text-sm">
                                 <p class="text-[14px] cursor-pointer pb-6 text-justify">Get all the latest information
