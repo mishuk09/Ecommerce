@@ -368,6 +368,86 @@ button {
 
 
 
+
+
+/*#################################################
+####                                            ####
+####          Section section START           ####
+####                                            ####
+##################################################  */
+
+
+
+
+
+.parent-divs {
+    background-color: #25b0c4;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+
+}
+
+.main-img {
+    transition: transform 0.3s ease;
+}
+
+.parent-divs:hover .main-img {
+    transform: scale(1.1);
+    /* Zoom in effect */
+}
+
+
+
+
+
+.section-div-3 {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-div-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/ll.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
+}
+
+.section-div-3:hover::before {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+
+
+
+.section-div-3:hover .hr-effect {
+    animation: moveBorder 1s linear infinite alternate;
+}
+
+@keyframes moveBorder {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
 /*#################################################
 ####                                            ####
 ####          Trending section START           ####
@@ -504,21 +584,6 @@ button {
 /* img hover  */
 
 
-.parent-divs {
-    position: relative;
-    overflow: hidden;
-    font-family: var(--primary-font);
-
-}
-
-.main-img {
-    transition: transform 0.3s ease;
-}
-
-.parent-divs:hover .main-img {
-    transform: scale(1.1);
-    /* Zoom in effect */
-}
 
 
 
