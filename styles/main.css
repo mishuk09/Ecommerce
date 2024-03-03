@@ -102,8 +102,11 @@ select {
     right: 0;
 }
 
+.navbar-cate {
 
 
+    border-left: 1px solid #e6dbdb;
+}
 
 
 .navbar-main {
