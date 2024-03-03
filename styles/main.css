@@ -37,10 +37,11 @@ body {
 
 
 
-/* sidebar  */
+/* main logo  */
 
-/* slider  */
-
+.main-logo {
+    filter: invert(1) brightness(7.5);
+}
 
 
 
