@@ -4,7 +4,7 @@
 
 @layer utilities {
     .custom-container {
-        max-width: 1200px;
+        max-width: 1480px;
         padding-left: 10px;
         padding-right: 10px;
         margin-left: auto;
@@ -29,6 +29,7 @@
 
 body {
     font-family: var(--primary-font);
+    overflow-x: hidden;
 }
 
 
@@ -351,6 +352,7 @@ button {
 .random-section {
     font-family: var(--primary-font);
 }
+
 /*#################################################
 ####                                            ####
 ####          Best   section START           ####
@@ -361,6 +363,7 @@ button {
 .best-section {
     font-family: var(--primary-font);
 }
+
 /*#################################################
 ####                                            ####
 ####          New   section START           ####
@@ -371,6 +374,7 @@ button {
 .new-section {
     font-family: var(--primary-font);
 }
+
 /*#################################################
 ####                                            ####
 ####          recent   section START           ####
@@ -381,6 +385,7 @@ button {
 .recent-section {
     font-family: var(--primary-font);
 }
+
 /*#################################################
 ####                                            ####
 ####          4 op   section START           ####
@@ -391,6 +396,7 @@ button {
 .four-section {
     font-family: var(--primary-font);
 }
+
 /*#################################################
 ####                                            ####
 ####          Footer  section START           ####
@@ -405,7 +411,7 @@ button {
 
 .number {
     color: var(--primary-text);
-   
+
 }
 
 /* img hover  */
@@ -536,7 +542,7 @@ button {
 
 }
 
- 
+
 
 
 
