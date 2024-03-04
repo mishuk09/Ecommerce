@@ -430,9 +430,67 @@ button {
 }
 
 
+.section-div-4 {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-div-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/mm.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
+}
+
+.section-div-4:hover::before {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
 
 
-.section-div-3:hover .hr-effect {
+.section-div-5 {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-div-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/camera.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
+}
+
+.section-div-5:hover::before {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+
+
+
+/* .section-div-3:hover .hr-effect {
     animation: moveBorder 1s linear infinite alternate;
 }
 
@@ -443,7 +501,7 @@ button {
     100% {
         transform: translateX(100%);
     }
-}
+} */
 
 
 
