@@ -320,7 +320,15 @@ button {
 .parent-divv .text-overlayy {
     opacity: 0;
     height: 0;
-    transition: opacity 0.3s, height 0.3s;
+    transition: opacity 0.3s, width 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.parent-divv:hover .text-overlayy {
+    opacity: 1;
+    height: auto;
+    /* Allows the height to adjust based on content */
 }
 
 .parent-divv:hover .text-overlayy {
@@ -363,7 +371,8 @@ button {
     text-align: center;
     color: var(--input-color);
 }
-#cat{
+
+#cat {
     color: var(--input-color);
 }
 
@@ -517,6 +526,15 @@ button {
 .trending-product {
     font-family: var(--primary-font);
 
+}
+
+.p-name {
+    color: #111111;
+    font-weight: 500;
+}
+
+.price-color {
+    color: var(--primary-text);
 }
 
 /*#################################################
