@@ -672,13 +672,48 @@ button {
     opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hdgkljhadskfhkasdkh */
+
+
+@keyframes focus {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.focused {
+    animation: focus 1s infinite;
+}
+
+
 /*#################################################
 ####                                            ####
 ####          Dropdown  section START           ####
 ####                                            ####
 ##################################################  */
 
- 
+
 
 
 /*#################################################

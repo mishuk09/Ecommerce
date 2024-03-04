@@ -1,4 +1,32 @@
- 
+// // Get the carousel items
+// const carouselItems = document.querySelectorAll('[data-carousel-item]');
+
+// // Function to add focused class to the active carousel item
+// function addFocusedClass() {
+//     carouselItems.forEach(item => {
+//         if (!item.classList.contains('hidden')) {
+//             item.classList.add('focused');
+//         } else {
+//             item.classList.remove('focused');
+//         }
+//     });
+// }
+
+// // Event listener for when the carousel transitions
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Add the focused class initially
+//     addFocusedClass();
+
+//     // Add event listener for carousel transition end
+//     document.querySelector('[data-carousel]').addEventListener('transitionend', function () {
+//         // Remove the focused class from all items
+//         carouselItems.forEach(item => item.classList.remove('focused'));
+//         // Add the focused class to the active item
+//         addFocusedClass();
+//     });
+// });
+
+
 
 
 // #################################################
