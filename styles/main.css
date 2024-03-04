@@ -780,19 +780,12 @@ button {
 }
 
 
-.btn-prevv,
-.btn-nextt {
-    display: none;
-}
 
-.focused {
-    transition: 2s;
-}
 
-.focused:hover .btn-prev,
-.focused:hover .btn-next {
-    display: flex;
-}
+
+
+
+
 
 /*#################################################
 ####                                            ####
@@ -902,10 +895,12 @@ button {
 .parent-divv:hover .main-img {
     display: none;
     /* Hide the main image on hover */
-    transition: opacity 5s ease, display 5s ease;
-    /* Add transition for opacity change and display */
-
+    transition-property: opacity, display;
+    /* Specify the properties to transition */
+    transition-duration: 5s;
+    /* Duration for the transition effect */
 }
+
 
 .parent-divv:hover .hover-img {
     display: block;
