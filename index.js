@@ -26,7 +26,10 @@
 //     });
 // });
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    var divElement = document.querySelector('.absolute.abcds');
+    divElement.classList.add('active');
+});
 
 
 // #################################################
