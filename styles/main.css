@@ -468,6 +468,62 @@ button {
     /* Zoom effect on hover */
 }
 
+.section-divvv {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-divvv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
+}
+
+.section-divvv:hover::before {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.section-div-6 {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-div-6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth animation */
+}
+
+.section-div-6:hover::before {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
 
 .section-div-5 {
     position: relative;
@@ -753,7 +809,8 @@ button {
 .parent-divv .hover-img {
     display: none;
     /* Initially hide the hover image */
-    transition: opacity 5s ease, display 5s ease; /* Add transition for opacity change and display */
+    transition: opacity 5s ease, display 5s ease;
+    /* Add transition for opacity change and display */
 
 
 }
@@ -761,7 +818,8 @@ button {
 .parent-divv:hover .main-img {
     display: none;
     /* Hide the main image on hover */
-    transition: opacity 5s ease, display 5s ease; /* Add transition for opacity change and display */
+    transition: opacity 5s ease, display 5s ease;
+    /* Add transition for opacity change and display */
 
 }
 
@@ -770,7 +828,7 @@ button {
     /* Show the hover image on hover */
 }
 
- 
+
 
 /* img hover  */
 
