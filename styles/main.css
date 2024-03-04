@@ -538,9 +538,10 @@ button {
 }
 
 
-.top-sell-d{
+.top-sell-d {
     background-color: #f1f3f7;
 }
+
 /*#################################################
 ####                                            ####
 ####          Features section START           ####
@@ -624,6 +625,28 @@ button {
     color: var(--primary-text);
 
 }
+
+.deli-div {
+    font-weight: 500;
+}
+
+.deli-div2 {
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* img hover  */
 
