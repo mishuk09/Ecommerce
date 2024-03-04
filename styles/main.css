@@ -688,7 +688,7 @@ button {
 /* hdgkljhadskfhkasdkh */
 
 
-@keyframes focus {
+/* @keyframes focus {
     0% {
         transform: scale(1);
     }
@@ -704,7 +704,7 @@ button {
 
 .focused {
     animation: focus 1s infinite;
-}
+} */
 
 
 /*#################################################
