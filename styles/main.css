@@ -752,7 +752,14 @@ button {
     font-family: var(--primary-font);
 }
 
-
+.abcds {
+    font-family: var(--primary-font);
+   
+}
+.hgytfd{
+    line-height: 60px;
+    font-weight: 700;
+}
 
 /*#################################################
 ####                                            ####
