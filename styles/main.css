@@ -733,6 +733,11 @@ button {
     font-weight: 500;
 }
 
+.p-name:hover {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
 .price-color {
     color: var(--primary-text);
 }
@@ -754,9 +759,10 @@ button {
 
 .abcds {
     font-family: var(--primary-font);
-   
+
 }
-.hgytfd{
+
+.hgytfd {
     line-height: 60px;
     font-weight: 700;
 }
@@ -772,6 +778,22 @@ button {
 .fade-in.active {
     opacity: 1;
 }
+
+
+.btn-prevv,
+.btn-nextt {
+    display: none;
+}
+
+.focused {
+    transition: 2s;
+}
+
+.focused:hover .btn-prev,
+.focused:hover .btn-next {
+    display: flex;
+}
+
 /*#################################################
 ####                                            ####
 ####          Random   section START           ####
