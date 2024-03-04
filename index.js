@@ -1,4 +1,4 @@
- 
+
 // #################################################
 // ####                                            ####
 // ####          Dropdown functionality            ####
@@ -284,3 +284,5 @@ parentDiv.addEventListener('mouseleave', () => {
 
 
 // slider 
+
+let interval = 2000;
