@@ -753,12 +753,16 @@ button {
 .parent-divv .hover-img {
     display: none;
     /* Initially hide the hover image */
+    transition: opacity 5s ease, display 5s ease; /* Add transition for opacity change and display */
+
 
 }
 
 .parent-divv:hover .main-img {
     display: none;
     /* Hide the main image on hover */
+    transition: opacity 5s ease, display 5s ease; /* Add transition for opacity change and display */
+
 }
 
 .parent-divv:hover .hover-img {
@@ -766,24 +770,7 @@ button {
     /* Show the hover image on hover */
 }
 
-.parent-divv .hover-img {
-    opacity: 0;
-    /* Initially hide the hover image */
-    transition: opacity 0.3s ease;
-    /* Add transition for opacity change */
-}
-
-.parent-divv:hover .main-img {
-    opacity: 0;
-    /* Hide the main image on hover */
-}
-
-.parent-divv:hover .hover-img {
-    opacity: 1;
-    /* Show the hover image on hover */
-}
-
-
+ 
 
 /* img hover  */
 
