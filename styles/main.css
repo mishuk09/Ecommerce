@@ -555,17 +555,18 @@ button {
 
 
 
-
 /* .section-div-3:hover .hr-effect {
-    animation: moveBorder 1s linear infinite alternate;
+    animation: moveBorder 1s;
+    overflow: hidden;
 }
 
 @keyframes moveBorder {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-0%);
     }
-    100% {
-        transform: translateX(100%);
+
+    50% {
+        transform: translateX(10%);
     }
 } */
 
