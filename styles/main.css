@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+
+
 @layer utilities {
     .custom-container {
         max-width: 1410px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -14,6 +16,24 @@
         color: #225487;
     }
 }
+
+
+
+@media only screen and (max-width: 640px) {
+    .custom-container {
+        max-width: 640px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1410px) {
+    .custom-container {
+        max-width: 1410px;
+
+    }
+}
+
 
 :root {
     --primary-color: #1d70ba;
@@ -613,7 +633,6 @@ button {
 }
 
 .border-custom-height {
-    border-right: 1px solid rgb(227, 227, 227);
     color: var(--primary-text);
 }
 
@@ -822,7 +841,20 @@ button {
     /* Zoom effect on hover */
 }
 
+
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }

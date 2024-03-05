@@ -5,7 +5,9 @@
 // ####                                            ####
 // ################################################## 
 
-
+// $(document).ready(function () {
+//     $(".banner-slider").owlCarousel();
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
     var dropdownButtons = document.querySelectorAll('.dropdown-button');
@@ -164,6 +166,16 @@ document.onscroll = function () { //ao rolar a tela...
 // ####      Tooltip effect                           ####
 // ####                                            ####
 // ################################################## 
+
+document.getElementById('tooltip-btn').addEventListener('mouseenter', function () {
+    var tooltip = this.nextElementSibling;
+    tooltip.style.visibility = 'visible';
+});
+
+document.getElementById('tooltip-btn').addEventListener('mouseleave', function () {
+    var tooltip = this.nextElementSibling;
+    tooltip.style.visibility = 'hidden';
+});
 
 
 
