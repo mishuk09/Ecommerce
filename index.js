@@ -1,38 +1,3 @@
-// // Get the carousel items
-// const carouselItems = document.querySelectorAll('[data-carousel-item]');
-
-// // Function to add focused class to the active carousel item
-// function addFocusedClass() {
-//     carouselItems.forEach(item => {
-//         if (!item.classList.contains('hidden')) {
-//             item.classList.add('focused');
-//         } else {
-//             item.classList.remove('focused');
-//         }
-//     });
-// }
-
-// // Event listener for when the carousel transitions
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Add the focused class initially
-//     addFocusedClass();
-
-//     // Add event listener for carousel transition end
-//     document.querySelector('[data-carousel]').addEventListener('transitionend', function () {
-//         // Remove the focused class from all items
-//         carouselItems.forEach(item => item.classList.remove('focused'));
-//         // Add the focused class to the active item
-//         addFocusedClass();
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var divElement = document.querySelector('.absolute.abcds');
-//     divElement.classList.add('active');
-// });
-
-
-
 
 // #################################################
 // ####                                            ####
@@ -115,6 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+// #################################################
+// ####                                            ####
+// ####      Slider    js     code                 ####
+// ####                                            ####
+// ################################################## 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Get reference to carousel items and slide control buttons
     const carouselItems = document.querySelectorAll('[data-carousel-item]');
@@ -128,17 +102,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hide all carousel items
         carouselItems.forEach(item => {
             item.style.transition = "opacity 0.9s ease";
-            item.style.opacity = "0";
+            item.style.opacity = "0.6";
             setTimeout(() => {
                 item.classList.add('hidden');
-            }, 200); // Delay hiding to match transition duration
+            }, 500); // Delay hiding to match transition duration
         });
         // Show the selected carousel item
         setTimeout(() => {
             carouselItems[index].style.opacity = "1";
             carouselItems[index].classList.remove('hidden');
             currentIndex = index; // Update current index
-        }, 200); // Delay showing to match transition duration
+        }, 500); // Delay showing to match transition duration
     }
 
     // Event listener for previous button click
@@ -156,6 +130,36 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initially show the first carousel item
     showCarouselItem(0);
 });
+
+
+
+// #################################################
+// ####                                            ####
+// ####      Fade Effect                           ####
+// ####                                            ####
+// ################################################## 
+
+
+
+var elScroll = document.querySelectorAll('.scroll'); //pega todos os elementos com a classe .scroll
+
+document.onscroll = function () { //ao rolar a tela...
+    elScroll.forEach(elScroll => { //cada elemento com a classe .scroll ...
+        var positionEl = elScroll.getBoundingClientRect(); //pega valores da posição do elemento
+        var alturaEl = positionEl.top; //pega distancia do topo da tela
+
+        if (alturaEl < 300) { //se a distancia do topo for menor que 300
+            elScroll.classList.add('scroll--show'); //adiciona a classe .scroll--show
+        }
+    });
+}
+
+
+
+
+
+
+
 
 
 

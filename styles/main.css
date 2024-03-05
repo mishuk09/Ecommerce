@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* styles.css (or any other name you prefer) */
 
 @layer utilities {
     .custom-container {
@@ -15,9 +14,6 @@
         color: #225487;
     }
 }
-
-
-
 
 :root {
     --primary-color: #1d70ba;
@@ -34,21 +30,11 @@ body {
 }
 
 
-/* Other styles can go here */
 
-
-
-/* main logo  */
 
 .main-logo {
     filter: invert(1) brightness(7.5);
 }
-
-
-
-
-
-
 
 select {
     -webkit-appearance: none;
@@ -63,7 +49,6 @@ select {
     /* Adjust the value as needed */
 }
 
-
 .center-option {
     text-align: center;
 }
@@ -72,8 +57,9 @@ select {
 
 
 
-
-
+/* #################################################
+####                   Go to top                 ####
+##################################################   */
 
 #goToTopButton {
     display: none;
@@ -92,18 +78,58 @@ select {
     display: block;
 }
 
+
+
+
+
+
+/* #################################################
+####                  Navbar                   ####
+##################################################   */
+
+
+
+
+
+.input-nav::placeholder {
+    color: var(--input-color);
+    font-weight: 400;
+}
+
+.navbar-cate {
+    border-left: 1px solid #e6dbdb;
+    font-weight: 400;
+}
+
+.input-nav {
+    font-size: var(--input-font-size);
+}
+
+.search-name {
+    font-weight: 500;
+}
+
+.center-option {
+    text-align: center;
+    color: var(--input-color);
+}
+
+#cat {
+    color: var(--input-color);
+}
+
+
 .dropdown-div {
     transition: top 0.3s ease;
-    /* Adjust the transition duration as needed */
+
 }
+
 
 .fixed {
     position: fixed;
     left: 0;
     right: 0;
 }
-
-
 
 .navbar-main {
     background-color: var(--primary-color);
@@ -116,7 +142,6 @@ select {
     align-items: center;
     gap: 50px;
     font-weight: 500;
-    /* font-family: "Noto Sans", sans-serif; */
 
 }
 
@@ -128,13 +153,8 @@ select {
     font-family: "Noto Sans", sans-serif;
 }
 
-
 .header {
-    /* background: #fff; */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     padding: 15px 20px;
-    /* width: 100%; */
-    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 9;
@@ -185,7 +205,6 @@ button {
     top: 0;
     transform: rotate(-45deg);
     background: #4CAF50;
-
 }
 
 .toggle span.toggle:after {
@@ -206,6 +225,19 @@ button {
     transition: all 0.3s ease-out;
 }
 
+
+
+
+
+
+/* #################################################
+####                  Side Bar               ####
+##################################################   */
+
+
+
+
+
 .sidebar ul {
     list-style: none;
 }
@@ -216,8 +248,7 @@ button {
 
 .sidebar ul li a {
     padding: 8px 15px;
-    /* font-size: 16px; */
-    /* color: #222; */
+
     font-family: arial;
     text-decoration: none;
     display: block;
@@ -237,7 +268,6 @@ button {
     width: 0;
     height: 1px;
     background: #1d1e20;
-    /* background-color: #282e36; */
     z-index: -1;
     transition: all 0.3s ease-out;
 }
@@ -246,21 +276,14 @@ button {
     width: 100%;
 }
 
-.sidebar ul li a:hover {
-    /* color: #4CAF50; */
-}
 
 .sidebarshow {
     left: 0;
 }
 
-
 .clicked {
     background-color: #2d2e30;
 }
-
-
-
 
 .rotate-down {
     transform: rotate(90deg);
@@ -268,17 +291,13 @@ button {
 }
 
 
-
 /* Add transition property to smoothly animate height changes */
+
 #dropdownMenu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
-
-
-
-
 
 .fixed-sidebar {
     position: fixed;
@@ -286,38 +305,56 @@ button {
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* Adjust z-index as needed */
+
 }
 
 
 
+/*#################################################
+####                                            ####
+####          slider section START           ####
+####                                            ####
+##################################################  */
 
-/* card style  */
+
+/* Hide slide control buttons by default */
+
+.btn-prevv,
+.btn-nextt {
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+
+/* Show slide control buttons on hover */
+
+#default-carousel:hover .btn-prevv,
+#default-carousel:hover .btn-nextt {
+    opacity: 1;
+}
+
+
+/* #################################################
+####                 Home Top Deal               ####
+##################################################   */
+
+
+
+
 .text-overlayy {
     opacity: 0;
-    /* background-color: var(--primary-color); */
-    /* transition: opacity 0.3s ease; */
-}
 
+}
 
 .parent-divv .image-container img {
     transition: opacity 0.5s;
-    /* Transition duration for opacity */
-}
 
+}
 
 .parent-divv:hover .image-container img {
     opacity: 1;
-
 }
 
-
-/* .parent-divv:hover .cart-items {
-    background-color: var(--primary-color);
-    color: white;
-    transition: 0.5s;
-
-} */
 
 .parent-divv .text-overlayy {
     opacity: 0;
@@ -330,7 +367,6 @@ button {
 .parent-divv:hover .text-overlayy {
     opacity: 1;
     height: auto;
-    /* Allows the height to adjust based on content */
 }
 
 .parent-divv:hover .text-overlayy {
@@ -343,42 +379,6 @@ button {
     position: relative;
 }
 
-/*#################################################
-####                                            ####
-####          Header     section START           ####
-####                                            ####
-##################################################  */
-
-.input-nav::placeholder {
-    color: var(--input-color);
-    font-weight: 400;
-}
-
-.navbar-cate {
-
-    border-left: 1px solid #e6dbdb;
-    font-weight: 400;
-
-}
-
-.input-nav {
-    font-size: var(--input-font-size);
-}
-
-.search-name {
-    font-weight: 500;
-}
-
-.center-option {
-    text-align: center;
-    color: var(--input-color);
-}
-
-#cat {
-    color: var(--input-color);
-}
-
-
 
 
 
@@ -390,16 +390,11 @@ button {
 ####                                            ####
 ##################################################  */
 
-
-
-
-
 .parent-divs {
     background-color: #25b0c4;
     position: relative;
     overflow: hidden;
     font-family: var(--primary-font);
-
 }
 
 .main-img {
@@ -408,12 +403,7 @@ button {
 
 .parent-divs:hover .main-img {
     transform: scale(1.1);
-    /* Zoom in effect */
 }
-
-
-
-
 
 .section-div-3 {
     position: relative;
@@ -433,16 +423,12 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    /* Ensure the pseudo-element is behind the content */
     transition: transform 0.3s ease;
-    /* Transition effect for smooth animation */
 }
 
 .section-div-3:hover::before {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
-
 
 .section-div-4 {
     position: relative;
@@ -462,14 +448,11 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    /* Ensure the pseudo-element is behind the content */
     transition: transform 0.3s ease;
-    /* Transition effect for smooth animation */
 }
 
 .section-div-4:hover::before {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
 
 .section-divvv {
@@ -490,14 +473,11 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    /* Ensure the pseudo-element is behind the content */
     transition: transform 0.3s ease;
-    /* Transition effect for smooth animation */
 }
 
 .section-divvv:hover::before {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
 
 .section-div-6 {
@@ -518,16 +498,12 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    /* Ensure the pseudo-element is behind the content */
     transition: transform 0.3s ease;
-    /* Transition effect for smooth animation */
 }
 
 .section-div-6:hover::before {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
-
 
 .section-div-5 {
     position: relative;
@@ -547,96 +523,12 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    /* Ensure the pseudo-element is behind the content */
     transition: transform 0.3s ease;
-    /* Transition effect for smooth animation */
 }
 
 .section-div-5:hover::before {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
-
-
-
-/* .section-div-3:hover .hr-effect {
-    animation: moveBorder 1s;
-    overflow: hidden;
-}
-
-@keyframes moveBorder {
-    0% {
-        transform: translateX(-0%);
-    }
-
-    50% {
-        transform: translateX(10%);
-    }
-} */
-
-
-
-
-/*#################################################
-####                                            ####
-####          slider section START           ####
-####                                            ####
-##################################################  */
-
-
-
-
-
-
-/* Hide slide control buttons by default */
-.btn-prevv,
-.btn-nextt {
-    opacity: 0;
-    transition: opacity 0.9s ease;
-}
-
-/* Show slide control buttons on hover */
-#default-carousel:hover .btn-prevv,
-#default-carousel:hover .btn-nextt {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-/* hdgkljhadskfhkasdkh */
-
-
-/* @keyframes focus {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.focused {
-    animation: focus 1s infinite;
-} */
-
-
-/*#################################################
-####                                            ####
-####          Dropdown  section START           ####
-####                                            ####
-##################################################  */
-
 
 
 
@@ -646,10 +538,91 @@ button {
 ####                                            ####
 ##################################################  */
 
+/* img hover  */
+
+.parent-divv .hover-img {
+    display: none;
+    /* Initially hide the hover image */
+    transition: opacity 5s ease, display 5s ease;
+    /* Add transition for opacity change and display */
+}
+
+.parent-divv:hover .main-img {
+    display: none;
+    /* Hide the main image on hover */
+    transition-property: opacity, display;
+    /* Specify the properties to transition */
+    transition-duration: 5s;
+    /* Duration for the transition effect */
+}
+
+.parent-divv:hover .hover-img {
+    display: block;
+    /* Show the hover image on hover */
+}
+
+
+/*#################################################
+####                                            ####
+####          New section START           ####
+####                                            ####
+##################################################  */
+
+.features-link {
+    color: #3182ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.new-div:hover .features-link {
+    color: #2c5282;
+}
+
+.features-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.new-div:hover .features-link i {
+    transform: translateX(5px);
+}
+
+.arrow-btn {
+    border: none;
+    background: transparent;
+    color: #3182ce;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow-btn:hover {
+    color: #2c5282;
+}
+
+.arrow-btn i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-btn:hover i {
+    transform: translateX(5px);
+}
+
+.border-custom-height {
+    border-right: 1px solid rgb(227, 227, 227);
+    color: var(--primary-text);
+}
+
+.border-custom-heigh {
+    color: var(--primary-text);
+}
+
+
+
 
 .trending-product {
     font-family: var(--primary-font);
-
 }
 
 .p-name {
@@ -666,10 +639,12 @@ button {
     color: var(--primary-text);
 }
 
-
 .top-sell-d {
     background-color: #f1f3f7;
 }
+
+
+
 
 /*#################################################
 ####                                            ####
@@ -677,22 +652,20 @@ button {
 ####                                            ####
 ##################################################  */
 
+
+
 .features-product {
     font-family: var(--primary-font);
 }
 
 .abcds {
     font-family: var(--primary-font);
-
 }
 
 .hgytfd {
     line-height: 60px;
     font-weight: 700;
 }
-
-
-
 
 .fade-in {
     opacity: 0;
@@ -705,22 +678,16 @@ button {
 
 
 
-
-
-
-
-
-
 /*#################################################
 ####                                            ####
 ####          Random   section START           ####
 ####                                            ####
 ##################################################  */
 
-
 .random-section {
     font-family: var(--primary-font);
 }
+
 
 /*#################################################
 ####                                            ####
@@ -728,10 +695,10 @@ button {
 ####                                            ####
 ##################################################  */
 
-
 .best-section {
     font-family: var(--primary-font);
 }
+
 
 /*#################################################
 ####                                            ####
@@ -739,10 +706,10 @@ button {
 ####                                            ####
 ##################################################  */
 
-
 .new-section {
     font-family: var(--primary-font);
 }
+
 
 /*#################################################
 ####                                            ####
@@ -750,21 +717,21 @@ button {
 ####                                            ####
 ##################################################  */
 
-
 .recent-section {
     font-family: var(--primary-font);
 }
 
+
 /*#################################################
 ####                                            ####
-####          4 op   section START           ####
+####          4 Top   section START           ####
 ####                                            ####
 ##################################################  */
-
 
 .four-section {
     font-family: var(--primary-font);
 }
+
 
 /*#################################################
 ####                                            ####
@@ -772,15 +739,12 @@ button {
 ####                                            ####
 ##################################################  */
 
-
 .footer-section {
     font-family: var(--primary-font);
 }
 
-
 .number {
     color: var(--primary-text);
-
 }
 
 .deli-div {
@@ -792,130 +756,14 @@ button {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* img hover  */
-
-.parent-divv .hover-img {
-    display: none;
-    /* Initially hide the hover image */
-    transition: opacity 5s ease, display 5s ease;
-    /* Add transition for opacity change and display */
-
-
-}
-
-.parent-divv:hover .main-img {
-    display: none;
-    /* Hide the main image on hover */
-    transition-property: opacity, display;
-    /* Specify the properties to transition */
-    transition-duration: 5s;
-    /* Duration for the transition effect */
-}
-
-
-.parent-divv:hover .hover-img {
-    display: block;
-    /* Show the hover image on hover */
-}
-
-
-
-/* img hover  */
-
-
-
-
-
-/* new product */
-.features-link {
-    color: #3182ce;
-    /* Link color */
-    text-decoration: none;
-    /* Remove default underline */
-    transition: color 0.3s ease;
-    /* Smooth transition for color change */
-}
-
-.new-div:hover .features-link {
-    color: #2c5282;
-    /* Color change on hover */
-}
-
-.features-link i {
-    margin-left: 5px;
-    /* Add some space between text and icon */
-    transition: transform 0.3s ease;
-    /* Smooth transition for transform */
-}
-
-.new-div:hover .features-link i {
-    transform: translateX(5px);
-    /* Move icon 5px to the right on hover */
-}
-
-.arrow-btn {
-    border: none;
-    background: transparent;
-    color: #3182ce;
-    /* Button color */
-    font-size: 14px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    /* Smooth transition for color change */
-}
-
-.arrow-btn:hover {
-    color: #2c5282;
-    /* Color change on hover */
-}
-
-.arrow-btn i {
-    margin-left: 5px;
-    /* Add some space between text and icon */
-    transition: transform 0.3s ease;
-    /* Smooth transition for transform */
-}
-
-.arrow-btn:hover i {
-    transform: translateX(5px);
-    /* Move icon 5px to the right on hover */
-}
-
-
-
-.border-custom-height {
-
-
-    border-right: 1px solid rgb(227, 227, 227);
-    color: var(--primary-text);
-
-}
-
-.border-custom-heigh {
-    color: var(--primary-text);
-
-}
-
-
-
-
+/*#################################################
+####                                            ####
+####          Footer  section START           ####
+####                                            ####
+##################################################  */
 
 
 /* ... */
-
 
 .parent-div {
     position: relative;
@@ -970,8 +818,6 @@ button {
     transform: scale(1.1);
     /* Zoom effect on hover */
 }
-
-
 
 .footer-grid {
     display: grid;
