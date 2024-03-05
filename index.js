@@ -26,10 +26,10 @@
 //     });
 // });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var divElement = document.querySelector('.absolute.abcds');
-    divElement.classList.add('active');
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     var divElement = document.querySelector('.absolute.abcds');
+//     divElement.classList.add('active');
+// });
 
 
 
@@ -84,6 +84,116 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+
+// #################################################
+// ####                                            ####
+// ####          GO TO TOP js              ####
+// ####                                            ####
+// ################################################## 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const goToTopButton = document.getElementById('goToTopButton');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+            goToTopButton.classList.add('show');
+        } else {
+            goToTopButton.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to top
+    goToTopButton.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+ 
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the carousel wrapper
+//     var carousel = document.getElementById("default-carousel");
+//     // Get the carousel items
+//     var carouselItems = carousel.querySelectorAll("[data-carousel-item]");
+//     // Initialize variables for touch events
+//     var touchStartX = 0;
+//     var touchEndX = 0;
+
+//     // Add event listeners for touch events
+//     carousel.addEventListener("touchstart", function (event) {
+//         touchStartX = event.touches[0].clientX;
+//     });
+
+//     carousel.addEventListener("touchend", function (event) {
+//         touchEndX = event.changedTouches[0].clientX;
+//         handleGesture();
+//     });
+
+//     // Function to handle touch gestures
+//     function handleGesture() {
+//         // Calculate the distance swiped
+//         var deltaX = touchEndX - touchStartX;
+//         // Set a threshold for swipe
+//         var threshold = 50;
+
+//         // If the swipe distance is greater than the threshold, move to the appropriate slide
+//         if (Math.abs(deltaX) > threshold) {
+//             if (deltaX > 0) {
+//                 // Swipe right, move to previous slide
+//                 showSlide(-1);
+//             } else {
+//                 // Swipe left, move to next slide
+//                 showSlide(1);
+//             }
+//         }
+//     }
+
+//     // Function to show a specific slide
+//     function showSlide(direction) {
+//         // Find the currently active slide
+//         var currentSlideIndex = Array.from(carouselItems).findIndex(function (item) {
+//             return item.classList.contains("focused");
+//         });
+
+//         // Calculate the index of the next slide
+//         var nextSlideIndex = currentSlideIndex + direction;
+
+//         // Check if the next slide index is within bounds
+//         if (nextSlideIndex < 0) {
+//             nextSlideIndex = carouselItems.length - 1;
+//         } else if (nextSlideIndex >= carouselItems.length) {
+//             nextSlideIndex = 0;
+//         }
+
+//         // Hide all slides
+//         carouselItems.forEach(function (item) {
+//             item.classList.add("hidden");
+//             item.classList.remove("focused");
+//         });
+
+//         // Show the next slide
+//         carouselItems[nextSlideIndex].classList.remove("hidden");
+//         carouselItems[nextSlideIndex].classList.add("focused");
+//     }
+// });
+
+
+
+
+
+
+
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     var dropdownButtons = document.querySelectorAll('.dropdown-button');
 //     var dropdownContents = document.querySelectorAll('.dropdown-content');
@@ -126,198 +236,166 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function toggleSearch() {
-    var logossDiv = document.getElementById("logoss");
-    if (logossDiv.style.display === "none") {
-        logossDiv.style.display = "block";
-    } else {
-        logossDiv.style.display = "none";
-    }
-};
+// function toggleSearch() {
+//     var logossDiv = document.getElementById("logoss");
+//     if (logossDiv.style.display === "none") {
+//         logossDiv.style.display = "block";
+//     } else {
+//         logossDiv.style.display = "none";
+//     }
+// };
 
 
-window.addEventListener('scroll', function () {
-    var sidebar = document.getElementById('sidebar');
-    var topPos = sidebar.getBoundingClientRect().top;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener('scroll', function () {
+//     var sidebar = document.getElementById('sidebar');
+//     var topPos = sidebar.getBoundingClientRect().top;
+//     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (topPos <= 0 && scrollTop > 0) {
-        sidebar.classList.add('fixed-sidebar');
-    } else {
-        sidebar.classList.remove('fixed-sidebar');
-    }
-});
-
-
-
-
-// #################################################
-// ####                                            ####
-// ####          GO TO TOP js              ####
-// ####                                            ####
-// ################################################## 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const goToTopButton = document.getElementById('goToTopButton');
-
-    // Show or hide the button based on scroll position
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 200) {
-            goToTopButton.classList.add('show');
-        } else {
-            goToTopButton.classList.remove('show');
-        }
-    });
-
-    // Smooth scroll to top
-    goToTopButton.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-});
-
-
-
-
-// toggle small button 
-
-
-$(document).ready(function () {
-    $(".toggle").click(function () {
-        $("aside").toggleClass("close")
-    });
-});
-
-// click outside
-$(document).mouseup(function (e) {
-    var container = $("aside");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $("aside").removeClass("close")
-    }
-});
+//     if (topPos <= 0 && scrollTop > 0) {
+//         sidebar.classList.add('fixed-sidebar');
+//     } else {
+//         sidebar.classList.remove('fixed-sidebar');
+//     }
+// });
 
 
 
 
 
-var btn = document.querySelector('.toggle');
-var btnst = true;
-btn.onclick = function () {
-    if (btnst == true) {
-        document.querySelector('.toggle span').classList.add('toggle');
-        document.getElementById('sidebar').classList.add('sidebarshow');
-        btnst = false;
-    } else if (btnst == false) {
-        document.querySelector('.toggle span').classList.remove('toggle');
-        document.getElementById('sidebar').classList.remove('sidebarshow');
-        btnst = true;
-    }
-}
+
+// toggle small button
+
+
+// $(document).ready(function () {
+//     $(".toggle").click(function () {
+//         $("aside").toggleClass("close")
+//     });
+// });
+
+// // click outside
+// $(document).mouseup(function (e) {
+//     var container = $("aside");
+//     if (!container.is(e.target) && container.has(e.target).length === 0) {
+//         $("aside").removeClass("close")
+//     }
+// });
+
+
+
+
+
+// var btn = document.querySelector('.toggle');
+// var btnst = true;
+// btn.onclick = function () {
+//     if (btnst == true) {
+//         document.querySelector('.toggle span').classList.add('toggle');
+//         document.getElementById('sidebar').classList.add('sidebarshow');
+//         btnst = false;
+//     } else if (btnst == false) {
+//         document.querySelector('.toggle span').classList.remove('toggle');
+//         document.getElementById('sidebar').classList.remove('sidebarshow');
+//         btnst = true;
+//     }
+// }
 
 
 
 // sidebar dropdown
 
-document.addEventListener("DOMContentLoaded", function () {
-    const categoryDropdown = document.getElementById("categoryDropdown");
-    const dropdownMenu = document.getElementById("dropdownMenu");
-    const categoryMenu = document.getElementById("cliked-id");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const categoryDropdown = document.getElementById("categoryDropdown");
+//     const dropdownMenu = document.getElementById("dropdownMenu");
+//     const categoryMenu = document.getElementById("cliked-id");
 
-    categoryDropdown.addEventListener("click", function () {
-        // Toggle the 'hidden' class for smooth animation
-        dropdownMenu.classList.toggle("hidden");
-        // Get the height of the menu after the 'hidden' class is toggled
-        const newHeight = dropdownMenu.scrollHeight;
-        // Set the max-height to the new height for smooth transition
-        dropdownMenu.style.maxHeight = dropdownMenu.classList.contains("hidden") ? 0 : newHeight + "px";
-        // Toggle the 'clicked' class if needed
-        categoryMenu.classList.toggle("clicked");
-    });
-});
-
-
+//     categoryDropdown.addEventListener("click", function () {
+//         // Toggle the 'hidden' class for smooth animation
+//         dropdownMenu.classList.toggle("hidden");
+//         // Get the height of the menu after the 'hidden' class is toggled
+//         const newHeight = dropdownMenu.scrollHeight;
+//         // Set the max-height to the new height for smooth transition
+//         dropdownMenu.style.maxHeight = dropdownMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+//         // Toggle the 'clicked' class if needed
+//         categoryMenu.classList.toggle("clicked");
+//     });
+// });
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const productsDropdown = document.getElementById("categoryDropdowntwo"); // Changed ID
-    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
 
-    productsDropdown.addEventListener("click", function () {
-        // Toggle the 'hidden' class for smooth animation
-        productsMenu.classList.toggle("hidden");
-        // Get the height of the menu after the 'hidden' class is toggled
-        const newHeight = productsMenu.scrollHeight;
-        // Set the max-height to the new height for smooth transition
-        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const productsDropdown = document.getElementById("categoryDropdownthree"); // Changed ID
-    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
 
-    productsDropdown.addEventListener("click", function () {
-        // Toggle the 'hidden' class for smooth animation
-        productsMenu.classList.toggle("hidden");
-        // Get the height of the menu after the 'hidden' class is toggled
-        const newHeight = productsMenu.scrollHeight;
-        // Set the max-height to the new height for smooth transition
-        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const productsDropdown = document.getElementById("categoryDropdownfour"); // Changed ID
-    const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+// document.addEventListener("DOMContentLoaded", function () {
+//     const productsDropdown = document.getElementById("categoryDropdowntwo"); // Changed ID
+//     const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
 
-    productsDropdown.addEventListener("click", function () {
-        // Toggle the 'hidden' class for smooth animation
-        productsMenu.classList.toggle("hidden");
-        // Get the height of the menu after the 'hidden' class is toggled
-        const newHeight = productsMenu.scrollHeight;
-        // Set the max-height to the new height for smooth transition
-        productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
-    });
-});
+//     productsDropdown.addEventListener("click", function () {
+//         // Toggle the 'hidden' class for smooth animation
+//         productsMenu.classList.toggle("hidden");
+//         // Get the height of the menu after the 'hidden' class is toggled
+//         const newHeight = productsMenu.scrollHeight;
+//         // Set the max-height to the new height for smooth transition
+//         productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+//     });
+// });
+// document.addEventListener("DOMContentLoaded", function () {
+//     const productsDropdown = document.getElementById("categoryDropdownthree"); // Changed ID
+//     const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+
+//     productsDropdown.addEventListener("click", function () {
+//         // Toggle the 'hidden' class for smooth animation
+//         productsMenu.classList.toggle("hidden");
+//         // Get the height of the menu after the 'hidden' class is toggled
+//         const newHeight = productsMenu.scrollHeight;
+//         // Set the max-height to the new height for smooth transition
+//         productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+//     });
+// });
+// document.addEventListener("DOMContentLoaded", function () {
+//     const productsDropdown = document.getElementById("categoryDropdownfour"); // Changed ID
+//     const productsMenu = productsDropdown.querySelector("#dropdownMenu"); // Changed ID
+
+//     productsDropdown.addEventListener("click", function () {
+//         // Toggle the 'hidden' class for smooth animation
+//         productsMenu.classList.toggle("hidden");
+//         // Get the height of the menu after the 'hidden' class is toggled
+//         const newHeight = productsMenu.scrollHeight;
+//         // Set the max-height to the new height for smooth transition
+//         productsMenu.style.maxHeight = productsMenu.classList.contains("hidden") ? 0 : newHeight + "px";
+//     });
+// });
 // ahgfjkagsfdjkasgdjasdgf
 
 
-const containerr = document.getElementById('containerr');
-const items = document.getElementById('items');
-const arrowLeft = document.querySelector('.arrow.left');
-const arrowRight = document.querySelector('.arrow.right');
+// const containerr = document.getElementById('containerr');
+// const items = document.getElementById('items');
+// const arrowLeft = document.querySelector('.arrow.left');
+// const arrowRight = document.querySelector('.arrow.right');
 
-const itemWidth = document.querySelector('.item').offsetWidth;
+// const itemWidth = document.querySelector('.item').offsetWidth;
 
-arrowLeft.addEventListener('click', () => {
-    items.style.transform = `translateX(${Math.min(0, items.getBoundingClientRect().left + itemWidth)}px)`;
-});
+// arrowLeft.addEventListener('click', () => {
+//     items.style.transform = `translateX(${Math.min(0, items.getBoundingClientRect().left + itemWidth)}px)`;
+// });
 
-arrowRight.addEventListener('click', () => {
-    items.style.transform = `translateX(${Math.max(-(items.scrollWidth - containerr.offsetWidth), items.getBoundingClientRect().left - itemWidth)}px)`;
-});
-
-
+// arrowRight.addEventListener('click', () => {
+//     items.style.transform = `translateX(${Math.max(-(items.scrollWidth - containerr.offsetWidth), items.getBoundingClientRect().left - itemWidth)}px)`;
+// });
 
 
 
-// hover 
+
+
+// hover
 
 // JavaScript to handle hover functionality
-const parentDiv = document.querySelector('.parent-div');
-const textOverlay = parentDiv.querySelector('.text-overlay');
+// const parentDiv = document.querySelector('.parent-div');
+// const textOverlay = parentDiv.querySelector('.text-overlay');
 
-parentDiv.addEventListener('mouseenter', () => {
-    textOverlay.classList.remove('hidden');
-});
+// parentDiv.addEventListener('mouseenter', () => {
+//     textOverlay.classList.remove('hidden');
+// });
 
-parentDiv.addEventListener('mouseleave', () => {
-    textOverlay.classList.add('hidden');
-});
+// parentDiv.addEventListener('mouseleave', () => {
+//     textOverlay.classList.add('hidden');
+// });
 
 
-
-// slider 
-
-let interval = 2000;

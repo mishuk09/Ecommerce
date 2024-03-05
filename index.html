@@ -20,8 +20,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="jQuery.js"></script>
     <script src="index.js"></script>
 </head>
 
@@ -639,11 +644,7 @@
 
 
 
-
-
-
-
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <div id="default-carousel" class="relative w-full " data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-[500px] parent-div-slide overflow-hidden  ">
             <!-- Item 1 -->
@@ -786,7 +787,7 @@
                         </p>
                         <p class="text-white flex text-start text-sm mt-4">
                             <span class="border-b-2 pb-1 cursor-pointer   duration-200">Shop Gamepad</span>
-                              <!-- <hr class="hr-effect"> -->
+                            <!-- <hr class="hr-effect"> -->
                         </p>
                     </div>
                 </div>
@@ -873,7 +874,7 @@
                         <a href="#">
                             <div class="image-container w-full  mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative"
                                 style="height: 245px;  ">
-                                <img class="w-full h-full duration-1000 items-center text-center justify-center flex main-img"
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
                                     src="/images/home/products_digital_6_2.webp" alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
                                     src="/images/home/products_digital_11_1.webp" alt="">
@@ -3829,9 +3830,34 @@
 ####                                            ####
 ##################################################-->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

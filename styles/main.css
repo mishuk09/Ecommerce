@@ -299,10 +299,12 @@ button {
     /* transition: opacity 0.3s ease; */
 }
 
+
 .parent-divv .image-container img {
-    /* opacity: 0; */
     transition: opacity 0.5s;
+    /* Transition duration for opacity */
 }
+
 
 .parent-divv:hover .image-container img {
     opacity: 1;
@@ -375,6 +377,8 @@ button {
 #cat {
     color: var(--input-color);
 }
+
+
 
 
 
@@ -580,103 +584,22 @@ button {
 ##################################################  */
 
 
-.carousel {
-    height: 400px;
-    width: 100vw;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 678px;
-    overflow-x: hidden;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 13px;
+
+
+
+
+/* Hide slide control buttons by default */
+.btn-prevv,
+.btn-nextt {
+    opacity: 0;
+    transition: opacity 0.9s ease;
 }
 
-.carousel-inner {
-    height: 100%;
-    /* min-width: 400%; */
-    display: flex;
-    transition: all ease .5s;
-}
-
-.carousel-item {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-item h1 {
-    opacity: .5;
-}
-
-.carousel-controls .prev {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url('prev.svg');
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    opacity: .5;
-}
-
-.carousel-controls .next {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url('next.svg');
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    opacity: .5;
-}
-
-.prev:hover,
-.next:hover {
+/* Show slide control buttons on hover */
+#default-carousel:hover .btn-prevv,
+#default-carousel:hover .btn-nextt {
     opacity: 1;
 }
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.carousel-indicators span {
-    display: inline-block;
-    background-color: white;
-    width: 30px;
-    height: 4px;
-    border-radius: 2px;
-    opacity: .5;
-    cursor: pointer;
-    margin: 3px;
-}
-
-.carousel-indicators span.active {
-    opacity: 1;
-}
-
-
-
-
-
 
 
 
