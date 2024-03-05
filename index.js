@@ -115,8 +115,51 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Get reference to carousel items and slide control buttons
+    const carouselItems = document.querySelectorAll('[data-carousel-item]');
+    const prevButton = document.querySelector('[data-carousel-prev]');
+    const nextButton = document.querySelector('[data-carousel-next]');
 
- 
+    let currentIndex = 0; // Initialize index of the current item
+
+    // Function to show a specific carousel item with a smooth transition
+    function showCarouselItem(index) {
+        // Hide all carousel items
+        carouselItems.forEach(item => {
+            item.style.transition = "opacity 0.9s ease";
+            item.style.opacity = "0";
+            setTimeout(() => {
+                item.classList.add('hidden');
+            }, 300); // Delay hiding to match transition duration
+        });
+        // Show the selected carousel item
+        setTimeout(() => {
+            carouselItems[index].style.opacity = "2";
+            carouselItems[index].classList.remove('hidden');
+            currentIndex = index; // Update current index
+        }, 300); // Delay showing to match transition duration
+    }
+
+    // Event listener for previous button click
+    prevButton.addEventListener('click', () => {
+        let newIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        showCarouselItem(newIndex);
+    });
+
+    // Event listener for next button click
+    nextButton.addEventListener('click', () => {
+        let newIndex = (currentIndex + 1) % carouselItems.length;
+        showCarouselItem(newIndex);
+    });
+
+    // Initially show the first carousel item
+    showCarouselItem(0);
+});
+
+
+
+
 
 
 // document.addEventListener("DOMContentLoaded", function () {
