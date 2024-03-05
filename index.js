@@ -131,14 +131,14 @@ document.addEventListener("DOMContentLoaded", function () {
             item.style.opacity = "0";
             setTimeout(() => {
                 item.classList.add('hidden');
-            }, 300); // Delay hiding to match transition duration
+            }, 200); // Delay hiding to match transition duration
         });
         // Show the selected carousel item
         setTimeout(() => {
-            carouselItems[index].style.opacity = "2";
+            carouselItems[index].style.opacity = "1";
             carouselItems[index].classList.remove('hidden');
             currentIndex = index; // Update current index
-        }, 300); // Delay showing to match transition duration
+        }, 200); // Delay showing to match transition duration
     }
 
     // Event listener for previous button click
