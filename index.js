@@ -159,7 +159,38 @@ document.onscroll = function () { //ao rolar a tela...
 
 
 
+// #################################################
+// ####                                            ####
+// ####      Tooltip effect                           ####
+// ####                                            ####
+// ################################################## 
 
+
+
+// Initialize tooltips for each tooltip trigger element
+const tooltipTriggers = document.querySelectorAll('[data-tooltip-target]');
+tooltipTriggers.forEach(trigger => {
+    const targetId = trigger.getAttribute('data-tooltip-target');
+    const placement = trigger.getAttribute('data-tooltip-placement');
+
+    const tooltip = document.getElementById(targetId);
+    if (tooltip) {
+        new Popper(trigger, tooltip, {
+            placement: placement,
+        });
+
+        // Show tooltip on trigger hover (optional)
+        trigger.addEventListener('mouseenter', function () {
+            tooltip.classList.add('visible', 'opacity-100');
+            tooltip.classList.remove('invisible', 'opacity-0');
+        });
+        // Hide tooltip on trigger mouseleave (optional)
+        trigger.addEventListener('mouseleave', function () {
+            tooltip.classList.remove('visible', 'opacity-100');
+            tooltip.classList.add('invisible', 'opacity-0');
+        });
+    }
+});
 
 
 
