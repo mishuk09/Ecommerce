@@ -66,18 +66,6 @@ body {
 
 
 
-:root {
-    --dark1: #3e363f;
-    --dark2: #212527;
-    --light1: #fffce8;
-    --light2: #edf7f6;
-    --red: #df4747;
-    --green: #47df5b;
-    --transition250: all 250ms ease-in-out;
-    --transition500: all 500ms ease-in-out;
-}
-
-
 /* .center {
     display: flex;
     justify-content: center;
@@ -87,9 +75,14 @@ body {
 .container-div-3 {
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
     width: 100%;
-    
+    z-index: 9999; /* Adjust z-index to make sure it appears above other content */
+
+
 }
 
 /* .product {
