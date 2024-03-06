@@ -879,6 +879,13 @@ button {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1224px) {
+    .section-divvv::before {
+        background-position: right;
+    }
+}
+
+
 .section-div-6 {
     position: relative;
     overflow: hidden;
@@ -903,6 +910,13 @@ button {
 .section-div-6:hover::before {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 1220px) {
+    .section-div-6::before {
+        background-position: right;
+    }
+}
+
 
 .section-div-5 {
     position: relative;
