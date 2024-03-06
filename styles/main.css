@@ -80,7 +80,8 @@ body {
     justify-content: center;
     position: fixed;
     width: 100%;
-    z-index: 9999; /* Adjust z-index to make sure it appears above other content */
+    z-index: 9999;
+    /* Adjust z-index to make sure it appears above other content */
 
 
 }
@@ -251,6 +252,7 @@ body {
 .detail__bagBtn:hover {
     color: var(--green);
 }
+
 /* 
 @media (max-width: 600px) {
     .product {
@@ -688,19 +690,41 @@ button {
 
 
 
-.text-overlayy {
+
+
+
+
+
+
+
+
+
+
+
+/* .text-overlayy {
     opacity: 0;
 
-}
+} */
 
-.parent-divv .image-container img {
+/* .parent-divv .image-container img {
     transition: opacity 0.5s;
 
-}
+} */
 
-.parent-divv:hover .image-container img {
+/* .parent-divv:hover .image-container img {
     opacity: 1;
-}
+    transition: opacity 1s, width 1s;
+
+} */
+/* .parent-divv:hover .main-img {
+    opacity: 1;
+    transition: opacity 1s, width 1s;
+} */
+
+/* .parent-divv:hover .hover-img {
+    opacity: 1;
+    transition: opacity 1s, width 1s;
+} */
 
 
 .parent-divv .text-overlayy {
@@ -885,27 +909,26 @@ button {
 ####                                            ####
 ##################################################  */
 
-/* img hover  */
-
+/* Initially hide the hover image */
 .parent-divv .hover-img {
     display: none;
-    /* Initially hide the hover image */
     transition: opacity 5s ease, display 5s ease;
     /* Add transition for opacity change and display */
 }
 
+/* Hide the main image on hover */
 .parent-divv:hover .main-img {
     display: none;
-    /* Hide the main image on hover */
-    transition-property: opacity, display;
+    transition: 1s;
     /* Specify the properties to transition */
-    transition-duration: 5s;
+    /* transition-property: opacity, display; */
     /* Duration for the transition effect */
+    /* transition-duration: 5s; */
 }
 
+/* Show the hover image on hover */
 .parent-divv:hover .hover-img {
     display: block;
-    /* Show the hover image on hover */
 }
 
 
