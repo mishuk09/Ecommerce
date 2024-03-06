@@ -727,13 +727,41 @@ button {
 } */
 
 
+@media only screen and (max-width: 1024px) {
+    .parent-divv .text-overlayy {
+        opacity: 1;
+        right: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 100%;
+        width: 50px;
+
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .parent-divv .text-overlayy {
+        opacity: 0;
+        height: 0;
+        transition: opacity 0.3s, width 0.3s;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+/* 
 .parent-divv .text-overlayy {
     opacity: 0;
     height: 0;
     transition: opacity 0.3s, width 0.3s;
     overflow: hidden;
     white-space: nowrap;
-}
+} */
 
 .parent-divv:hover .text-overlayy {
     opacity: 1;
