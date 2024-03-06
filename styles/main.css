@@ -345,18 +345,18 @@ button {
     display: flex;
     justify-content: space-between;
     z-index: 10;
+    
 }
 
-.btn-prevv,
-.btn-nextt {
-    background-color: transparent;
-    border: none;
+
+ 
+.owl-nav .owl-next i {
+    font-size: 40px;
+    color: #6b7280;
     cursor: pointer;
-    padding: 0;
-    outline: none;
 }
 
-.owl-nav .owl-next {
+.owl-nav .owl-prev i {
     font-size: 40px;
     color: #6b7280;
     cursor: pointer;
