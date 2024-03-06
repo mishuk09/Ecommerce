@@ -155,12 +155,12 @@ select {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
 }
- 
+
 .dropdown-div2 {
     font-family: var(--primary-font);
-     
+
     align-items: center;
-    
+
     font-weight: 500;
 
 }
@@ -336,10 +336,38 @@ button {
 ####                                            ####
 ##################################################  */
 
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.btn-prevv,
+.btn-nextt {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.owl-nav .owl-next {
+    font-size: 40px;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+
+
 
 /* Hide slide control buttons by default */
 
-.btn-prevv,
+/* .btn-prevv,
 .btn-nextt {
     opacity: 0;
     transition: opacity 0.9s ease;
@@ -348,10 +376,11 @@ button {
 
  
 
+
 #default-carousel:hover .btn-prevv,
 #default-carousel:hover .btn-nextt {
     opacity: 1;
-}
+} */
 
 
 /* #################################################

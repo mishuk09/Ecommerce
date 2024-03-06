@@ -625,36 +625,74 @@
         ##################################################  -->
 
 
-
-
     <div class="owl-carousel">
-        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s1.webp" alt=""></div>
-        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s2.jpg" alt=""></div>
-        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s2_e1.webp" alt=""></div>
-        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/slide-2.jpg" alt=""></div>
-
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="/images/home/s1.webp" alt="">
+            <div class="absolute top-[130px] text-white w-[50%] flex flex-col ml-[100px]">
+                <p class="text-5xl leading-tight">
+                    Gamepad <br>
+                    Top Game Control
+                </p>
+                <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
+                <button
+                    class="w-[180px] mt-6 h-[55px] text-lg px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    Now</button>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="/images/home/s2.jpg" alt="">
+            <div class="absolute top-[130px] text-white w-[50%] flex flex-col ml-[100px]">
+                <p class="text-5xl leading-tight">
+                    Gamepad <br>
+                    Top Game Control
+                </p>
+                <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
+                <button
+                    class="w-[180px] mt-6 h-[55px] text-lg px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    Now</button>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="/images/home/s2_e1.webp" alt="">
+            <div class="absolute top-[130px] text-white w-[50%] flex flex-col ml-[100px]">
+                <p class="text-5xl leading-tight">
+                    Gamepad <br>
+                    Top Game Control
+                </p>
+                <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
+                <button
+                    class="w-[180px] mt-6 h-[55px] text-lg px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    Now</button>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="/images/home/slide-2.jpg" alt="">
+            <div class="absolute top-[130px] text-white w-[50%] flex flex-col ml-[100px]">
+                <p class="text-5xl leading-tight">
+                    Gamepad <br>
+                    Top Game Control
+                </p>
+                <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
+                <button
+                    class="w-[180px] mt-6 h-[55px] text-lg px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    Now</button>
+            </div>
+        </div>
     </div>
 
     <!-- Add navigation buttons -->
-    <div class="owl-nav">
-        <button type="button" class="owl-prev btn-prevv text-2xl">
-            <i class="fa-solid fa-chevron-left text-slate-600"></i>
-        </button>
-        <button type="button" class="owl-next btn-nextt">
-            <i class="fa-solid fa-chevron-right text-slate-600"></i>
-        </button>
-    </div>
+    <!-- Add navigation buttons -->
     <!-- <div class="owl-nav">
-        <button class="owl-prev"> </button>
-        <button class="owl-next"> </button>
+        <button type="button" class="owl-prev btn-prev">
+        <i type="button" class="fas owl-prev btn-prev fa-chevron-left"></i>  
+        </button>
+        <button type="button" class="owl-next btn-next">
+            <i class="fas fa-chevron-right"></i>  
+        </button>
     </div> -->
 
     <!-- Add small navigation buttons -->
     <div class="owl-dots"></div>
-
-
-
-
 
 
 
@@ -3771,10 +3809,14 @@
                 nav: true,
                 dots: true,
                 items: 1,
-
+                navText: [
+                    "<i class='fa fa-chevron-left'></i>",
+                    "<i class='fas fa-chevron-right'></i>"
+                ]
             });
         });
     </script>
+
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
