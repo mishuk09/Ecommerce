@@ -89,8 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // ####                                            ####
 // ################################################## 
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
     // Get reference to carousel items and slide control buttons
     const carouselItems = document.querySelectorAll('[data-carousel-item]');
@@ -103,18 +101,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function showCarouselItem(index) {
         // Hide all carousel items
         carouselItems.forEach(item => {
-            item.style.transition = "opacity 0.9s ease";
-            item.style.opacity = "0.6";
-            setTimeout(() => {
-                item.classList.add('hidden');
-            }, 500); // Delay hiding to match transition duration
+            item.style.transition = "opacity 0.9s ease"; // Adjust transition timing
+            item.style.opacity = "0";
+            item.classList.add('hidden');
         });
         // Show the selected carousel item
         setTimeout(() => {
             carouselItems[index].style.opacity = "1";
             carouselItems[index].classList.remove('hidden');
             currentIndex = index; // Update current index
-        }, 500); // Delay showing to match transition duration
+        }, 100); // Adjust delay if necessary
     }
 
     // Event listener for previous button click
