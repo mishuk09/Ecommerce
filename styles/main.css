@@ -155,12 +155,12 @@ select {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
 }
-
+ 
 .dropdown-div2 {
     font-family: var(--primary-font);
-    display: flex;
+     
     align-items: center;
-    gap: 50px;
+    
     font-weight: 500;
 
 }
