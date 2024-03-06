@@ -627,18 +627,30 @@
 
 
 
-
-
     <div class="owl-carousel">
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
+        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s1.webp" alt=""></div>
+        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s2.jpg" alt=""></div>
+        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/s2_e1.webp" alt=""></div>
+        <div class="w-full h-full"><img class="w-full h-full" src="/images/home/slide-2.jpg" alt=""></div>
+
     </div>
 
+    <!-- Add navigation buttons -->
+    <div class="owl-nav">
+        <button type="button" class="owl-prev btn-prevv text-2xl">
+            <i class="fa-solid fa-chevron-left text-slate-600"></i>
+        </button>
+        <button type="button" class="owl-next btn-nextt">
+            <i class="fa-solid fa-chevron-right text-slate-600"></i>
+        </button>
+    </div>
+    <!-- <div class="owl-nav">
+        <button class="owl-prev"> </button>
+        <button class="owl-next"> </button>
+    </div> -->
+
+    <!-- Add small navigation buttons -->
+    <div class="owl-dots"></div>
 
 
 
@@ -3753,7 +3765,14 @@
 
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                items: 1,
+
+            });
         });
     </script>
     <script src="./js/owl.carousel.min.js"></script>
