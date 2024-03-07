@@ -1,57 +1,69 @@
 
-
-// // JavaScript to handle dropdown functionality
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Get the elements
-//     var clickedId = document.getElementById("clicked-id");
-//     var dropdownMenu = document.getElementById("dropdownMenu");
-
-//     // Add click event listener to clickedId
-//     clickedId.addEventListener("click", function (event) {
-//         event.preventDefault(); // Prevent default action of anchor tag
-//         dropdownMenu.classList.toggle("hidden"); // Toggle visibility of dropdown menu
-//     });
-// });
-
-
-
+// JavaScript to handle dropdown functionality
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the elements for the first dropdown menu
+    // Dropdown 1
     var clickedId1 = document.getElementById("clicked-id1");
     var dropdownMenu1 = document.getElementById("dropdownMenu1");
-
-    // Add click event listener to clickedId1
     clickedId1.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default action of anchor tag
-
-        // Calculate the position of the dropdown menu
+        event.preventDefault();
         var rect = clickedId1.getBoundingClientRect();
         dropdownMenu1.style.left = rect.left + "px";
         dropdownMenu1.style.top = rect.bottom + "px";
-
-        // Toggle visibility of dropdown menu
         dropdownMenu1.classList.toggle("hidden");
+        clickedId1.classList.toggle("clicked-bg");
+
+        // dropdownMenu1.classList.toggle("homecolor");
+
     });
 
-    // Get the elements for the second dropdown menu
+    // Dropdown 2
     var clickedId2 = document.getElementById("clicked-id2");
     var dropdownMenu2 = document.getElementById("dropdownMenu2");
-
-    // Add click event listener to clickedId2
     clickedId2.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default action of anchor tag
-
-        // Calculate the position of the dropdown menu
+        event.preventDefault();
         var rect = clickedId2.getBoundingClientRect();
         dropdownMenu2.style.left = rect.left + "px";
         dropdownMenu2.style.top = rect.bottom + "px";
-
-        // Toggle visibility of dropdown menu
         dropdownMenu2.classList.toggle("hidden");
+        clickedId2.classList.toggle("clicked-bg");
+    });
+
+    // Dropdown 3
+    var clickedId3 = document.getElementById("clicked-id3");
+    var dropdownMenu3 = document.getElementById("dropdownMenu3");
+    clickedId3.addEventListener("click", function (event) {
+        event.preventDefault();
+        var rect = clickedId3.getBoundingClientRect();
+        dropdownMenu3.style.left = rect.left + "px";
+        dropdownMenu3.style.top = rect.bottom + "px";
+        dropdownMenu3.classList.toggle("hidden");
+        clickedId3.classList.toggle("clicked-bg");
+    });
+
+    // Dropdown 4
+    var clickedId4 = document.getElementById("clicked-id4");
+    var dropdownMenu4 = document.getElementById("dropdownMenu4");
+    clickedId4.addEventListener("click", function (event) {
+        event.preventDefault();
+        var rect = clickedId4.getBoundingClientRect();
+        dropdownMenu4.style.left = rect.left + "px";
+        dropdownMenu4.style.top = rect.bottom + "px";
+        dropdownMenu4.classList.toggle("hidden");
+        clickedId4.classList.toggle("clicked-bg");
+    });
+
+    // Dropdown 5
+    var clickedId5 = document.getElementById("clicked-id5");
+    var dropdownMenu5 = document.getElementById("dropdownMenu5");
+    clickedId5.addEventListener("click", function (event) {
+        event.preventDefault();
+        var rect = clickedId5.getBoundingClientRect();
+        dropdownMenu5.style.left = rect.left + "px";
+        dropdownMenu5.style.top = rect.bottom + "px";
+        dropdownMenu5.classList.toggle("hidden");
+        clickedId5.classList.toggle("clicked-bg");
     });
 });
-
-
 
 
 // #################################################
