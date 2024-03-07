@@ -179,8 +179,8 @@ body {
     text-align: center;
     align-items: center; */
     /* grid-template-columns: repeat(2, 1fr); */
-    max-height: 540px;
-    max-width: 960px;
+    /* max-height: 540px;
+    max-width: 960px; */
     background-color: white;
     visibility: hidden;
     opacity: 0;
@@ -452,9 +452,22 @@ select {
     font-weight: 500;
 }
 
-#dropdown-content {
+.dropdown-content {
     font-family: "Noto Sans", sans-serif;
+    /* transform: matrix(1, 1); */
+    transition: 1s;
+    /* top: -50px; */
 }
+
+.invisible {
+    display: none;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 
 .header {
     padding: 15px 20px;
@@ -478,7 +491,7 @@ button {
     background: #555;
     display: block;
     position: relative;
-    coursor: pointer;
+   cursor: pointer;
 }
 
 .toggle span:before,
