@@ -172,7 +172,7 @@ body {
 }
 
 .modal__content {
-    top: 100px;
+    top: 70px;
     position: absolute;
     display: grid;
     /* justify-content: center;
