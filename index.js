@@ -1,4 +1,22 @@
- 
+
+
+// JavaScript to handle dropdown functionality
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the elements
+    var clickedId = document.getElementById("clicked-id");
+    var dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Add click event listener to clickedId
+    clickedId.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default action of anchor tag
+        dropdownMenu.classList.toggle("hidden"); // Toggle visibility of dropdown menu
+    });
+});
+
+
+
+
+
 
 
 // #################################################
