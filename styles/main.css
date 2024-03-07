@@ -660,6 +660,9 @@ button {
     background-color: white;
 }
 
+.owl-images {
+    object-fit: cover;
+}
 
 
 /* Hide slide control buttons by default */
@@ -727,16 +730,28 @@ button {
 } */
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .parent-divv .text-overlayy {
         opacity: 1;
-        right: 0px;
+        right: -20px;
         overflow: hidden;
         white-space: nowrap;
         height: 100%;
         width: 50px;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
 
     }
+
+    .parent-divv:hover .text-overlayy {
+        opacity: 0;
+        right: 0;
+        height: auto;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+
+    }
+
 
     .image-container {
         position: relative;
@@ -744,34 +759,25 @@ button {
 
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 1025px) {
     .parent-divv .text-overlayy {
-        opacity: 0;
-        height: 0;
-        transition: opacity 0.3s, width 0.3s;
+        opacity: 1;
+        right: 0;
+        /* right: -20px; */
         overflow: hidden;
-        white-space: nowrap;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+        align-items: center;
+        text-align: center;
+        justify-content: right;
+
     }
 }
 
-/* 
-.parent-divv .text-overlayy {
-    opacity: 0;
-    height: 0;
-    transition: opacity 0.3s, width 0.3s;
-    overflow: hidden;
-    white-space: nowrap;
-} */
-
 .parent-divv:hover .text-overlayy {
     opacity: 1;
-    height: auto;
-}
-
-.parent-divv:hover .text-overlayy {
-    opacity: 1;
-    height: 100%;
-    width: 50px;
+    /* height: 100%; */
+    /* width: 50px; */
 }
 
 .image-container {
@@ -951,27 +957,53 @@ button {
 ####                                            ####
 ##################################################  */
 
-/* Initially hide the hover image */
-.parent-divv .hover-img {
-    display: none;
-    transition: opacity 5s ease, display 5s ease;
-    /* Add transition for opacity change and display */
+@media only screen and (min-width: 1024px) {
+
+    .parent-divv .hover-img {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: scale(1.1);
+
+    }
+
+    .parent-divv:hover .main-img {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.6s;
+
+    }
+
+    .parent-divv:hover .hover-img {
+
+        visibility: visible;
+        opacity: 1;
+    }
+
+
 }
 
-/* Hide the main image on hover */
-.parent-divv:hover .main-img {
-    display: none;
-    transition: 1s;
-    /* Specify the properties to transition */
-    /* transition-property: opacity, display; */
-    /* Duration for the transition effect */
-    /* transition-duration: 5s; */
+
+@media only screen and (max-width: 1024px) {
+
+    .parent-divv .hover-img {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: scale(1.1);
+
+    }
 }
 
-/* Show the hover image on hover */
-.parent-divv:hover .hover-img {
-    display: block;
-}
+
+
+
+
+
+
+
+
+
 
 
 /*#################################################
