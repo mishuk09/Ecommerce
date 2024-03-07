@@ -57,7 +57,7 @@
 ##################################################-->
 
 
-    <div class="container-div-3   flex items-center text-center justify-center ">
+    <div class="container-div-3   flex items-center text-center justify-center popup-overlay">
 
         <div class="product">
         </div>
@@ -3987,6 +3987,7 @@
         });
 
         const modal = document.querySelector('.modal');
+        const modalWrapper = document.querySelector('.popup-overlay');
         const modalContent = document.querySelector('.modal__content');
         const close = document.querySelector('.modal__close');
         const modalImg = document.querySelector('.modal__img');
@@ -4002,6 +4003,7 @@
 
             view.addEventListener('click', () => {
                 modal.classList.add('modal--bg');
+                modalWrapper.classList.add('active');
                 modalContent.classList.add('modal__content--show');
                 modalImg.setAttribute('src', productImg);
                 title.innerText = `product title ${index + 1}`;
@@ -4011,11 +4013,13 @@
 
         close.addEventListener('click', () => {
             modal.classList.remove('modal--bg');
+            modalWrapper.classList.remove('active');
             modalContent.classList.remove('modal__content--show');
         });
 
         modal.addEventListener('click', () => {
             modal.classList.remove('modal--bg');
+            modalWrapper.classList.remove('active');
             modalContent.classList.remove('modal__content--show');
         });
 
