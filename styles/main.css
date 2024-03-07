@@ -530,10 +530,9 @@ button {
     background: #4CAF50;
 }
 
-.sidebar {
+/* .sidebar {
     background: #fff;
-    /* width: 235px; */
-    position: absolute;
+     
     top: 0;
     left: -235px;
     height: 100%;
@@ -541,7 +540,7 @@ button {
     padding-top: 90px;
     transition: all 0.3s ease-out;
 }
-
+ */
 
 
 
@@ -561,6 +560,7 @@ button {
 
 .sidebar ul li {
     display: block;
+    border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 .sidebar ul li a {
@@ -575,7 +575,7 @@ button {
     font-weight: 500;
 }
 
-.sidebar ul li a:before {
+/* .sidebar ul li a:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -587,7 +587,7 @@ button {
     background: #1d1e20;
     z-index: -1;
     transition: all 0.3s ease-out;
-}
+} */
 
 .sidebar ul li a:hover:before {
     width: 100%;
