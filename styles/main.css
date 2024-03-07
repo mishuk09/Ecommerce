@@ -121,21 +121,22 @@ body {
     opacity: 0.5;
 } */
 
-.product__viewBtn {
+/* .product__viewBtn {
     /* cursor: pointer; */
-    /* position: absolute; */
-    /* bottom: 10%; */
-    /* background: var(--dark2); */
-    /* color: var(--light2); */
-    /* padding: 10px 20px; */
-    /* font-weight: bold; */
-    /* text-align: center; */
-    /* text-transform: uppercase; */
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    /* transition: var(--transition250); */
-}
+/* position: absolute; */
+/* bottom: 10%; */
+/* background: var(--dark2); */
+/* color: var(--light2); */
+/* padding: 10px 20px; */
+/* font-weight: bold; */
+/* text-align: center; */
+/* text-transform: uppercase; */
+/* opacity: 0; */
+/* visibility: hidden; */
+/* transition: var(--transition250); */
 
+
+*/
 /* .product__list:hover>.product__viewBtn {
     visibility: visible;
     opacity: 0;
@@ -339,23 +340,31 @@ body {
     filter: invert(1) brightness(7.5);
 }
 
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* Add custom arrow */
-    background-image: url('path_to_custom_arrow_icon.svg');
-    background-position: right center;
-    background-repeat: no-repeat;
-    /* Adjust padding to make space for the arrow */
-    padding-right: 20px;
-    /* Adjust the value as needed */
-}
+
 
 .center-option {
     text-align: center;
 }
 
+.hover-menu-wrapper .hover-menu-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    top: 90px;
+    width: max-content;
+}
+
+.hover-menu-wrapper:hover .hover-menu-content {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    top: 80px;
+
+    visibility: visible;
+}
+
+.hover-menu-wrapper {
+    position: relative;
+}
 
 
 
@@ -422,10 +431,7 @@ select {
 }
 
 
-.dropdown-div {
-    transition: top 0.3s ease;
 
-}
 
 
 .fixed {
@@ -452,12 +458,7 @@ select {
     font-weight: 500;
 }
 
-.dropdown-content {
-    font-family: "Noto Sans", sans-serif;
-    /* transform: matrix(1, 1); */
-    transition: 1s;
-    /* top: -50px; */
-}
+
 
 .invisible {
     display: none;
@@ -993,22 +994,21 @@ button {
 @media only screen and (min-width: 1024px) {
 
     .parent-divv .hover-img {
-        display: none;
         visibility: hidden;
         opacity: 0;
-        transition: scale(1.1);
-
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.08);
+        position: absolute;
     }
 
     .parent-divv:hover .main-img {
         visibility: hidden;
         opacity: 0;
-        transition: 0.6s;
-
+        transition: all 0.3s ease-in-out;
     }
 
     .parent-divv:hover .hover-img {
-
+        transition: all 0.3s ease-in-out;
         visibility: visible;
         opacity: 1;
     }
