@@ -1,11 +1,17 @@
- 
-
+$(document).ready(function () {
+  $(".toggle-hamburger").click(function () {
+    $(".sidebar-main-wrapper").addClass("active");
+  });
+  $(".close-sidebar").click(function () {
+    $(".sidebar-main-wrapper").removeClass("active");
+  });
+});
 
 // #################################################
 // ####                                            ####
 // ####          Dropdown functionality            ####
 // ####                                            ####
-// ################################################## 
+// ##################################################
 
 // $(document).ready(function () {
 //     $(".banner-slider").owlCarousel();
@@ -53,159 +59,146 @@
 //     });
 // });
 
-
-
-
 // #################################################
 // ####                                            ####
 // ####          GO TO TOP js              ####
 // ####                                            ####
-// ################################################## 
+// ##################################################
 
-document.addEventListener('DOMContentLoaded', function () {
-    const goToTopButton = document.getElementById('goToTopButton');
+document.addEventListener("DOMContentLoaded", function () {
+  const goToTopButton = document.getElementById("goToTopButton");
 
-    // Show or hide the button based on scroll position
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 200) {
-            goToTopButton.classList.add('show');
-        } else {
-            goToTopButton.classList.remove('show');
-        }
+  // Show or hide the button based on scroll position
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      goToTopButton.classList.add("show");
+    } else {
+      goToTopButton.classList.remove("show");
+    }
+  });
+
+  // Smooth scroll to top
+  goToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
-
-    // Smooth scroll to top
-    goToTopButton.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+  });
 });
-
-
 
 // #################################################
 // ####                                            ####
 // ####      Slider    js     code                 ####
 // ####                                            ####
-// ################################################## 
+// ##################################################
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get reference to carousel items and slide control buttons
-    const carouselItems = document.querySelectorAll('[data-carousel-item]');
-    const prevButton = document.querySelector('[data-carousel-prev]');
-    const nextButton = document.querySelector('[data-carousel-next]');
+  // Get reference to carousel items and slide control buttons
+  const carouselItems = document.querySelectorAll("[data-carousel-item]");
+  const prevButton = document.querySelector("[data-carousel-prev]");
+  const nextButton = document.querySelector("[data-carousel-next]");
 
-    let currentIndex = 0; // Initialize index of the current item
+  let currentIndex = 0; // Initialize index of the current item
 
-    // Function to show a specific carousel item with a smooth transition
-    function showCarouselItem(index) {
-        // Hide all carousel items
-        carouselItems.forEach(item => {
-            item.style.transition = "opacity 0.9s ease"; // Adjust transition timing
-            item.style.opacity = "0";
-            item.classList.add('hidden');
-        });
-        // Show the selected carousel item
-        setTimeout(() => {
-            carouselItems[index].style.opacity = "1";
-            carouselItems[index].classList.remove('hidden');
-            currentIndex = index; // Update current index
-        }, 100); // Adjust delay if necessary
-    }
-
-    // Event listener for previous button click
-    prevButton.addEventListener('click', () => {
-        let newIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-        showCarouselItem(newIndex);
+  // Function to show a specific carousel item with a smooth transition
+  function showCarouselItem(index) {
+    // Hide all carousel items
+    carouselItems.forEach((item) => {
+      item.style.transition = "opacity 0.9s ease"; // Adjust transition timing
+      item.style.opacity = "0";
+      item.classList.add("hidden");
     });
+    // Show the selected carousel item
+    setTimeout(() => {
+      carouselItems[index].style.opacity = "1";
+      carouselItems[index].classList.remove("hidden");
+      currentIndex = index; // Update current index
+    }, 100); // Adjust delay if necessary
+  }
 
-    // Event listener for next button click
-    nextButton.addEventListener('click', () => {
-        let newIndex = (currentIndex + 1) % carouselItems.length;
-        showCarouselItem(newIndex);
-    });
+  // Event listener for previous button click
+  prevButton.addEventListener("click", () => {
+    let newIndex =
+      (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    showCarouselItem(newIndex);
+  });
 
-    // Initially show the first carousel item
-    showCarouselItem(0);
+  // Event listener for next button click
+  nextButton.addEventListener("click", () => {
+    let newIndex = (currentIndex + 1) % carouselItems.length;
+    showCarouselItem(newIndex);
+  });
+
+  // Initially show the first carousel item
+  showCarouselItem(0);
 });
-
-
 
 // #################################################
 // ####                                            ####
 // ####      Fade Effect                           ####
 // ####                                            ####
-// ################################################## 
+// ##################################################
 
+var elScroll = document.querySelectorAll(".scroll"); //pega todos os elementos com a classe .scroll
 
+document.onscroll = function () {
+  //ao rolar a tela...
+  elScroll.forEach((elScroll) => {
+    //cada elemento com a classe .scroll ...
+    var positionEl = elScroll.getBoundingClientRect(); //pega valores da posição do elemento
+    var alturaEl = positionEl.top; //pega distancia do topo da tela
 
-var elScroll = document.querySelectorAll('.scroll'); //pega todos os elementos com a classe .scroll
-
-document.onscroll = function () { //ao rolar a tela...
-    elScroll.forEach(elScroll => { //cada elemento com a classe .scroll ...
-        var positionEl = elScroll.getBoundingClientRect(); //pega valores da posição do elemento
-        var alturaEl = positionEl.top; //pega distancia do topo da tela
-
-        if (alturaEl < 300) { //se a distancia do topo for menor que 300
-            elScroll.classList.add('scroll--show'); //adiciona a classe .scroll--show
-        }
-    });
-}
-
-
-
-
-
+    if (alturaEl < 300) {
+      //se a distancia do topo for menor que 300
+      elScroll.classList.add("scroll--show"); //adiciona a classe .scroll--show
+    }
+  });
+};
 
 // #################################################
 // ####                                            ####
 // ####      Tooltip effect                           ####
 // ####                                            ####
-// ################################################## 
+// ##################################################
 
-document.getElementById('tooltip-btn').addEventListener('mouseenter', function () {
+document
+  .getElementById("tooltip-btn")
+  .addEventListener("mouseenter", function () {
     var tooltip = this.nextElementSibling;
-    tooltip.style.visibility = 'visible';
-});
+    tooltip.style.visibility = "visible";
+  });
 
-document.getElementById('tooltip-btn').addEventListener('mouseleave', function () {
+document
+  .getElementById("tooltip-btn")
+  .addEventListener("mouseleave", function () {
     var tooltip = this.nextElementSibling;
-    tooltip.style.visibility = 'hidden';
-});
-
-
+    tooltip.style.visibility = "hidden";
+  });
 
 // Initialize tooltips for each tooltip trigger element
-const tooltipTriggers = document.querySelectorAll('[data-tooltip-target]');
-tooltipTriggers.forEach(trigger => {
-    const targetId = trigger.getAttribute('data-tooltip-target');
-    const placement = trigger.getAttribute('data-tooltip-placement');
+const tooltipTriggers = document.querySelectorAll("[data-tooltip-target]");
+tooltipTriggers.forEach((trigger) => {
+  const targetId = trigger.getAttribute("data-tooltip-target");
+  const placement = trigger.getAttribute("data-tooltip-placement");
 
-    const tooltip = document.getElementById(targetId);
-    if (tooltip) {
-        new Popper(trigger, tooltip, {
-            placement: placement,
-        });
+  const tooltip = document.getElementById(targetId);
+  if (tooltip) {
+    new Popper(trigger, tooltip, {
+      placement: placement,
+    });
 
-        // Show tooltip on trigger hover (optional)
-        trigger.addEventListener('mouseenter', function () {
-            tooltip.classList.add('visible', 'opacity-100');
-            tooltip.classList.remove('invisible', 'opacity-0');
-        });
-        // Hide tooltip on trigger mouseleave (optional)
-        trigger.addEventListener('mouseleave', function () {
-            tooltip.classList.remove('visible', 'opacity-100');
-            tooltip.classList.add('invisible', 'opacity-0');
-        });
-    }
+    // Show tooltip on trigger hover (optional)
+    trigger.addEventListener("mouseenter", function () {
+      tooltip.classList.add("visible", "opacity-100");
+      tooltip.classList.remove("invisible", "opacity-0");
+    });
+    // Hide tooltip on trigger mouseleave (optional)
+    trigger.addEventListener("mouseleave", function () {
+      tooltip.classList.remove("visible", "opacity-100");
+      tooltip.classList.add("invisible", "opacity-0");
+    });
+  }
 });
-
-
-
-
-
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     // Get the carousel wrapper
@@ -274,14 +267,6 @@ tooltipTriggers.forEach(trigger => {
 //     }
 // });
 
-
-
-
-
-
-
-
-
 // document.addEventListener('DOMContentLoaded', function () {
 //     var dropdownButtons = document.querySelectorAll('.dropdown-button');
 //     var dropdownContents = document.querySelectorAll('.dropdown-content');
@@ -321,9 +306,6 @@ tooltipTriggers.forEach(trigger => {
 //     });
 // });
 
-
-
-
 // function toggleSearch() {
 //     var logossDiv = document.getElementById("logoss");
 //     if (logossDiv.style.display === "none") {
@@ -332,7 +314,6 @@ tooltipTriggers.forEach(trigger => {
 //         logossDiv.style.display = "none";
 //     }
 // };
-
 
 // window.addEventListener('scroll', function () {
 //     var sidebar = document.getElementById('sidebar');
@@ -346,13 +327,7 @@ tooltipTriggers.forEach(trigger => {
 //     }
 // });
 
-
-
-
-
-
 // toggle small button
-
 
 // $(document).ready(function () {
 //     $(".toggle").click(function () {
@@ -368,10 +343,6 @@ tooltipTriggers.forEach(trigger => {
 //     }
 // });
 
-
-
-
-
 // var btn = document.querySelector('.toggle');
 // var btnst = true;
 // btn.onclick = function () {
@@ -385,8 +356,6 @@ tooltipTriggers.forEach(trigger => {
 //         btnst = true;
 //     }
 // }
-
-
 
 // sidebar dropdown
 
@@ -406,10 +375,6 @@ tooltipTriggers.forEach(trigger => {
 //         categoryMenu.classList.toggle("clicked");
 //     });
 // });
-
-
-
-
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const productsDropdown = document.getElementById("categoryDropdowntwo"); // Changed ID
@@ -452,7 +417,6 @@ tooltipTriggers.forEach(trigger => {
 // });
 // ahgfjkagsfdjkasgdjasdgf
 
-
 // const containerr = document.getElementById('containerr');
 // const items = document.getElementById('items');
 // const arrowLeft = document.querySelector('.arrow.left');
@@ -468,10 +432,6 @@ tooltipTriggers.forEach(trigger => {
 //     items.style.transform = `translateX(${Math.max(-(items.scrollWidth - containerr.offsetWidth), items.getBoundingClientRect().left - itemWidth)}px)`;
 // });
 
-
-
-
-
 // hover
 
 // JavaScript to handle hover functionality
@@ -485,5 +445,3 @@ tooltipTriggers.forEach(trigger => {
 // parentDiv.addEventListener('mouseleave', () => {
 //     textOverlay.classList.add('hidden');
 // });
-
-

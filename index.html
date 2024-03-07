@@ -18,7 +18,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -247,7 +246,7 @@
 
                             <a href="#"> <img class="main-logo" src="/images/logo.png" alt=""></a>
                         </div>
-                        <div class="open-menu lg:hidden">
+                        <div class="open-menu lg:hidden toggle-hamburger">
                             <button><i class="fa-solid fa-bars text-white "></i></button>
                         </div>
                         <!-- <div class="header lg:hidden ">
@@ -646,17 +645,12 @@
 
 
 
-    <section class="">
-        <div style="background-color: #fff" class="sidebar   w-[400px] h-auto" id='sidebar'>
-            <div class="w-full h-[60px] text-[14px] flex items-center px-6  text-center justify-between"
-                style="background-color: var(--primary-color);">
-                <div class="flex">
-                    <p class="me-6 text-white">MENU</p>
-                    <p class="text-gray-300">CATEGORIES</p>
-                </div>
-                <div class="text-white">
-                    <button>X</button>
-                </div>
+    <section class="sidebar-main-wrapper inactive">
+        <div class="sidebar  bg-white w-[400px] h-full sidebar-content" id='sidebar'>
+            <div
+                class="w-full h-[60px] text-[14px] bg-primary flex items-center px-6  text-center justify-end close-sidebar cursor-pointer">
+
+                <img src="./images/close.png" width="15" />
 
             </div>
             <ul>
@@ -832,12 +826,12 @@
                 <li><a class="  text-[14px]" href=""><i class="fa-regular fa-user me-2"></i>Login / Register</a></li>
 
 
-                <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded "
-                    style="background-color: #2d2e30;">
-                    <input placeholder="Search..." type="text" style="background-color: #2d2e30;"
-                        class="outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm  w-full pt-2 pb-2 px-2  rounded">
-                    <button class="flex items-center me-3 text-center justify-center"> <i
-                            class="fa-solid fa-magnifying-glass text-white"></i></button>
+                <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded bg-gray-100">
+                    <input placeholder="Search..." type="text" "
+                        class=" outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm w-full pt-2 pb-2 px-2
+                        rounded">
+                    <button class="flex items-center me-3 text-center justify-center bg-gray-100"> <i
+                            class="fa-solid fa-magnifying-glass text-gray-400"></i></button>
                 </div>
 
                 <div class=" flex gap-2 my-6 text-center items-center justify-center text-white">
@@ -4064,10 +4058,9 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 

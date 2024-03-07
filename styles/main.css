@@ -52,8 +52,19 @@ body {
 
 
 
+.bg-primary {
+    background-color: var(--primary-color);
+}
 
-
+.sidebar-main-wrapper {
+    background-color: #00000050;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
 
 
 
@@ -252,6 +263,33 @@ body {
 
 .detail__bagBtn:hover {
     color: var(--green);
+}
+
+.parent-divv .hover-img {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.08);
+    position: absolute;
+}
+
+.parent-divv:hover .main-img {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.parent-divv:hover .hover-img {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.parent-divv .hover-img {
+    visibility: hidden;
+    opacity: 0;
+    transition: scale(1.1);
+
 }
 
 /* 
@@ -566,7 +604,7 @@ button {
 .sidebar ul li a {
     padding: 8px 15px;
 
-    font-family: arial;
+    font-family: var(--primary-font);
     text-decoration: none;
     display: block;
     position: relative;
@@ -764,6 +802,10 @@ button {
 } */
 
 
+.sidebar-main-wrapper {
+    display: none;
+}
+
 @media only screen and (min-width: 1024px) {
     .parent-divv .text-overlayy {
         opacity: 1;
@@ -791,9 +833,6 @@ button {
         position: relative;
     }
 
-}
-
-@media only screen and (max-width: 1025px) {
     .parent-divv .text-overlayy {
         opacity: 1;
         right: 0;
@@ -806,7 +845,10 @@ button {
         justify-content: right;
 
     }
+
+
 }
+
 
 .parent-divv:hover .text-overlayy {
     opacity: 1;
@@ -990,46 +1032,6 @@ button {
 ####          Trending section START           ####
 ####                                            ####
 ##################################################  */
-
-@media only screen and (min-width: 1024px) {
-
-    .parent-divv .hover-img {
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        transform: scale(1.08);
-        position: absolute;
-    }
-
-    .parent-divv:hover .main-img {
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .parent-divv:hover .hover-img {
-        transition: all 0.3s ease-in-out;
-        visibility: visible;
-        opacity: 1;
-    }
-
-
-}
-
-
-@media only screen and (max-width: 1024px) {
-
-    .parent-divv .hover-img {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-        transition: scale(1.1);
-
-    }
-}
-
-
-
 
 
 
@@ -1310,5 +1312,45 @@ button {
 @media only screen and (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-content {
+        width: 100% !important;
+    }
+
+    .hover-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar-main-wrapper {
+        display: block;
+    }
+
+    .sidebar-main-wrapper.inactive {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .sidebar-main-wrapper.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .sidebar-main-wrapper {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar-content {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    .sidebar-main-wrapper.active .sidebar-content {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(0%);
     }
 }
