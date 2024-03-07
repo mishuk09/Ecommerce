@@ -618,7 +618,6 @@ button {
 ####          slider section START           ####
 ####                                            ####
 ##################################################  */
-
 .owl-nav {
     position: absolute;
     top: 50%;
@@ -628,42 +627,63 @@ button {
     display: flex;
     justify-content: space-between;
     z-index: 10;
-
 }
 
+.owl-carousel {
+    position: relative;
+}
 
+.owl-carousel button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    /* Ensure buttons are above other content */
+}
 
 .owl-nav .owl-next i {
     font-size: 20px;
     color: #6b7280;
     cursor: pointer;
-    right: 50px;
-    margin-right: 70px;
-    padding-top: 15px;
+    margin-right: 10px;
     border-radius: 100%;
     height: 50px;
     width: 50px;
-    border-radius: 100%;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .owl-nav .owl-prev i {
     font-size: 20px;
     color: #6b7280;
     cursor: pointer;
-    padding-top: 15px;
     margin-left: 10px;
     border-radius: 100%;
     height: 50px;
     width: 50px;
-    border-radius: 100%;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .owl-images {
     object-fit: cover;
+
 }
 
+.owl-nav .owl-prev {
+    left: 0;
+    /* Adjusting the position of the previous button */
+}
+
+.owl-nav .owl-next {
+    right: 0;
+    /* Adjusting the position of the next button */
+}
 
 /* Hide slide control buttons by default */
 
