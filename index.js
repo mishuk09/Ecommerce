@@ -1,20 +1,55 @@
 
 
-// JavaScript to handle dropdown functionality
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the elements
-    var clickedId = document.getElementById("clicked-id");
-    var dropdownMenu = document.getElementById("dropdownMenu");
+// // JavaScript to handle dropdown functionality
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the elements
+//     var clickedId = document.getElementById("clicked-id");
+//     var dropdownMenu = document.getElementById("dropdownMenu");
 
-    // Add click event listener to clickedId
-    clickedId.addEventListener("click", function (event) {
+//     // Add click event listener to clickedId
+//     clickedId.addEventListener("click", function (event) {
+//         event.preventDefault(); // Prevent default action of anchor tag
+//         dropdownMenu.classList.toggle("hidden"); // Toggle visibility of dropdown menu
+//     });
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the elements for the first dropdown menu
+    var clickedId1 = document.getElementById("clicked-id1");
+    var dropdownMenu1 = document.getElementById("dropdownMenu1");
+
+    // Add click event listener to clickedId1
+    clickedId1.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default action of anchor tag
-        dropdownMenu.classList.toggle("hidden"); // Toggle visibility of dropdown menu
+
+        // Calculate the position of the dropdown menu
+        var rect = clickedId1.getBoundingClientRect();
+        dropdownMenu1.style.left = rect.left + "px";
+        dropdownMenu1.style.top = rect.bottom + "px";
+
+        // Toggle visibility of dropdown menu
+        dropdownMenu1.classList.toggle("hidden");
+    });
+
+    // Get the elements for the second dropdown menu
+    var clickedId2 = document.getElementById("clicked-id2");
+    var dropdownMenu2 = document.getElementById("dropdownMenu2");
+
+    // Add click event listener to clickedId2
+    clickedId2.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default action of anchor tag
+
+        // Calculate the position of the dropdown menu
+        var rect = clickedId2.getBoundingClientRect();
+        dropdownMenu2.style.left = rect.left + "px";
+        dropdownMenu2.style.top = rect.bottom + "px";
+
+        // Toggle visibility of dropdown menu
+        dropdownMenu2.classList.toggle("hidden");
     });
 });
-
-
-
 
 
 
