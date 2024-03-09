@@ -1387,3 +1387,30 @@ button {
 .create-btn {
     border: 1px solid rgb(220, 219, 219);
 }
+
+
+
+
+
+
+
+
+/*#################################################
+####                                            ####
+####          Rightbar  section START           ####
+####                                            ####
+##################################################  */
+
+
+
+
+
+.rightbar-cart::-webkit-scrollbar {
+    width: 10px;
+    visibility: auto;
+
+} 
+
+.right-bar-div{
+    z-index: 9999;
+}
