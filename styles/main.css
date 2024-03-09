@@ -222,6 +222,13 @@ body {
 }
 
 
+
+.modal__right::-webkit-scrollbar {
+    width: 10px;
+    visibility: auto;
+}
+
+
 .modal__left {
     display: flex;
     justify-content: center;
