@@ -1267,7 +1267,17 @@
         ####      Flash sell of HOME                ####
         ##################################################  -->
 
+            <div id="toast" class="toast    ">
+                <div class="flex">
+                    <p>Items added to cart
+                    </p>
+                    <p class="mx-2">
+                        <img class="w-6 " src="/images/cart.png" alt="">
+                    </p>
 
+                </div>
+
+            </div>
 
 
 
@@ -1311,9 +1321,10 @@
                                             class="rounded-full product__viewBtn  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3 product__img" src="/images/icon/view.png" alt="">
                                         </p>
-                                        <p
-                                            class="rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
+                                        <p id="add-to-cart-btn-product1"
+                                            class="add-to-cart-btn rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3" src="/images/icon/cart.png" alt="">
+
                                         </p>
 
                                     </div>
@@ -1396,8 +1407,8 @@
                                             class="rounded-full product__viewBtn  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3 product__img" src="/images/icon/view.png" alt="">
                                         </p>
-                                        <p
-                                            class="rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
+                                        <p id="add-to-cart-btn-product2"
+                                            class="add-to-cart-btn rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3" src="/images/icon/cart.png" alt="">
                                         </p>
 
@@ -1484,8 +1495,8 @@
                                             class="rounded-full product__viewBtn  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3 product__img" src="/images/icon/view.png" alt="">
                                         </p>
-                                        <p
-                                            class="rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
+                                        <p id="add-to-cart-btn-product3"
+                                            class="add-to-cart-btn rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3" src="/images/icon/cart.png" alt="">
                                         </p>
 
@@ -1570,8 +1581,8 @@
                                             class="rounded-full product__viewBtn bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 product__img w-3" src="/images/icon/view.png" alt="">
                                         </p>
-                                        <p
-                                            class="rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
+                                        <p id="add-to-cart-btn-product4"
+                                            class="add-to-cart-btn rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3" src="/images/icon/cart.png" alt="">
                                         </p>
 
@@ -1656,8 +1667,8 @@
                                             class="rounded-full product__viewBtn  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3 product__img" src="/images/icon/view.png" alt="">
                                         </p>
-                                        <p
-                                            class="rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
+                                        <p id="add-to-cart-btn-product5"
+                                            class="add-to-cart-btn rounded-full  bg-slate-100 flex items-center text-center justify-center sm:w-10 sm:h-10 w-8 h-8">
                                             <img class="sm:w-4 w-3" src="/images/icon/cart.png" alt="">
                                         </p>
 
@@ -4781,6 +4792,27 @@
 
 
 
+        // Toast code 
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+            addToCartButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    var productId = this.id.replace('add-to-cart-btn-', '');
+
+                    var toast = document.getElementById('toast');
+                    toast.style.display = 'block';
+
+                    setTimeout(function () {
+                        toast.style.display = 'none';
+                    }, 2000);
+
+                });
+            });
+        });
 
 
 
