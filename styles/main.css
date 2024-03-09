@@ -1462,3 +1462,58 @@ button {
     display: none;
     /* Initially hide the overlay */
 }
+
+
+
+
+
+
+
+/*#################################################
+####                                            ####
+####          Timer  section START           ####
+####                                            ####
+##################################################  */
+
+
+
+
+
+
+
+/* CSS classes for styling the hours, minutes, and seconds */
+.timer-hour {
+    color: white;
+    padding: 8px;
+  
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 2px;
+    
+    background-color: var(--primary-color);
+}
+
+.timer-minute {
+    color: white;
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 2px;
+    
+    background-color: var(--primary-color);
+}
+
+.timer-second {
+    color: white;
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 2px;
+    
+    background-color: var(--primary-color);
+}
+#timer{
+    color: var(--primary-color);
+    font-weight: 500;
+    
+}
