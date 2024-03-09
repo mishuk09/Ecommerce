@@ -311,7 +311,8 @@
                             <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
                         </div>
 
-                        <div class="open-menu   toggle-hamburger   flex gap-2 items-center text-center justify-center">
+                        <div id="cart-menu-button"
+                            class="open-menu      flex gap-2 items-center text-center justify-center">
                             <div class="py-1 ">
                                 <img class="w-7 mx-auto" src="/images/cart.png" alt="">
                             </div>
@@ -834,244 +835,193 @@
 
 
 
-
-    <div>
-        <div class="bg-white right-bar-div absolute border right-bar top-0 right-0 w-[400px] h-auto">
-            <div class="px-6 pt-6 w-full rightbar-content">
-                <div class="flex justify-between">
-                    <div class="flex items-center">
-                        <p class="text-[18px] font-bold">Shopping Cart</p>
-                        <p class="text-[18px] ms-2">(0)</p>
+    <div id="overlay"></div>
 
 
-                    </div>
-                    <div class="items-center flex">
-                        <i class="fa-solid text-gray-600 flex items-center text-[18px] fa-xmark"></i>
-                    </div>
-                </div>
-                <div
-                    class="w-full cursor-pointer  mt-6 rightbar-cart overflow-hidden overflow-y-auto   h-[300px] 2xl:h-[600px]">
-                    <div class="w-full flex  border-b-2 border-dotted h-[150px]       bg-white">
-                        <div class="w-[30%] overflow-hidden      "><img
-                                class="w-[30%] hover:scale-105 duration-300   md:w-full"
-                                src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                        <div class="w-[70%] relative   flex items-center">
-                            <div class="absolute mt-2  top-0 right-0">
-                                <p>
-                                    <i
-                                        class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
-
-                                </p>
-                                <p>
-                                    <i
-                                        class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
-
-                                </p>
-                            </div>
-                            <div class="details-container    grid  duration-150 rounded-b-xl w-full">
-
-                                <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                    iPhone
-                                    12 Pro Max 128GB-Unlocked
-                                </p>
-
-                                <span class="text-sm mt-1 text-gray-600  ">
-                                    64GB
-                                </span>
-                                <div class="flex  items-center price-color   mt-1">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-                                    <del>
-                                        <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
-                                    </del>
-                                </div>
-                                <div
-                                    class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
-                                    <button
-                                        class="text-2xl flex items-center text-center justify-center">-</button><span
-                                        class="text-[12px]">2</span><button
-                                        class="  flex items-center text-center justify-center">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="w-full flex  border-b-2 border-dotted h-[150px]       bg-white">
-                        <div class="w-[30%] overflow-hidden      "><img
-                                class="w-[30%] hover:scale-105 duration-300   md:w-full"
-                                src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                        <div class="w-[70%] relative   flex items-center">
-                            <div class="absolute mt-2  top-0 right-0">
-                                <p>
-                                    <i
-                                        class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
-
-                                </p>
-                                <p>
-                                    <i
-                                        class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
-
-                                </p>
-                            </div>
-                            <div class="details-container    grid  duration-150 rounded-b-xl w-full">
-
-                                <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                    iPhone
-                                    12 Pro Max 128GB-Unlocked
-                                </p>
-
-                                <span class="text-sm mt-1 text-gray-600  ">
-                                    64GB
-                                </span>
-                                <div class="flex  items-center price-color   mt-1">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-                                    <del>
-                                        <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
-                                    </del>
-                                </div>
-                                <div
-                                    class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
-                                    <button
-                                        class="text-2xl flex items-center text-center justify-center">-</button><span
-                                        class="text-[12px]">2</span><button
-                                        class="  flex items-center text-center justify-center">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="w-full flex  border-b-2 border-dotted h-[150px]       bg-white">
-                        <div class="w-[30%] overflow-hidden      "><img
-                                class="w-[30%] hover:scale-105 duration-300   md:w-full"
-                                src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                        <div class="w-[70%] relative   flex items-center">
-                            <div class="absolute mt-2  top-0 right-0">
-                                <p>
-                                    <i
-                                        class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
-
-                                </p>
-                                <p>
-                                    <i
-                                        class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
-
-                                </p>
-                            </div>
-                            <div class="details-container    grid  duration-150 rounded-b-xl w-full">
-
-                                <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                    iPhone
-                                    12 Pro Max 128GB-Unlocked
-                                </p>
-
-                                <span class="text-sm mt-1 text-gray-600  ">
-                                    64GB
-                                </span>
-                                <div class="flex  items-center price-color   mt-1">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-                                    <del>
-                                        <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
-                                    </del>
-                                </div>
-                                <div
-                                    class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
-                                    <button
-                                        class="text-2xl flex items-center text-center justify-center">-</button><span
-                                        class="text-[12px]">2</span><button
-                                        class="  flex items-center text-center justify-center">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="w-full flex  border-b-2 border-dotted h-[150px]       bg-white">
-                        <div class="w-[30%] overflow-hidden      "><img
-                                class="w-[30%] hover:scale-105 duration-300   md:w-full"
-                                src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                        <div class="w-[70%] relative   flex items-center">
-                            <div class="absolute mt-2  top-0 right-0">
-                                <p>
-                                    <i
-                                        class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
-
-                                </p>
-                                <p>
-                                    <i
-                                        class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
-
-                                </p>
-                            </div>
-                            <div class="details-container    grid  duration-150 rounded-b-xl w-full">
-
-                                <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                    iPhone
-                                    12 Pro Max 128GB-Unlocked
-                                </p>
-
-                                <span class="text-sm mt-1 text-gray-600  ">
-                                    64GB
-                                </span>
-                                <div class="flex  items-center price-color   mt-1">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-                                    <del>
-                                        <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
-                                    </del>
-                                </div>
-                                <div
-                                    class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
-                                    <button
-                                        class="text-2xl flex items-center text-center justify-center">-</button><span
-                                        class="text-[12px]">2</span><button
-                                        class="  flex items-center text-center justify-center">+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+    <div id="cart-div" class="bg-white right-bar-div   border     w-[400px]  ">
+        <div class="flex flex-col justify-between  pt-6 w-full rightbar-content">
+            <div class="flex mx-6 justify-between">
+                <div class="flex items-center">
+                    <p class="text-[18px] font-bold">Shopping Cart</p>
+                    <p class="text-[18px] ms-2">(0)</p>
 
 
                 </div>
+                <div class="items-center flex">
+                    <i class="fa-solid text-gray-600 flex items-center text-[18px] fa-xmark"></i>
+                </div>
+            </div>
+            <div
+                class="w-full mx-6 cursor-pointer  mt-6 rightbar-cart overflow-hidden overflow-y-auto   h-[280px] 2xl:h-auto">
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[30%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[70%] relative   flex items-center">
+                        <div class="absolute mt-1  top-0 right-0">
+                            <p>
+                                <i
+                                    class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
+
+                            </p>
+                            <p>
+                                <i class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
+
+                            </p>
+                        </div>
+                        <div class="     grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <del>
+                                    <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
+                                </del>
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
+                                <button class="text-2xl flex items-center text-center justify-center">-</button><span
+                                    class="text-[12px]">2</span><button
+                                    class="  flex items-center text-center justify-center">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[30%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[70%] relative   flex items-center">
+                        <div class="absolute mt-1  top-0 right-0">
+                            <p>
+                                <i
+                                    class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
+
+                            </p>
+                            <p>
+                                <i class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
+
+                            </p>
+                        </div>
+                        <div class="     grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <del>
+                                    <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
+                                </del>
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
+                                <button class="text-2xl flex items-center text-center justify-center">-</button><span
+                                    class="text-[12px]">2</span><button
+                                    class="  flex items-center text-center justify-center">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[30%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[70%] relative   flex items-center">
+                        <div class="absolute mt-1  top-0 right-0">
+                            <p>
+                                <i
+                                    class="fa-regular text-[12px] text-gray-600 hover:text-black duration-300 fa-trash-can"></i>
+
+                            </p>
+                            <p>
+                                <i class="fa-solid text-[12px] text-gray-600 hover:text-black duration-300 fa-pen"></i>
+
+                            </p>
+                        </div>
+                        <div class="     grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <del>
+                                    <p class="text-[12px] text-gray-700 cursor-auto  ">$400.00</p>
+                                </del>
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center  rounded h-[30px] w-[90px]   bg-slate-100 text-black">
+                                <button class="text-2xl flex items-center text-center justify-center">-</button><span
+                                    class="text-[12px]">2</span><button
+                                    class="  flex items-center text-center justify-center">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
 
 
             </div>
-            <div class="flex border-t border-b   text-center items-center justify-center">
-                <div class="w-[60%] flex justify-between h-12  items-center text-center">
-                    <p><img class="w-5" src="/images/icon/notes.png" alt=""></p>
-                    <p><img class="w-5" src="/images/icon/gift.png" alt=""></p>
-                    <p><img class="w-5" src="/images/icon/box.png" alt=""></p>
 
-                </div>
-            </div>
-            <div class="bg-slate-100  p-6">
 
-                <div class="flex   justify-between">
-                    <div class="flex items-center">
-                        <p class="text-[18px] font-bold">Shoping Cart</p>
-                        <!-- <p class="text-[18px] ms-2">(0)</p> -->
+            <div>
+
+                <div class="flex border-t border-b   text-center items-center justify-center">
+                    <div class="w-[60%] flex justify-between h-12  items-center text-center">
+                        <p><img class="w-5" src="/images/icon/notes.png" alt=""></p>
+                        <p><img class="w-5" src="/images/icon/gift.png" alt=""></p>
+                        <p><img class="w-5" src="/images/icon/box.png" alt=""></p>
 
                     </div>
-                    <div class="items-center flex">
-                        <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">$210.00</p>
+                </div>
+                <div class="bg-slate-100   p-6">
+
+                    <div class="flex   justify-between">
+                        <div class="flex items-center">
+                            <p class="text-[18px] font-bold">Shoping Cart</p>
+                            <!-- <p class="text-[18px] ms-2">(0)</p> -->
+
+                        </div>
+                        <div class="items-center flex">
+                            <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">$210.00</p>
+                        </div>
+                    </div>
+                    <div class=" mt-6   items-center  text-[14px]">
+                        <input type="checkbox" class="text-[14px]" name="field name" value="Initial value" class=""> I
+                        agree
+                        with
+                        <a href="" class="underline"> Terms &
+                            Conditions</a>
+                    </div>
+                    <div>
+                        <a href="/auth/signup.html"
+                            class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
+                            View Cart</a>
+                        <button
+                            class="border border-slate-200 mt-3 login-btn font-semibold rounded-full w-full h-11 px-4 text-white outline-none text-[12px]"
+                            placeholder='d' type="text">Check Out</button>
                     </div>
                 </div>
-                <div class=" mt-6   items-center  text-[14px]">
-                    <input type="checkbox" class="text-[14px]" name="field name" value="Initial value" class=""> I agree
-                    with
-                    <a href="" class="underline"> Terms &
-                        Conditions</a>
-                </div>
-                <div>
-                    <a href="/auth/signup.html"
-                        class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
-                        View Cart</a>
-                    <button
-                        class="border border-slate-200 mt-3 login-btn font-semibold rounded-full w-full h-11 px-4 text-white outline-none text-[12px]"
-                        placeholder='d' type="text">Check Out</button>
-                </div>
             </div>
-
         </div>
+
     </div>
+
 
 
 
@@ -4298,14 +4248,34 @@
 
 
 
+        // Get references to the cart menu button, X mark, overlay, and the cart div
+        const cartMenuButton = document.getElementById('cart-menu-button');
+        const cartCloseButton = document.querySelector('.fa-xmark');
+        const cartDiv = document.getElementById('cart-div');
+        const overlay = document.getElementById('overlay');
 
 
+        function openCart() {
+            cartDiv.classList.add('cart-open');
+            overlay.style.display = 'block';
+        }
 
+        function closeCart() {
+            cartDiv.classList.remove('cart-open');
+            overlay.style.display = 'none';
+        }
 
+        cartMenuButton.addEventListener('click', () => {
+            if (cartDiv.classList.contains('cart-open')) {
+                closeCart();
+            } else {
+                openCart();
+            }
+        });
 
+        cartCloseButton.addEventListener('click', closeCart);
 
-
-
+        overlay.addEventListener('click', closeCart);
 
 
 
