@@ -65,7 +65,8 @@
         <div class="modal"></div>
         <div class="modal__content w-[90%] max-h-[800px]  md:max-h-[900px] md:max-w-[700px] lg:max-h-[540px]  lg:max-w-[960px]   pt-1   rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto"
             syle="height:600px">
-            <i class="modal__close far fa-times-circle"></i>
+            <!-- <i class="modal__close far fa-times-circle"></i> -->
+            <i class="modal__close fa-solid text-gray-600 fa-xmark"></i>
 
             <div class="modal__left overflow-hidden">
 
@@ -4695,16 +4696,24 @@
         });
 
         close.addEventListener('click', () => {
-            modal.classList.remove('modal--bg');
-            modalWrapper.classList.remove('active');
-            modalContent.classList.remove('modal__content--show');
+            closeModal();
+        });
+
+        modalWrapper.addEventListener('click', (event) => {
+            if (event.target === modalWrapper) {
+                closeModal();
+            }
         });
 
         modal.addEventListener('click', () => {
+            closeModal();
+        });
+
+        function closeModal() {
             modal.classList.remove('modal--bg');
             modalWrapper.classList.remove('active');
             modalContent.classList.remove('modal__content--show');
-        });
+        }
 
 
 
