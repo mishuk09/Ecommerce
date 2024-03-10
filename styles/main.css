@@ -703,7 +703,7 @@ button {
     /* Ensure buttons are above other content */
 }
 
-.owl-nav .owl-next i {
+.owl-nav .owl-next .icon-r {
     font-size: 20px;
     color: #6b7280;
     cursor: pointer;
@@ -717,7 +717,7 @@ button {
     justify-content: center;
 }
 
-.owl-nav .owl-prev i {
+.owl-nav .owl-prev .icon-l {
     font-size: 20px;
     color: #6b7280;
     cursor: pointer;
@@ -769,7 +769,9 @@ button {
 ##################################################   */
 
 
-
+.top-deal-scrool::-webkit-scrollbar{
+    width: 0;
+}
 
 
 
@@ -840,6 +842,14 @@ button {
 .image-container {
     position: relative;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1520,6 +1530,7 @@ button {
     font-weight: 500;
 
 }
+
 
 
 
