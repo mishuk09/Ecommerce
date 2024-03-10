@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  $('.owl-carousel').on('mouseenter', function () {
+  $('.main-slider').on('mouseenter', function () {
     if ($(window).width() > 768) {
       $(this).find('button').fadeIn();
     }
@@ -22,10 +22,10 @@ $(document).ready(function () {
     $(this).find('button').fadeOut();
   });
 
-  $('.owl-carousel').owlCarousel({
+  $('.main-slider').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     // dots: true,
     items: 1,
     navText: [
@@ -47,6 +47,26 @@ $(document).ready(function () {
   });
 });
 
+
+$('.new-carousel').owlCarousel({
+  loop: true,
+  // margin: 10,
+  nav: false,
+  dots: false,
+
+  navText: false,
+  responsive: {
+    0: {
+      items: 2
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
+  }
+})
 
 
 // #################################################

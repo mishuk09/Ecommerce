@@ -523,6 +523,23 @@ button {
 ####          slider section START           ####
 ####                                            ####
 ##################################################  */
+
+
+
+
+.new-carousel .owl-item .img-owl {
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
 .owl-nav {
     position: absolute;
     top: 50%;
@@ -534,11 +551,11 @@ button {
     z-index: 10;
 }
 
-.owl-carousel {
+.main-slider {
     position: relative;
 }
 
-.owl-carousel button {
+.main-slider button {
     display: none;
     position: absolute;
     top: 50%;
@@ -590,22 +607,6 @@ button {
     /* Adjusting the position of the next button */
 }
 
-/* Hide slide control buttons by default */
-
-/* .btn-prevv,
-.btn-nextt {
-    opacity: 0;
-    transition: opacity 0.9s ease;
-}
-
-
- 
-
-
-#default-carousel:hover .btn-prevv,
-#default-carousel:hover .btn-nextt {
-    opacity: 1;
-} */
 
 
 /* #################################################
