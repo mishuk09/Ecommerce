@@ -67,7 +67,7 @@ body {
 }
 
 
- 
+
 
 .container-div-3 {
     margin-left: auto;
@@ -81,7 +81,7 @@ body {
 
 
 }
-  
+
 
 .modal {
     display: flex;
@@ -91,7 +91,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     transition: var(--transition250);
     opacity: 0;
     visibility: hidden;
@@ -159,7 +159,7 @@ body {
     justify-content: center;
     align-items: center;
 }
- 
+
 .parent-divv .hover-img {
     visibility: hidden;
     opacity: 0;
@@ -186,7 +186,7 @@ body {
     transition: scale(1.1);
 
 }
- 
+
 
 
 
@@ -256,8 +256,7 @@ body {
     bottom: 20px;
     right: 10px;
     z-index: 999;
-    background-color: var(--primary-color
-    );
+    background-color: var(--primary-color);
     color: #fff;
     border-radius: 5px;
     padding: 5px 8px;
@@ -619,7 +618,7 @@ button {
 }
 
 
-.cart-font{
+.cart-font {
     font-size: 16px;
 }
 
