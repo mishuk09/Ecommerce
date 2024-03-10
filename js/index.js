@@ -8,6 +8,11 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
+
 // #################################################
 // ####          Home Slider                    ####
 // ##################################################
@@ -50,7 +55,7 @@ $(document).ready(function () {
 
 $('.new-carousel').owlCarousel({
   loop: true,
-  // margin: 10,
+  margin: 20,
   nav: false,
   dots: false,
 
@@ -93,8 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
 
 
 
