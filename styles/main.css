@@ -458,7 +458,7 @@ button {
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-out;
