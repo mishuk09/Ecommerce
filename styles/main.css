@@ -1450,3 +1450,71 @@ button {
     z-index: 9999;
     transition: opacity 0.3s ease;
 }
+
+
+
+
+
+
+
+
+/*#################################################
+####                                            ####
+####          Cart  section START           ####
+####                                            ####
+##################################################  */
+.cart-access {
+    font-weight: 400;
+}
+
+
+
+.cart-details {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+@media only screen and (max-width:1024px) {
+
+    .cart-details {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.cart-body {
+    align-items: center;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.3fr 0.1fr;
+
+}
+
+.cart-body-child {
+    align-items: center;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.3fr 0.1fr;
+
+}
+
+@media only screen and (max-width:768px) {
+    .cart-body {
+        display: none;
+
+    }
+
+    .cart-body-child {
+        align-items: center;
+        font-weight: 400;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.terms-cart {
+    font-weight: 500;
+}
