@@ -456,7 +456,9 @@ button {
 
     font-family: var(--primary-font);
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-out;
