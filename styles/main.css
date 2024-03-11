@@ -66,21 +66,6 @@ body {
     z-index: 9999;
 }
 
-#dropdownMenu1 {
-    transition: max-height 1s ease;
-    /* Adjust the timing as needed */
-    max-height: 0;
-    /* Initially hide the submenu */
-    overflow: hidden;
-}
-
-#dropdownMenu1 .show {
-    max-height: 500px;
-    /* Adjust the maximum height as needed */
-
-}
-
-
 
 
 
