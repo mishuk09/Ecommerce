@@ -680,6 +680,28 @@ button {
     display: none;
 }
 
+.sidebar {
+    height: 600px;
+    overflow: hidden;
+}
+
+@media only screen and (max-widht:640px) {
+    .sidebar {
+        height: 600px;
+        overflow: hidden;
+    }
+
+}
+
+.main-accordion-menu {
+    height: 100%;
+}
+
+.submenu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
 .parent-divv .text-overlayy {
     opacity: 0;
     right: -20px;
