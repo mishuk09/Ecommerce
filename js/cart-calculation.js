@@ -113,6 +113,8 @@ calculateSubTotal();
 
 
 
+
+
 // Function to remove the cart item
 function removeCartItem(cartItem) {
     cartItem.remove();
@@ -127,3 +129,5 @@ document.querySelectorAll('.fa-trash-can').forEach(function (trashIcon) {
         removeCartItem(cartItem);
     });
 });
+
+// Function to remove the cart item
