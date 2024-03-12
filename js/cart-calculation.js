@@ -138,9 +138,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const casePrice = 350; // Price of case
 
     // Function to update total price
-    function updateTotalPrice() {
+    function updateTotalPrice(price) {
+        console.log(price)
+
+
         const phoneQuantity = parseInt(document.getElementById('phone-number-field').value);
         const caseQuantity = parseInt(document.getElementById('case-number-field').value);
+        const subtotalText = document.getElementById('subtotal').textContent;
+
 
         const phoneTotal = phoneQuantity * phonePrice;
         const caseTotal = caseQuantity * casePrice;
@@ -148,7 +153,23 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('phone-total').textContent = phoneTotal.toFixed(2);
         document.getElementById('case-total').textContent = caseTotal.toFixed(2);
 
+
+        if (price === 1200) {
+            const newTotal = Number(subtotalText) - Number(phoneTotal);
+            // console.log(previousTotal)
+            // console.log(phoneTotal)
+            document.getElementById('subtotal').textContent = newTotal.toFixed(2);
+            return;
+            // console.log("phonePrice")
+        }
+        if (price === 350) {
+            const newTotal = Number(subtotalText) - Number(caseTotal);
+
+            document.getElementById('subtotal').textContent = newTotal.toFixed(2);
+            return;
+        }
         const subtotal = phoneTotal + caseTotal;
+
         document.getElementById('subtotal').textContent = subtotal.toFixed(2);
     }
 
@@ -186,8 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.addEventListener('click', function () {
             const item = this.closest('.cart-body-child');
             const price = parseFloat(item.querySelector('.price-color').textContent.replace('$', ''));
+            // console.log(price);
+            updateTotalPrice(price); // Subtract the price of the removed item
             item.remove();
-            updateTotalPrice(-price); // Subtract the price of the removed item
         });
     });
 
