@@ -8,21 +8,18 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  // Hide all submenus initially
-  $(".submenu").hide();
+   $(".submenu").hide();
 
-  // When a main menu item is clicked
-  $(".main-accordion-menu > li").click(function () {
-    // Slide up all other open submenus
+   $(".main-accordion-menu > li").click(function () {
     $(".submenu").not($(this).find(".submenu")).slideUp();
 
-    // Check if the clicked submenu is not already visible
     if (!$(this).find(".submenu").is(":visible")) {
-      // Slide down the clicked submenu
       $(this).find(".submenu").slideDown();
     }  
   });
 });
+
+
 
 // #################################################
 // ####          Home Slider                    ####
@@ -108,3 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+
+// #################################################
+// ####          GO TO TOP js                   ####
+// ##################################################
