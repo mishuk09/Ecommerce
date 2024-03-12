@@ -142,35 +142,64 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(price)
 
 
-        const phoneQuantity = parseInt(document.getElementById('phone-number-field').value);
-        const caseQuantity = parseInt(document.getElementById('case-number-field').value);
+        // const phoneQuantity = parseInt(document.getElementById('phone-number-field').value);
+        // const caseQuantity = parseInt(document.getElementById('case-number-field').value);
         const subtotalText = document.getElementById('subtotal').textContent;
 
 
-        const phoneTotal = phoneQuantity * phonePrice;
-        const caseTotal = caseQuantity * casePrice;
+        // const phoneTotal = phoneQuantity * phonePrice;
+        // const caseTotal = caseQuantity * casePrice;
 
-        document.getElementById('phone-total').textContent = phoneTotal.toFixed(2);
-        document.getElementById('case-total').textContent = caseTotal.toFixed(2);
+        // document.getElementById('phone-total').textContent = phoneTotal.toFixed(2);
+        // document.getElementById('case-total').textContent = caseTotal.toFixed(2);
 
 
         if (price === 1200) {
+            const phoneQuantity = parseInt(document.getElementById('phone-number-field').value);
+            const phoneTotal = phoneQuantity * phonePrice;
+            document.getElementById('phone-total').textContent = phoneTotal.toFixed(2);
+
             const newTotal = Number(subtotalText) - Number(phoneTotal);
-            // console.log(previousTotal)
-            // console.log(phoneTotal)
             document.getElementById('subtotal').textContent = newTotal.toFixed(2);
+
             return;
-            // console.log("phonePrice")
+
         }
-        if (price === 350) {
+        else if (price === 350) {
+            const caseQuantity = parseInt(document.getElementById('case-number-field').value);
+            const caseTotal = caseQuantity * casePrice;
+            document.getElementById('case-total').textContent = caseTotal.toFixed(2);
+
             const newTotal = Number(subtotalText) - Number(caseTotal);
-
             document.getElementById('subtotal').textContent = newTotal.toFixed(2);
             return;
         }
-        const subtotal = phoneTotal + caseTotal;
+        else {
 
-        document.getElementById('subtotal').textContent = subtotal.toFixed(2);
+
+
+            const phoneQuantity = parseInt(document.getElementById('phone-number-field').value);
+            const phoneTotal = phoneQuantity * phonePrice;
+            document.getElementById('phone-total').textContent = phoneTotal.toFixed(2);
+
+            const caseQuantity = parseInt(document.getElementById('case-number-field').value);
+            const caseTotal = caseQuantity * casePrice;
+            document.getElementById('case-total').textContent = caseTotal.toFixed(2);
+
+            let subtotal;
+            if (phoneTotal && caseTotal) {
+                subtotal = phoneTotal + caseTotal;
+
+            }
+            else if (!phoneTotal) {
+                subtotal = caseTotal;
+            }
+            else if (!caseTotal) {
+                subtotal = phoneTotal;
+            }
+            // const subtotal = phoneTotal + caseTotal;
+            document.getElementById('subtotal').textContent = subtotal.toFixed(2);
+        }
     }
 
     // Add event listeners for quantity buttons
