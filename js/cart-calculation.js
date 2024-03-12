@@ -100,7 +100,6 @@ function setTextElementValueById(elementId, value) {
 
 
 function calculateSubTotal() {
-    // Calculate total
     const currentPhoneTotal = getTextElementValueById('phone-total');
     const currentCaseTotal = getTextElementValueById('case-total');
 
@@ -108,5 +107,23 @@ function calculateSubTotal() {
     setTextElementValueById('sub-total', currentSubTotal);
 }
 
-// Call calculateSubTotal once initially
+
 calculateSubTotal();
+
+
+
+
+// Function to remove the cart item
+function removeCartItem(cartItem) {
+    cartItem.remove();
+    calculateSubTotal();
+}
+
+
+document.querySelectorAll('.fa-trash-can').forEach(function (trashIcon) {
+    trashIcon.addEventListener('click', function () {
+        const cartItem = trashIcon.closest('.cart-body-child');
+
+        removeCartItem(cartItem);
+    });
+});
