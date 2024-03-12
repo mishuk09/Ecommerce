@@ -1,1 +1,955 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Login</title>
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font import  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/js/cart.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+    <header>
+        <nav>
+
+
+            <div class=" navbar-main ">
+
+
+                <div class="custom-container px-8 w-full flex flex-col lg:flex-row lg:justify-between py-4  ">
+                    <div class="logo lg:w-[20%] w-[100%]  flex items-center text-start justify-between  ">
+
+                        <div class="  lg:hidden gap-2 items-center text-center justify-center">
+                            <div class="py-1 ">
+                                <img class="w-7 mx-auto" src="/images/cart.png" alt="">
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <a href="#"> <img class="main-logo" src="/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="open-menu lg:hidden toggle-hamburger">
+                            <button><i class="fa-solid fa-bars text-white "></i></button>
+                        </div>
+                        <!-- <div class="header lg:hidden ">
+                            <div class="header_in">
+                                <button type="button" class="toggle" id="toggle">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div
+                        class="logo  w-[100%] lg:w-[55%] xl:w-[60%]    mt-3 lg:mt-0   flex items-center text-center justify-center  ">
+
+                        <div
+                            class="h-11 bg-white xl:px-4 lg:px-2  px-3 flex rounded-l-full font-thin  items-center text-center justify-center text-gray-400 text-[18px]">
+                            <i class="fa-solid fa-magnifying-glass font-thin"></i>
+
+                        </div>
+                        <div class="  w-full ">
+
+                            <input placeholder="I'm looking for..." type="text"
+                                class="outline-none h-11 input-nav w-full      bg-white   pt-2 pb-2 px-3 ">
+                        </div>
+                        <div
+                            class="h-11 w-[210px] hidden md:flex  navbar-cate     bg-white  items-center text-center justify-center">
+                            <select id="cat" name="cat" class="w-full bg-white    text-[14px] outline-none px-1">
+                                <option value="" class="center-option">All Categories</option>
+                                <option value="4">Fashion</option>
+                                <option value="12">- Women</option>
+                                <option value="13">- Men</option>
+                                <option value="66">- Jewellery</option>
+                                <option value="67">- Kids Fashion</option>
+                                <option value="5">Electronics</option>
+                                <option value="21">- Smart TVs</option>
+                                <option value="22">- Cameras</option>
+                                <option value="63">- Games</option>
+                                <option value="7">Home & Garden</option>
+                                <option value="11">Motors</option>
+                                <option value="31">- Cars and Trucks</option>
+                                <option value="32">- Motorcycles & Powersports</option>
+                                <option value="33">- Parts & Accessories</option>
+                                <option value="34">- Boats</option>
+                                <option value="57">- Auto Tools & Supplies</option>
+                            </select>
+                        </div>
+                        <div
+                            class="h-11 search-name bg-cyan-500 w-[140px] flex  rounded-r-full justify-center items-center text-white text-[14px]">
+                            <button class="w-full">Search</button>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="logo w-[20%]   gap-7 hidden lg:flex items-center text-end justify-end lg:justify-end lg:w-[25%]">
+
+                        <div class="hidden sm:hidden lg:hidden" onclick="toggleSearch()">
+                            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                        </div>
+
+                        <a href="/auth/signin.html" class="flex items-center me-1 text-center justify-center">
+                            <div>
+                                <img class="w-8 mx-auto" src="/images/user.png" alt="">
+                            </div>
+                            <div class="text-start hidden sm:block ms-1 text-white leading-4">
+                                <p class="text-[12px] text-gray-300">Log in</p>
+                                <p class="font-bold text-[14px]">Account</p>
+                            </div>
+                        </a>
+
+                        <a href="/cart/cart.html" class="flex items-center text-center justify-center">
+                            <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
+                        </a>
+
+                        <div id="cart-menu-button"
+                            class="open-menu  cursor-pointer    flex gap-2 items-center text-center justify-center">
+                            <a href="cart2.html" class="py-1 ">
+                                <img class="w-7 mx-auto" src="/images/cart.png" alt="">
+                            </a>
+                            <div class="text-start ms-2 text-white leading-4">
+                                <p class="text-[12px] text-gray-300">Cart</p>
+                                <p class="font-semibold text-[14px]">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr class="text-gray-300 ">
+
+
+
+
+
+            <!-- navbar dropdown  -->
+
+
+            <div class="dropdown-div  z-50 relative shadow-sm" id="sidebar">
+                <div class="custom-container  hidden mx-auto lg:flex  ">
+                    <div
+                        class=" dropdown-div2 cursor-pointer flex gap-7 xl:gap-16 text-[14px] text-gray-600 text-sm relative hover-menu-wrapper  ">
+                        <div id="dropdownButton1"
+                            class="dropdown-button hover-menu-button px-8 py-8   flex gap-2 items-center  hover:text-blue-500">
+                            <p>
+                                Men
+                            </p> <i class="fas fa-angle-down "></i>
+                        </div>
+                        <div id="dropdownContent1"
+                            class="dropdown-content hover-menu-content pt-4   absolute bg-white  pb-2 shadow-md z-10">
+                            <!-- Added 'hidden' class here -->
+                            <div class="grid grid-cols-4 text-[15px] relative font-normal">
+                                <div>
+                                    <a class="block px-4 py-2  women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Hody's & Shorts
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Ware's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" dropdown-div2 cursor-pointer flex gap-7 xl:gap-16 text-[14px] text-gray-600 text-sm relative hover-menu-wrapper  ">
+                        <div id="dropdownButton1"
+                            class="dropdown-button hover-menu-button px-8 py-8   flex gap-2 items-center  hover:text-blue-500">
+                            <p>
+                                Women
+                            </p> <i class="fas fa-angle-down "></i>
+                        </div>
+                        <div id="dropdownContent1"
+                            class="dropdown-content hover-menu-content pt-4   absolute bg-white  pb-2 shadow-md z-10">
+                            <!-- Added 'hidden' class here -->
+                            <div class="grid grid-cols-4 text-[15px] relative font-normal">
+                                <div>
+                                    <a class="block px-4 py-2  women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Hody's & Shorts
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Treaditional
+                                        Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+                                <div>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Clothing's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Dresses,
+                                        Scart
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500   no-underline hover:underline">Hoodies
+                                        & Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Shirts,
+                                        T-Shart, Tops</a>
+                                    <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
+                                        Ware's
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500    no-underline hover:underline">Pants
+                                        & Trouser</a>
+                                    <a href="#" class="block px-4 py-2 text-gray-500     no-underline hover:underline">
+                                        Thermal Wear</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-500     no-underline hover:underline">Dress,Cart,Shorts</a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class=" dropdown-div2 cursor-pointer flex gap-7 xl:gap-16 text-[14px] text-gray-600 text-sm relative hover-menu-wrapper  ">
+                        <div id="dropdownButton1"
+                            class="dropdown-button hover-menu-button px-8 py-8   flex gap-2 items-center  hover:text-blue-500">
+                            <p>
+                                Children
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </nav>
+    </header>
+
+
+    <!--#################################################
+####                                            ####
+####          Header section END              ####
+####                                            ####
+##################################################-->
+
+
+
+
+
+
+
+
+    <!--#################################################
+####                                            ####
+####      Sidebar Dropdown section Start     ####
+####                                            ####
+##################################################-->
+
+
+
+
+    <section class="sidebar-main-wrapper inactive">
+        <div class="sidebar  bg-white w-[400px] h-full sidebar-content" id='sidebar'>
+            <div
+                class="w-full h-[60px] text-[14px] bg-primary flex items-center px-6  text-center justify-end close-sidebar cursor-pointer">
+
+                <img src="/images/close.png" width="15" />
+
+            </div>
+            <ul>
+
+                <li class="relative" id="categoryDropdown1">
+                    <a id="clicked-id1" class="border-1 border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">Home</a>
+                    <ul class="ps-4 mt-2 rounded-md shadow-md hidden" id="dropdownMenu1">
+                        <!-- Dropdown menu items -->
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                    </ul>
+                </li>
+
+                <li class="relative" id="categoryDropdown2">
+                    <a id="clicked-id2" class="border-1 border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">Shop</a>
+                    <ul class="ps-4 mt-2 rounded-md shadow-md hidden" id="dropdownMenu2">
+                        <!-- Dropdown menu items -->
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                    </ul>
+                </li>
+                <li class="relative" id="categoryDropdowntwo">
+                    <a id="cliked-id" class="  border-1   border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">Product </a>
+                    <ul class="  ps-4 mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
+
+                        <li "><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
+                            Width Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
+                                Slider Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
+                                Image Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Left
+                                Sidebar</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Right
+                                Sidebar</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Off
+                                Canvas Filter</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
+                                href="#">Horizontal Filter 1</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
+                                href="#">Horizontal Filter 2</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">List
+                                Types</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Ajax
+                                Infinite Scroll</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">3
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">4
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">5
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">6
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">7
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">8
+                                Columns Products</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a class="  text-[14px]" href="">Blog</a></li>
+
+                <li class="relative" id="categoryDropdownfour">
+                    <a id="cliked-id" class=" border-1   border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">Page </a>
+                    <ul class="  ps-4 mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
+
+                        <li "><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
+                            Width Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
+                                Slider Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
+                                Image Banner</a> </li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Left
+                                Sidebar</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Right
+                                Sidebar</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Off
+                                Canvas Filter</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
+                                href="#">Horizontal Filter 1</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
+                                href="#">Horizontal Filter 2</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">List
+                                Types</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Ajax
+                                Infinite Scroll</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">3
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">4
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">5
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">6
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">7
+                                Columns Products</a></li>
+                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">8
+                                Columns Products</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a class="  text-[14px]" href="">Sale</a></li>
+                <li><a class="  text-[14px]" href="">Buy Umino</a></li>
+                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-clock me-2"></i> Recently Viewsd</a></li>
+                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-heart me-2"></i>Wishlist</a></li>
+                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-user me-2"></i>Login / Register</a></li>
+
+
+                <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded bg-gray-100">
+                    <input placeholder="Search..." type="text" "
+                        class=" outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm w-full pt-2 pb-2 px-2
+                        rounded">
+                    <button class="flex items-center me-3 text-center justify-center bg-gray-100"> <i
+                            class="fa-solid fa-magnifying-glass text-gray-400"></i></button>
+                </div>
+
+                <div class=" flex gap-2 my-6 text-center items-center justify-center text-white">
+                    <i class="fa-brands text-2xl fa-square-facebook"></i>
+                    <i class="fa-brands text-2xl fa-square-twitter"></i>
+                    <i class="fa-brands text-2xl fa-square-instagram"></i>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--#################################################
+####                                            ####
+####      Sidebar Dropdown section END           ####
+####                                            ####
+##################################################-->
+
+
+
+
+
+
+
+
+
+
+    <div class="custom-container">
+
+
+        <div class="custom-container  pt-[40px] md:pt-[50px]     flex items-center text-center justify-center">
+            <div class="flex  relative flex-col bg-white  h-auto  w-full text-center justify-center">
+                <p class=" text-[20px] sm:text-[28px] lg:text-[45px] font-bold  ">Your Cart</p>
+                <a href="#" class="text-center text-gray-500 text-[12px] cart-access lg:text-[14px]"><span
+                        class="text-gray-800">Home /</span> Your Shoping Sart</a>
+
+            </div>
+
+        </div>
+        <div class="custom-container mt-10 mb-20 mx-0    text-gray-600  cart-details  ">
+            <div>
+
+
+                <div class="cart-body-child   text-[14px]  ">
+                    <div class="border-b md:border-l md:border-t md:border-r   h-[165px] md:h-[120px]  md:ps-4">
+                        <div class="w-full flex relative   h-full       bg-white">
+                            <div
+                                class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
+                                <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
+                                    src="/images/home/top/products_digital_9_1.webp" alt="">
+                            </div>
+                            <div class=" w-[100%]  relative   flex  md:pt-6">
+
+                                <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
+
+                                    <p class=" pe-3 sm:pe-0  text-[14px]  text-gray-700  font-bold leading-5  block  ">
+                                        Apple
+                                        iPhone
+                                        12 Pro Max 128GB-Unlocked
+                                    </p>
+
+
+                                    <div class="flex  items-center price-color   mt-2">
+                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$1200.00</p>
+
+                                    </div>
+
+                                    <div
+                                        class="flex md:hidden  px-1 mt-2 justify-between items-center text-center rounded h-[32px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                                        <button
+                                            class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
+                                        <span class="quantity text-[14px]">2</span>
+                                        <button
+                                            class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
+                                    </div>
+                                    <div class="flex mt-2 md:hidden items-center price-color   ">
+                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                                    </div>
+                                    <p class="absolute md:hidden top-3 right-2">
+                                        <i class="fa-regular text-gray-600 fa-trash-can"></i>
+                                    </p>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-b h-[120px] hidden  md:flex items-center text-center justify-center">
+                        <div
+                            class="flex   px-1  justify-between items-center text-center rounded h-[45px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                            <button id="btn-phone-minus"
+                                class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
+                            <input id="phone-number-field" type="number" min="0"
+                                class="form-control bg-slate-100 w-[40px] text-center" value="1">
+                            <button id="btn-phone-plus"
+                                class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t   border-l border-b h-[120px]   hidden  md:flex    items-center text-center justify-center">
+                        <div class="flex  items-center price-color   mt-1">
+                            <p id="phone-total" class="text-[14px] font-semibold  me-2 cursor-auto  "> 1200</p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-b border-l border-r h-[120px] hidden  md:flex     items-center text-center justify-center">
+                        <i class="fa-regular text-gray-600 fa-trash-can"></i>
+                    </div>
+
+
+                </div>
+                <div class="cart-body-child   text-[14px]  ">
+                    <div class="border-b md:border-l md:border-t md:border-r   h-[165px] md:h-[120px]  md:ps-4">
+                        <div class="w-full flex relative   h-full       bg-white">
+                            <div
+                                class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
+                                <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
+                                    src="/images/home/top/products_digital_9_1.webp" alt="">
+                            </div>
+                            <div class=" w-[100%]  relative   flex  md:pt-6">
+
+                                <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
+
+                                    <p class=" pe-3 sm:pe-0  text-[14px]  text-gray-700  font-bold leading-5  block  ">
+                                        Apple
+                                        iPhone
+                                        12 Pro Max 128GB-Unlocked
+                                    </p>
+
+
+                                    <div class="flex  items-center price-color   mt-2">
+                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                                    </div>
+
+                                    <div
+                                        class="flex md:hidden  px-1 mt-2 justify-between items-center text-center rounded h-[32px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                                        <button
+                                            class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
+                                        <span class="quantity text-[14px]">2</span>
+                                        <button
+                                            class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
+                                    </div>
+                                    <div class="flex mt-2 md:hidden items-center price-color   ">
+                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                                    </div>
+                                    <p class="absolute md:hidden top-3 right-2">
+                                        <i class="fa-regular text-gray-600 fa-trash-can"></i>
+                                    </p>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-b h-[120px] hidden  md:flex items-center text-center justify-center">
+                        <div
+                            class="flex   px-1  justify-between items-center text-center rounded h-[45px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                            <button id="btn-case-minus"
+                                class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
+                            <input id="case-number-field" type="number" min="0"
+                                class="form-control bg-slate-100 w-[40px] text-center" value="1">
+                            <button id="btn-case-plus"
+                                class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t   border-l border-b h-[120px]   hidden  md:flex    items-center text-center justify-center">
+                        <div class="flex  items-center price-color   mt-1">
+                            <p id="case-total" class="text-[14px] font-semibold  me-2 cursor-auto  "> 350</p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-b border-l border-r h-[120px] hidden  md:flex     items-center text-center justify-center">
+                        <i class="fa-regular text-gray-600 fa-trash-can"></i>
+                    </div>
+
+
+                </div>
+
+
+                <div class=" mt-8 items-center     text-[14px]">
+                    <input type="checkbox" name="field name" value="Initial value" class="w-[20px]"> Please wrap the
+                    product
+                    carefully. Fee is only <span class="font-bold">$5.00.</span> (You can choose or not)
+                </div>
+            </div>
+
+            <div
+                class="flex p-6 max-h-[230px] mt-6 lg:mt-0 relative flex-col bg-slate-100 rounded   border   w-full   justify-center">
+                <div class="w-full text-[20px] font-bold flex items-center justify-between">
+                    <div>Subtotal</div>
+                    <div id="sub-total">350</div>
+                </div>
+                <p class="text-[14px] mt-1"> Taxes and shipping calculated at checkout</p>
+                <div class=" mt-6 items-center terms-cart   text-[14px]">
+                    <input type="checkbox" name="field name" value="Initial value" class=""> I agree with <a href="#"
+                        class="underline">Terms &
+                        Conditions</a>
+
+                </div>
+                <button
+                    class="border border-slate-200 lg:mt-5 mt-6 login-btn font-semibold rounded-full w-full h-11 px-4 text-white outline-none text-[12px]"
+                    placeholder='d' type="text">CHECK OUT</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <section>
+
+
+
+        <div id='footer' class=' footer-section   bottom-0 w-full'>
+            <div class='bg-slate-50 h-auto   w-full  '>
+                <div class='custom-container footer-grid  pb-4 gap-3 w-[100%]'>
+                    <div class='w-full h-full flex flex-col overflow-hidden'>
+                        <p class="text-black pt-12 pb-3 text-[15px] font-bold">Nepal Mart Online Shopping</p>
+                        <p class="text-justify pe-6 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Porro eius doloremque doloribus quos, </p>
+                        <p class="text-2xl font-semibold mt-3 mb-2 number">+977 65764763</p>
+                        <p class="text-justify pe-6 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. </p>
+                        <div class="flex gap-2 mt-3">
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
+                                    class="fa-brands fa-facebook-f"></i></p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
+                                    class="fa-brands fa-youtube"></i></p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
+                                    class="fa-brands fa-twitter"></i></p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
+                                    class="fa-brands fa-instagram"></i></p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
+                                    class="fa-brands fa-whatsapp"></i></p>
+                        </div>
+                    </div>
+
+                    <div class='w-full h-full leading-6 flex flex-col overflow-hidden'>
+                        <a class="text-black pt-4 md:pt-12 pb-3 text-[15px] font-bold">Customer Service</a>
+                        <a href="#" class="text-[14px] hover:underline transition duration-400 cursor-pointer pb-1">Help
+                            & FAQs</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Order Tracking</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Shipping & Delivery</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Order History</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Advanced Search</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">My Account</a>
+                    </div>
+
+                    <div class='w-full h-full leading-6 flex flex-col overflow-hidden'>
+                        <a class="text-black pt-4 md:pt-12 pb-3 text-[15px] font-bold">Shop By Outletshop</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Help & FAQs</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Order Tracking</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Shipping & Delivery</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Order History</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">Advanced Search</a>
+                        <a href="#" class="text-[14px] cursor-pointer pb-1">My Account</a>
+                    </div>
+
+                    <div class='grid   w-[100%]'>
+                        <div class='w-full h-full flex flex-col overflow-hidden'>
+                            <a
+                                class="text-black hover:text-blue-500 duration-200 cursor-pointer pt-4 md:pt-12 pb-3 text-[17px] font-bold">Sign
+                                Up to Newsletter</a>
+                            <div class="grid text-sm">
+                                <p class="text-[14px] cursor-pointer pb-6 text-justify">Get all the latest information
+                                    on events, sales and offers. Sign up for the newsletter:</p>
+
+                                <div class=" lg:flex gap-1">
+
+                                    <input type="text"
+                                        class="border w-full rounded-full h-10 outline-none px-4 text-gray-300"
+                                        placeholder="Email Address">
+                                    <button type="submit"
+                                        class="w-full h-10 px-4 mt-4 lg:mt-0 text-white font-bold rounded-full"
+                                        style="background-color: var(--primary-color);">
+                                        SUBSCRIBE
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="bg-slate-50 ">
+
+                <div
+                    class="custom-container bg-slate-50 mb-6 md:mb-0 md:flex text-center pt-3 flex-row  justify-between items-center w-full h-20">
+                    <div class="text-[14px] py-2">© Porto eCommerce. 2021. All Rights Reserved</div>
+
+                    <div class="flex gap-1  items-center text-center justify-center">
+                        <img class="w-10" src="/images/footer/am.webp" alt="">
+                        <img class="w-10" src="/images/footer/master.webp" alt="">
+                        <img class="w-10" src="/images/footer/pp.png" alt="">
+                        <img class="w-10" src="/images/footer/visa.png" alt="">
+                        <img class="w-10" src="/images/footer/am.webp" alt="">
+                        <img class="w-10" src="/images/footer/master.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/case.js"></script>
+    <script src="/js/phone.js"></script>
+
+</body>
+
+</html>
