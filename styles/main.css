@@ -998,6 +998,38 @@ input[type=number] {
 
 
 
+
+
+
+
+
+
+.details-container .p-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Other styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .trending-product {
     font-family: var(--primary-font);
 }
@@ -1006,7 +1038,7 @@ input[type=number] {
     color: #555555;
     font-weight: 500;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
 }
 
 

@@ -72,6 +72,9 @@ $(".new-carousel").owlCarousel({
     0: {
       items: 2,
     },
+    500: {
+      items: 3,
+    },
     600: {
       items: 3,
     },
