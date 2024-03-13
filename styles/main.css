@@ -1248,11 +1248,8 @@ input[type=number] {
 
 }
 
-
-
 .subscribe-btn {
     background-color: var(--primary-color);
-    color: white;
 }
 
 .subscribe-btn:hover {
