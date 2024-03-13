@@ -309,8 +309,15 @@ body {
     font-weight: 500;
 }
 
+.navbar-cate i {
+    position: relative;
+    left: -15px;
+    pointer-events: none;
+
+}
+
 .center-option {
-    text-align: center;
+    /* text-align: center; */
     color: var(--input-color);
 }
 
