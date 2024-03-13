@@ -117,5 +117,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // #################################################
-// ####          GO TO TOP js                   ####
+// ####          Toast js                   ####
 // ##################################################
+ 
+
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+  var toast = document.getElementById('toast');
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var productId = this.id.replace('add-to-cart-btn-', '');
+
+      toast.classList.add('show'); // Add class to show toast
+
+      setTimeout(function () {
+        toast.classList.remove('show'); // Remove class to hide toast
+      }, 2000);
+    });
+  });
+});
+
