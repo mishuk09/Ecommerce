@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.scrollY > 200) {
       goToTopButton.classList.add("show");
     } else {
+      
       goToTopButton.classList.remove("show");
     }
   });
