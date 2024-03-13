@@ -36,7 +36,8 @@
 
 
 :root {
-    --primary-color: #1d70ba;
+    --primary-color: #225487;
+    --secondary-color: #1d70ba;
     --primary-text: #225487;
     --primary-font: 'Roboto', sans-serif;
     /* input  */
@@ -549,7 +550,15 @@ input[type=number] {
 
 }
 
+.dropdown-hover:hover {
+    color: var(--secondary-color);
+}
 
+.cart-btn-hover:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+
+}
 
 /*#################################################
 ####                                            ####
@@ -722,26 +731,43 @@ input[type=number] {
     overflow-y: auto;
 }
 
-.parent-divv .text-overlayy {
-    opacity: 0;
-    right: -20px;
-    overflow: hidden;
-    white-space: nowrap;
-    height: 100%;
-    width: 35px;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
 
+
+
+@media (max-width: 640px) {
+    .parent-divv .text-overlayy {
+        opacity: 1;
+        bottom: 0;
+        top: 325px;
+        visibility: visible;
+        height: 35px;
+        width: 100%;
+    }
 }
 
-.parent-divv:hover .text-overlayy {
-    opacity: 1;
-    right: 0;
-    height: auto;
-    visibility: visible;
-    transition: 0.3s ease-in-out;
+@media (min-width: 640px) {
+    .parent-divv .text-overlayy {
+        opacity: 0;
+        right: -20px;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 100%;
+        width: 35px;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
 
+    }
+
+    .parent-divv:hover .text-overlayy {
+        opacity: 1;
+        right: 0;
+        height: auto;
+        visibility: visible;
+        transition: 0.3s ease-in-out;
+
+    }
 }
+
 
 
 .image-container {
@@ -1299,13 +1325,6 @@ input[type=number] {
     }
 }
 
-@media (max-width: 600px) {
-    .parent-divv .text-overlayy {
-        opacity: 1;
-        right: 0;
-        visibility: visible;
-    }
-}
 
 @media (max-width: 480px) {
     .sidebar-content {
@@ -1503,7 +1522,7 @@ input[type=number] {
 
 
 
- 
+
 
 #toast {
     display: none;
