@@ -159,22 +159,26 @@
                     <p class="text-[14px] text-gray-700 mt-6 mb-2">Size: <span class="font-bold">16GB</span></p>
                     <div class="flex gap-2">
                         <p
-                            class="bg-black rounded text-white text-[14px] px-6 flex items-center text-center justify-center h-8  ">
+                            class="bg-black cursor-pointer rounded text-white text-[14px] px-6 flex items-center text-center justify-center h-8  ">
                             16GB</p>
-                        <p class="border rounded px-6 text-[14px] flex items-center text-center justify-center h-8">
+                        <p
+                            class="border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
                             64 GB</p>
-                        <p class="border rounded px-6 text-[14px] flex items-center text-center justify-center h-8">
+                        <p
+                            class="border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
                             128 GB</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                         <div
-                            class="flex px-4 justify-between items-center text-center  rounded-full h-11 w-[90px] md:w-[140px] bg-slate-200 text-black">
+                            class="flex px-4 justify-between items-center text-center rounded-full h-11 w-[90px] md:w-[140px] bg-slate-200 text-black">
                             <button
-                                class="text-2xl flex items-center text-center justify-center">-</button><span>2</span><button
-                                class="text-xl flex items-center text-center justify-center">+</button>
+                                class="text-2xl flex quick-minus-btn items-center text-center justify-center">-</button>
+                            <span class="quick-field">1</span>
+                            <button
+                                class="text-xl quick-plus-btn flex items-center text-center justify-center">+</button>
                         </div>
                         <div
-                            class="rounded-full h-11 w-[100px] md:w-[200px] bg-black text-[14px] text-white flex items-center text-center justify-center">
+                            class="rounded-full cursor-pointer h-11 w-[100px] md:w-[200px] bg-black text-[14px] text-white flex items-center text-center justify-center">
                             Add To Cart</div>
                         <div
                             class=" flex items-center text-center justify-center rounded-full h-11 w-11 bg-black text-white">
@@ -191,8 +195,7 @@
                         Conditions
                     </div>
                     <div class="  text-[14px] mt-6   ">
-                        <button style="background-color: var(--primary-color)"
-                            class="w-full text-white h-11 rounded-full  ">Buy with IMEPAY
+                        <button class="w-full text-white quick-view-btn h-11 rounded-full  ">Buy with IMEPAY
                         </button>
 
 
@@ -307,6 +310,7 @@
                         <a href="/auth/signin.html" class="flex items-center me-1 text-center justify-center">
                             <div>
                                 <img class="w-8 mx-auto" src="/images/user.png" alt="">
+                                <!-- <i class="fa-regular text-white text-xl fa-user"></i> -->
                             </div>
                             <div class="text-start hidden sm:block ms-1 text-white leading-4">
                                 <p class="text-[12px] text-gray-300">Log in</p>
@@ -1072,7 +1076,7 @@
                             Conditions</a>
                     </div>
                     <div>
-                        <a href="/auth/signup.html"
+                        <a href="./cart/cart.html"
                             class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
                             View Cart</a>
                         <button
@@ -1132,7 +1136,7 @@
                 </p>
                 <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
                 <a
-                    class="w-[180px] mt-14 h-[55px] text-[14px] px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    class="w-[180px] slider-shop-btn mt-14 h-[55px] text-[14px] px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
                     Now</a>
             </div>
         </div>
@@ -1149,7 +1153,7 @@
                 </p>
                 <p class="text-lg mt-3">Discount 40% Off Products & Free Shipping</p>
                 <a
-                    class="w-[180px] mt-14 h-[55px] text-[14px] px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
+                    class="w-[180px] slider-shop-btn mt-14 h-[55px] text-[14px] px-6 bg-white text-black rounded-full flex items-center justify-center">Shop
                     Now</a>
             </div>
         </div>
@@ -1181,7 +1185,7 @@
                             Gamepad <br> Save Up To $99
                         </p>
                         <p class="text-white flex text-start text-sm mt-4">
-                            <span class="border-b-2 pb-1 cursor-pointer   duration-200">Shop Gamepad</span>
+                            <span class="  pb-1 cursor-pointer shop-btn   duration-200">Shop Gamepad</span>
                             <!-- <hr class="hr-effect"> -->
                         </p>
                     </div>
@@ -1192,7 +1196,7 @@
                             Buy 1 Get 1 <br> Save Up To $599
                         </p>
                         <p class="text-white flex text-start text-sm mt-4">
-                            <span class="border-b-2 pb-1 cursor-pointer   duration-200">Shop Gamepad</span>
+                            <span class="  pb-1 cursor-pointer shop-btn  duration-200">Shop Gamepad</span>
                         </p>
                     </div>
                 </a>
@@ -1201,8 +1205,8 @@
                         <p class="text-white   leading-8 pt-0 text-[18px]  ">
                             Cameras <br> Save Up To $159
                         </p>
-                        <p class="text-white flex text-start text-sm mt-4">
-                            <span class="border-b-2 pb-1 cursor-pointer   duration-200">Shop Gamepad</span>
+                        <p class="text-white flex  text-start text-sm mt-4">
+                            <span class="  pb-1 cursor-pointer shop-btn  duration-200">Shop Gamepad</span>
                         </p>
                     </div>
                 </a>
@@ -3860,7 +3864,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -3935,10 +3939,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -3954,7 +3958,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4029,10 +4033,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4049,7 +4053,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4124,10 +4128,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4145,7 +4149,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4220,10 +4224,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4239,9 +4243,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4316,10 +4319,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4335,7 +4338,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4410,10 +4413,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4429,9 +4432,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4506,10 +4508,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4526,7 +4528,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy  hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy  hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4601,10 +4603,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4686,7 +4688,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4761,10 +4763,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4780,7 +4782,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4855,10 +4857,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4875,7 +4877,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -4950,10 +4952,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -4971,7 +4973,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5046,10 +5048,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5065,9 +5067,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5142,10 +5143,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5161,7 +5162,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5236,10 +5237,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5255,9 +5256,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5332,10 +5332,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5352,7 +5352,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy  hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy  hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5427,10 +5427,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5470,7 +5470,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5545,10 +5545,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5564,7 +5564,7 @@
                             src="/images/home/products_digital_11_1.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5639,10 +5639,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5659,7 +5659,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5734,10 +5734,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5755,7 +5755,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5830,10 +5830,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5849,9 +5849,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -5926,10 +5925,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -5945,7 +5944,7 @@
                             src="/images/home/products_digital_6_2.webp" alt="">
 
                         <div
-                            class="text-overlayy hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -6020,10 +6019,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -6039,9 +6038,8 @@
                         <img class="w-full h-full items-center text-center justify-center flex hover-img"
                             src="/images/home/sw.jpeg" alt="">
 
-                        <div
-                            class="text-overlayy hidden
-                             text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -6116,10 +6114,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -6136,7 +6134,7 @@
                             src="/images/home/sw.jpeg" alt="">
 
                         <div
-                            class="text-overlayy  hidden text-sm  product__list  gap-2 absolute       w-full h-full flex    bg-opacity-75 text-white">
+                            class="text-overlayy  hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
                                 class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
@@ -6211,10 +6209,10 @@
                             </del>
                         </div>
                     </div>
-                    <div class="flex justify-between border rounded-full px-4 h-7 items-center   mt-3">
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
                         <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
 
-                        <p class="delete-cart-price text-gray-700 cursor-auto  ">+</p>
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
 
                     </div>
                 </a>
@@ -6317,15 +6315,16 @@
                             <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
                                     class="fa-brands fa-twitter"></i></p>
                             <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-instagram"></i></p>
+                                    class="fa-brands fa-square-instagram"></i></p>
                             <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-whatsapp"></i></p>
+                                    class="fa-brands fa-square-whatsapp"></i></p>
                         </div>
                     </div>
 
-                    <div class='w-full h-full leading-6 flex flex-col overflow-hidden'>
-                        <a class="text-black pt-4 md:pt-12 pb-3 text-[15px] font-bold">Customer Service</a>
-                        <a href="#" class="text-[14px] hover:underline transition duration-400 cursor-pointer pb-1">Help
+                    <div class='w-full footer-service h-full leading-6 flex flex-col overflow-hidden'>
+                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Customer Service
+                        </p>
+                        <a href="#" class="text-[14px]   cursor-pointer pb-1">Help
                             & FAQs</a>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Order Tracking</a>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Shipping & Delivery</a>
@@ -6334,8 +6333,9 @@
                         <a href="#" class="text-[14px] cursor-pointer pb-1">My Account</a>
                     </div>
 
-                    <div class='w-full h-full leading-6 flex flex-col overflow-hidden'>
-                        <a class="text-black pt-4 md:pt-12 pb-3 text-[15px] font-bold">Shop By Outletshop</a>
+                    <div class='w-full footer-service h-full leading-6 flex flex-col overflow-hidden'>
+                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Shop By Outletshop
+                        </p>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Help & FAQs</a>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Order Tracking</a>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Shipping & Delivery</a>
@@ -6346,9 +6346,10 @@
 
                     <div class='grid   w-[100%]'>
                         <div class='w-full h-full flex flex-col overflow-hidden'>
-                            <a
-                                class="text-black hover:text-blue-500 duration-200 cursor-pointer pt-4 md:pt-12 pb-3 text-[17px] font-bold">Sign
-                                Up to Newsletter</a>
+                            <p
+                                class="text-black   duration-200 cursor-pointer pt-4 md:pt-12 pb-3 text-[17px] font-bold">
+                                Sign
+                                Up to Newsletter</p>
                             <div class="grid text-sm">
                                 <p class="text-[14px] cursor-pointer pb-6 text-justify">Get all the latest information
                                     on events, sales and offers. Sign up for the newsletter:</p>
@@ -6359,8 +6360,7 @@
                                         class="border w-full rounded-full h-10 outline-none px-4 text-gray-300"
                                         placeholder="Email Address">
                                     <button type="submit"
-                                        class="w-full h-10 px-4 mt-4 lg:mt-0 text-white font-bold rounded-full"
-                                        style="background-color: var(--primary-color);">
+                                        class="w-full subscribe-btn h-10 px-4 mt-4 lg:mt-0 text-white font-bold rounded-full">
                                         SUBSCRIBE
                                     </button>
 

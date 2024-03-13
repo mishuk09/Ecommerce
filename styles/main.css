@@ -84,6 +84,16 @@ body {
 }
 
 
+.quick-view-btn {
+    background-color: var(--primary-color);
+}
+
+.quick-view-btn:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
 .modal {
     display: flex;
     justify-content: center;
@@ -567,7 +577,11 @@ input[type=number] {
 ##################################################  */
 
 
-
+.slider-shop-btn:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
 
 .new-carousel .owl-item .img-owl {
     width: 40%;
@@ -650,6 +664,16 @@ input[type=number] {
 ####                 Home Top Deal               ####
 ##################################################   */
 
+
+.shop-btn {
+    border-bottom: 2px solid white;
+}
+
+.shop-btn:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    transition: 0.3s;
+
+}
 
 .top-deal-scrool::-webkit-scrollbar {
     width: 0;
@@ -972,6 +996,8 @@ input[type=number] {
 ####                                            ####
 ##################################################  */
 
+
+
 .features-link {
     color: #3182ce;
     text-decoration: none;
@@ -1123,6 +1149,13 @@ input[type=number] {
 ##################################################  */
 
 
+.add-to-cart:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+
+}
+
 
 .features-product {
     font-family: var(--primary-font);
@@ -1208,6 +1241,24 @@ input[type=number] {
 ####          Footer  section START           ####
 ####                                            ####
 ##################################################  */
+.footer-service a:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+    color: var(--secondary-color);
+
+}
+
+
+
+.subscribe-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
 
 .footer-section {
     font-family: var(--primary-font);
@@ -1392,8 +1443,20 @@ input[type=number] {
     background-color: var(--primary-color);
 }
 
+.login-btn:hover {
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+
 .create-btn {
     border: 1px solid rgb(220, 219, 219);
+}
+
+.create-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
 }
 
 

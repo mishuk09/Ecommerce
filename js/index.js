@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // #################################################
 // ####          Toast js                   ####
 // ##################################################
- 
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
@@ -139,3 +139,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+// #################################################
+// ####          Quick vies items increment decrement   ####
+// ##################################################
+
+
+
+$(document).ready(function () {
+  $('.quick-minus-btn').click(function () {
+    var currentValue = parseInt($(this).next('.quick-field').text());
+    if (currentValue > 1) {
+      $(this).next('.quick-field').text(currentValue - 1);
+    }
+  });
+
+  $('.quick-plus-btn').click(function () {
+    var currentValue = parseInt($(this).prev('.quick-field').text());
+    $(this).prev('.quick-field').text(currentValue + 1);
+  });
+});
