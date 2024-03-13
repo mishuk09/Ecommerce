@@ -459,6 +459,18 @@ button {
     border-bottom: 1px solid rgb(216, 216, 216);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
 .sidebar ul li a {
     padding: 8px 15px;
 
