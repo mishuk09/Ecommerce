@@ -554,11 +554,11 @@ input[type=number] {
     color: var(--secondary-color);
 }
 
-.cart-btn-hover:hover {
+/* .cart-btn-hover:hover {
     background-color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 
-}
+} */
 
 /*#################################################
 ####                                            ####
