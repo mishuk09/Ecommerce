@@ -587,9 +587,34 @@ input[type=number] {
     width: 40%;
 }
 
+ 
 
 
 
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+    .quickview-iframe {
+        height: 550px;
+        width: 530px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .quickview-iframe {
+        height: 320px;
+        width: 530px;
+        /* margin-top: 30px; */
+        /* padding: 0px; */
+
+    }
+}
+@media only screen and (min-width:1024px) {
+    .quickview-iframe {
+        height: 440px;
+        width: 100%;
+        /* padding: 20px */
+        /* margin-top: 20px; */
+    }
+}
 
 .owl-nav {
     position: absolute;
@@ -604,6 +629,10 @@ input[type=number] {
 
 .main-slider {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-slider button {
