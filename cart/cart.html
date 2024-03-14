@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Login</title>
+    <title>Cart</title>
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -458,12 +458,20 @@
                 <img src="/images/close.png" width="15" />
 
             </div>
-            <ul>
+
+
+            <ul class="main-accordion-menu overflow-hidden overflow-y-auto">
 
                 <li class="relative" id="categoryDropdown1">
-                    <a id="clicked-id1" class="border-1 border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">Home</a>
-                    <ul class="ps-4 mt-2 rounded-md shadow-md hidden" id="dropdownMenu1">
+                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">
+                        <p class="open">
+                            Men
+                        </p>
+                        <img src="/images/down.png" width="15" />
+
+                    </a>
+                    <ul class="ps-4 submenu rounded-md   hidden" id="dropdownMenu1">
                         <!-- Dropdown menu items -->
                         <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
                         </li>
@@ -483,13 +491,50 @@
                                 Banner</a></li>
                     </ul>
                 </li>
+                <li class="relative" id="categoryDropdown1">
+                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">
+                        <p class="open">
+                            Women
+                        </p>
+                        <img src="/images/down.png" width="15" />
+
+                    </a>
+                    <ul class="ps-4 submenu rounded-md   hidden" id="dropdownMenu1">
+                        <!-- Dropdown menu items -->
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                    </ul>
+                </li>
+
 
                 <li class="relative" id="categoryDropdown2">
-                    <a id="clicked-id2" class="border-1 border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">Shop</a>
-                    <ul class="ps-4 mt-2 rounded-md shadow-md hidden" id="dropdownMenu2">
+                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">
+                        <p class="open">
+                            Products
+                        </p>
+                        <img src="/images/down.png" width="15" />
+
+                    </a>
+
+                    <ul class="ps-4 submenu  rounded-md shadow-md hidden" id="dropdownMenu3">
                         <!-- Dropdown menu items -->
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Half Width Banner</a>
                         </li>
                         <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
                                 Banner</a></li>
@@ -511,90 +556,41 @@
                                 Banner</a></li>
                     </ul>
                 </li>
-                <li class="relative" id="categoryDropdowntwo">
-                    <a id="cliked-id" class="  border-1   border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">Product </a>
-                    <ul class="  ps-4 mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
+                <li class="relative" id="categoryDropdown2">
+                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
+                        href="#">
+                        <p class="open">
+                            Page
+                        </p>
+                        <img src="/images/down.png" width="15" />
 
-                        <li "><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
-                            Width Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
-                                Slider Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
-                                Image Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Left
-                                Sidebar</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Right
-                                Sidebar</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Off
-                                Canvas Filter</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
-                                href="#">Horizontal Filter 1</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
-                                href="#">Horizontal Filter 2</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">List
-                                Types</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Ajax
-                                Infinite Scroll</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">3
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">4
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">5
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">6
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">7
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">8
-                                Columns Products</a></li>
-
+                    </a>
+                    <ul class="ps-4 submenu  rounded-md shadow-md hidden" id="dropdownMenu4">
+                        <!-- Dropdown menu items -->
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Page Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
+                        </li>
+                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
+                                Banner</a></li>
                     </ul>
                 </li>
 
                 <li><a class="  text-[14px]" href="">Blog</a></li>
-
-                <li class="relative" id="categoryDropdownfour">
-                    <a id="cliked-id" class=" border-1   border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">Page </a>
-                    <ul class="  ps-4 mt-2   rounded-md shadow-md hidden" id="dropdownMenu">
-
-                        <li "><a class=" text-gray-200 border-1 border-solid border-gray-800 text-[12px]" href="#">Full
-                            Width Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
-                                Slider Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Boxed
-                                Image Banner</a> </li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Left
-                                Sidebar</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Right
-                                Sidebar</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Off
-                                Canvas Filter</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
-                                href="#">Horizontal Filter 1</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]"
-                                href="#">Horizontal Filter 2</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">List
-                                Types</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">Ajax
-                                Infinite Scroll</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">3
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">4
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">5
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">6
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">7
-                                Columns Products</a></li>
-                        <li><a class="text-gray-200 border-1   border-solid border-gray-800 text-[12px]" href="#">8
-                                Columns Products</a></li>
-
-                    </ul>
-                </li>
-
                 <li><a class="  text-[14px]" href="">Sale</a></li>
                 <li><a class="  text-[14px]" href="">Buy Umino</a></li>
                 <li><a class="  text-[14px]" href=""><i class="fa-regular fa-clock me-2"></i> Recently Viewsd</a></li>
@@ -604,8 +600,7 @@
 
                 <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded bg-gray-100">
                     <input placeholder="Search..." type="text" "
-                        class=" outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm w-full pt-2 pb-2 px-2
-                        rounded">
+                class=" outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm w-full pt-2 pb-2 px-2 rounded">
                     <button class="flex items-center me-3 text-center justify-center bg-gray-100"> <i
                             class="fa-solid fa-magnifying-glass text-gray-400"></i></button>
                 </div>
@@ -678,7 +673,7 @@
                                     </div>
 
                                 </div>
-                                
+
 
                             </div>
                         </div>
