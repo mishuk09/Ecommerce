@@ -1,0 +1,17 @@
+.popup-over {
+
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal__conte {
+    /* position: absolute; */
+    display: grid;
+    grid-gap: 10px;
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateY(-100px); */
+    /* transition: var(--transition250); */
+}
