@@ -16,12 +16,29 @@
     <!-- Font import  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+    <!-- jquery  -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/products.js"></script>
 
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
 
 </head>
 
@@ -1073,22 +1090,20 @@
 
 
 
-                        <p class="text-[14px] text-gray-700 mt-4 mb-0"><span class="bg-black   rounded "><i
-                                    class="fa-regular text-white text-[10px] px-2 pt-4 fa-eye"></i></span><span
-                                class="mx-2">24 people
-                                are viewing this right now</span></p>
 
-                        <p class="text-[14px] text-gray-700 mt-6 mb-2">Size: <span class="font-bold">16GB</span></p>
+
+                        <p class="text-[14px] memory-size text-gray-700 mt-6 mb-2">Size: <span
+                                class="font-bold">64GB</span></p>
                         <div class="flex gap-2">
                             <p
-                                class="bg-black cursor-pointer rounded text-white text-[14px] px-6 flex items-center text-center justify-center h-8  ">
-                                16GB</p>
+                                class="size-selection selected cursor-pointer border rounded   text-[14px] px-6 flex items-center text-center justify-center h-8">
+                                64GB</p>
                             <p
-                                class="border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
-                                64 GB</p>
-                            <p
-                                class="border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
+                                class="size-selection border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
                                 128 GB</p>
+                            <p
+                                class="size-selection border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
+                                256 GB</p>
                         </div>
                         <div class="flex gap-2 mt-6">
                             <div
@@ -1112,9 +1127,9 @@
                             </div>
                         </div>
                         <div class=" mt-6 items-center  text-[14px]">
-                            <input type="checkbox" name="field name" value="Initial value" class=""> I agree with
-                            Terms &
-                            Conditions
+                            <input type="checkbox" name="field name" value="Initial value" class=""> I agree with<span
+                                class="underline mx-1">Terms &
+                                Conditions</span>
                         </div>
                         <div class="  text-[14px] mt-6   ">
                             <button class="w-full text-white quick-view-btn h-11 rounded-full  ">Buy with IMEPAY
@@ -1132,6 +1147,11 @@
                             non-refundable.
                             (International).
                         </div>
+                        <hr class="mt-6">
+
+                        <div class=" mt-6 items-center text-gray-600  text-[14px]">
+                            Available: <span class="text-black font-semibold">Instock</span>
+                        </div>
 
 
                     </div>
@@ -1146,6 +1166,9 @@
 
         </div>
 
+        <hr class="mt-10 mb-6">
+
+
 
 
 
@@ -1153,6 +1176,31 @@
     </section>
 
 
+
+
+
+
+    <div id="main-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Main Slide 1</li>
+                <li class="splide__slide">Main Slide 2</li>
+                <li class="splide__slide">Main Slide 3</li>
+                <!-- Add more main slides here -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="thumbnail-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Thumbnail 1</li>
+                <li class="splide__slide">Thumbnail 2</li>
+                <li class="splide__slide">Thumbnail 3</li>
+                <!-- Add more thumbnails here -->
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -1458,6 +1506,50 @@
 
 
 
+
+        var main = new Splide('#main-slider', {
+            type: 'fade',
+            heightRatio: 0.5,
+            pagination: false,
+            arrows: false,
+            cover: true,
+        });
+
+        var thumbnails = new Splide('#thumbnail-slider', {
+            rewind: true,
+            fixedWidth: 104,
+            fixedHeight: 58,
+            isNavigation: true,
+            gap: 10,
+            focus: 'center',
+            pagination: false,
+            cover: true,
+            dragMinThreshold: {
+                mouse: 4,
+                touch: 10,
+            },
+            breakpoints: {
+                640: {
+                    fixedWidth: 66,
+                    fixedHeight: 38,
+                },
+            },
+        });
+
+        main.sync(thumbnails);
+        main.mount();
+        thumbnails.mount();
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 
@@ -1466,6 +1558,10 @@
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 
 </body>
 

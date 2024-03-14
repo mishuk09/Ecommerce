@@ -15,3 +15,28 @@
     /* transform: translateY(-100px); */
     /* transition: var(--transition250); */
 }
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+
+/* Customize styles for the sliders */
+#main-slider,
+#thumbnail-slider {
+    width: 80%;
+    /* Adjust width as needed */
+    margin: 20px auto;
+    /* Center horizontally with top and bottom margin */
+}
+
+.splide__slide {
+    text-align: center;
+    /* Center slide content */
+    padding: 20px;
+    background: #ccc;
+    /* Add a background color */
+}
+
+/* Add more custom styles as needed */
