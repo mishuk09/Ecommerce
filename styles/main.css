@@ -598,12 +598,20 @@ input[type=number] {
     }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
     .quickview-iframe {
-        height: 400px;
+        height: 360px;
         width: 530px;
-        /* margin-top: 30px; */
-        /* padding: 0px; */
+
+
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .quickview-iframe {
+        height: 310px;
+        width: 530px;
+
 
     }
 }
