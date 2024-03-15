@@ -58,19 +58,25 @@
 
 .tab-content {
     display: none;
-    transition: all 0.3s ease-in-out;
 
 }
 
 .active {
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .inactive {
     background-color: #f3f4f6;
-    /* Slate 100 */
+     
     color: black;
+    transition: all 0.3s ease-in-out;
+
+}
+.tab-links li {
+    cursor: pointer;
 }
 
 <header><nav><div class=" navbar-main "><div class="custom-container px-8 w-full flex flex-col lg:flex-row lg:justify-between py-4  "><div class="logo lg:w-[25%] w-[100%]  flex items-center text-start justify-between  "><div class="  lg:hidden gap-2 items-center text-center justify-center"><div class="py-1 "><img class="w-7 mx-auto" src="/images/cart.png" alt=""></div></div><div><a href="#"><img class="main-logo" src="/images/logo.png" alt=""></a></div><div class="open-menu lg:hidden toggle-hamburger"><button><i class="fa-solid fa-bars text-white "></i></button></div>< !-- <div class="header lg:hidden "><div class="header_in"><button type="button" class="toggle" id="toggle"><span></span></button></div></div>--></div><div class="logo  w-[100%] lg:w-[50%] xl:w-[60%]    mt-3 lg:mt-0   flex items-center text-center justify-center  "><div class="h-11 bg-white xl:px-4 lg:px-2  px-3 flex rounded-l-full font-thin  items-center text-center justify-center text-gray-400 text-[18px]"><i class="fa-solid fa-magnifying-glass font-thin"></i></div><div class="  w-full "><input placeholder="I'm looking for..." type="text"
