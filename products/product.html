@@ -16,15 +16,20 @@
     <!-- Font import  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
 
     <!-- jquery  -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="css/albery.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/albery.js"></script>
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="/styles/owl.carousel.min.css">
@@ -66,7 +71,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                         <div>
 
-                            <a href="#"> <img class="main-logo" src="/images/logo.png" alt=""></a>
+                            <a href="./products.html"> <img class="main-logo" src="/images/logo.png" alt=""></a>
                         </div>
                         <div class="open-menu lg:hidden toggle-hamburger">
                             <button><i class="fa-solid fa-bars text-white "></i></button>
@@ -1177,43 +1182,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
+    <div class="custom-container">
 
 
+        <section id="main-slider" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img class="w=[300px]" src="/images/products/products_digital_6_1.webp"
+                            alt=""></li>
+                    <li class="splide__slide"><img class="w=[300px]" src="/images/products/products_digital_6_4.webp"
+                            alt=""></li>
+                    <li class="splide__slide"><img class="w=[300px]" src="/images/products/products_digital_6_5.webp"
+                            alt=""></li>
+                </ul>
+            </div>
+        </section>
 
-    <div id="main-slider" class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">Main Slide 1</li>
-                <li class="splide__slide">Main Slide 2</li>
-                <li class="splide__slide">Main Slide 3</li>
-                <!-- Add more main slides here -->
-            </ul>
-        </div>
+        <section id="thumbnail-slider" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="/images/products/products_digital_6_1.webp" alt=""></li>
+                    <li class="splide__slide"><img src="/images/products/products_digital_6_4.webp" alt=""></li>
+                    <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
+                </ul>
+            </div>
+        </section>
     </div>
-
-    <div id="thumbnail-slider" class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">Thumbnail 1</li>
-                <li class="splide__slide">Thumbnail 2</li>
-                <li class="splide__slide">Thumbnail 3</li>
-                <!-- Add more thumbnails here -->
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1344,6 +1338,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 ####          Footer section END                 ####
 ####                                            ####
 ##################################################-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <script>
 
@@ -1503,16 +1498,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
-
-
-
-
         var main = new Splide('#main-slider', {
             type: 'fade',
             heightRatio: 0.5,
             pagination: false,
             arrows: false,
             cover: true,
+            fixedWidth: 300,
+            fixedHeight: 300,
         });
 
         var thumbnails = new Splide('#thumbnail-slider', {
@@ -1540,16 +1533,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         main.mount();
         thumbnails.mount();
 
-
-
-
-
-
-
-
-
-
-
     </script>
 
 
@@ -1559,9 +1542,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/products.js"></script>
-    <script src="
+    <!-- <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
+"></script> -->
 
 </body>
 
