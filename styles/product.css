@@ -139,7 +139,10 @@
 
 
 
-
+.selected-color {
+    border-color: #333;
+    /* Change border color to desired color */
+}
 
 
 :root {

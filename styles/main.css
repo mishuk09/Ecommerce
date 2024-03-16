@@ -83,6 +83,11 @@ body {
 
 }
 
+.selected-color {
+    border-color: #333;
+    /* Change border color to desired color */
+}
+
 
 .quick-view-btn {
     background-color: var(--primary-color);
