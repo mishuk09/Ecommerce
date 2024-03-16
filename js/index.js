@@ -21,6 +21,26 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  $(".size-selection").click(function () {
+    $(".size-selection").removeClass("selected");
+    $(this).addClass("selected");
+    var selectedSize = $(this).text();
+    $(".memory-size span").text(selectedSize);
+  });
+});
+
+
+
+$(document).ready(function () {
+  $(".color-selection").click(function () {
+    $(".color-selection").removeClass("selected-color");
+    $(this).addClass("selected-color");
+    var selectedSize = $(this).text();
+    $(".color-selected span").text(selectedSize);
+  });
+});
+
 // #################################################
 // ####          Home Slider                    ####
 // ##################################################

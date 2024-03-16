@@ -48,6 +48,7 @@
 body {
     font-family: var(--primary-font);
     overflow-x: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -86,11 +87,19 @@ body {
 
 .quick-view-btn {
     background-color: var(--primary-color);
+    transition: color 0.3s, background-color 0.3s;
 }
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+
+
 
 .quick-view-btn:hover {
     background-color: var(--secondary-color);
-    transition: all 0.3s ease-in-out;
 }
 
 
@@ -577,10 +586,14 @@ input[type=number] {
 ##################################################  */
 
 
+.slider-shop-btn {
+    transition: color 0.3s, background-color 0.5s;
+    /* Apply transition to default state */
+}
+
 .slider-shop-btn:hover {
     color: white;
     background-color: var(--secondary-color);
-    transition: all 0.3s ease-in-out;
 }
 
 .new-carousel .owl-item .img-owl {
@@ -1186,11 +1199,14 @@ input[type=number] {
 ####                                            ####
 ##################################################  */
 
+.add-to-cart {
+    transition: color 0.3s, background-color 0.5s;
+}
 
 .add-to-cart:hover {
     color: white;
     background-color: var(--secondary-color);
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 
 }
 
@@ -1288,11 +1304,12 @@ input[type=number] {
 
 .subscribe-btn {
     background-color: var(--primary-color);
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .subscribe-btn:hover {
     background-color: var(--secondary-color);
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .footer-section {
@@ -1476,21 +1493,22 @@ input[type=number] {
 
 .login-btn {
     background-color: var(--primary-color);
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .login-btn:hover {
     background-color: var(--secondary-color);
-    transition: 0.3s;
 }
 
 .create-btn {
     border: 1px solid rgb(220, 219, 219);
+    transition: color 0.3s, background-color 0.3s;
+
 }
 
 .create-btn:hover {
     background-color: var(--secondary-color);
     color: white;
-    transition: all 0.3s ease-in-out;
 
 }
 
