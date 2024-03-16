@@ -19,7 +19,7 @@
 
 
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
     .custom-container {
         max-width: 640px;
         padding-left: 1rem;
@@ -32,7 +32,7 @@
         max-width: 1410px;
 
     }
-}
+} */
 
 
 :root {
@@ -40,7 +40,6 @@
     --secondary-color: #1d70ba;
     --primary-text: #225487;
     --primary-font: 'Roboto', sans-serif;
-    /* input  */
     --input-color: rgb(85, 85, 85);
     --input-font-size: 14px
 }
