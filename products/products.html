@@ -718,8 +718,8 @@
 
             <section id="main-slider" class="splide  " aria-label="Splide Basic HTML Example">
                 <div class="splide__track  ">
-                    <ul class="splide__list w-[500px] ">
-                        <li class="splide__slide pt-10"> <iframe class="rounded quickview-iframe"
+                    <ul class="splide__list w-[500px]  ">
+                        <li class="splide__slide pt-10"> <iframe class="rounded w-[400px] h-full quickview-iframe"
                                 src="https://www.youtube.com/embed/BSYsXVFzmKA?si=ZGzWDWaLFaBxho-_"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -2264,7 +2264,7 @@
         </div>
         <hr class="mt-3 text-slate-400">
 
-        <div class=" owl-carousel new-carousel owl-theme ">
+        <div class=" owl-carousel p-details-carousel owl-theme ">
 
 
             <div
@@ -3056,7 +3056,7 @@
         <hr class="mt-3 text-slate-400">
 
 
-        <div class=" owl-carousel new-carousel owl-theme ">
+        <div class=" owl-carousel p-details-carousel owl-theme ">
 
 
             <div
@@ -3961,6 +3961,31 @@
     <script>
 
 
+        $(".p-details-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+
+            navText: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                500: {
+                    items: 2,
+                },
+                600: {
+                    items: 3,
+                },
+                800: {
+                    items: 4,
+                },
+                1000: {
+                    items: 7,
+                },
+            },
+        });
 
 
 
@@ -3978,8 +4003,24 @@
             pagination: false,
             arrows: false,
             cover: true,
-            fixedWidth: 500,
+            fixedWidth: 463,
             fixedHeight: 500,
+            breakpoints: {
+                400: {
+                    fixedWidth: 270,
+                    fixedHeight: 415,
+                },
+                500: {
+                    fixedWidth: 320,
+                    fixedHeight: 320,
+                },
+
+                640: {
+                    fixedWidth: 390,
+                    fixedHeight: 500,
+                },
+
+            },
         });
 
         var thumbnails = new Splide('#thumbnail-slider', {
@@ -4002,8 +4043,8 @@
             },
             breakpoints: {
                 640: {
-                    fixedWidth: 66,
-                    fixedHeight: 38,
+                    fixedWidth: 60,
+                    fixedHeight: 60,
                 },
             },
         });
