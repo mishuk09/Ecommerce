@@ -6,6 +6,16 @@ $(document).ready(function () {
         $(".memory-size span").text(selectedSize);
     });
 });
+$(document).ready(function () {
+    $(".color-selection").click(function () {
+        $(".color-selection").removeClass("selected-color");
+        $(this).addClass("selected-color");
+        var selectedSize = $(this).text();
+        $(".color-selected span").text(selectedSize);
+    });
+});
+
+
 
 $(document).ready(function () {
     $('.tab-content:first').show(); // Show the first tab content by default
@@ -16,11 +26,10 @@ $(document).ready(function () {
         $(currentAttrValue).fadeIn();
 
         // Change/remove current tab to active
-        $('.tab-links li').removeClass('active').addClass('inactive');
-        $(this).parent('li').removeClass('inactive').addClass('active');
+        $('.tab-links li').removeClass('current-tab').addClass('inactive-tab');
+        $(this).parent('li').removeClass('inactive-tab').addClass('current-tab');
 
         e.preventDefault();
     });
 });
-
 

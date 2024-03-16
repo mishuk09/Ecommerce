@@ -9,8 +9,12 @@
 
     <link href="/styles/product.css" rel="stylesheet">
     <link href="/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+
 
 </head>
 
@@ -537,6 +541,8 @@
                         <li class="splide__slide"><img src="/images/products/products_digital_6_4.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
+                        <li class="splide__slide"><img src="/images/products/products_digital_6_1.webp" alt=""></li>
+                        <li class="splide__slide"><img src="/images/products/products_digital_6_4.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
                     </ul>
                 </div>
@@ -620,7 +626,29 @@
 
 
 
-                    <p class="text-[14px] memory-size text-gray-700 mt-8 mb-2">Size: <span class="font-bold">64GB</span>
+                    <p class="text-[14px] color-selected text-gray-700 mt-8 mb-2">Color: <span class="font-bold">Mattle
+                            Black</span>
+                    </p>
+                    <div class="flex gap-2">
+                        <p
+                            class="color-selection bg-gray-900 selected cursor-pointer border rounded   text-[14px] px-6 flex items-center text-center justify-center h-8">
+                            <span class="hidden">Mattle Black</span>
+                        </p>
+                        <p
+                            class="color-selection bg-blue-200 border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
+                            <span class="hidden">Pastel Blue</span>
+                        </p>
+
+                        <p
+                            class="color-selection bg-green-200 border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
+                            <span class="hidden">Pastel Green</span>
+                        </p>
+                        <p
+                            class="color-selection bg-yellow-300 border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
+                            <span class="hidden">Shiny Gold </span>
+                        </p>
+                    </div>
+                    <p class="text-[14px] memory-size text-gray-700 mt-6 mb-2">Size: <span class="font-bold">64GB</span>
                     </p>
                     <div class="flex gap-2">
                         <p
@@ -701,22 +729,23 @@
         <div class="tabs mt-14">
             <ul class="tab-links flex items-center text-center justify-center gap-4">
                 <li
-                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full active">
+                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full current-tab">
                     <a href="#tab1">Description</a>
                 </li>
                 <li
-                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full inactive ">
-                    <a href="#tab2"> Customer Reviews</a>
+                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full inactive-tab">
+                    <a href="#tab2">Customer Reviews</a>
                 </li>
                 <li
-                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full  inactive">
+                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full  inactive-tab">
                     <a href="#tab3">Shipping & Returns</a>
                 </li>
                 <li
-                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full inactive ">
+                    class="w-[140px] h-9  text-[14px] flex items-center text-center justify-center  rounded-full inactive-tab">
                     <a href="#tab4">Return Policies</a>
                 </li>
             </ul>
+
 
             <div class="tab-content  mt-10" id="tab1">
                 <div class="flex gap-8">
@@ -1041,20 +1070,1666 @@
                     </div>
                 </div>
                 <hr class="mt-8">
+
+
+                <div
+                    class="most-rev-btn flex mt-6 mx-2  rounded-full  bg-white items-center text-center justify-center ">
+                    <select id="cat" name="cat" class="w-[120px] bg-white text-[14px] outline-none px-1"
+                        style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                        <option value="" class="center-option">
+                            Most Recent
+                        </option>
+                        <option value="4">Higest Rating</option>
+                        <option value="12">Lowest Rating</option>
+                        <option value="13">Only Pictures</option>
+                        <option value="66">Pictures First</option>
+                        <option value="67">Video First</option>
+                        <option value="5">Most Helpfull</option>
+
+                    </select>
+                    <i class="fa-solid text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i>
+                </div>
+
+
+
+
             </div>
 
-            <div class="tab-content" id="tab3">
-                <h2>Option 3 Details</h2>
-                <p>This is the details for option 3.</p>
+            <div class="tab-content mt-10" id="tab3">
+                <p class="text-justify text-[14px] text-gray-600">For all orders exceeding a value of 100USD shipping is
+                    offered for
+                    free.
+
+                </p>
+                <p class="text-justify mt-4 text-[14px] text-gray-600">Returns will be accepted for up to 10 days of
+                    Customer’s
+                    receipt or
+                    tracking number on unworn items.
+                    You, as a Customer, are obliged to inform us via email before you return the item.
+
+                </p>
+                <p class="text-justify mt-4 text-[14px] text-gray-600">Otherwise, standard shipping charges apply. Check
+                    out our
+                    delivery
+                    <a href="#" class="font-semibold">Terms & Conditions</a> for more
+                    details.
+
+                </p>
             </div>
 
-            <div class="tab-content" id="tab4">
-                <h2>Option 4 Details</h2>
-                <p>This is the details for option 4.</p>
+            <div class="tab-content mt-10" id="tab4">
+                <div class=" w-full h-auto">
+                    <p class="mt-4 text-[14px] text-gray-600 text-justify">The garments labelled as committed are
+                        products that have
+                        been
+                        produced using
+                        sustainable fibres
+                        or processes, reducing their environmental impact. Umino’s goal is to support the
+                        implementation
+                        of practices more committed to the environment.</p>
+                    <p class="text-[14px] mt-4 text-gray-600">– Tonal stitching: 98% cotton, 2% elastane.</p>
+                    <p class="text-[14px] text-gray-600">– Supple and stretch knit with a rich touch of wool.</p>
+                    <p class="text-[14px] text-gray-600">– Model: Model is 6′1″, wearing a size M.</p>
+                    <p class="text-[14px] text-gray-600">– Caring for your clothes is caring for the environment.
+                    </p>
+                    <p class="mt-4 text-[14px] text-gray-600 text-justify">The garments labelled as committed are
+                        products that have
+                        been
+                        produced using
+                        sustainable fibres
+                        or processes, reducing their environmental impact. Umino’s goal is to support the
+                        implementation
+                        of practices more committed to the environment.</p>
+                </div>
             </div>
+
         </div>
 
     </section>
+    <hr class="mt-10">
+
+
+    <!--#################################################
+####          recent view Start                 ####
+##################################################-->
+
+
+
+
+
+    <div class="custom-container trending-product mt-10 mb-14">
+        <div class="flex justify-between  items-center ">
+            <p class="font-bold cart-headline leading-7  sm:text-[28px]">Recently View <br>
+                <span class="text-[14px] font-normal "> Don't forget! The products that you viewed. Add it to cart
+                    now.</span>
+            </p>
+            <button class="sm:me-4  me-1 w-[100px] text-sm">View All <i
+                    class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <hr class="mt-3 text-slate-400">
+
+        <div class=" owl-carousel new-carousel owl-theme ">
+
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product w-full       mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_32_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2      p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_32_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2     p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full  mb-4    flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0  mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div
+                class=" max-w-[100%] sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_8_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
+                            M1
+                            11-inc 2021 Wifi 128GB
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full  mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_8_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div
+                            class="text-overlayy  hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
+                            M1
+                            11-inc 2021 Wifi 128GB
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--#################################################
+####          peoplebought section                   ####
+##################################################-->
+
+
+
+
+
+
+    <div class="custom-container trending-product mt-10 mb-14">
+        <div class="flex justify-between  items-center ">
+            <p class="font-bold cart-headline leading-7  sm:text-[28px]">People Also Bought<br>
+                <span class="text-[14px] font-normal ">Here’s some of our most similar products people are buying. Click
+                    to discover trending style.
+
+                </span>
+            </p>
+            <button class="sm:me-4  me-1 w-[100px] text-sm">View All <i
+                    class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <hr class="mt-3 text-slate-400">
+
+
+        <div class=" owl-carousel new-carousel owl-theme ">
+
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product w-full       mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_32_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2      p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_32_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2     p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full  mb-4    flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0  mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div
+                class=" max-w-[100%] sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_8_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
+                            M1
+                            11-inc 2021 Wifi 128GB
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full  mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_11_1.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+
+                        <div
+                            class="text-overlayy hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_8_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div class="text-overlayy hidden sm:flex
+                             text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                            Ultra
+                            5G 128GB Unlocked International Version
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[360px] hover:rounded-xl rounded-xl parent-divv">
+                <a href="#">
+                    <div
+                        class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                        <img class="w-full h-full items-center text-center justify-center flex main-img"
+                            src="/images/home/products_digital_6_2.webp" alt="">
+                        <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                            src="/images/home/sw.jpeg" alt="">
+
+                        <div
+                            class="text-overlayy  hidden sm:flex text-sm  product__list  gap-2 absolute       w-full h-full      bg-opacity-75 text-white">
+                            <div
+                                class="flex items-center right-0 text-start justify-center flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                <p
+                                    class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                    <img class="img-owl" src="/images/icon/heart.png" alt="">
+                                </p>
+
+                                <p
+                                    class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/stack.png" alt="">
+                                </p>
+                                <p
+                                    class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+
+                                    <img class="img-owl product__img" src="/images/icon/view.png" alt="">
+                                </p>
+                                <p id="add-to-cart-btn-product1"
+                                    class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                    <img class="img-owl" src="/images/icon/cart.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                        <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                        <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
+                            M1
+                            11-inc 2021 Wifi 128GB
+                        </p>
+
+                        <span class="text-sm mt-1">
+
+
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+                        <div class="flex  items-center price-color mt-3">
+                            <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                            <del>
+                                <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                            </del>
+                        </div>
+                    </div>
+                    <div class="flex justify-between add-to-cart border rounded-full px-4 h-7 items-center   mt-3">
+                        <p class="    text-[14px]   me-2 cursor-auto  ">Add</p>
+
+                        <p class="delete-cart-price   cursor-auto  ">+</p>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
 
 
 
@@ -1183,8 +2858,24 @@
     <script src="/js/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/index.js"></script>
+
 
     <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
         var main = new Splide('#main-slider', {
             type: 'fade',
             heightRatio: 0.1,
