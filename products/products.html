@@ -698,7 +698,7 @@
     <div class="flex flex-col lg:flex lg:flex-row custom-container">
 
 
-        <div class="splide-container overflow-hidden  mt-1">
+        <div class="splide-container    mt-1">
 
             <section id="thumbnail-slider" class="splide h-[570px]" aria-label="Splide Basic HTML Example">
                 <div class="splide__track thumbnail-slider-container mt-14">
@@ -716,10 +716,10 @@
             </section>
 
 
-            <section id="main-slider" class="splide  " aria-label="Splide Basic HTML Example">
+            <section id="main-slider" class="splide  overflow-hidden " aria-label="Splide Basic HTML Example">
                 <div class="splide__track  ">
-                    <ul class="splide__list max-w-[500px]   ">
-                        <li class="splide__slide pt-10"> <iframe class="rounded w-[400px] h-full quickview-iframe"
+                    <ul class="splide__list max-w-[500px]     ">
+                        <li class="splide__slide pt-10"> <iframe class="rounded w-full h-full quickview-iframe"
                                 src="https://www.youtube.com/embed/BSYsXVFzmKA?si=ZGzWDWaLFaBxho-_"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -3894,8 +3894,6 @@
 
 
 
-
-
         var main = new Splide('#main-slider', {
             type: 'fade',
             heightRatio: 0.1,
@@ -3907,8 +3905,8 @@
             fixedHeight: 500,
             breakpoints: {
                 400: {
-                    fixedWidth: 200,
-                    fixedHeight: 270,
+                    fixedWidth: 250,
+                    fixedHeight: 330,
                 },
                 500: {
                     fixedWidth: 320,
@@ -3952,9 +3950,6 @@
         main.sync(thumbnails);
         main.mount();
         thumbnails.mount();
-
-
-
 
 
 
