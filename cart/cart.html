@@ -723,129 +723,148 @@
     <div class="custom-container">
 
 
-        <div class="custom-container  pt-[40px] md:pt-[50px]     flex items-center text-center justify-center">
+        <div class="custom-container  pt-[40px] md:pt-[30px]     flex items-center text-center justify-center">
             <div class="flex  relative flex-col bg-white  h-auto  w-full text-center justify-center">
-                <p class=" text-[20px] sm:text-[28px] lg:text-[45px] font-bold  ">Your Cart</p>
+                <p class=" text-[20px] sm:text-[26px] lg:text-[30px] font-bold  ">Your Cart</p>
                 <a href="#" class="text-center text-gray-500 text-[12px] cart-access lg:text-[14px]"><span
                         class="text-gray-800">Home /</span> Your Shoping Sart</a>
 
             </div>
 
         </div>
+
         <div class="custom-container mt-10 mb-20 mx-0    text-slate-800  cart-details  ">
-            <div>
 
 
-                <div id="item1" class="cart-body-child    text-[14px]  ">
-                    <div class="border-b md:border-l md:border-t md:border-r   h-[165px] md:h-[120px]  md:ps-4">
-                        <div class="w-full flex relative   h-full       bg-white">
-                            <div
-                                class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
-                                <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
-                                    src="/images/home/top/products_digital_9_1.webp" alt="">
-                            </div>
-                            <div class=" w-[100%]  relative   flex  md:pt-6">
+            <div class=" flex flex-col gap-3  ">
 
-                                <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
-
-                                    <p class="font-medium">
-                                        Apple iPhone 12 Pro Max 128GB-Unlocked
-                                    </p>
-
-                                    <div class="flex  items-center price-color   mt-2">
-                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$2000.00</p>
-
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-t border-b h-[120px]  flex items-center text-center justify-center">
-                        <div
-                            class="flex   px-1  justify-between items-center text-center rounded h-[45px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
-                            <button id="btn-phone-minus"
-                                class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
-                            <input id="phone-number-field" type="number" min="0"
-                                class="form-control outline-none  bg-slate-100 w-[40px] text-center" disabled value="1">
-                            <button id="btn-phone-plus"
-                                class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
-                        </div>
-                    </div>
-                    <div
-                        class="border-t   border-l border-b h-[120px]    flex    items-center text-center justify-center">
-                        <div class="flex  items-center price-color   mt-1">
-                            <p id="phone-total" class="text-[14px] phone-total font-semibold  me-2 cursor-auto  ">Rs
-                                1200</p>
-
-                        </div>
-                    </div>
-                    <div
-                        class="border-t cursor-pointer border-b border-l border-r h-[120px] flex     items-center text-center justify-center">
-                        <i class="fa-regular delete-icon text-gray-600 fa-trash-can"></i>
-                    </div>
-
+                <div class="w-full  h-10 px-4   cart-headline bg-slate-50">
+                    <div>PRODUCT</div>
+                    <div class="hidden sm:block">QUANTITY</div>
+                    <div class="hidden sm:block">TOTAL</div>
 
                 </div>
-                <div id="item2" class="cart-body-child   text-[14px]  ">
-                    <div class="border-b md:border-l md:border-t md:border-r   h-[165px] md:h-[120px]  md:ps-4">
-                        <div class="w-full flex relative   h-full       bg-white">
-                            <div
-                                class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
-                                <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
-                                    src="/images/home/top/products_digital_9_1.webp" alt="">
-                            </div>
-                            <div class=" w-[100%]  relative   flex  md:pt-6">
+                <div id="item1" class="cart-body-child relative  border  text-[14px]  ">
 
-                                <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
+                    <div
+                        class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
+                        <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
+                            src="/images/home/top/products_digital_9_1.webp" alt="">
+                    </div>
+                    <div class="  cart-body-child2">
+                        <div class=" w-[100%]  relative   flex  md:pt-6">
 
+                            <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
 
-                                    <p>
-                                        Apple iPhone 12 Pro Max 128GB-Unlocked
-                                    </p>
+                                <p class="font-medium">
+                                    Apple iPhone 12 Pro Max 128GB-Unlocked
+                                </p>
 
-                                    <div class="flex  items-center price-color   mt-2">
-                                        <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$1000.00</p>
-
-                                    </div>
-
-
-
-
+                                <div class="sm:flex hidden   items-center price-color   mt-2">
+                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$2000.00</p>
 
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                    <div class="border-t border-b h-[120px] hidden  md:flex items-center text-center justify-center">
-                        <div
-                            class="flex   px-1  justify-between items-center text-center rounded h-[45px] w-[110px] bg-slate-100 text-gray-600 quantity-controls">
-                            <button id="btn-case-minus"
-                                class="decreaseQuantity text-3xl flex items-center text-center justify-center">-</button>
-                            <input id="case-number-field" type="number" min="0"
-                                class="form-control bg-slate-100 w-[40px] text-center" value="1">
-                            <button id="btn-case-plus"
-                                class="increaseQuantity text-xl flex items-center text-center justify-center">+</button>
-                        </div>
-                    </div>
-                    <div
-                        class="border-t   border-l border-b h-[120px]   hidden  md:flex    items-center text-center justify-center">
-                        <div class="flex  items-center price-color   mt-1">
-                            <span id="phone-total" class="text-[14px] phone-total font-semibold  me-2 cursor-auto  ">Rs
-                                350</span>
+
 
                         </div>
+                        <div class=" h-auto sm:h-[120px]  flex sm:items-center sm:text-center sm:justify-center">
+                            <div
+                                class="flex  mt-2 sm:mt-0  px-1  justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                                <button id="btn-phone-minus"
+                                    class="decreaseQuantity text-xl sm:text-3xl flex items-center text-center justify-center">-</button>
+                                <input id="phone-number-field" type="number" min="0"
+                                    class="form-control outline-none  bg-slate-100 w-[40px] text-center" disabled
+                                    value="1">
+                                <button id="btn-phone-plus"
+                                    class="increaseQuantity text-sm sm:text-xl flex items-center text-center justify-center">+</button>
+                            </div>
+                        </div>
+                        <div
+                            class="  pb-2 sm:pb-0 h-auto sm:h-[120px]   flex    sm:items-center sm:text-center sm:justify-center">
+                            <div class="flex  items-center price-color   mt-2 sm:mt-0">
+                                <p id="phone-total"
+                                    class=" text-[12px] ps-1 sm:text-[14px] phone-total font-semibold  me-2 cursor-auto  ">
+                                    Rs
+                                    1200</p>
+
+                            </div>
+                        </div>
                     </div>
                     <div
-                        class="border-t border-b cursor-pointer border-l border-r h-[120px] hidden  md:flex     items-center text-center justify-center">
+                        class="  absolute cursor-pointer right-2 sm:right-4 md:right-10  top-[45%] sm:top-0  sm:h-[120px] flex     items-center text-center justify-center">
+                        <i class="fa-regular delete-icon text-gray-600 fa-trash-can"></i>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+
+
+
+                </div>
+                <div id="item2" class="cart-body-child relative  border   text-[14px]  ">
+
+                    <div
+                        class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
+                        <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
+                            src="/images/home/top/products_digital_9_1.webp" alt="">
+                    </div>
+
+                    <div class="  cart-body-child2">
+
+                        <div class=" w-[100%]  relative   flex  md:pt-6">
+
+                            <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
+
+
+                                <p class="font-medium">
+                                    Apple iPhone 12 Pro Max 128GB-Unlocked
+                                </p>
+
+                                <div class="sm:flex hidden  items-center price-color   mt-2">
+                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$1000.00</p>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+                        <div class=" h-auto sm:h-[120px]  flex sm:items-center sm:text-center sm:justify-center">
+                            <div
+                                class="flex  mt-2 sm:mt-0  px-1  justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600 quantity-controls">
+                                <button id="btn-case-minus"
+                                    class="decreaseQuantity text-xl sm:text-3xl flex items-center text-center justify-center">-</button>
+                                <input id="case-number-field" type="number" min="0"
+                                    class="form-control bg-slate-100 w-[40px] text-center" value="1">
+                                <button id="btn-case-plus"
+                                    class="increaseQuantity text-xl sm:text-xl flex items-center text-center justify-center">+</button>
+                            </div>
+                        </div>
+                        <div
+                            class="  pb-2 sm:pb-0 h-auto sm:h-[120px]   flex    sm:items-center sm:text-center sm:justify-center">
+                            <div class="flex  items-center price-color  mt-2 sm:mt-0">
+                                <span id="phone-total"
+                                    class=" text-[12px] ps-1 sm:text-[14px] phone-total font-semibold  me-2 cursor-auto  ">Rs
+                                    350</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="  absolute cursor-pointer right-2 sm:right-4 md:right-10  top-[45%] sm:top-0  sm:h-[120px] flex     items-center text-center justify-center">
                         <i class="fa-regular delete-icon text-gray-600 fa-trash-can"></i>
                     </div>
 
 
+
+
+
                 </div>
+
 
 
                 <div class=" mt-8 items-center     text-[14px]">
@@ -854,6 +873,7 @@
                     carefully. Fee is only <span class="font-bold">$5.00.</span> (You can choose or not)
                 </div>
             </div>
+
 
             <div class="flex  max-h-[1000px] mt-6 lg:mt-0   flex-col   rounded       w-full    ">
                 <p class="border-b-2 border-black text-[20px] font-semibold pb-4">ORDER SUMMARY</p>

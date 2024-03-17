@@ -1692,6 +1692,14 @@ input[type=number] {
     font-weight: 400;
 }
 
+.cart-headline {
+    font-size: 14px;
+    font-weight: 500;
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.8fr 0.2fr 0.2fr 0.01fr ;
+}
 
 
 .cart-details {
@@ -1718,26 +1726,41 @@ input[type=number] {
 }
 
 .cart-body-child {
-    align-items: center;
+    /* align-items: center; */
     font-weight: 400;
     display: grid;
-    grid-template-columns: 1fr 0.4fr 0.3fr 0.1fr;
+    grid-template-columns: 0.1fr 1fr;
+
+}
+
+.cart-body-child2 {
+    /* align-items: center; */
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 0.6fr 0.2fr 0.2fr 0.1fr;
 
 }
 
 @media only screen and (max-width:768px) {
-    .cart-body {
-        display: none;
+    .cart-body-child2 {
+        /* align-items: center; */
+        font-weight: 400;
+        display: grid;
+        grid-template-columns: 0.7fr 0.2fr 0.2fr;
 
     }
+}
 
-    .cart-body-child {
+@media only screen and (max-width:640px) {
+
+
+    .cart-body-child2 {
         align-items: center;
         font-weight: 400;
         display: grid;
         grid-template-columns: 1fr;
-
     }
+
 }
 
 .terms-cart {
