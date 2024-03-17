@@ -1500,6 +1500,12 @@ input[type=number] {
     transition: color 0.3s, background-color 0.3s;
 }
 
+.shoping-cart-sbtn {
+    background-color: white;
+    border: 1px solid gray;
+    transition: color 0.3s, background-color 0.3s;
+}
+
 .login-btn:hover {
     background-color: var(--secondary-color);
 }
