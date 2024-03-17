@@ -146,16 +146,14 @@
 
 
 :root {
-    --primary: #e6e6e6;
+    --primary: #f0f0f0;
     --secondary: #ff5252;
     --background: #eee;
     --highlight: #ffda79;
-    /* Theme color */
     --theme: var(--primary);
 }
 
 
-/* Core styles/functionality */
 .tab input {
     position: absolute;
     opacity: 0;
@@ -165,7 +163,7 @@
 .tab__content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.35s;
+    transition: all 0.7s;
 }
 
 .tab input:checked~.tab__content {
@@ -198,34 +196,19 @@
 
 .tab input:checked+.tab__label::after {
     transform: rotate(270deg);
+    margin-right: 8px;
 }
 
 .tab__content p {
     margin: 0;
-    /* padding: 1rem; */
 }
 
 .tab__close {
     justify-content: flex-end;
-    padding: 0.5rem 1rem;
+    padding: 5px;
     font-size: 0.75rem;
 }
 
 .accordion--radio {
     --theme: var(--secondary);
-}
-
-/* Arrow animation */
-.tab input:not(:checked)+.tab__label:hover::after {
-    animation: bounce .5s infinite;
-}
-
-@keyframes bounce {
-    25% {
-        transform: rotate(90deg) translate(.25rem);
-    }
-
-    75% {
-        transform: rotate(90deg) translate(-.25rem);
-    }
 }
