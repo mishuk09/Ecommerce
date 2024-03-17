@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(".memory-size span").text(selectedSize);
     });
 });
- 
+
 $(document).ready(function () {
     $(".color-selection").click(function () {
         $(".color-selection").removeClass("selected-color");
@@ -33,3 +33,17 @@ $(document).ready(function () {
 });
 
 
+
+
+$(document).ready(function () {
+    var mainSlider = $('#main-slider');
+
+    // Pause the video when switching slides in the main slider
+    mainSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var iframe = mainSlider.find('.slick-slide').eq(currentSlide).find('iframe');
+        if (iframe.length > 0) {
+            var player = new YT.Player(iframe[0]);
+            player.pauseVideo();
+        }
+    });
+});
