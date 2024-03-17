@@ -742,7 +742,7 @@ input[type=number] {
 
 @media only screen and (max-width:640px) {
 
-    .cart-headline {
+    .cart-headline-two {
         font-size: 20px;
     }
 }
@@ -1692,13 +1692,13 @@ input[type=number] {
     font-weight: 400;
 }
 
-.cart-headline {
+.cart-headline-two {
     font-size: 14px;
     font-weight: 500;
-    
+
     display: grid;
     align-items: center;
-    grid-template-columns: 0.8fr 0.2fr 0.2fr 0.01fr ;
+    grid-template-columns: 0.8fr 0.2fr 0.2fr 0.01fr;
 }
 
 
