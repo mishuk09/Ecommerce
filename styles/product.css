@@ -63,6 +63,17 @@
     text-align: center;
 }
 
+
+@media only screen and (min-width:1024px) {
+    #main-slider {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
 .tab-content {
     display: none;
     font-weight: 500;
