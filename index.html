@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
     <link rel="stylesheet" href="./styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -72,7 +74,7 @@
 
                 <div class="owl-carousel main-slider flex items-center justify-center">
                     <div class="item p-4 flex items-center justify-center text-center">
-                        <iframe class="rounded quickview-iframe"
+                        <iframe id="player" class="rounded quickview-iframe"
                             src="https://www.youtube.com/embed/BSYsXVFzmKA?si=ZGzWDWaLFaBxho-_"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -91,7 +93,6 @@
 
 
 
-                <!-- <img class="w-[90%]" src="/images/home/products_digital_6_1.webp" alt=""> -->
             </div>
 
 
@@ -6497,6 +6498,53 @@
             modalWrapper.classList.remove('active');
             modalContent.classList.remove('modal__content--show');
         }
+
+
+
+
+
+
+
+
+        const mainSlider = document.querySelector('.main-slider');
+        const iframe = document.querySelector('.quickview-iframe');
+        let player;
+
+        // Initialize the YouTube player when the iframe is loaded
+        iframe.onload = function () {
+            player = new YT.Player('player', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        };
+
+        // Function to pause the YouTube player
+        function pauseVideo() {
+            if (player && player.pauseVideo) {
+                player.pauseVideo();
+            }
+        }
+
+        // Function to handle YouTube player ready event
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // Function to add event listeners to carousel navigation
+        function addCarouselEventListeners() {
+            mainSlider.addEventListener('changed.owl.carousel', function (event) {
+                const currentSlideIndex = event.item.index;
+                // Pause the video when the slide changes
+                pauseVideo();
+            });
+        }
+
+        // Call the function to add event listeners to carousel navigation
+        addCarouselEventListeners();
+
+
+
 
 
 
