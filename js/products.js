@@ -47,3 +47,50 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+// $(document).ready(function () {
+//     // Show main image in image viewer on click
+//     $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
+//         var imageUrl = $(this).find('img').attr('src');
+//         $('#main-image').attr('src', imageUrl);
+//         $('.image-viewer').fadeIn();
+//     });
+
+//     // Close image viewer on close icon click
+//     $('.close-icon').on('click', function () {
+//         $('.image-viewer').fadeOut();
+//     });
+// });
+
+
+
+// $(document).ready(function () {
+//     // Show main image in image viewer on click
+//     $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
+//         var imageUrl = $(this).find('img').attr('src');
+//         $('#main-image').attr('src', imageUrl);
+//         $('.image-viewer').fadeIn();
+//     });
+
+//     // Close image viewer on close icon click
+//     $('.close-icon').on('click', function () {
+//         $('.image-viewer').fadeOut();
+//     });
+// });
+
+
+$(document).ready(function () {
+    // Show main image in image viewer on click
+    $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
+        var imageUrl = $(this).find('img').attr('src');
+        $('#main-image').attr('src', imageUrl);
+        $('.image-viewer, .overlay').fadeIn();
+    });
+
+    // Close image viewer on close icon click
+    $('.close-icon, .overlay').on('click', function () {
+        $('.image-viewer, .overlay').fadeOut();
+    });
+});
