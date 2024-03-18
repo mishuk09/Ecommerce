@@ -364,3 +364,22 @@
     margin-left: 5%;
     float: left;
 }
+
+
+
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+
+.image {
+    width: 500px;
+    /* float: left; */
+}
+
+.clear {
+    clear: both;
+}
