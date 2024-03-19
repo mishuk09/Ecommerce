@@ -189,3 +189,31 @@ $(document).ready(function () {
     $(this).prev('.quick-field').text(currentValue + 1);
   });
 });
+
+
+// Products details page video pause 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const thumbnailSlider = document.getElementById('thumbnail-slider');
+  const mainSlider = document.getElementById('main-slider');
+  const video = document.querySelector('#main-slider video');
+
+  // Pause video function
+  function pauseVideo() {
+    if (!video.paused) {
+      video.pause();
+    }
+  }
+  // Listen for "click" event on thumbnail slider
+  thumbnailSlider.addEventListener('click', pauseVideo);
+
+  // Listen for "transitionend" event on main slider
+  mainSlider.addEventListener('transitionend', pauseVideo);
+});
+
+
+// Home page  video pause 
+
+
+ 

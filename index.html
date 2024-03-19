@@ -15,9 +15,6 @@
     <!-- Font import  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-    <script src="https://www.youtube.com/iframe_api"></script>
-
     <link rel="stylesheet" href="./styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -67,18 +64,18 @@
         <div class="modal"></div>
         <div class="modal__content w-[90%] max-h-[600px]  md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]  lg:max-w-[960px]   pt-2      rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto"
             syle="height:600px">
-            <!-- <i class="modal__close far fa-times-circle"></i> -->
+
             <i class="modal__close fa-solid text-gray-600 fa-xmark"></i>
 
             <div class="modal__left overflow-hidden">
 
                 <div class="owl-carousel main-slider flex items-center justify-center">
                     <div class="item p-4 flex items-center justify-center text-center">
-                        <iframe id="player" class="rounded quickview-iframe"
-                            src="https://www.youtube.com/embed/BSYsXVFzmKA?si=ZGzWDWaLFaBxho-_"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <video id="videoPlayer" class="rounded w-full h-full mt-[100px] object-center object-cover"
+                            controls>
+                            <source src="/products/video/ss.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="item p-4">
                         <img class="w-[70%] h-auto rounded" src="/images/home/products_digital_6_1.webp" alt="">
@@ -6506,42 +6503,42 @@
 
 
 
-        const mainSlider = document.querySelector('.main-slider');
-        const iframe = document.querySelector('.quickview-iframe');
-        let player;
+        // const mainSlider = document.querySelector('.main-slider');
+        // const iframe = document.querySelector('.quickview-iframe');
+        // let player;
 
-        // Initialize the YouTube player when the iframe is loaded
-        iframe.onload = function () {
-            player = new YT.Player('player', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        };
+        // // Initialize the YouTube player when the iframe is loaded
+        // iframe.onload = function () {
+        //     player = new YT.Player('player', {
+        //         events: {
+        //             'onReady': onPlayerReady
+        //         }
+        //     });
+        // };
 
-        // Function to pause the YouTube player
-        function pauseVideo() {
-            if (player && player.pauseVideo) {
-                player.pauseVideo();
-            }
-        }
+        // // Function to pause the YouTube player
+        // function pauseVideo() {
+        //     if (player && player.pauseVideo) {
+        //         player.pauseVideo();
+        //     }
+        // }
 
-        // Function to handle YouTube player ready event
-        function onPlayerReady(event) {
-            event.target.playVideo();
-        }
+        // // Function to handle YouTube player ready event
+        // function onPlayerReady(event) {
+        //     event.target.playVideo();
+        // }
 
-        // Function to add event listeners to carousel navigation
-        function addCarouselEventListeners() {
-            mainSlider.addEventListener('changed.owl.carousel', function (event) {
-                const currentSlideIndex = event.item.index;
-                // Pause the video when the slide changes
-                pauseVideo();
-            });
-        }
+        // // Function to add event listeners to carousel navigation
+        // function addCarouselEventListeners() {
+        //     mainSlider.addEventListener('changed.owl.carousel', function (event) {
+        //         const currentSlideIndex = event.item.index;
+        //         // Pause the video when the slide changes
+        //         pauseVideo();
+        //     });
+        // }
 
-        // Call the function to add event listeners to carousel navigation
-        addCarouselEventListeners();
+        // // Call the function to add event listeners to carousel navigation
+        // addCarouselEventListeners();
 
 
 
@@ -6650,6 +6647,21 @@
 
 
 
+
+        // Home page quick view video pause 
+
+        $(document).ready(function () {
+            $('.main-slider').owlCarousel({
+
+            });
+
+            // Pause video when sliding
+            $('.main-slider').on('changed.owl.carousel', function (event) {
+                var currentItemIndex = event.item.index;
+                var videoPlayer = document.getElementById('videoPlayer');
+                videoPlayer.pause();
+            });
+        });
 
 
 
