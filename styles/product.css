@@ -10,8 +10,18 @@
 
 .thumbail-div {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 0.8fr 0.5fr;
 }
+
+
+/* .d-address .d-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
 
 .splide-container {
     display: flex;
