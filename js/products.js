@@ -54,37 +54,6 @@ $(document).ready(function () {
 
 
 
-// $(document).ready(function () {
-//     // Show main image in image viewer on click
-//     $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
-//         var imageUrl = $(this).find('img').attr('src');
-//         $('#main-image').attr('src', imageUrl);
-//         $('.image-viewer').fadeIn();
-//     });
-
-//     // Close image viewer on close icon click
-//     $('.close-icon').on('click', function () {
-//         $('.image-viewer').fadeOut();
-//     });
-// });
-
-
-
-// $(document).ready(function () {
-//     // Show main image in image viewer on click
-//     $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
-//         var imageUrl = $(this).find('img').attr('src');
-//         $('#main-image').attr('src', imageUrl);
-//         $('.image-viewer').fadeIn();
-//     });
-
-//     // Close image viewer on close icon click
-//     $('.close-icon').on('click', function () {
-//         $('.image-viewer').fadeOut();
-//     });
-// });
-
-
 $(document).ready(function () {
     // Show main image in image viewer on click
     $('#main-slider .splide__slide:not(:first-child)').on('click', function () {
@@ -133,15 +102,21 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+    // Plus button click event
+    $(".quick-plus-btn-d-2").click(function () {
+        var currentVal = parseInt($(this).prev(".quick-field-2").text());
+        $(this).prev(".quick-field-2").text(currentVal + 1);
+    });
 
-// $(document).ready(function () {
-//     $("#add-to-cart-btn").click(function () {
-//         $("#toast").removeClass("hidden"); // Show the toast
-//         setTimeout(function () {
-//             $("#toast").addClass("hidden"); // Hide the toast after 3 seconds
-//         }, 3000);
-//     });
-// });
+    // Minus button click event
+    $(".quick-minus-btn-d-2").click(function () {
+        var currentVal = parseInt($(this).next(".quick-field-2").text());
+        if (currentVal > 1) {
+            $(this).next(".quick-field-2").text(currentVal - 1);
+        }
+    });
+});
 
 
 

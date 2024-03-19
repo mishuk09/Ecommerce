@@ -69,8 +69,7 @@
                         </div>
                         <div
                             class="h-11 w-[210px] hidden md:flex navbar-cate bg-white items-center text-center justify-center ">
-                            <select id="cat" name="cat" class="w-full bg-white text-[14px] outline-none px-1"
-                                style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                            <select id="cat" name="cat" class="w-full bg-white text-[14px] outline-none px-1">
                                 <option value="" class="center-option">All Categories</option>
                                 <option value="4">Fashion</option>
                                 <option value="12">- Women</option>
@@ -92,7 +91,7 @@
                             <i class="fa-solid text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i>
                         </div>
 
-                        <div style="background-color: var(--secondary-color);"
+                        <div
                             class="h-11 search-name w-[140px] flex rounded-r-full justify-center items-center text-white text-[14px]">
                             <button class="w-full">Search</button>
                         </div>
@@ -532,11 +531,11 @@
                 <div class="owl-carousel main-slider flex items-center justify-center">
 
                     <div class="item p-4 flex items-center justify-center text-center">
-                        <!-- <iframe id="player" class="rounded quickview-iframe"
-                            src="https://www.youtube.com/embed/BSYsXVFzmKA?si=ZGzWDWaLFaBxho-_"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe> -->
+                        <video id="videoPlayer" class="rounded w-full h-full mt-[100px] object-center object-cover"
+                            controls>
+                            <source src="./video/ss.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="item p-4">
                         <img class="w-[70%] h-auto rounded" src="/images/home/products_digital_6_1.webp" alt="">
@@ -665,10 +664,10 @@
                         <div
                             class="flex px-4 justify-between items-center text-center rounded-full h-11 w-[90px] md:w-[140px] bg-slate-200 text-black">
                             <button
-                                class="text-2xl flex quick-minus-btn-d items-center text-center justify-center">-</button>
-                            <span class="quick-field">1</span>
+                                class="text-2xl flex quick-minus-btn-d-2 items-center text-center justify-center">-</button>
+                            <span class="quick-field-2">1</span>
                             <button
-                                class="text-xl quick-plus-btn-d flex items-center text-center justify-center">+</button>
+                                class="text-xl quick-plus-btn-d-2 flex items-center text-center justify-center">+</button>
                         </div>
                         <div
                             class="rounded-full cursor-pointer h-11 w-[100px] md:w-[200px] bg-black text-[14px] text-white flex items-center text-center justify-center">
@@ -919,7 +918,7 @@
                 <div class="splide__track">
                     <ul class="splide__list max-w-[465px] px-10">
                         <li class="splide__slide pt-10">
-                            <video class="rounded w-full h-full" controls>
+                            <video class="rounded w-full  " controls>
                                 <source src="./video/ss.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -952,8 +951,9 @@
             <div class="text-start top-6  px-2  lg:px-4 pt-5   grid duration-150  ">
 
                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                <p class="text-[14px] w-12 rounded-full h-6 mt-4  flex items-center text-center justify-center text-white "
-                    style="background-color: var(--secondary-color);">-7%</p>
+                <p
+                    class="text-[14px] offer-no w-12 rounded-full h-6 mt-4  flex items-center text-center justify-center text-white ">
+                    -7%</p>
                 <p
                     class="text-my-0 py-0 text-[20px] sm:text-[30px] mt-1 sm:mt-3 font-bold   sm:leading-10 leading-6  capitalize">
                     Galaxy
@@ -1147,8 +1147,7 @@
                     <div
                         class="most-rev-btn flex  mx-2  rounded-full  bg-white items-center text-center justify-center ">
                         <select id="cat" name="cat"
-                            class=" w-[100px] sm:w-[120px] bg-white text-[12px] sm:text-[14px] outline-none px-1"
-                            style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                            class=" w-[100px] sm:w-[120px] bg-white text-[12px] sm:text-[14px] outline-none px-1">
                             <option value="" class="center-option">
                                 Most Recent
                             </option>
@@ -3722,6 +3721,23 @@
             });
         });
 
+
+
+
+        // Products details page     video pause 
+
+        $(document).ready(function () {
+            $('.main-slider').owlCarousel({
+
+            });
+
+            // Pause video when sliding
+            $('.main-slider').on('changed.owl.carousel', function (event) {
+                var currentItemIndex = event.item.index;
+                var videoPlayer = document.getElementById('videoPlayer');
+                videoPlayer.pause();
+            });
+        });
 
     </script>
 

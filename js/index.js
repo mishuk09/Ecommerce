@@ -31,16 +31,7 @@ $(document).ready(function () {
 });
 
 
-
-// $(document).ready(function () {
-//   $(".color-selection").click(function () {
-//     $(".color-selection").removeClass("selected-color");
-//     $(this).addClass("selected-color");
-//     var selectedSize = $(this).text();
-//     $(".color-selected span").text(selectedSize);
-//   });
-// });
-
+ 
 
 $(document).ready(function () {
   $(".color-selection").click(function () {
