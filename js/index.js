@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
   addToCartButtons.forEach(function (button) {
     button.addEventListener('click', function (event) {
       event.preventDefault();
-      var productId = this.id.replace('add-to-cart-btn-', '');
+      var productId = this.id.replace('add-to-cart-btn-product1', '');
 
       toast.classList.add('show'); // Add class to show toast
 

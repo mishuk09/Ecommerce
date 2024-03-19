@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function () {
     $(".size-selection").click(function () {
         $(".size-selection").removeClass("selected");
@@ -135,3 +139,24 @@ $(document).ready(function () {
         }, 3000);
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
