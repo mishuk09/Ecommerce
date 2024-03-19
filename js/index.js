@@ -176,16 +176,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// $(document).ready(function () {
-//   $('.quick-minus-btn').click(function () {
-//     var currentValue = parseInt($(this).next('.quick-field').text());
-//     if (currentValue > 1) {
-//       $(this).next('.quick-field').text(currentValue - 1);
-//     }
-//   });
+$(document).ready(function () {
+  $('.quick-minus-btn').click(function () {
+    var currentValue = parseInt($(this).next('.quick-field').text());
+    if (currentValue > 1) {
+      $(this).next('.quick-field').text(currentValue - 1);
+    }
+  });
 
-//   $('.quick-plus-btn').click(function () {
-//     var currentValue = parseInt($(this).prev('.quick-field').text());
-//     $(this).prev('.quick-field').text(currentValue + 1);
-//   });
-// });
+  $('.quick-plus-btn').click(function () {
+    var currentValue = parseInt($(this).prev('.quick-field').text());
+    $(this).prev('.quick-field').text(currentValue + 1);
+  });
+});

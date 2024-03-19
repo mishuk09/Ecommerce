@@ -106,23 +106,23 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     // Increment button
-    $(".quick-plus-btn").click(function () {
-        var value = parseInt($(this).siblings('.quick-field').text());
-        $(this).siblings('.quick-field').text(value + 1);
+    $(".quick-plus-btn-d").click(function () {
+        var value = parseInt($(this).siblings('.quick-field-d').text());
+        $(this).siblings('.quick-field-d').text(value + 1);
     });
 
     // Decrement button
-    $(".quick-minus-btn").click(function () {
-        var value = parseInt($(this).siblings('.quick-field').text());
+    $(".quick-minus-btn-d").click(function () {
+        var value = parseInt($(this).siblings('.quick-field-d').text());
         if (value > 1) {
-            $(this).siblings('.quick-field').text(value - 1);
+            $(this).siblings('.quick-field-d').text(value - 1);
         }
     });
 
     // Add To Cart button
     $("#add-to-cart-btn").click(function () {
         var cartValue = parseFloat($("#cart-value").text().replace(/[^\d.]/g, '')); // Extract numerical value
-        var quickFieldValue = parseInt($(".quick-field").text());
+        var quickFieldValue = parseInt($(".quick-field-d").text());
         var newCartValue = cartValue + quickFieldValue;
         $("#cart-value").text(newCartValue);
     });
@@ -131,14 +131,17 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-    $("#add-to-cart-btn").click(function () {
-        $("#toast").removeClass("hidden"); // Show the toast
-        setTimeout(function () {
-            $("#toast").addClass("hidden"); // Hide the toast after 3 seconds
-        }, 3000);
-    });
-});
+
+
+
+// $(document).ready(function () {
+//     $("#add-to-cart-btn").click(function () {
+//         $("#toast").removeClass("hidden"); // Show the toast
+//         setTimeout(function () {
+//             $("#toast").addClass("hidden"); // Hide the toast after 3 seconds
+//         }, 3000);
+//     });
+// });
 
 
 
