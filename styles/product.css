@@ -10,8 +10,79 @@
 
 .thumbail-div {
     display: grid;
-    grid-template-columns: 1fr 0.8fr 0.5fr;
+    grid-template-columns: 0.6fr 1fr;
 }
+
+
+@media only screen and (max-width:1286px) {
+    .thumbail-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .thumbail-div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.thumbail-child {
+
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+@media only screen and (max-width:1286px) {
+    .thumbail-child {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .d-delivery-box {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width:640px) {
+    .thumbail-child {
+        display: grid;
+        grid-template-columns: 0.9fr;
+    }
+
+    .d-delivery-box {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .thumbail-child {
+        display: grid;
+        grid-template-columns: 0.6fr;
+    }
+
+    .d-delivery-box {
+        margin-top: 30px;
+    }
+
+}
+
+/* @media only screen and (max-width:640px) {
+    .thumbail-child {
+        display: grid;
+        grid-template-columns: 0.7fr;
+    }
+
+    .d-delivery-box {
+        margin-top: 30px;
+    }
+
+} */
+
+
 
 
 /* .d-address .d-name {
@@ -162,10 +233,12 @@
     grid-gap: 12px;
 }
 
+
+
 .review-btn {
     width: 240px;
     height: 45px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .review-btn2 {
@@ -180,18 +253,38 @@
     border: 1px solid rgb(134, 134, 134);
 }
 
+@media only screen and (max-width:640px) {
+    .most-rev-btn {
+        width: 130px;
+        height: 30px;
+        border: 1px solid rgb(134, 134, 134);
+    }
+
+    .most-rev-btn i {
+        position: relative;
+        left: -10px;
+        pointer-events: none;
+    }
+}
+
 .most-rev-btn i {
     position: relative;
     left: -15px;
     pointer-events: none;
 }
 
+.review-btn {
+    background-color: var(--primary-color);
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
 .review-btn:hover {
     width: 240px;
     height: 45px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     border: 1px solid var(--primary-color);
 }
 
@@ -587,7 +680,14 @@
     gap: 30px;
 }
 
+@media only screen and (max-width:640px) {
+    .review-main-wrapper {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0px;
+    }
 
+}
 
 .pagination ul {
     width: 100%;
