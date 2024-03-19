@@ -277,6 +277,27 @@ body {
     display: block;
 }
 
+/* #################################################
+####                   Go to top  details               ####
+##################################################   */
+
+#goToTopButton-d {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 999;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+#goToTopButton-d.show {
+    display: block;
+}
+
 
 
 
@@ -344,7 +365,7 @@ body {
     color: var(--input-color);
 }
 
- 
+
 
 
 

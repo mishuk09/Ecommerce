@@ -208,6 +208,30 @@ function createPagination(totalPages, page) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const goToTopButton = document.getElementById("goToTopButton-d");
+
+    // Show or hide the button based on scroll position
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            goToTopButton.classList.add("show");
+        } else {
+
+            goToTopButton.classList.remove("show");
+        }
+    });
+
+    // Smooth scroll to top
+    goToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+});
+
+
+
 
 
 
