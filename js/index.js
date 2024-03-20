@@ -200,3 +200,25 @@ document.addEventListener('DOMContentLoaded', function () {
 // Home page  video pause 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #################################################
+// ####     Shop js code   ####
+// ##################################################
+
+
+
+
+
+ 
