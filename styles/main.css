@@ -1963,7 +1963,6 @@ input[type=number] {
 
 .thumbnail-slider-container {
     height: 300px;
-    /* Set your desired height */
     overflow-y: auto;
 }
 
