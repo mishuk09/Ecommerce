@@ -46,7 +46,7 @@
                         </div>
                         <div>
 
-                            <a href="/index.html"> <img class="main-logo" src="/images/logo.png" alt=""></a>
+                            <a href="#"> <img class="main-logo" src="/images/logo.png" alt=""></a>
                         </div>
                         <div class="open-menu lg:hidden toggle-hamburger">
                             <button><i class="fa-solid fa-bars text-white "></i></button>
@@ -67,9 +67,8 @@
                                 class="outline-none h-11 input-nav w-full      bg-white   pt-2 pb-2 px-3 ">
                         </div>
                         <div
-                            class="h-11 w-[210px] hidden md:flex navbar-cate bg-white items-center text-center justify-center ">
-                            <select id="cat" name="cat" class="w-full bg-white text-[14px] outline-none px-1"
-                                style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                            class="h-11 w-[210px] hidden md:flex navbar-cate bg-white items-center text-center justify-center">
+                            <select id="cat" name="cat" class="w-full bg-white text-[14px] outline-none px-1">
                                 <option value="" class="center-option">All Categories</option>
                                 <option value="4">Fashion</option>
                                 <option value="12">- Women</option>
@@ -91,7 +90,8 @@
                             <i class="fa-solid text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i>
                         </div>
 
-                        <div style="background-color: var(--secondary-color);"
+
+                        <div
                             class="h-11 search-name w-[140px] flex rounded-r-full justify-center items-center text-white text-[14px]">
                             <button class="w-full">Search</button>
                         </div>
@@ -109,6 +109,7 @@
                         <a href="/auth/signin.html" class="flex items-center me-1 text-center justify-center">
                             <div>
                                 <img class="w-8 mx-auto" src="/images/user.png" alt="">
+                                <!-- <i class="fa-regular text-white text-xl fa-user"></i> -->
                             </div>
                             <div class="text-start hidden sm:block ms-1 text-white leading-4">
                                 <p class="text-[12px] text-gray-300">Log in</p>
@@ -156,7 +157,9 @@
                         </div>
                         <div id="dropdownContent1"
                             class="dropdown-content hover-menu-content pt-4   absolute bg-white  pb-2 shadow-md z-10">
-                            <div class="grid grid-cols-6 gap-7 text-[15px] w-[100%] relative font-normal">
+                            <!-- Added 'hidden' class here -->
+                            <div
+                                class="grid grid-cols-4 xl:grid-cols-6 gap-7 text-[15px] w-[100%] relative font-normal">
                                 <div>
                                     <a class="block px-4 py-2  women-colth text-black text-[15px]   no-underline">Women
                                         Clothing's
@@ -336,7 +339,8 @@
                         <div id="dropdownContent1"
                             class="dropdown-content hover-menu-content pt-4    absolute bg-white  pb-2 shadow-md z-10">
                             <!-- Added 'hidden' class here -->
-                            <div class="grid grid-cols-6 gap-7 text-[15px]   relative  font-normal">
+                            <div
+                                class="grid grid-cols-4 xl:grid-cols-6 gap-7 text-[15px] w-[100%] relative font-normal">
 
                                 <div>
                                     <a class="block px-4 py-2 women-colth text-black text-[15px]   no-underline">Women
@@ -709,13 +713,22 @@
 
 
 
+    <!--#################################################
+####                                            ####
+####      rightbar  Dropdown section             ####
+####                                            ####
+##################################################-->
+
+
+
+
 
 
 
     <div id="overlay"></div>
 
 
-    <div id="cart-div" class="bg-white right-bar-div   border     w-[400px]  ">
+    <div id="cart-div" class="bg-white right-bar-div    border     w-[400px]  ">
         <div class="flex flex-col justify-between  pt-6 w-full rightbar-content">
             <div class="flex mx-6 justify-between">
                 <div class="flex items-center">
@@ -724,9 +737,7 @@
 
 
                 </div>
-                <!-- <div class="items-center flex">
-                <i class="fa-solid text-gray-600 flex items-center text-[18px] fa-xmark"></i>
-            </div> -->
+
             </div>
             <div
                 class="w-full ps-6 pe-2 cursor-pointer  mt-6 rightbar-cart overflow-hidden overflow-y-auto   h-[280px] 2xl:h-auto">
@@ -862,6 +873,7 @@
                     <div class="flex   justify-between">
                         <div class="flex items-center">
                             <p class="text-[18px] font-bold">Shoping Cart</p>
+                            <!-- <p class="text-[18px] ms-2">(0)</p> -->
 
                         </div>
                         <div class="items-center flex">
@@ -876,7 +888,7 @@
                             Conditions</a>
                     </div>
                     <div>
-                        <a href="./cart/cart.html"
+                        <a href="/cart/cart.html"
                             class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
                             View Cart</a>
                         <button
@@ -1043,6 +1055,41 @@
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="/js/index.js"></script>
+
+    <script>
+
+
+        // Get references to the cart menu button, X mark, overlay, and the cart div
+        const cartMenuButton = document.getElementById('cart-menu-button');
+        const cartCloseButton = document.querySelector('.fa-xmark');
+        const cartDiv = document.getElementById('cart-div');
+        const overlay = document.getElementById('overlay');
+
+
+        function openCart() {
+            cartDiv.classList.add('cart-open');
+            overlay.style.display = 'block';
+        }
+
+        function closeCart() {
+            cartDiv.classList.remove('cart-open');
+            overlay.style.display = 'none';
+        }
+
+        cartMenuButton.addEventListener('click', () => {
+            if (cartDiv.classList.contains('cart-open')) {
+                closeCart();
+            } else {
+                openCart();
+            }
+        });
+
+        cartCloseButton.addEventListener('click', closeCart);
+
+        overlay.addEventListener('click', closeCart);
+
+
+    </script>
 </body>
 
 </html>

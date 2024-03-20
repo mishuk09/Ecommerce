@@ -57,6 +57,8 @@ $(document).ready(function () {
       $(this).find("button").fadeOut();
     });
 
+
+
   $(".main-slider").owlCarousel({
     loop: true,
     margin: 10,
@@ -87,7 +89,6 @@ $(".new-carousel").owlCarousel({
   margin: 20,
   nav: false,
   dots: false,
-
   navText: false,
   responsive: {
     0: {
@@ -106,32 +107,6 @@ $(".new-carousel").owlCarousel({
       items: 7,
     },
   },
-});
-
-// #################################################
-// ####          GO TO TOP js                   ####
-// ##################################################
-
-document.addEventListener("DOMContentLoaded", function () {
-  const goToTopButton = document.getElementById("goToTopButton");
-
-  // Show or hide the button based on scroll position
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      goToTopButton.classList.add("show");
-    } else {
-
-      goToTopButton.classList.remove("show");
-    }
-  });
-
-  // Smooth scroll to top
-  goToTopButton.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
 });
 
 
@@ -180,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // #################################################
-// ####          Quick vies items increment decrement   ####
+// ####      Quick vies items increment decrement   ####
 // ##################################################
 
 

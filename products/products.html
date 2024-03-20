@@ -19,8 +19,7 @@
 </head>
 
 <body>
-
-
+    
     <section>
         <button id="goToTopButton-d" class="h-8 w-8">
             <i class="fa-solid fa-angle-up"></i>
@@ -127,7 +126,7 @@
                             <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
                         </a>
 
-                        <a href="/cart/cart.html" id="cart-menu-button"
+                        <div id="cart-menu-button"
                             class="open-menu cursor-pointer flex gap-2 items-center text-center justify-center">
 
 
@@ -142,7 +141,7 @@
                                 <p class="text-[12px] text-gray-300">Cart</p>
                                 <p id="cart-" class="font-semibold text-[14px]">$0.00</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
 
 
@@ -527,8 +526,8 @@
 
         <div class="product"></div>
         <div class="model"></div>
-        <div class="model_con w-[90%] max-h-[600px]  md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]  lg:max-w-[960px]   pt-2      rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto"
-             >
+        <div
+            class="model_con w-[90%] max-h-[600px]  md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]  lg:max-w-[960px]   pt-2      rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto">
 
             <i class="modal__close fa-solid text-gray-600 fa-xmark"></i>
 
@@ -900,6 +899,199 @@
 
 
 
+    <!--#################################################
+####          Right sidebar      start              ####
+##################################################-->
+
+
+
+
+
+
+
+
+    <div id="overlay"></div>
+
+
+    <div id="cart-div" class="bg-white right-bar-div    border     w-[400px]  ">
+        <div class="flex flex-col justify-between  pt-6 w-full rightbar-content">
+            <div class="flex mx-6 justify-between">
+                <div class="flex items-center">
+                    <p class="text-[18px] font-bold">Shopping Cart</p>
+                    <p class="text-[18px] ms-2">(0)</p>
+
+
+                </div>
+
+            </div>
+            <div
+                class="w-full ps-6 pe-2 cursor-pointer  mt-6 rightbar-cart overflow-hidden overflow-y-auto   h-[280px] 2xl:h-auto">
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[25%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[75%] relative   flex items-center">
+                        <div class="absolute mt-2  top-0 right-4">
+                            <p>
+                                <i
+                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
+
+                            </p>
+
+                        </div>
+                        <div class="   ps-1 pe-2  grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
+                                <button
+                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
+                                <span class="quantity text-[14px]">2</span>
+                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[25%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[75%] relative   flex items-center">
+                        <div class="absolute mt-2  top-0 right-4">
+                            <p>
+                                <i
+                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
+
+                            </p>
+
+                        </div>
+                        <div class="  ps-1  pe-2  grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
+                                <button
+                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
+                                <span class="quantity">1</span>
+                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
+                    <div class="w-[25%] overflow-hidden      "><img
+                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
+                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
+                    <div class="w-[75%] relative   flex items-center">
+                        <div class="absolute mt-2  top-0 right-4">
+                            <p>
+                                <i
+                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
+                            </p>
+
+                        </div>
+                        <div class=" ps-1  pe-2   grid  duration-150   w-full">
+
+                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
+                                iPhone
+                                12 Pro Max 128GB-Unlocked
+                            </p>
+
+
+                            <div class="flex  items-center price-color   mt-1">
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+
+                            </div>
+                            <div
+                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
+                                <button
+                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
+                                <span class="quantity">3</span>
+                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div>
+
+                <div class="flex border-t border-b   text-center items-center justify-center">
+                    <div class="w-[60%] flex justify-between h-12  items-center text-center">
+                        <p><img class="w-5" src="/images/icon/notes.png" alt=""></p>
+                        <p><img class="w-5" src="/images/icon/gift.png" alt=""></p>
+                        <p><img class="w-5" src="/images/icon/box.png" alt=""></p>
+
+                    </div>
+                </div>
+                <div class="bg-slate-100   p-6">
+
+                    <div class="flex   justify-between">
+                        <div class="flex items-center">
+                            <p class="text-[18px] font-bold">Shoping Cart</p>
+                            <!-- <p class="text-[18px] ms-2">(0)</p> -->
+
+                        </div>
+                        <div class="items-center flex">
+                            <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">$210.00</p>
+                        </div>
+                    </div>
+                    <div class=" mt-6   items-center  text-[14px]">
+                        <input type="checkbox" class="text-[14px]" name="field name" value="Initial value" class=""> I
+                        agree
+                        with
+                        <a href="" class="underline"> Terms &
+                            Conditions</a>
+                    </div>
+                    <div>
+                        <a href="/cart/cart.html"
+                            class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
+                            View Cart</a>
+                        <button
+                            class="border border-slate-200 mt-3 login-btn font-semibold rounded-full w-full h-11 px-4 text-white outline-none text-[12px]"
+                            placeholder='d' type="text">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 
 
     <div class="  thumbail-div   custom-container">
@@ -935,7 +1127,7 @@
                         <!-- Other slides -->
                         <li class="splide__slide"><img src="/images/products/products_digital_6_1.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_4.webp" alt=""></li>
-                        <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
+                        <li class="splide__slide"><img src="/images/products/   products_digital_6_5.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_5.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_1.webp" alt=""></li>
                         <li class="splide__slide"><img src="/images/products/products_digital_6_4.webp" alt=""></li>
@@ -1024,25 +1216,25 @@
                         class="size-selection border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
                         256 GB</p>
                 </div>
-                <div class="flex     gap-2 mt-6">
+                <div class="   d-add-btn   gap-2 mt-6">
                     <div
-                        class="flex px-4 justify-between items-center text-center rounded-full h-11 w-[90px] md:w-[140px] bg-slate-200 text-black">
+                        class="flex px-4 justify-between items-center text-center rounded-full h-11 w-full  lg:w-[140px] bg-slate-200 text-black">
                         <button
                             class="text-2xl flex quick-minus-btn-d items-center text-center justify-center">-</button>
                         <span class="quick-field-d">1</span>
                         <button class="text-xl quick-plus-btn-d flex items-center text-center justify-center">+</button>
                     </div>
                     <div id="add-to-cart-btn"
-                        class="rounded-full cursor-pointer h-11 w-[100px] md:w-[200px] bg-black text-[14px] text-white flex items-center text-center justify-center">
+                        class="rounded-full add-to-cart-btn-dd cursor-pointer h-11 w-full  lg:w-[200px] bg-black text-[14px] text-white flex items-center text-center justify-center">
                         Add To Cart
                     </div>
 
                     <div
-                        class="flex items-center text-center justify-center rounded-full h-11 w-11 bg-black text-white">
+                        class="flex items-center text-center justify-center rounded-full h-11 w-full lg:w-11 bg-black text-white">
                         <i class="fa-regular fa-heart "></i>
                     </div>
                     <div
-                        class="flex items-center text-center justify-center rounded-full h-11 w-11 bg-black text-white">
+                        class="flex items-center text-center justify-center rounded-full h-11 w-full lg:w-11 bg-black text-white">
                         <img class="w-6" src="/images/products/compare.png" alt="">
                     </div>
                 </div>
@@ -3747,6 +3939,40 @@
                 videoPlayer.pause();
             });
         });
+
+
+
+
+        // Get references to the cart menu button, X mark, overlay, and the cart div
+        const cartMenuButton = document.getElementById('cart-menu-button');
+        const cartCloseButton = document.querySelector('.fa-xmark');
+        const cartDiv = document.getElementById('cart-div');
+        const overlay = document.getElementById('overlay');
+
+
+        function openCart() {
+            cartDiv.classList.add('cart-open');
+            overlay.style.display = 'block';
+        }
+
+        function closeCart() {
+            cartDiv.classList.remove('cart-open');
+            overlay.style.display = 'none';
+        }
+
+        cartMenuButton.addEventListener('click', () => {
+            if (cartDiv.classList.contains('cart-open')) {
+                closeCart();
+            } else {
+                openCart();
+            }
+        });
+
+        cartCloseButton.addEventListener('click', closeCart);
+
+        overlay.addEventListener('click', closeCart);
+
+
 
     </script>
 
