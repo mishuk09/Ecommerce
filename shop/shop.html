@@ -97,7 +97,7 @@
 
 
             <div
-                class="modal__right pe-4 top-0 mt-4 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-auto lg:h-[430px] ">
+                class="modal__right pe-4 top-0 mt-4 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-auto lg:h-[450px] ">
 
 
                 <div class="text-start top-0 w-full p-6 lg:p-0 lg:pe-6 mt-0 grid duration-150 rounded-b-xl md:w-full">
@@ -1144,10 +1144,20 @@
 
 
 
+    <div
+        class="custom-container border-b pb-14  pt-[40px] md:pt-[50px]     flex items-center text-center justify-center">
+        <div class="flex  relative flex-col bg-white  h-auto  w-full text-center justify-center">
+            <p class=" text-[20px] sm:text-[26px] lg:text-[30px] font-bold  ">Shop</p>
+            <a href="#" class="text-center text-gray-500 text-[12px] cart-access lg:text-[14px]"><span
+                    class="text-gray-800">Home /</span> Shop</a>
 
-    <section class="custom-container">
+        </div>
+
+    </div>
+
+    <section class="custom-container mt-6">
         <div class="shop-div">
-            <div class="w-full h-full p-2">
+            <div class="w-full hidden lg:block h-full p-2">
 
 
                 <div class="border-b pb-4 text-[14px]">
@@ -1155,7 +1165,7 @@
                         <p>Category</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn fa-minus"></i> </p>
                     </div>
-                    <div class="category-content visible">
+                    <div class="category-content text-gray-600 font-normal visible">
                         <p class="mt-4">Dresses</p>
                         <p class="mt-2">Sweaters</p>
                         <p class="mt-2">Women's Shirts</p>
@@ -1163,21 +1173,21 @@
                     </div>
                 </div>
 
-                <div class="border-b mt-10 pb-4 text-[14px]">
+                <div class="border-b mt-8 pb-4 text-[14px]">
                     <div class="font-semibold flex justify-between text-[16px]">
                         <p>Availability</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn-2 fa-minus"></i> </p>
                     </div>
-                    <div class="category-content-2 visible">
-                        <p class="mt-4"><input type="checkbox"> Dresses</p>
-                        <p class="mt-2"><input type="checkbox"> Sweaters</p>
-                        <p class="mt-2"><input type="checkbox"> Women's Shirts</p>
-                        <p class="mt-2"><input type="checkbox"> Top T-shirt</p>
+                    <div class="category-content-2 text-gray-600 visible">
+                        <p class="mt-4 flex items-center"><input class="me-2" type="checkbox"> Dresses</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Sweaters</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Women's Shirts</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Top T-shirt</p>
                     </div>
                 </div>
 
 
-                <div class="border-b pb-4 mt-10 text-[14px]">
+                <div class="border-b pb-4 mt-8 text-[14px]">
                     <div class="font-semibold flex justify-between text-[16px]">
                         <p>Price</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn-3 fa-minus"></i> </p>
@@ -1187,19 +1197,19 @@
                             <fieldset class="filter-price w-full">
 
                                 <div class="price-field w-full  mt-6 h-4">
-                                    <input class="w-full " type="range" min="100" max="6000" value="100" id="lower">
+                                    <input class="w-full " type="range" min="100" max="6000" value="1000" id="lower">
                                     <input class="w-full " type="range" min="100" max="6000" value="6000" id="upper">
                                 </div>
-                                <div class="price-wrap">
+                                <div class="price-wrap pt-3">
                                     <span class="price-title ">Price:</span>
-                                    <div class="price-wrap-1 ">
+                                    <div class="price-wrap-1">
+                                        <label class=" items-center" for="one">$</label>
                                         <input id="one">
-                                        <label for="one">$</label>
                                     </div>
                                     <div class="price-wrap_line">-</div>
                                     <div class="price-wrap-2">
-                                        <input id="two">
                                         <label for="two">$</label>
+                                        <input id="two">
                                     </div>
                                 </div>
                             </fieldset>
@@ -1209,55 +1219,90 @@
 
 
 
-                <div class="border-b mt-10 pb-4 text-[14px]">
+                <div class="border-b mt-8 pb-4 text-[14px]">
                     <div class="font-semibold flex justify-between text-[16px]">
                         <p>Brand</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn-4 fa-minus"></i> </p>
                     </div>
-                    <div class="category-content-4 visible">
-                        <p class="mt-4"><input type="checkbox"> Dresses</p>
-                        <p class="mt-2"><input type="checkbox"> Sweaters</p>
-                        <p class="mt-2"><input type="checkbox"> Women's Shirts</p>
-                        <p class="mt-2"><input type="checkbox"> Top T-shirt</p>
-                        <p class="mt-2"><input type="checkbox"> Sweaters</p>
-                        <p class="mt-2"><input type="checkbox"> Women's Shirts</p>
-                        <p class="mt-2"><input type="checkbox"> Top T-shirt</p>
+                    <div class="category-content-4 text-gray-600 visible">
+                        <p class="mt-4 flex items-center"><input class="me-2" type="checkbox"> Dresses</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Sweaters</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Women's Shirts</p>
+                        <p class="mt-2 flex items-center"><input class="me-2" type="checkbox"> Top T-shirt</p>
                     </div>
                 </div>
 
-                <div class="border-b mt-10 pb-4 text-[14px]">
+                <div class="border-b mt-8 pb-4 text-[14px]">
                     <div class="font-semibold flex justify-between text-[16px]">
                         <p>Color</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn-5 fa-minus"></i> </p>
                     </div>
-                    <div class="category-content-5 grid grid-cols-12 gap-1  visible">
-                        <p class="mt-4 w-3 h-3 rounded-full bg-green-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-red-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-blue-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-pink-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-gray-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-yellow-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-green-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-red-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-blue-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-pink-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-gray-500"></p>
-                        <p class="mt-4 w-3 h-3 rounded-full bg-yellow-500"></p>
+                    <div class="category-content-5 grid grid-cols-8 gap-1  visible">
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="color-items w-6 border-1 h-6 rounded-full bg-green-500"></p>
+                        </div>
+
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-red-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-blue-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-pink-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-gray-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-yellow-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-green-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-red-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-blue-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-pink-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-gray-500"></p>
+                        </div>
+                        <div
+                            class="w-7 h-7 mt-4 color-items-p rounded-full flex items-center text-center justify-center">
+                            <p class="  w-6 border-1 h-6 rounded-full bg-yellow-500"></p>
+                        </div>
+
 
 
                     </div>
                 </div>
-                <div class="border-b mt-10 pb-4 text-[14px]">
+                <div class="border-b mt-8 pb-4 text-[14px]">
                     <div class="font-semibold flex justify-between text-[16px]">
                         <p>Size</p>
                         <p class="toggle-icons"><i class="fa-solid plus-btn-6 fa-minus"></i> </p>
                     </div>
                     <div class="category-content-6 flex gap-3 text-[12px] visible">
-                        <p class="mt-2 w-6 h-6 flex items-center text-center justify-center border rounded"> S</p>
-                        <p class="mt-2 w-6 h-6 flex items-center text-center justify-center border rounded"> M</p>
-                        <p class="mt-2 w-6 h-6 flex items-center text-center justify-center border rounded"> L</p>
-                        <p class="mt-2 w-6 h-6 flex items-center text-center justify-center border rounded"> XL</p>
-                        <p class="mt-2 w-6 h-6 flex items-center text-center justify-center border rounded"> XXl</p>
+                        <p class="mt-2 w-8 h-6 flex items-center text-center justify-center border rounded"> S</p>
+                        <p class="mt-2 w-8 h-6 flex items-center text-center justify-center border rounded"> M</p>
+                        <p class="mt-2 w-8 h-6 flex items-center text-center justify-center border rounded"> L</p>
+                        <p class="mt-2 w-8 h-6 flex items-center text-center justify-center border rounded"> XL</p>
+                        <p class="mt-2 w-8 h-6 flex items-center text-center justify-center border rounded"> XXl</p>
                     </div>
                 </div>
                 <div class="border-b mt-10 pb-4 text-[14px]">
@@ -1667,30 +1712,21 @@
 
 
 
-
-
-
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-
             </div>
 
 
 
             <div class="p-2">
-                <div class="flex justify-between   text-[14px]">
+                <div class="flex justify-between text-gray-600 text-[14px]">
                     <div>There are 30 results in total</div>
-                    <div class="flex gap-2"><i class="fa-solid fa-grip"></i> <i class="fa-solid fa-list"></i></div>
-                    <div class="flex items-center text-center justify-center ">
+                    <div class="flex gap-2 items-center text-center justify-center"><i
+                            class="fa-solid text-[18px] fa-grip"></i> <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="flex items-center text-gray-600 text-center justify-center ">
                         Sort by:
-                        <select id="cat" name="cat"
+                        <select id="cat2" name="cat"
                             class=" w-[100px] sm:w-[120px] bg-white text-[12px] sm:text-[14px] outline-none px-1">
-                            <option value="" class="center-option font-bold">
+                            <option value="" class="center-option2 font-bold">
                                 Best Selling
                             </option>
                             <option value="4">Higest Rating</option>
@@ -1701,43 +1737,44 @@
                             <option value="5">Most Helpfull</option>
 
                         </select>
-                        <i class="fa-solid text-[12px] sm:text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i>
+                        <!-- <i class="fa-solid text-[12px] sm:text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i> -->
                     </div>
                 </div>
 
                 <div class=" shop-div-p mt-6">
 
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[320px] hover:rounded-xl rounded-xl parent-divv">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
                         <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container product w-full       mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
                                 <img class="w-full h-full   items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_32_2.webp" alt="">
+                                    src="/images/shop/fashion_products_19_1.webp" alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
                                         <p id="add-to-cart-d"
-                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -1749,7 +1786,7 @@
 
                             <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2      p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -1787,7 +1824,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -1797,664 +1834,37 @@
                         </a>
                     </div>
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[320px] hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container product w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_32_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2     p-name block capitalize">Galaxy S21
-                                    Ultra
-                                    5G 128GB Unlocked International Version
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container w-full  mb-4    flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0  mt-2    p-name block capitalize">Galaxy S21
-                                    Ultra
-                                    5G 128GB Unlocked International Version
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class=" max-w-[100%] sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_8_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
-                                    Ultra
-                                    5G 128GB Unlocked International Version
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[320px] hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
-                                    M1
-                                    11-inc 2021 Wifi 128GB
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container w-full  mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
-                                    Ultra
-                                    5G 128GB Unlocked International Version
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_8_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
-                                    Ultra
-                                    5G 128GB Unlocked International Version
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
-                                    M1
-                                    11-inc 2021 Wifi 128GB
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[320px] hover:rounded-xl rounded-xl parent-divv">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
                         <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container product w-full       mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
                                 <img class="w-full h-full   items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_32_2.webp" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
+                                    src="/images/shop/fashion_products_4_2.webp" alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
                                         <p id="add-to-cart-d"
-                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -2466,7 +1876,7 @@
 
                             <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2      p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -2504,7 +1914,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -2514,36 +1924,37 @@
                         </a>
                     </div>
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[320px] hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container product w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
                                 <img class="w-full h-full   items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_32_2.webp" alt="">
+                                    src="/images/shop/fashion_products_18_2.webp" alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -2555,7 +1966,7 @@
 
                             <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2     p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -2593,7 +2004,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -2602,38 +2013,38 @@
                             </div>
                         </a>
                     </div>
-
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container w-full  mb-4    flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_19_1.webp" alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -2643,9 +2054,9 @@
                                 </div>
                             </div>
 
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0  mt-2    p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -2683,7 +2094,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -2692,38 +2103,39 @@
                             </div>
                         </a>
                     </div>
-
                     <div
-                        class=" max-w-[100%] sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_8_2.webp" alt="">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_1_5_b16af6ff-97d4-4d32-b8cd-76a93babc9dc.webp"
+                                    alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -2733,9 +2145,9 @@
                                 </div>
                             </div>
 
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -2773,97 +2185,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
-                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
-                                    <del>
-                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
-                                    </del>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-[320px] hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
-                            <div
-                                class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
-                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
-
-                                <div
-                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
-                                    <div
-                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
-                                        <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
-                                        </p>
-
-                                        <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
-                                        </p>
-                                        <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
-
-                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
-                                                alt="">
-                                        </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
-                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
-                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
-                                    M1
-                                    11-inc 2021 Wifi 128GB
-                                </p>
-
-                                <span class="text-sm mt-1">
-
-
-                                    <div class="flex items-center">
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                            <path
-                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                        </svg>
-
-                                    </div>
-
-                                </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -2873,36 +2195,38 @@
                         </a>
                     </div>
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container w-full  mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_11_1.webp" alt="">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_22_2_c238fe43-81a4-447f-a039-c1257bce442a.webp"
+                                    alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -2912,9 +2236,9 @@
                                 </div>
                             </div>
 
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -2952,7 +2276,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -2961,38 +2285,38 @@
                             </div>
                         </a>
                     </div>
-
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container w-full   mb-4   flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_8_2.webp" alt="">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_23_1.webp" alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -3002,9 +2326,9 @@
                                 </div>
                             </div>
 
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Galaxy S21
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
                                     Ultra
                                     5G 128GB Unlocked International Version
                                 </p>
@@ -3042,7 +2366,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -3051,38 +2375,39 @@
                             </div>
                         </a>
                     </div>
-
                     <div
-                        class="max-w-[100%]  sm:max-w-[255px]  product    duration-300 h-auto hover:rounded-xl rounded-xl parent-divv">
-                        <a href="#">
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
                             <div
-                                class="image-container product__list w-full  mb-4     flex items-center text-center justify-center  object-cover rounded-t-xl relative">
-                                <img class="w-full h-full items-center text-center justify-center flex main-img"
-                                    src="/images/home/products_digital_6_2.webp" alt="">
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_3_2_4c840a1e-7e84-44f4-8384-80391c909457.webp"
+                                    alt="">
                                 <img class="w-full h-full items-center text-center justify-center flex hover-img"
-                                    src="/images/home/sw.jpeg" alt="">
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
 
                                 <div
                                     class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                                     <div
                                         class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                         <p
-                                            class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
                                         </p>
 
                                         <p
-                                            class="rounded-full  w-8 h-8  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
                                         </p>
                                         <p
-                                            class="rounded-full w-8 h-8 product__viewBtn  bg-slate-100 flex items-center text-center justify-center   ">
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
 
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product1"
-                                            class="add-to-cart-btn w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -3092,11 +2417,11 @@
                                 </div>
                             </div>
 
-                            <div class="details-container   mt-3 grid  duration-150 rounded-b-xl w-full">
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
                                 <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
-                                <p class="text-my-0 py-0   mt-2    p-name block capitalize">Apple Ipad Pro
-                                    M1
-                                    11-inc 2021 Wifi 128GB
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
+                                    Ultra
+                                    5G 128GB Unlocked International Version
                                 </p>
 
                                 <span class="text-sm mt-1">
@@ -3132,7 +2457,7 @@
                                     </div>
 
                                 </span>
-                                <div class="flex  items-center price-color mt-3">
+                                <div class="flex  items-center price-color mt-1">
                                     <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
                                     <del>
                                         <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
@@ -3141,6 +2466,279 @@
                             </div>
                         </a>
                     </div>
+                    <div
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
+                            <div
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_4_2.webp" alt="">
+                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
+
+                                <div
+                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
+                                    <div
+                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                        <p
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
+                                        </p>
+
+                                        <p
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
+                                        </p>
+                                        <p
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
+
+                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
+                                                alt="">
+                                        </p>
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
+                                    Ultra
+                                    5G 128GB Unlocked International Version
+                                </p>
+
+                                <span class="text-sm mt-1">
+
+
+                                    <div class="flex items-center">
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+
+                                    </div>
+
+                                </span>
+                                <div class="flex  items-center price-color mt-1">
+                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                                    <del>
+                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                                    </del>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
+                            <div
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_6_5_11cd4532-676e-4275-b68b-b7a7f90f3ad4.webp"
+                                    alt="">
+                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
+
+                                <div
+                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
+                                    <div
+                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                        <p
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
+                                        </p>
+
+                                        <p
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
+                                        </p>
+                                        <p
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
+
+                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
+                                                alt="">
+                                        </p>
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
+                                    Ultra
+                                    5G 128GB Unlocked International Version
+                                </p>
+
+                                <span class="text-sm mt-1">
+
+
+                                    <div class="flex items-center">
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+
+                                    </div>
+
+                                </span>
+                                <div class="flex  items-center price-color mt-1">
+                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                                    <del>
+                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                                    </del>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="max-w-[100%]  sm:max-w-[255px]    duration-300 h-[360px] sm:h-[450px]   rounded-xl parent-divv">
+                        <a href="/products/products.html" target="_blank">
+                            <div
+                                class="image-container-shop product w-full   overflow-hidden     mb-4   flex items-center text-center justify-center  object-cover rounded-md relative">
+                                <img class="w-full h-full   items-center text-center justify-center flex main-img"
+                                    src="/images/shop/fashion_products_22_2_c238fe43-81a4-447f-a039-c1257bce442a.webp"
+                                    alt="">
+                                <img class="w-full h-full items-center text-center justify-center flex hover-img"
+                                    src="/images/shop/fashion_products_11_2_3d10acad-a9e3-423a-8704-c1a394896768.webp"
+                                    alt="">
+
+                                <div
+                                    class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
+                                    <div
+                                        class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                        <p
+                                            class="rounded-full w-8 h-8   bg-white flex items-center text-center justify-center  ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/heart.png" alt="">
+                                        </p>
+
+                                        <p
+                                            class="rounded-full  w-8 h-8  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/stack.png" alt="">
+                                        </p>
+                                        <p
+                                            class="rounded-full w-8 h-8 product__viewBtn  bg-white flex items-center text-center justify-center   ">
+
+                                            <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
+                                                alt="">
+                                        </p>
+                                        <p id="add-to-cart-d"
+                                            class="add-to-cart-btn-product1 w-8 h-8 rounded-full  bg-white flex items-center text-center justify-center   ">
+                                            <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="details-container      mt-3 grid  duration-150 rounded-b-xl w-full">
+                                <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
+                                <p class="text-my-0 py-0        p-name-s block capitalize">Galaxy S21
+                                    Ultra
+                                    5G 128GB Unlocked International Version
+                                </p>
+
+                                <span class="text-sm mt-1">
+
+
+                                    <div class="flex items-center">
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-3 h-3 text-yellow-400 me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+
+                                    </div>
+
+                                </span>
+                                <div class="flex  items-center price-color mt-1">
+                                    <p class="  cart-price font-semibold  me-2 cursor-auto  ">$149</p>
+                                    <del>
+                                        <p class="delete-cart-price text-gray-700 cursor-auto  ">$199</p>
+                                    </del>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="pagination mt-6">
