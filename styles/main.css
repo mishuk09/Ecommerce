@@ -834,7 +834,7 @@ input[type=number] {
     .parent-divv .text-overlayy {
         opacity: 1;
         bottom: 0;
-        top: 325px;
+        /* top: 200px; */
         visibility: visible;
         height: 35px;
         width: 100%;
@@ -2929,6 +2929,22 @@ input[type=number] {
 
 .p-name-s {
     font-weight: 400px;
-    font-size: 14px;
+    font-size: 16px;
     color: #111111;
+}
+
+
+.details-container-s {
+    height: 110px;
+}
+
+.shop-c-h {
+    font-weight: 400;
+}
+
+.filter-btn {
+    width: 100px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: white;
 }
