@@ -2923,7 +2923,7 @@ input[type="range"]::-moz-range-thumb {
 
 
 .tooltip {
-    padding-top: 4px;
+    /* padding-top: 4px; */
     position: relative;
     display: inline-block;
 }
