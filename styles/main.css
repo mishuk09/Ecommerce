@@ -2600,7 +2600,7 @@ input[type=number] {
 
 
 .shop-div {
-
+margin-top: 3.5rem;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     grid-gap: 20px;
