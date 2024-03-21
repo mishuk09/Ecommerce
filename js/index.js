@@ -249,3 +249,15 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 });
+$(document).ready(function () {
+  $(".category-shop label").click(function () {
+    var checkbox = $(this).find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+});
+$(document).ready(function () {
+  $(".availability-shop label").click(function () {
+    var checkbox = $(this).find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+});
