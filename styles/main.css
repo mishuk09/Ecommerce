@@ -2627,7 +2627,7 @@ input[type=number] {
 }
 
 
- 
+
 
 
 
@@ -2913,4 +2913,55 @@ input[type="range"]::-moz-range-thumb {
     padding-top: 1px;
     justify-content: center;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+.tooltip {
+    padding-top: 4px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 0;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 0%;
+    margin-left: -7px;
+
+    /* Transition effect */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    /* transition: visibility 0.1s ease-in-out; */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--primary-color) transparent transparent transparent;
 }
