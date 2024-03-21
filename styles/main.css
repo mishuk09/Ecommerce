@@ -1749,13 +1749,23 @@ input[type=number] {
 
 
 .cart-details {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 1fr 0.4fr;
 }
 
+@media only screen and (max-width:640px) {
+    .cart-details {
+        margin-top: 2rem;
+        display: grid;
+        /* grid-gap: 25px; */
+        grid-template-columns: 1fr;
+    }
+}
+
 @media only screen and (max-width:1024px) {
+
 
     .cart-details {
         display: grid;
@@ -3126,5 +3136,3 @@ input[type="range"]::-moz-range-thumb {
     background-color: var(--primary-color);
     /* Set your desired background color here */
 }
-
-
