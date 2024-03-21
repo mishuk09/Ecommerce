@@ -2910,7 +2910,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .shop-size {
-    padding-top: 1px;
+    padding-top: 4px;
     justify-content: center;
     text-align: center;
 }
