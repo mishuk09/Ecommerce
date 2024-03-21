@@ -25,14 +25,20 @@
     --secondary-color: #1d70ba;
     --primary-text: #225487;
     --primary-font: 'Roboto', sans-serif;
+    --primary-font-two: 'Jost', sans-serif;
+
     --input-color: rgb(85, 85, 85);
-    --input-font-size: 14px
+    --input-font-size: 14px;
 }
 
 body {
     font-family: var(--primary-font);
     overflow-x: hidden;
     /* overflow: hidden; */
+}
+
+.body {
+    font-family: var(--primary-font-two);
 }
 
 
@@ -2602,6 +2608,7 @@ input[type=number] {
 .category-content-6,
 .category-content-7,
 .category-content-8 {
+    font-size: 16px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
@@ -2620,7 +2627,7 @@ input[type=number] {
 }
 
 
-
+ 
 
 
 
