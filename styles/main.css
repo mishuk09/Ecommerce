@@ -1148,12 +1148,30 @@ input[type=number] {
 
 
 
-
 .cart-head {
-
+    position: relative;
+    /* Ensure the overlay is positioned relative to this element */
     background-image: url('/images/home/s2.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity as needed */
+}
+
+.cart-h-text {
+    color: white;
+    position: relative;
+    /* Ensure the container is positioned relative */
+    z-index: 1;
+    /* Ensure the text stays above the overlay */
 }
 
 
@@ -3049,8 +3067,27 @@ input[type="range"]::-moz-range-thumb {
 
 
 .shop-head {
-
+    position: relative;
+    /* Ensure the overlay is positioned relative to this element */
     background-image: url('/images/home/s2.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity as needed */
+}
+
+.shop-h-text {
+    color: white;
+    position: relative;
+    /* Ensure the container is positioned relative */
+    z-index: 1;
+    /* Ensure the text stays above the overlay */
 }
