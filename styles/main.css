@@ -332,9 +332,6 @@ body {
     font-weight: 400;
 }
 
-.input-nav {
-    font-size: var(--input-font-size);
-}
 
 .search-name {
     font-weight: 500;
@@ -2637,7 +2634,7 @@ input[type=number] {
 .wrapper {
     width: 300px;
     background: #fff;
-    padding-top: 25px ;
+    padding-top: 25px;
 }
 
 .price-input {
@@ -2646,7 +2643,7 @@ input[type=number] {
     align-items: center;
     text-align: center;
     justify-content: center;
-     
+
 }
 
 .price-input .field {
@@ -2815,4 +2812,82 @@ input[type="range"]::-moz-range-thumb {
     height: 30px;
     background-color: var(--primary-color);
     color: white;
+}
+
+
+
+
+
+
+
+
+.custom-radios div {
+    display: inline-block;
+}
+
+.custom-radios input[type=radio] {
+    display: none;
+}
+
+.custom-radios input[type=radio]+label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.custom-radios input[type=radio]+label span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+}
+
+
+.custom-radios input[type=radio]+label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-radios input[type=radio]#color-1+label span {
+    background-color: #2ecc71;
+}
+
+.custom-radios input[type=radio]#color-2+label span {
+    background-color: #3498db;
+}
+
+.custom-radios input[type=radio]#color-3+label span {
+    background-color: #f1c40f;
+}
+
+.custom-radios input[type=radio]#color-4+label span {
+    background-color: #e74c3c;
+}
+
+.custom-radios input[type=radio]#color-5+label span {
+    background-color: green;
+}
+
+.custom-radios input[type=radio]#color-6+label span {
+    background-color: blue;
+}
+.custom-radios input[type=radio]#color-7+label span {
+    background-color: rgb(127, 206, 30);
+}
+.custom-radios input[type=radio]#color-8+label span {
+    background-color: rgb(98, 98, 182);
+}
+
+.custom-radios input[type=radio]:checked+label span img {
+    opacity: 1;
 }
