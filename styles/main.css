@@ -2068,7 +2068,7 @@ input[type=number] {
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.1fr;
-    grid-gap: 12px;
+    grid-gap: 25px;
 }
 
 
@@ -2608,6 +2608,16 @@ input[type=number] {
 }
 
 
+@media only screen and (max-width:640px) {
+    .shop-div {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        grid-gap: 20px;
+    }
+
+}
+
 @media only screen and (max-width:1024px) {
     .shop-div {
 
@@ -2767,8 +2777,26 @@ input[type="range"]::-moz-range-thumb {
 
 .shop-div-p {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
     grid-template-columns: repeat(5, 1fr);
+}
+
+/* @media only screen and (max-width:430px) {
+    .shop-div-p {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media only screen and (max-width:1268px) {
+    .shop-div-p {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        /* Two columns of equal width */
+    }
+
 }
 
 @media only screen and (max-width:1024px) {
@@ -2794,7 +2822,7 @@ input[type="range"]::-moz-range-thumb {
 @media only screen and (max-width:640px) {
     .shop-div-p {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         /* Two columns of equal width */
     }
@@ -3092,3 +3120,11 @@ input[type="range"]::-moz-range-thumb {
     z-index: 1;
     /* Ensure the text stays above the overlay */
 }
+
+
+.selected {
+    background-color: var(--primary-color);
+    /* Set your desired background color here */
+}
+
+

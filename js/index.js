@@ -236,5 +236,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+$(document).ready(function () {
+  $('.shop-size').click(function () {
+    $('.shop-size').removeClass('selected'); // Remove the 'selected' class from all color options
+    $(this).addClass('selected'); // Add the 'selected' class to the clicked color option
+  });
+});
 
-
+$(document).ready(function () {
+  $(".ratting-shop-c label").click(function () {
+    var checkbox = $(this).find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+});
