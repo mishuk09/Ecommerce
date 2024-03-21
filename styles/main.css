@@ -1149,7 +1149,12 @@ input[type=number] {
 
 
 
+.cart-head {
 
+    background-image: url('/images/home/s2.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -2800,7 +2805,7 @@ input[type="range"]::-moz-range-thumb {
 
 
 .p-name-s {
-    font-weight: 400px;
+    font-weight: 500px;
     font-size: 16px;
     color: #111111;
 }
@@ -2910,7 +2915,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .shop-size {
-    padding-top: 4px;
+    /* padding-top: 2px; */
     justify-content: center;
     text-align: center;
 }
@@ -2922,8 +2927,47 @@ input[type="range"]::-moz-range-thumb {
 
 
 
-.tooltip {
+.tooltip2 {
     /* padding-top: 4px; */
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 80px;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 0%;
+    margin-left: -32px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+/* Arrow */
+.tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+
+
+.tooltip {
     position: relative;
     display: inline-block;
 }
@@ -2937,17 +2981,12 @@ input[type="range"]::-moz-range-thumb {
     text-align: center;
     border-radius: 3px;
     padding: 4px 0;
-
     position: absolute;
     z-index: 1;
     bottom: 120%;
     left: 0%;
-    margin-left: -7px;
-
-    /* Transition effect */
+    margin-left: -5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-    /* transition: visibility 0.1s ease-in-out; */
 }
 
 .tooltip:hover .tooltiptext {
@@ -2964,4 +3003,13 @@ input[type="range"]::-moz-range-thumb {
     border-width: 5px;
     border-style: solid;
     border-color: var(--primary-color) transparent transparent transparent;
+}
+
+
+
+.shop-head {
+
+    background-image: url('/images/home/s2.jpg');
+    background-size: cover;
+    background-position: center;
 }
