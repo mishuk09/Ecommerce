@@ -2901,3 +2901,9 @@ input[type="range"]::-moz-range-thumb {
     color: white;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.shop-size {
+    padding-top: 1px;
+    justify-content: center;
+    text-align: center;
+}
