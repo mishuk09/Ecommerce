@@ -2175,6 +2175,15 @@ input[type=number] {
     grid-template-columns: 0.8fr 0.2fr 0.2fr 0.01fr;
 }
 
+.cart-headline-3 {
+    font-size: 14px;
+    font-weight: 500;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.8fr 0.2fr 0.2fr 0.1fr;
+}
+
 
 .cart-details {
     margin-top: 3.5rem;
