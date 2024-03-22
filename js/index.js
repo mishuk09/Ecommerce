@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   var addToCartButtons = document.querySelectorAll('.add-to-cart-shop');
   var toast = document.getElementById('toast');
@@ -160,6 +161,24 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function (event) {
       event.preventDefault();
       var productId = this.id.replace('add-to-cart-btn-product3', '');
+
+      toast.classList.add('show'); // Add class to show toast
+
+      setTimeout(function () {
+        toast.classList.remove('show'); // Remove class to hide toast
+      }, 2000);
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartButtons = document.querySelectorAll('.add-to-cart-profile');
+  var toast = document.getElementById('toast');
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var productId = this.id.replace('add-to-cart-btn-product4', '');
 
       toast.classList.add('show'); // Add class to show toast
 

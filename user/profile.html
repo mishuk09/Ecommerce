@@ -19,8 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
 
@@ -39,12 +39,19 @@
 ##################################################-->
 
 
-    <button id="goToTopButton" class="h-8 w-8">
+    <button id="goToTopButton-p" class="h-8 w-8">
         <i class="fa-solid fa-angle-up"></i>
     </button>
 
 
-
+    <div id="toast" class="toast">
+        <div class="flex">
+            <p>Items added to cart</p>
+            <p>
+                <img class="w-6" src="/images/cart.png" alt="">
+            </p>
+        </div>
+    </div>
 
     <!--#################################################
 ####                                            ####
@@ -2796,7 +2803,7 @@
                 <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
                         class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
                 </h2>
-                <p class="sm:text-[24px] text-[20px] font-medium mt-7">Order history</p>
+                <p class="sm:text-[24px] text-[20px] font-medium mt-7">Order's history</p>
                 <div class=" rounded flex items-center ps-6 mt-6 order-div">
                     <i class="fa-solid me-3 fa-check"></i>
                     <h2 class=" "><span class="underline font-semibold">Make your first
@@ -2899,8 +2906,8 @@
                                             <img class="img-owl w-4 h-4 product__img" src="/images/icon/view.png"
                                                 alt="">
                                         </p>
-                                        <p id="add-to-cart-btn-product3"
-                                            class=" add-to-cart-shop w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
+                                        <p id="add-to-cart-btn-product4"
+                                            class=" add-to-cart-profile w-8 h-8 rounded-full  bg-slate-100 flex items-center text-center justify-center   ">
                                             <img class="img-owl w-4 h-4" src="/images/icon/cart.png" alt="">
 
                                         </p>
@@ -4045,53 +4052,6 @@
 
 
 
-        // Get references to all the quantity control elements
-        const quantityControlContainers = document.querySelectorAll('.quantity-controls');
-
-        quantityControlContainers.forEach(container => {
-
-            const quantityElement = container.querySelector('.quantity');
-            const decreaseButton = container.querySelector('.decreaseQuantity');
-            const increaseButton = container.querySelector('.increaseQuantity');
-
-
-            decreaseButton.addEventListener('click', () => {
-
-                let currentQuantity = parseInt(quantityElement.textContent);
-                if (currentQuantity > 1) {
-                    currentQuantity--;
-                    quantityElement.textContent = currentQuantity;
-                }
-            });
-
-            // Add event listener to the increase button
-            increaseButton.addEventListener('click', () => {
-                let currentQuantity = parseInt(quantityElement.textContent);
-                currentQuantity++;
-                quantityElement.textContent = currentQuantity;
-            });
-        });
-
-
-
-
-        // Get reference to the timer button
-        const timerButton = document.getElementById('timer');
-        const endTime = new Date().getTime() + (3 * 60 * 60 * 1000); // 3 hours from now
-        const timerInterval = setInterval(updateTimer, 1000);
-
-        function updateTimer() {
-            const currentTime = new Date().getTime();
-            const remainingTime = endTime - currentTime;
-            const hours = String(Math.floor(remainingTime / (1000 * 60 * 60))).padStart(2, '0');
-            const minutes = String(Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-            const seconds = String(Math.floor((remainingTime % (1000 * 60)) / 1000)).padStart(2, '0');
-            timerButton.innerHTML = `Hurry up! Offer ends in: <span class="timer-hour">${hours}</span><span class="timer-minute">${minutes}</span><span class="timer-second">${seconds}</span>`;
-            if (remainingTime <= 0) {
-                clearInterval(timerInterval);
-                timerButton.textContent = 'Offer ended!';
-            }
-        }
 
 
 
@@ -4164,6 +4124,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
     <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/owl.carousel.js"></script>
     <script src="/js/index.js"></script>
 
 </body>
