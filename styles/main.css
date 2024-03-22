@@ -448,7 +448,7 @@ body {
 }
 
 .header .menu>ul>li .sub-menu.mega-menu-column-4 {
-    max-width: 1300px;
+    /* max-width: 1300px; */
     /* margin-top: 50px; */
     width: 100%;
     display: flex;
@@ -456,6 +456,25 @@ body {
     padding: 20px 15px;
 }
 
+.child-s {
+    width: 1000px;
+}
+
+.child-s1 {
+    width: 800px;
+}
+
+.child-s2 {
+    width: 600px;
+}
+
+.child-s3 {
+    width: 300px;
+}
+
+.child-s4 {
+    width: 300px;
+}
 
 /* banner section */
 .banner-section {
@@ -618,7 +637,7 @@ body {
     }
 
     .header .menu .menu-main {
-        width: 1400px;
+        /* width: 100%; */
         height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
