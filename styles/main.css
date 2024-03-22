@@ -330,7 +330,7 @@ body {
 
 
 
-.row {
+.row-nav {
     display: flex;
     flex-wrap: nowrap;
 }
@@ -348,14 +348,14 @@ body {
     /* padding: 15px; */
 }
 
-.header .item-left {
+/* .header .item-left {
     flex: 0 0 17%;
-}
+} */
 
 
-.header .item-center {
+/* .header .item-center {
     flex: 0 0 66%;
-}
+} */
 
 .header .item-right {
     flex: 0 0 17%;
@@ -531,7 +531,7 @@ body {
 
     .header .menu {
         position: fixed;
-        width: 320px;
+        width: 100%;
         background-color: #ffffff;
         left: 0;
         top: 0;
