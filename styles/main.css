@@ -3823,3 +3823,21 @@ input[type="range"]::-moz-range-thumb {
 .order-child {
     color: var(--primary-color);
 }
+
+
+
+.order-cart-d {
+    padding: 10px 20px;
+}
+
+@media only screen and (max-width:640px) {
+    .order-cart-d {
+        padding: 10px 10px;
+    }
+
+
+}
+
+.dashbord-r{
+    display: flex;
+}
