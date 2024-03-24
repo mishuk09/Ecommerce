@@ -262,24 +262,24 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".ratting-shop-c label").click(function () {
-    var checkbox = $(this).find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-  });
-});
-$(document).ready(function () {
-  $(".category-shop label").click(function () {
-    var checkbox = $(this).find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-  });
-});
-$(document).ready(function () {
-  $(".availability-shop label").click(function () {
-    var checkbox = $(this).find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-  });
-});
+// $(document).ready(function () {
+//   $(".ratting-shop-c label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+// });
+// $(document).ready(function () {
+//   $(".category-shop label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+// });
+// $(document).ready(function () {
+//   $(".availability-shop label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+// });
 
 
 
@@ -415,12 +415,12 @@ $(document).ready(function () {
 $(document).ready(function () {
   // Add click event listener to all elements with class 'add-to-cart'
   $('.add-to-cart').click(function (e) {
-    e.preventDefault();  
+    e.preventDefault();
     $(this).closest('.parent-divv').remove();
   });
 });
 
- 
+
 
 $(document).ready(function () {
   function updateCount() {
@@ -442,24 +442,24 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-  $(".profile-box label").click(function () {
-    var checkbox = $(this).find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-  });
-});
- 
+// $(document).ready(function () {
+//   $(".profile-box label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+// });
 
 
-$(document).ready(function () {
-  $(".profile-box-2 label").click(function () {
-    var checkbox = $(this).find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-  });
 
-  $(".profile-box-2 label input[type='checkbox'], .profile-box-2 label p").click(function (e) {
-    var checkbox = $(this).closest("label").find("input[type='checkbox']");
-    checkbox.prop("checked", !checkbox.prop("checked"));
-    e.stopPropagation(); // prevent event bubbling
-  });
-});
+// $(document).ready(function () {
+//   $(".profile-box-2 label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+
+//   $(".profile-box-2 label input[type='checkbox'], .profile-box-2 label p").click(function (e) {
+//     var checkbox = $(this).closest("label").find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//     e.stopPropagation(); // prevent event bubbling
+//   });
+// });
