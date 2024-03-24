@@ -402,3 +402,44 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+
+// Wishlist   
+
+
+
+
+$(document).ready(function () {
+  // Add click event listener to all elements with class 'add-to-cart'
+  $('.add-to-cart').click(function (e) {
+    e.preventDefault(); // Prevent default behavior of anchor tag
+    // Remove the parent container of the clicked element
+    $(this).closest('.parent-divv').remove();
+  });
+});
+
+
+
+
+$(document).ready(function () {
+  // Initial count of child div elements within the parent div with class 'wishlist-dic-sount'
+  var initialCount = $('.wishlist-dic-sount').children('div').length;
+  $('.wishlist-span').text(initialCount); // Set initial count
+
+  // Function to update the count
+  function updateCount() {
+    var childCount = $('.wishlist-dic-sount').children('div').length;
+    $('.wishlist-span').text(childCount);
+  }
+
+  // Update count when page loads
+
+  // Update count when a child div is removed
+  $('.wishlist-dic-sount').on('click', 'div', function () {
+    $(this).remove(); // Remove the clicked child div
+    updateCount(); // Update the count
+  });
+});

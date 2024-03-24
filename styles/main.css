@@ -2828,6 +2828,21 @@ input[type=number] {
     justify-content: center;
 }
 
+.wishlist-span {
+    background: var(--secondary-color);
+    width: 22px;
+    font-size: 12px;
+    border-radius: 100%;
+    right: -10px;
+    top: -10px;
+    position: absolute;
+    height: 23px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .main-img-container {
     border-radius: 8px;
@@ -3895,4 +3910,14 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 7px;
     background-color: var(--secondary-color);
     color: white;
+}
+
+
+
+
+
+
+
+.wishlist-div {
+    margin-top: 3.5rem;
 }
