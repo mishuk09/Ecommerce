@@ -2651,11 +2651,11 @@ input[type=number] {
 }
 
 
-.tab input {
+/* .tab input {
     position: absolute;
     opacity: 0;
     z-index: -1;
-}
+} */
 
 .tab__content {
     max-height: 0;
@@ -3850,4 +3850,10 @@ input[type="range"]::-moz-range-thumb {
     text-align: center;
     justify-content: center;
     border: 1px dotted gray;
+}
+
+.personal-inout input {
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
 }
