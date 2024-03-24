@@ -228,15 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
       video.pause();
     }
   }
-  // Listen for "click" event on thumbnail slider
   thumbnailSlider.addEventListener('click', pauseVideo);
 
-  // Listen for "transitionend" event on main slider
   mainSlider.addEventListener('transitionend', pauseVideo);
 });
 
 
-// Home page  video pause
 
 
 
@@ -418,44 +415,12 @@ $(document).ready(function () {
 $(document).ready(function () {
   // Add click event listener to all elements with class 'add-to-cart'
   $('.add-to-cart').click(function (e) {
-    e.preventDefault(); // Prevent default behavior of anchor tag
-    // Remove the parent container of the clicked element
+    e.preventDefault();  
     $(this).closest('.parent-divv').remove();
   });
 });
 
-
-
-
-// $(document).ready(function () {
-//   // Initial count of child div elements within the parent div with class 'wishlist-dic-sount'
-//   var initialCount = $('.wishlist-dic-sount').children('div').length;
-//   $('.wishlist-span').text(initialCount); // Set initial count
-
-//   // Function to update the count
-//   function updateCount() {
-//     var childCount = $('.wishlist-dic-sount').children('div').length;
-//     $('.wishlist-span').text(childCount);
-//   }
-
-//   // Update count when page loads
-
-//   // Update count when a child div is removed
-//   $('.wishlist-dic-sount').on('click', 'div', function () {
-//     $(this).remove(); // Remove the clicked child div
-//     updateCount(); // Update the count
-//   });
-// });
-
-
-// $(document).ready(function () {
-//   // Get the count of child div elements within the parent div with class 'wishlist-dic-sount'
-//   var childCount = $('.wishlist-dic-sount').children('div').length;
-
-//   // Update the text of the span with class 'wishlist-span' to show the count
-//   $('.wishlist-span').text(childCount);
-// });
-
+ 
 
 $(document).ready(function () {
   function updateCount() {
@@ -483,12 +448,7 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 });
-// $(document).ready(function () {
-//   $(".profile-box-2 label").click(function () {
-//     var checkbox = $(this).find("input[type='checkbox']");
-//     checkbox.prop("checked", !checkbox.prop("checked"));
-//   });
-// });
+ 
 
 
 $(document).ready(function () {
