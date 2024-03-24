@@ -3678,7 +3678,7 @@ input[type="range"]::-moz-range-thumb {
 
 @media only screen and (max-width:768px) {
     .profile-head {
-        padding-top: 3.5rem;
+        /* padding-top: 3.5rem; */
         padding-left: 30px;
         padding-right: 30px;
         display: grid;
@@ -3727,8 +3727,8 @@ input[type="range"]::-moz-range-thumb {
 
 .tab-content-2 {
     margin-top: 3.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 
     /* background: #f1f5f9;
     border-radius: 100px 0 0 0;
@@ -3736,6 +3736,14 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     border: 1px solid #e5e7eb; */
 
+}
+
+@media only screen and (max-width:768px) {
+    .tab-content-2 {
+        margin-top: 3.5rem;
+        padding-left: 25px;
+        padding-right: 0px;
+    }
 }
 
 @media only screen and (max-width:768px) {

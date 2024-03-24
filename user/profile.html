@@ -1631,7 +1631,7 @@
     </div>
 
     <div class="tabs custom-container    profile-head">
-        <div class="dashbord-parent px-3  bg-white">
+        <div class="dashbord-parent md:px-1 lg:px-3  bg-white">
             <div class="tab-links h-[200px] grid rounded   ">
                 <a class="active " href="#tab1">
                     <div class="flex   items-center text-center  ">
@@ -1666,7 +1666,7 @@
             </div>
         </div>
 
-        <div class="tab-content-2  bg-white mb-[100px] border-l      ">
+        <div class="tab-content-2  bg-white mb-[100px] md:border-l      ">
             <div id="tab1" class="tab active  ">
                 <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
                         class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
@@ -1682,12 +1682,12 @@
                 <p class="text-[18px] font-medium mt-7">Personal Information <span
                         class="ms-2 info-idit cursor-pointer">Edit</span>
                 </p>
-                <div class="h-[70px]">
-                    <div class="flex gap-6 personal-inout text-[14px] mt-6">
+                <div class="h-[130px] sm:h-[70px]">
+                    <div class=" sm:flex gap-6 personal-inout text-[14px] mt-6">
                         <input class="border outline-none px-2" placeholder="Hasan Mahmud" type="text" name=""
                             id="firstName" disabled>
-                        <input class="border outline-none px-2" placeholder="Khan" type="text" name="" id="lastName"
-                            disabled>
+                        <input class="border outline-none mt-4 sm:mt-0 px-2" placeholder="Khan" type="text" name=""
+                            id="lastName" disabled>
                         <!-- <button id="cancelBtn" class="invisible">Cancel</button> -->
 
                     </div>
@@ -1719,19 +1719,9 @@
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-                <div class="h-[150px]">
-                    <div class="flex gap-6  ">
-                        <div class=" w-full">
+                <div class="h-[230px] sm:h-[150px]">
+                    <div class=" sm:flex gap-6 personal-inout text-[14px] mt-6">
+                        <div class=" w-full h-[120px] sm:h-0">
                             <p class="text-[18px] font-medium mt-10">Email Address <span
                                     class="ms-2 info-idit2 cursor-pointer">Edit</span></p>
 
@@ -1741,9 +1731,9 @@
                                 <button id="saveBtnEmail" class="invisible mt-2">Save</button>
                             </div>
                         </div>
-                        <div class=" w-full">
+                        <div class=" w-full h-[120px] sm:h-0">
 
-                            <p class=" text-[18px] font-medium mt-10">Mobile Number <span
+                            <p class=" text-[18px] font-medium  mt-6 sm:mt-10">Mobile Number <span
                                     class="ms-2 cursor-pointer  info-idit3">Edit</span></p>
 
                             <div class="flex flex-col   personal-inout mt-6 text-[14px]">
@@ -1757,12 +1747,12 @@
 
 
 
-                <p class="text-[18px] font-medium mt-10">Reset Password <span
+                <p class="text-[18px] font-medium mt-16 sm:mt-10">Reset Password <span
                         class="ms-2 cursor-pointer   info-idit4">Edit</span></p>
                 <div class="h-[100px]">
 
 
-                    <div class="flex  gap-4 text-[14px] personal-inout leading-2 mt-6">
+                    <div class=" sm:flex  gap-4 text-[14px] personal-inout leading-2 mt-6">
                         <div class="w-full">
                             <label for="newPassword">New Password</label> <br>
                             <input class="border outline-none px-2 mt-1" placeholder="" type="password"
@@ -1787,9 +1777,7 @@
 
             </div>
             <div id="tab2" class="tab  ">
-                <!-- <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
-                        class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
-                </h2> -->
+
                 <p class="sm:text-[24px] text-[20px] font-medium mt-0">Order's history</p>
 
 
@@ -2024,37 +2012,16 @@
 
 
 
-
-                <!-- <p class="sm:text-[24px] text-[20px] font-medium mt-12"> Account details</p>
-                <table class="custom-table   mt-4 text-gray-600">
-                    <tr>
-                        <td class="col1">Name</td>
-                        <td class="col2">Hasan</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Email</td>
-                        <td class="col2">hasaninfo09@gmail.com</td>
-                    </tr>
-                </table>
-
-                <div class="acount-btn-div mb-6 cursor-pointer mt-8 rounded-full">
-                    VIEW ADDRESSES (1)
-                </div> -->
-
-
-
             </div>
 
             <div id="tab3" class="tab pb-6">
                 <p class="sm:text-[24px] text-[20px] font-medium  "> Your Address (1)</p>
 
-                <div class='address-div mt-6 flex gap-3'>
-                    <!-- <div class="w-full h-[full] text-gray-400 text-3xl  cursor-pointer rounded-md  add-new-a">
-                        <i class="fa-solid  fa-plus"></i>
-                        <p>Add Address</p>
-                    </div> -->
+                <div class='address-div mt-6 md:flex  md:gap-3'>
+
                     <div class="w-full h-[full] border rounded-md">
-                        <div class="w-[100%] md:w-[100%]   relative h-[250px] border   rounded">
+                        <div
+                            class="w-[100%] md:w-[100%]   relative h-[250px] md:h-[300px] lg:h-[250px] border   rounded">
                             <div class="w-full h-12 bg-slate-100 flex items-center px-6">
                                 Default addresses
                             </div>
@@ -2069,21 +2036,22 @@
                                     class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
                                     EDIT
                                 </div>
-                                <div
+                                <!-- <div
                                     class="w-full flex editbtn2 items-center text-center justify-center bg-slate-100 border  rounded-full h-10">
                                     REMOVE
-                                </div>
+                                </div> -->
                             </div>
 
                         </div>
                     </div>
-                    <div class="w-full h-[full] border rounded-md">
-                        <div class="w-[100%] md:w-[100%]   relative h-[250px] border   rounded">
-                            <!-- <div class="w-full h-12 bg-slate-100 flex items-center text-center justify-center">
-                                Default addresses
-                            </div> -->
+                    <div class="w-full mt-4 md:mt-0 h-[full] border rounded-md">
+                        <div
+                            class="w-[100%] md:w-[100%] h-[250px]   md:h-[300px]  relative lg:h-[250px] border   rounded">
+                            <div class="w-full h-12 bg-slate-100 flex items-center px-6">
+                                Shiping addresses
+                            </div>
                             <div class=" px-6 pt-4 pb-4">
-                                <p class="pt-1 font-semibold">Riyad Khan</p>
+                                <p class="pt-1 font-semibold">Hasan Mahmud</p>
                                 <p class="pt-1">Atlas,Vomra,UNITED KINGDOM.</p>
                                 <p class="pt-1">hasaninfo09@gmail.com</p>
                                 <p class="pt-1">Phone:+766 657637643</p>
@@ -2093,14 +2061,15 @@
                                     class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
                                     EDIT
                                 </div>
-                                <div
+                                <!-- <div
                                     class="w-full flex editbtn2 items-center text-center justify-center bg-slate-100 border  rounded-full h-10">
                                     REMOVE
-                                </div>
+                                </div> -->
                             </div>
 
                         </div>
                     </div>
+
                 </div>
 
 
