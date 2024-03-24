@@ -2790,7 +2790,7 @@
     </div>
 
     <div class="tabs custom-container    profile-head">
-        <div class="dashbord-parent p-3  bg-slate-100">
+        <div class="dashbord-parent px-3  bg-white">
             <div class="tab-links h-[200px] grid rounded   ">
                 <a class="active " href="#tab1">
                     <div class="flex   items-center text-center  ">
@@ -2825,22 +2825,37 @@
             </div>
         </div>
 
-        <div class="tab-content-2 bg-white mb-[100px] rounded-md">
+        <div class="tab-content-2 bg-white mb-[100px] border-l  ">
             <div id="tab1" class="tab active">
                 <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
                         class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
                 </h2>
-                <p class="  text-[18px] font-medium mt-7">Personal Information <span class="ms-2  info-idit">Edit</span>
+
+
+
+
+
+
+
+
+
+                <p class="text-[18px] font-medium mt-7">Personal Information <span
+                        class="ms-2 info-idit cursor-pointer">Edit</span>
                 </p>
 
-                <div class="flex gap-4 personal-inout mt-6">
-                    <input class="border outline-none px-2" placeholder="Hasan Mahmud" type="text" name="" id="">
-                    <input class="border outline-none px-2" placeholder="Khan" type="text" name="" id="">
-
+                <div class="flex gap-4 personal-inout text-[14px] mt-6">
+                    <input class="border outline-none px-2" placeholder="Hasan Mahmud" type="text" name=""
+                        id="firstName" disabled>
+                    <input class="border outline-none px-2" placeholder="Khan" type="text" name="" id="lastName"
+                        disabled>
+                    <button id="saveBtn" class="invisible  ">Save</button>
+                    <!-- <button id="cancelBtn" class="invisible">Cancel</button> -->
                 </div>
+
+
                 <p class="mt-6">Your Gender</p>
 
-                <div class="flex gap-4 mt-4 text-gray-600 items-center">
+                <div class="flex gap-4 mt-4 text-[14px] text-gray-600 items-center">
                     <p>
                         <input type="checkbox" class="me-1"> Male
                     </p>
@@ -2852,19 +2867,41 @@
 
 
 
-                <p class="  text-[18px] font-medium mt-10">Email Address <span class="ms-2  info-idit">Edit</span></p>
+                <p class="text-[18px] font-medium mt-10">Email Address <span
+                        class="ms-2 info-idit2 cursor-pointer">Edit</span></p>
 
-                <div class="flex gap-4 personal-inout mt-6">
+                <div class="flex gap-4 personal-inout mt-6 text-[14px]">
                     <input class="border outline-none px-2" placeholder="hasaninfo09@gmail.com" type="text" name=""
-                        id="">
-
+                        id="email" disabled>
+                    <button id="saveBtnEmail" class="invisible ">Save</button>
+                    <!-- <button id="cancelBtnEmail" class="invisible">Cancel</button> -->
                 </div>
 
-                <p class="  text-[18px] font-medium mt-10">Mobile Number <span class="ms-2  info-idit">Edit</span></p>
+                <p class="text-[18px] font-medium mt-10">Mobile Number <span
+                        class="ms-2 cursor-pointer  info-idit3">Edit</span></p>
 
-                <div class="flex gap-4 personal-inout mt-6">
-                    <input class="border outline-none px-2" placeholder="+91 834375639" type="text" name="" id="">
+                <div class="flex gap-4 personal-inout mt-6 text-[14px]">
+                    <input class="border outline-none px-2" placeholder="+91 834375639" type="text" name="" id="mobile"
+                        disabled>
+                    <button id="saveBtnMobile" class="invisible">Save</button>
+                    <!-- <button id="cancelBtnMobile" class="invisible">Cancel</button> -->
+                </div>
+                <p class="text-[18px] font-medium mt-10">Reset Password <span
+                        class="ms-2 cursor-pointer   info-idit4">Edit</span></p>
 
+                <div class="flex flex-col gap-4 text-[14px] personal-inout leading-2 mt-6">
+                    <div>
+                        <label for="newPassword">New Password</label> <br>
+                        <input class="border outline-none px-2 mt-1" placeholder="" type="password" name="newPassword"
+                            id="newPassword" disabled>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm New Password</label><br>
+                        <input class="border outline-none px-2 mt-1" placeholder="" type="password"
+                            name="confirmPassword" id="confirmPassword" disabled>
+                        <button id="saveBtnPass" class="invisible">Save</button>
+                        <!-- <button id="cancelBtnPass" class="invisible">Cancel</button> -->
+                    </div>
                 </div>
 
 

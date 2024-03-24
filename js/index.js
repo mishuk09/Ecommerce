@@ -305,3 +305,100 @@ $(document).ready(function () {
     e.preventDefault();
   });
 });
+
+
+
+$(document).ready(function () {
+  $('.info-idit').click(function () {
+    var editBtn = $(this);
+    var firstNameInput = $('#firstName');
+    var lastNameInput = $('#lastName');
+    var saveBtn = $('#saveBtn');
+    var cancelBtn = $('#cancelBtn');
+
+    if (editBtn.text() === 'Edit') {
+      editBtn.text('Cancel');
+      firstNameInput.prop('disabled', false);
+      lastNameInput.prop('disabled', false);
+      saveBtn.removeClass('invisible');
+      cancelBtn.removeClass('invisible');
+    } else {
+      editBtn.text('Edit');
+      firstNameInput.prop('disabled', true);
+      lastNameInput.prop('disabled', true);
+      saveBtn.addClass('invisible');
+      cancelBtn.addClass('invisible');
+    }
+  });
+});
+
+
+$(document).ready(function () {
+  $('.info-idit2').click(function () {
+    var editBtn = $(this);
+    var emailInput = $('#email');
+    var saveBtn = $('#saveBtnEmail');
+    var cancelBtn = $('#cancelBtnEmail');
+
+    if (editBtn.text() === 'Edit') {
+      editBtn.text('Cancel');
+      emailInput.prop('disabled', false);
+      saveBtn.removeClass('invisible');
+      cancelBtn.removeClass('invisible');
+    } else {
+      editBtn.text('Edit');
+      emailInput.prop('disabled', true);
+      saveBtn.addClass('invisible');
+      cancelBtn.addClass('invisible');
+    }
+  });
+});
+
+
+
+$(document).ready(function () {
+  $('.info-idit3').click(function () {
+    var editBtn = $(this);
+    var mobileInput = $('#mobile');
+    var saveBtn = $('#saveBtnMobile');
+    var cancelBtn = $('#cancelBtnMobile');
+
+    if (editBtn.text() === 'Edit') {
+      editBtn.text('Cancel');
+      mobileInput.prop('disabled', false);
+      saveBtn.removeClass('invisible');
+      cancelBtn.removeClass('invisible');
+    } else {
+      editBtn.text('Edit');
+      mobileInput.prop('disabled', true);
+      saveBtn.addClass('invisible');
+      cancelBtn.addClass('invisible');
+    }
+  });
+});
+
+
+
+$(document).ready(function () {
+  $('.info-idit4').click(function () {
+    var editBtn = $(this);
+    var newPasswordInput = $('#newPassword');
+    var confirmPasswordInput = $('#confirmPassword');
+    var saveBtn = $('#saveBtnPass');
+    var cancelBtn = $('#cancelBtnPass');
+
+    if (editBtn.text() === 'Edit') {
+      editBtn.text('Cancel');
+      newPasswordInput.prop('disabled', false);
+      confirmPasswordInput.prop('disabled', false);
+      saveBtn.removeClass('invisible');
+      cancelBtn.removeClass('invisible');
+    } else {
+      editBtn.text('Edit');
+      newPasswordInput.prop('disabled', true);
+      confirmPasswordInput.prop('disabled', true);
+      saveBtn.addClass('invisible');
+      cancelBtn.addClass('invisible');
+    }
+  });
+});
