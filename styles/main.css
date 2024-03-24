@@ -3637,7 +3637,7 @@ input[type="range"]::-moz-range-thumb {
     padding-right: 30px;
     display: grid;
     grid-template-columns: 0.3fr 1.2fr;
-    grid-gap: 50px;
+    grid-gap: 20px;
 }
 
 @media only screen and (max-width:768px) {
@@ -3675,8 +3675,9 @@ input[type="range"]::-moz-range-thumb {
 
 
 .tab-links a.active {
-    background-color: #f1f5f9;
+    background-color: #fff;
     font-weight: 500;
+    border-radius: 7px;
 }
 
 .tab-content-2 .tab {
@@ -3688,7 +3689,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .tab-content-2 {
-    padding-left: 50px;
+    padding: 20px;
 }
 
 @media only screen and (max-width:768px) {
@@ -3774,7 +3775,7 @@ input[type="range"]::-moz-range-thumb {
 
 .editbtn {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     font-size: 12px;
     transition: color 0.3s, backgroundcolor 0.3s;
 }
@@ -3838,6 +3839,15 @@ input[type="range"]::-moz-range-thumb {
 
 }
 
-.dashbord-r{
+.dashbord-r {
     display: flex;
+}
+
+.add-new-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px dotted gray;
 }

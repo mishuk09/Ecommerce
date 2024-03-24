@@ -2789,46 +2789,43 @@
         <div class="overlay1"></div>
     </div>
 
-    <div class="tabs custom-container   profile-head">
-        <div class="tab-links h-[200px] grid rounded border ">
-            <a class="active border-b  dashbord-r   rounded-t" href="#tab1">
-                <div class="flex   items-center text-center  ">
-                    <div><img class="w-4 h-4 me-2" src="/images/profile/dashboard.png" alt=""></div>
-                    <div>Dashbord</div>
-                </div>
-            </a>
-            <a class="border-b" href="#tab2">
-                <div class="flex   items-center text-center  ">
-                    <div><img class="w-4 h-4 me-2" src="/images/profile/pin.png" alt=""></div>
-                    <div>Your Address</div>
-                </div>
-            </a>
-            <a class="border-b" href="#tab3">
-                <div class="flex   items-center text-center  ">
-                    <div><img class="w-4 h-4 me-2" src="/images/profile/heart (2).png" alt=""></div>
-                    <div>Your Wishlist</div>
-                </div>
-            </a>
-            <a href="#tab4" class=" rounded-b">
-                <div class="flex   items-center text-center  ">
-                    <div><img class="w-4 h-4 me-2" src="/images/profile/logout.png" alt=""></div>
-                    <div>Log Out</div>
-                </div>
-            </a>
+    <div class="tabs custom-container  bg-slate-100  profile-head">
+        <div class="dashbord-parent">
+            <div class="tab-links h-[200px] grid rounded   ">
+                <a class="active " href="#tab1">
+                    <div class="flex   items-center text-center  ">
+                        <div><img class="w-4 h-4 me-2" src="/images/profile/dashboard.png" alt=""></div>
+                        <div>Dashbord</div>
+                    </div>
+                </a>
+                <a class=" " href="#tab2">
+                    <div class="flex   items-center text-center  ">
+                        <div><img class="w-4 h-4 me-2" src="/images/profile/pin.png" alt=""></div>
+                        <div>Your Address</div>
+                    </div>
+                </a>
+                <a class=" " href="#tab3">
+                    <div class="flex   items-center text-center  ">
+                        <div><img class="w-4 h-4 me-2" src="/images/profile/heart (2).png" alt=""></div>
+                        <div>Your Wishlist</div>
+                    </div>
+                </a>
+                <a href="#tab4" class=" ">
+                    <div class="flex   items-center text-center  ">
+                        <div><img class="w-4 h-4 me-2" src="/images/profile/logout.png" alt=""></div>
+                        <div>Log Out</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <div class="tab-content-2   mb-[100px] md:border-l">
+        <div class="tab-content-2  bg-white  mb-[100px]  rounded-md">
             <div id="tab1" class="tab active">
                 <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
                         class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
                 </h2>
                 <p class="sm:text-[24px] text-[20px] font-medium mt-7">Order's history</p>
-                <!-- <div class=" rounded flex hidden items-center ps-6 mt-6 order-div">
-                    <i class="fa-solid me-3 fa-check"></i>
-                    <h2 class=" "><span class="underline font-semibold">Make your first
-                            order!</span> You Haven't placed any orders yet!
-                    </h2>
-                </div> -->
+
 
 
 
@@ -3079,7 +3076,64 @@
             <div id="tab2" class="tab pb-6">
                 <p class="sm:text-[24px] text-[20px] font-medium  "> Your Address (1)</p>
 
-                <div class="acount-btn-div mb-6 cursor-pointer mt-6 rounded-full">
+                <div class='address-div mt-6 grid grid-cols-3 gap-3'>
+                    <div class="w-full h-[full] text-gray-400 text-3xl  cursor-pointer rounded-md  add-new-a">
+                        <i class="fa-solid  fa-plus"></i>
+                        <p>Add Address</p>
+                    </div>
+                    <div class="w-full h-[full] border rounded-md">
+                        <div class="w-[100%] md:w-[100%]   relative h-[250px] border   rounded">
+                            <div class="w-full h-12 bg-slate-100 flex items-center px-6">
+                                Default addresses
+                            </div>
+                            <div class=" px-6 pt-4 pb-4">
+                                <p class="pt-1 font-semibold">Hasan Mahmud</p>
+                                <p class="pt-1">Atlas,Vomra,UNITED KINGDOM.</p>
+                                <p class="pt-1">hasaninfo09@gmail.com</p>
+                                <p class="pt-1">Phone:+766 657637643</p>
+                            </div>
+                            <div class="flex editbtn w-full  gap-3 px-6">
+                                <div
+                                    class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
+                                    EDIT
+                                </div>
+                                <div
+                                    class="w-full flex editbtn2 items-center text-center justify-center bg-slate-100 border  rounded-full h-10">
+                                    REMOVE
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="w-full h-[full] border rounded-md">
+                        <div class="w-[100%] md:w-[100%]   relative h-[250px] border   rounded">
+                            <!-- <div class="w-full h-12 bg-slate-100 flex items-center text-center justify-center">
+                                Default addresses
+                            </div> -->
+                            <div class=" px-6 pt-4 pb-4">
+                                <p class="pt-1 font-semibold">Riyad Khan</p>
+                                <p class="pt-1">Atlas,Vomra,UNITED KINGDOM.</p>
+                                <p class="pt-1">hasaninfo09@gmail.com</p>
+                                <p class="pt-1">Phone:+766 657637643</p>
+                            </div>
+                            <div class="flex editbtn w-full  gap-3 px-6">
+                                <div
+                                    class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
+                                    EDIT
+                                </div>
+                                <div
+                                    class="w-full flex editbtn2 items-center text-center justify-center bg-slate-100 border  rounded-full h-10">
+                                    REMOVE
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="acount-btn-div mb-6 cursor-pointer mt-6 rounded-full">
                     ADD A NEW ADDRESSES
                 </div>
                 <p class="text-[24px] font-medium  mt-10"> Default addresses</p>
@@ -3104,7 +3158,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             </div>
 
             <div id="tab3" class="tab h-auto">
