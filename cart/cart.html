@@ -57,7 +57,7 @@
                         class="logo  w-[100%] lg:w-[50%] xl:w-[60%]    mt-3 lg:mt-0   flex items-center text-center justify-center  ">
 
                         <div
-                            class="h-11 bg-white xl:px-4 lg:px-2  px-3 flex rounded-l-full font-thin  items-center text-center justify-center text-gray-400 text-[18px]">
+                            class="h-11 bg-white xl:px-5 lg:px-4  px-4 flex rounded-l-full font-thin  items-center text-center justify-center text-gray-400 text-[14px]">
                             <i class="fa-solid fa-magnifying-glass font-thin"></i>
 
                         </div>
@@ -69,7 +69,8 @@
                         <div
                             class="h-11 w-[210px] hidden md:flex navbar-cate bg-white items-center text-center justify-center">
                             <select id="cat" name="cat" class="w-full bg-white text-[14px] outline-none px-1">
-                                <option value="" class="center-option">All Categories</option>
+                                <option value="" class="center-option">All Categories&blacktriangledown;
+                                </option>
                                 <option value="4">Fashion</option>
                                 <option value="12">- Women</option>
                                 <option value="13">- Men</option>
@@ -87,7 +88,7 @@
                                 <option value="34">- Boats</option>
                                 <option value="57">- Auto Tools & Supplies</option>
                             </select>
-                            <i class="fa-solid text-[15px] text-gray-400 pt-[4px] fa-angle-down"></i>
+
                         </div>
 
 
@@ -102,9 +103,6 @@
                     <div
                         class="logo w-[20%] lg:gap-4 xl:gap-7   gap-7 hidden lg:flex items-center text-end justify-end lg:justify-end lg:w-[25%]">
 
-                        <div class="hidden sm:hidden lg:hidden" onclick="toggleSearch()">
-                            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
-                        </div>
 
                         <a href="/auth/signin.html" class="flex items-center me-1 text-center justify-center">
                             <div>
@@ -117,7 +115,7 @@
                             </div>
                         </a>
 
-                        <a href="/cart/cart.html" class="flex items-center text-center justify-center">
+                        <a href="/wishlist/wishlist.html" class="flex items-center text-center justify-center">
                             <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
                         </a>
 
@@ -916,7 +914,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="menu-item-has-children">
+                                    <!-- <li class="menu-item-has-children">
                                         <a href="#">Soft Toys <i class="fas fa-angle-down"></i></a>
                                         <div class="sub-menu single-column-menu">
                                             <div
@@ -955,7 +953,7 @@
 
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
 
 
@@ -1148,8 +1146,10 @@
                 <li><a class="  text-[14px]" href="">Sale</a></li>
                 <li><a class="  text-[14px]" href="">Buy Umino</a></li>
                 <li><a class="  text-[14px]" href=""><i class="fa-regular fa-clock me-2"></i> Recently Viewsd</a></li>
-                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-heart me-2"></i>Wishlist</a></li>
-                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-user me-2"></i>Login / Register</a></li>
+                <li><a href="/wishlist/wishlist.html" class="  text-[14px]" href=""><i
+                            class="fa-regular fa-heart me-2"></i>Wishlist</a></li>
+                <li><a href="/auth/signin.html" class="  text-[14px]" href=""><i
+                            class="fa-regular fa-user me-2"></i>Login / Register</a></li>
 
 
                 <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded bg-gray-100">
