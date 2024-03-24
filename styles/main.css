@@ -3972,3 +3972,67 @@ input[type="range"]::-moz-range-thumb {
 .wishlist-div {
     margin-top: 3.5rem;
 }
+
+
+
+.privecy-t {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.head-tearms {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.privacy-head-div .ul li {
+    /* color: green; */
+    margin: 10px;
+    text-decoration: solid;
+}
+
+.fags-div a {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.fags-div a:hover {
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+
+.about-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    font-size: 15px;
+}
+
+.about-us-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1024px) {
+    .about-us-p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .about-team {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        font-size: 15px;
+    }
+}
