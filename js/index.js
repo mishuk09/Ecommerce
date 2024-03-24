@@ -153,9 +153,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 document.addEventListener('DOMContentLoaded', function () {
   var addToCartButtons = document.querySelectorAll('.add-to-cart-shop');
-  var toast = document.getElementById('toast');
+  var toast = document.getElementById('toast-two');
 
   addToCartButtons.forEach(function (button) {
     button.addEventListener('click', function (event) {
@@ -170,6 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var addToCartButtons = document.querySelectorAll('.add-to-cart-profile');
@@ -424,27 +427,49 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-  // Initial count of child div elements within the parent div with class 'wishlist-dic-sount'
-  var initialCount = $('.wishlist-dic-sount').children('div').length;
-  $('.wishlist-span').text(initialCount); // Set initial count
+// $(document).ready(function () {
+//   // Initial count of child div elements within the parent div with class 'wishlist-dic-sount'
+//   var initialCount = $('.wishlist-dic-sount').children('div').length;
+//   $('.wishlist-span').text(initialCount); // Set initial count
 
-  // Function to update the count
+//   // Function to update the count
+//   function updateCount() {
+//     var childCount = $('.wishlist-dic-sount').children('div').length;
+//     $('.wishlist-span').text(childCount);
+//   }
+
+//   // Update count when page loads
+
+//   // Update count when a child div is removed
+//   $('.wishlist-dic-sount').on('click', 'div', function () {
+//     $(this).remove(); // Remove the clicked child div
+//     updateCount(); // Update the count
+//   });
+// });
+
+
+// $(document).ready(function () {
+//   // Get the count of child div elements within the parent div with class 'wishlist-dic-sount'
+//   var childCount = $('.wishlist-dic-sount').children('div').length;
+
+//   // Update the text of the span with class 'wishlist-span' to show the count
+//   $('.wishlist-span').text(childCount);
+// });
+
+
+$(document).ready(function () {
   function updateCount() {
-    var childCount = $('.wishlist-dic-sount').children('div').length;
+    var childCount = $('.parent-divv').children('a').length;
     $('.wishlist-span').text(childCount);
   }
-
-  // Update count when page loads
-
-  // Update count when a child div is removed
-  $('.wishlist-dic-sount').on('click', 'div', function () {
-    $(this).remove(); // Remove the clicked child div
-    updateCount(); // Update the count
+  // Initial count update
+  updateCount();
+  $('.add-to-cart').click(function (event) {
+    event.preventDefault();
+    $(this).parents('.parent-divv').remove();
+    updateCount();
   });
 });
-
-
 
 
 
@@ -458,9 +483,23 @@ $(document).ready(function () {
     checkbox.prop("checked", !checkbox.prop("checked"));
   });
 });
+// $(document).ready(function () {
+//   $(".profile-box-2 label").click(function () {
+//     var checkbox = $(this).find("input[type='checkbox']");
+//     checkbox.prop("checked", !checkbox.prop("checked"));
+//   });
+// });
+
+
 $(document).ready(function () {
   $(".profile-box-2 label").click(function () {
     var checkbox = $(this).find("input[type='checkbox']");
     checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+
+  $(".profile-box-2 label input[type='checkbox'], .profile-box-2 label p").click(function (e) {
+    var checkbox = $(this).closest("label").find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+    e.stopPropagation(); // prevent event bubbling
   });
 });
