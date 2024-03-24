@@ -443,3 +443,24 @@ $(document).ready(function () {
     updateCount(); // Update the count
   });
 });
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $(".profile-box label").click(function () {
+    var checkbox = $(this).find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+});
+$(document).ready(function () {
+  $(".profile-box-2 label").click(function () {
+    var checkbox = $(this).find("input[type='checkbox']");
+    checkbox.prop("checked", !checkbox.prop("checked"));
+  });
+});

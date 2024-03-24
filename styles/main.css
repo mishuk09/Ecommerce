@@ -3682,7 +3682,7 @@ input[type="range"]::-moz-range-thumb {
     display: inline-block;
     width: 100%;
     /* height: 30px; */
-    padding: 12px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     color: #333;
     transition: 0.3s;
@@ -3869,7 +3869,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .personal-inout input {
-    width: 300px;
+    width: 100%;
     height: 40px;
     border-radius: 7px;
 }
@@ -3893,7 +3893,7 @@ input[type="range"]::-moz-range-thumb {
 #saveBtnMobile,
 #saveBtnPass,
 #saveBtn {
-    width: 100px;
+    width: 100%;
     height: 40px;
     border-radius: 7px;
     background-color: var(--primary-color);
@@ -3902,6 +3902,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 #saveBtnEmail,
+#saveBtn,
 #saveBtnMobile,
 #saveBtnPass,
 #saveBtn:hover {

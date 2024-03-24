@@ -2826,7 +2826,7 @@
         </div>
 
         <div class="tab-content-2 bg-white mb-[100px] border-l  ">
-            <div id="tab1" class="tab active">
+            <div id="tab1" class="tab active  ">
                 <h2 class="text-gray-600">Welcome <span class="font-semibold">Hasan!</span> (Not ? <span
                         class="font-semibold me-2">Hasan</span><span class="underline">Logout!</span>)
                 </h2>
@@ -2838,69 +2838,103 @@
 
 
 
-
                 <p class="text-[18px] font-medium mt-7">Personal Information <span
                         class="ms-2 info-idit cursor-pointer">Edit</span>
                 </p>
+                <div class="h-[70px]">
+                    <div class="flex gap-6 personal-inout text-[14px] mt-6">
+                        <input class="border outline-none px-2" placeholder="Hasan Mahmud" type="text" name=""
+                            id="firstName" disabled>
+                        <input class="border outline-none px-2" placeholder="Khan" type="text" name="" id="lastName"
+                            disabled>
+                        <!-- <button id="cancelBtn" class="invisible">Cancel</button> -->
 
-                <div class="flex gap-4 personal-inout text-[14px] mt-6">
-                    <input class="border outline-none px-2" placeholder="Hasan Mahmud" type="text" name=""
-                        id="firstName" disabled>
-                    <input class="border outline-none px-2" placeholder="Khan" type="text" name="" id="lastName"
-                        disabled>
-                    <button id="saveBtn" class="invisible  ">Save</button>
-                    <!-- <button id="cancelBtn" class="invisible">Cancel</button> -->
+                    </div>
+                    <button id="saveBtn" class="invisible  mt-2">Save</button>
                 </div>
-
 
                 <p class="mt-6">Your Gender</p>
 
-                <div class="flex gap-4 mt-4 text-[14px] text-gray-600 items-center">
-                    <p>
-                        <input type="checkbox" class="me-1"> Male
-                    </p>
-                    <p>
-                        <input type="checkbox" class="me-1"> Female
 
-                    </p>
+
+                <div class="flex gap-4 mt-4">
+                    <div class="  profile-box  flex  text-[14px] text-gray-600 items-center">
+                        <label for="">
+                            <p class="flex items-center">
+                                <input type="checkbox" class="me-1"> Male
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="profile-box-2">
+                        <label for="">
+                            <p class="flex items-center">
+                                <input type="checkbox" class="me-1"> Female
+                            </p>
+                        </label>
+                    </div>
+
                 </div>
 
 
 
-                <p class="text-[18px] font-medium mt-10">Email Address <span
-                        class="ms-2 info-idit2 cursor-pointer">Edit</span></p>
 
-                <div class="flex gap-4 personal-inout mt-6 text-[14px]">
-                    <input class="border outline-none px-2" placeholder="hasaninfo09@gmail.com" type="text" name=""
-                        id="email" disabled>
-                    <button id="saveBtnEmail" class="invisible ">Save</button>
-                    <!-- <button id="cancelBtnEmail" class="invisible">Cancel</button> -->
+
+
+
+
+
+
+
+
+                <div class="h-[150px]">
+                    <div class="flex gap-6  ">
+                        <div class=" w-full">
+                            <p class="text-[18px] font-medium mt-10">Email Address <span
+                                    class="ms-2 info-idit2 cursor-pointer">Edit</span></p>
+
+                            <div class="flex flex-col  personal-inout mt-6 text-[14px]">
+                                <input class="border outline-none px-2" placeholder="hasaninfo09@gmail.com" type="text"
+                                    name="" id="email" disabled>
+                                <button id="saveBtnEmail" class="invisible mt-2">Save</button>
+                            </div>
+                        </div>
+                        <div class=" w-full">
+
+                            <p class=" text-[18px] font-medium mt-10">Mobile Number <span
+                                    class="ms-2 cursor-pointer  info-idit3">Edit</span></p>
+
+                            <div class="flex flex-col   personal-inout mt-6 text-[14px]">
+                                <input class="border outline-none px-2" placeholder="+91 834375639" type="text" name=""
+                                    id="mobile" disabled>
+                                <button id="saveBtnMobile" class="invisible mt-2">Save</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <p class="text-[18px] font-medium mt-10">Mobile Number <span
-                        class="ms-2 cursor-pointer  info-idit3">Edit</span></p>
 
-                <div class="flex gap-4 personal-inout mt-6 text-[14px]">
-                    <input class="border outline-none px-2" placeholder="+91 834375639" type="text" name="" id="mobile"
-                        disabled>
-                    <button id="saveBtnMobile" class="invisible">Save</button>
-                    <!-- <button id="cancelBtnMobile" class="invisible">Cancel</button> -->
-                </div>
+
                 <p class="text-[18px] font-medium mt-10">Reset Password <span
                         class="ms-2 cursor-pointer   info-idit4">Edit</span></p>
+                <div class="h-[100px]">
 
-                <div class="flex flex-col gap-4 text-[14px] personal-inout leading-2 mt-6">
-                    <div>
-                        <label for="newPassword">New Password</label> <br>
-                        <input class="border outline-none px-2 mt-1" placeholder="" type="password" name="newPassword"
-                            id="newPassword" disabled>
+
+                    <div class="flex  gap-4 text-[14px] personal-inout leading-2 mt-6">
+                        <div class="w-full">
+                            <label for="newPassword">New Password</label> <br>
+                            <input class="border outline-none px-2 mt-1" placeholder="" type="password"
+                                name="newPassword" id="newPassword" disabled>
+                        </div>
+                        <div class="w-full">
+                            <label for="confirmPassword">Confirm New Password</label><br>
+                            <input class="border outline-none px-2 mt-1" placeholder="" type="password"
+                                name="confirmPassword" id="confirmPassword" disabled>
+                        </div>
                     </div>
-                    <div>
-                        <label for="confirmPassword">Confirm New Password</label><br>
-                        <input class="border outline-none px-2 mt-1" placeholder="" type="password"
-                            name="confirmPassword" id="confirmPassword" disabled>
+                    <div class="mt-2">
+
                         <button id="saveBtnPass" class="invisible">Save</button>
-                        <!-- <button id="cancelBtnPass" class="invisible">Cancel</button> -->
                     </div>
                 </div>
 
@@ -3177,7 +3211,8 @@
                                 <div class="">
                                     <div class="flex lg:flex-col    ">
                                         <p class="text-[12px] order-t text-gray-600">Order Placed</p>
-                                        <p class="text-[12px] ms-2 order-child lg:ms-0  text font-semibold"> Nov 2, 2022
+                                        <p class="text-[12px] ms-2 order-child lg:ms-0  text font-semibold"> Nov 2,
+                                            2022
                                         </p>
                                     </div>
                                     <div class=" flex lg:hidden  ">
@@ -3197,7 +3232,8 @@
                                 </div>
                                 <div class="hidden lg:block">
                                     <p class="text-[12px] order-t text-gray-600 ">Ship to</p>
-                                    <p class="text-[12px]  order-child ms-2 lg:ms-0  font-semibold">Irakli Lolashvili
+                                    <p class="text-[12px]  order-child ms-2 lg:ms-0  font-semibold">Irakli
+                                        Lolashvili
                                     </p>
                                 </div>
                             </div>
@@ -3233,7 +3269,8 @@
                                         </a>
 
                                         <div class="lg:flex hidden   items-center price-color   lg:mt-0">
-                                            <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Color: Brown</p>
+                                            <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Color: Brown
+                                            </p>
 
                                         </div>
 
@@ -3274,7 +3311,8 @@
                                 <div class="">
                                     <div class="flex lg:flex-col    ">
                                         <p class="text-[12px] order-t text-gray-600">Order Placed</p>
-                                        <p class="text-[12px] ms-2 order-child lg:ms-0  text font-semibold"> Nov 2, 2022
+                                        <p class="text-[12px] ms-2 order-child lg:ms-0  text font-semibold"> Nov 2,
+                                            2022
                                         </p>
                                     </div>
                                     <div class=" flex lg:hidden  ">
@@ -3294,7 +3332,8 @@
                                 </div>
                                 <div class="hidden lg:block">
                                     <p class="text-[12px] order-t text-gray-600 ">Ship to</p>
-                                    <p class="text-[12px]  order-child ms-2 lg:ms-0  font-semibold">Irakli Lolashvili
+                                    <p class="text-[12px]  order-child ms-2 lg:ms-0  font-semibold">Irakli
+                                        Lolashvili
                                     </p>
                                 </div>
                             </div>
@@ -3330,7 +3369,8 @@
                                         </a>
 
                                         <div class="lg:flex hidden   items-center price-color   lg:mt-0">
-                                            <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Color: Brown</p>
+                                            <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Color: Brown
+                                            </p>
 
                                         </div>
 
@@ -3494,7 +3534,8 @@
 
                 <div class="flex justify-between  items-center mt-6">
                     <p class="font-semibold   leading-7 text-[20px] sm:text-[24px]">Recently View <br>
-                        <span class="text-[14px] font-normal "> Don't forget! The products that you viewed. Add it to
+                        <span class="text-[14px] font-normal "> Don't forget! The products that you viewed. Add it
+                            to
                             cart
                             now.</span>
                     </p>
@@ -4495,21 +4536,27 @@
                         <p class="text-justify pe-6 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. </p>
                         <div class="flex gap-2 mt-3">
-                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-facebook-f"></i></p>
-                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-youtube"></i></p>
-                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-twitter"></i></p>
-                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-square-instagram"></i></p>
-                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10"><i
-                                    class="fa-brands fa-square-whatsapp"></i></p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10">
+                                <i class="fa-brands fa-youtube"></i>
+                            </p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10">
+                                <i class="fa-brands fa-twitter"></i>
+                            </p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </p>
+                            <p class="rounded-full border-3 flex items-center text-center justify-center w-10 h-10">
+                                <i class="fa-brands fa-square-whatsapp"></i>
+                            </p>
                         </div>
                     </div>
 
                     <div class='w-full footer-service h-full leading-6 flex flex-col overflow-hidden'>
-                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Customer Service
+                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Customer
+                            Service
                         </p>
                         <a href="#" class="text-[14px]   cursor-pointer pb-1">Help
                             & FAQs</a>
@@ -4521,7 +4568,8 @@
                     </div>
 
                     <div class='w-full footer-service h-full leading-6 flex flex-col overflow-hidden'>
-                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Shop By Outletshop
+                        <p class="text-black cursor-pointer pt-4 md:pt-12 pb-3 text-[15px] font-bold">Shop By
+                            Outletshop
                         </p>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Help & FAQs</a>
                         <a href="#" class="text-[14px] cursor-pointer pb-1">Order Tracking</a>
@@ -4538,7 +4586,8 @@
                                 Sign
                                 Up to Newsletter</p>
                             <div class="grid text-sm">
-                                <p class="text-[14px] cursor-pointer pb-6 text-justify">Get all the latest information
+                                <p class="text-[14px] cursor-pointer pb-6 text-justify">Get all the latest
+                                    information
                                     on events, sales and offers. Sign up for the newsletter:</p>
 
                                 <div class=" lg:flex gap-1">
