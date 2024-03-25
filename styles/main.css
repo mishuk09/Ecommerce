@@ -4458,7 +4458,7 @@ button.contact_form_submit:hover {
 
 .contact-div-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
 
@@ -4563,4 +4563,12 @@ button.contact_form_submit:hover {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+}
+
+
+.get-it-touch input {
+    border-radius: 50px;
+}
+.get-it-touch textarea {
+    border-radius: 50px;
 }
