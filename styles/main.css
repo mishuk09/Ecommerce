@@ -1807,7 +1807,7 @@ input[type=number] {
 }
 
 .footer-section {
-    font-family: var(--primary-font);
+    font-family: var(--primary-font-two);
 }
 
 .number {
@@ -4061,7 +4061,7 @@ input[type="range"]::-moz-range-thumb {
 .page_404 {
     padding: 40px 0;
     background: #fff;
-    font-family: "Arvo", serif;
+    /* font-family: "Arvo", serif; */
 }
 
 .page_404 img {
@@ -4458,7 +4458,7 @@ button.contact_form_submit:hover {
 
 .contact-div-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr  ;
     grid-gap: 30px;
 }
 
