@@ -4505,3 +4505,62 @@ button.contact_form_submit:hover {
     height: 350px;
     background-color: #303e39;
 }
+
+
+.hint-div {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media only screen and (max-width:768px) {
+    .hint-div {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+
+
+.factory-btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+.why-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+}
+
+
+.unique-think {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media only screen and (max-width:640px) {
+
+    .why-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+    .unique-think {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
