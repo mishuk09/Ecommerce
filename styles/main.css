@@ -4268,6 +4268,17 @@ button.contact_form_submit:hover {
     grid-gap: 50px;
 }
 
+@media only screen and (max-width:768px) {
+
+
+    .faqs-head {
+        margin-top: 3.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+}
+
 .fags-child button {
     background-color: var(--primary-color);
     width: 100%;
@@ -4275,9 +4286,20 @@ button.contact_form_submit:hover {
     color: white;
     font-size: 14px;
     transition: color 0.3s, background-color 0.3s;
-    /* Corrected property name */
 
+}
 
+@media only screen and (max-width:768px) {
+
+    .fags-child button {
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 40px;
+        color: white;
+        font-size: 12px;
+        transition: color 0.3s, background-color 0.3s;
+
+    }
 }
 
 .fags-child button:hover {
@@ -4343,6 +4365,17 @@ button.contact_form_submit:hover {
     padding: 1em 1.5em 1em 0;
     color: #111111;
     font-weight: 500;
+
+}
+
+@media only screen and (max-width:768px) {
+    .accordion button .accordion-title {
+        padding: 1em 1.5em 1em 0;
+        color: #111111;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
 }
 
 .accordion button .icon {
