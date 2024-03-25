@@ -463,3 +463,32 @@ $(document).ready(function () {
 //     e.stopPropagation(); // prevent event bubbling
 //   });
 // });
+
+
+
+
+
+
+
+
+
+
+function countAnimation(element, target) {
+  $({ countNum: $(element).text() }).animate({ countNum: target }, {
+    duration: 2000,
+    easing: 'linear',
+    step: function () {
+      $(element).text(Math.floor(this.countNum));
+    },
+    complete: function () {
+      $(element).text(target);
+    }
+  });
+}
+
+$(document).ready(function () {
+  // Specify the target numbers and call countAnimation function
+  countAnimation('.count-down:eq(0)', 56);
+  countAnimation('.count-down:eq(1)', 9.6);
+  countAnimation('.count-down:eq(2)', 13);
+});
