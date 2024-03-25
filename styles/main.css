@@ -4294,7 +4294,7 @@ button.contact_form_submit:hover {
     }
 }
 
-.fags-child button {
+.fags-child a {
     background-color: var(--primary-color);
     width: 100%;
     height: 50px;
@@ -4306,7 +4306,7 @@ button.contact_form_submit:hover {
 
 @media only screen and (max-width:768px) {
 
-    .fags-child button {
+    .fags-child a {
         background-color: var(--primary-color);
         width: 100%;
         height: 40px;
@@ -4317,7 +4317,7 @@ button.contact_form_submit:hover {
     }
 }
 
-.fags-child button:hover {
+.fags-child a:hover {
     background-color: var(--secondary-color);
     width: 100%;
     height: 50px;
@@ -4569,6 +4569,7 @@ button.contact_form_submit:hover {
 .get-it-touch input {
     border-radius: 50px;
 }
+
 .get-it-touch textarea {
     border-radius: 50px;
 }
