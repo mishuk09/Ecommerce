@@ -24,15 +24,15 @@
     --primary-color: #225487;
     --secondary-color: #1d70ba;
     --primary-text: #225487;
-    --primary-font: 'Roboto', sans-serif;
+    /* --primary-font: 'Roboto', sans-serif; */
     --primary-font-two: 'Jost', sans-serif;
 
     --input-color: rgb(85, 85, 85);
     --input-font-size: 14px;
 }
 
-body {
-    font-family: var(--primary-font);
+.main-body {
+    font-family: var(--primary-font-two);
     overflow-x: hidden;
     /* overflow: hidden; */
 }
@@ -1621,9 +1621,9 @@ input[type=number] {
 
 
 
-.trending-product {
+/* .trending-product {
     font-family: var(--primary-font);
-}
+} */
 
 .p-name {
     color: #555555;
