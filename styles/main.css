@@ -4480,3 +4480,28 @@ button.contact_form_submit:hover {
     font-size: 12px;
 
 }
+
+
+.coundown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media only screen and (max-width:768px) {
+    .coundown {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+
+
+
+
+.quote-div {
+
+    width: 100%;
+    height: 350px;
+    background-color: #303e39;
+}
