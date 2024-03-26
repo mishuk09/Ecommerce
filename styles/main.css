@@ -4806,7 +4806,7 @@ button.contact_form_submit:hover {
     width: 100%;
     height: 40px;
     outline: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 
 
 }
@@ -4819,4 +4819,17 @@ button.contact_form_submit:hover {
 
 #popup1 {
     width: 100%;
+}
+
+
+.q-buy-input {
+    font-size: 14px;
+
+}
+
+
+
+.q-buy-child::-webkit-scrollbar {
+    width: 0px;
+    visibility: auto;
 }

@@ -1766,24 +1766,9 @@
                         <div class="popup">
                             <a class="close" href="#">&times;</a>
                             <div
-                                class="  w-[100%] max-h-[600px]  md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]     pt-2      rounded-md grid grid-cols-1     overflow-y-auto">
+                                class="  w-[100%] max-h-[600px] q-buy-child   md:max-w-[600px]       pt-2      rounded-md grid grid-cols-1     overflow-y-auto">
 
 
-
-                                <!-- <div class="  overflow-hidden">
-
-                                    <div class="  flex items-center justify-center">
-
-                                        <div class="item p-4">
-                                            <img class="w-[100%] h-auto rounded"
-                                                src="/images/home/products_digital_6_1.webp" alt="">
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div> -->
 
                                 <div
                                     class="  pe-4 top-0 mt-4 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-auto lg:h-[430px] ">
@@ -1798,60 +1783,62 @@
                                             S21 Ultra
                                             5G 128GB Unlocked International Version
                                         </p>
-                                        <div class="flex flex-col gap-2 mt-10">
 
-                                            <input class="q-buy-input border px-2" placeholder="Name" type="text">
-                                            <input class="q-buy-input border px-2" placeholder="Email" type="email">
-                                            <input class="q-buy-input border px-2" placeholder="Address" type="text">
-                                        </div>
-
-
-                                        <div class="flex gap-10 mt-6">
-
-
-                                            <div
-                                                class=" h-auto sm:h-[120px]  flex sm:items-center sm:text-center sm:justify-center">
+                                        <div class="flex gap-4">
+                                            <div class="h-auto flex sm:items-center sm:text-center sm:justify-center">
                                                 <div
-                                                    class="flex  mt-2 sm:mt-0  px-1  justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600 quantity-controls">
-                                                    <button id="btn-case-minus"
-                                                        class="decreaseQuantity text-xl sm:text-3xl flex items-center text-center justify-center">-</button>
+                                                    class="flex px-2 justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600">
+                                                    <button id="btn-q-minus"
+                                                        class="decreaseQuantity text-[14px] flex items-center text-center justify-center"><i
+                                                            class="fa-solid fa-minus"></i></button>
                                                     <input id="case-number-field" type="number" min="0"
                                                         class="form-control bg-slate-100 w-[40px] text-center"
                                                         value="1">
-                                                    <button id="btn-case-plus"
-                                                        class="increaseQuantity text-xl sm:text-xl flex items-center text-center justify-center">+</button>
+                                                    <button id="btn-q-plus"
+                                                        class="increaseQuantity text-[14px] flex items-center text-center justify-center"><i
+                                                            class="fa-solid fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div
-                                                class="  pb-2 sm:pb-0 h-auto sm:h-[120px]   flex    sm:items-center sm:text-center sm:justify-center">
-                                                <div class="flex  items-center price-color  mt-2 sm:mt-0">
+                                                class="pb-2 sm:pb-0 h-auto sm:h-[120px] flex sm:items-center sm:text-center sm:justify-center">
+                                                <div class="flex items-center price-color mt-2 sm:mt-0">
                                                     <span id="phone-total"
-                                                        class=" text-[12px] ps-1 sm:text-[14px] phone-total font-semibold  me-2 cursor-auto  ">Rs
+                                                        class="text-[12px] ps-1 sm:text-[14px] phone-total font-semibold me-2 cursor-auto">$
                                                         350</span>
-
                                                 </div>
                                             </div>
                                         </div>
 
 
 
-                                        <p class="mt-6 font-semibold text-[14px]">Coupon Code</p>
+
+
+
+
+                                        <p class=" font-semibold text-[14px]">Coupon Code</p>
                                         <input type="text"
                                             class="w-full h-10 outline-none border border-gray-300 rounded px-2 text-[14px] mt-3"
                                             placeholder="Enter Coupon Code">
-                                        <!-- <p class="text-[14px] mt-4 border-b pb-6">Coupon code will be applied on the
-                                            checkout page
 
-                                        </p> -->
-                                        <div class="w-full border-b
-                                         pb-3 mt-8 text-[16px] font-semibold flex items-center justify-between">
+                                        <div
+                                            class="w-full border-b pb-3 mt-8 text-[16px] font-semibold flex items-center justify-between">
                                             <div>Subtotal</div>
-                                            <div id="subtotal">$ 350</div>
+                                            <div id="subtotal-q font-semibold">$ 350</div>
                                         </div>
 
 
 
                                         <p class="text-[14px] mt-6"> Taxes and shipping calculated at checkout</p>
+
+
+                                        <div class="flex flex-col gap-2 mt-4">
+
+                                            <input class="q-buy-input border rounded border-gray-300  px-2"
+                                                placeholder="Name" type="text">
+                                            <input class="q-buy-input rounded border-gray-300 border px-2"
+                                                placeholder="Email" type="email">
+
+                                        </div>
 
                                         <div class="w-full flex flex-col  mt-6 h-20">
                                             <label class="text-sm text-start font-semibold my-1" for="">Shiping
@@ -1860,14 +1847,24 @@
                                                 class="w-full h-full flex    flex-col   text-[14px] border rounded p-3">
 
                                                 <div class=" flex items-center">
-                                                    <input type="checkbox" class="me-2">
-                                                    <p class="  ">Hasan Mahmud, hasaninfo09@gmail.com , Atlas,
-                                                        Vomra.</p>
+
+                                                    <label>
+                                                        <p class="flex items-center">
+                                                            <input type="checkbox" class="me-2"> Hasan Mahmud,
+                                                            hasaninfo09@gmail.com , Atlas,
+                                                            Vomra.
+                                                        </p>
+                                                    </label>
                                                 </div>
                                                 <div class=" flex items-center">
-                                                    <input type="checkbox" class="me-2">
-                                                    <p class="  "> Mahmud Sah, mahmud@gmail.com , Batlas,
-                                                        UK.</p>
+                                                    <label>
+                                                        <p class="flex items-center">
+                                                            <input type="checkbox" class="me-2"> Mahmud Sah,
+                                                            mahmud@gmail.com , Batlas,
+                                                            UK.
+                                                        </p>
+                                                    </label>
+
 
 
                                                 </div>
@@ -1881,11 +1878,17 @@
 
 
                                         <div class=" mt-10 flex  items-center  text-[14px]">
-                                            <input type="checkbox" name="field name" value="Initial value" class="me-2">
-                                            I
-                                            agree with
-                                            Terms &
-                                            Conditions
+                                            <label>
+                                                <p class="flex items-center">
+                                                    <input type="checkbox" class="me-2"> I
+                                                    agree with
+                                                    Terms &
+                                                    Conditions
+                                                </p>
+                                            </label>
+
+
+
                                         </div>
                                         <div class="  text-[14px] mt-6   ">
                                             <button class="w-full text-white q-buy-btn  h-11 rounded-full    ">Buy with
@@ -1897,8 +1900,6 @@
 
                                     </div>
 
-                                    <!-- <p class="detail__price"></p>
-                    <p class="detail__bagBtn">add to bag</p> -->
 
                                 </div>
 

@@ -592,3 +592,29 @@ $(document).ready(function () {
 //     $(".overlay-two").hide();
 //   });
 // });
+
+
+
+$(document).ready(function () {
+  $('#btn-q-plus').click(function () {
+    var currentValue = parseInt($('#case-number-field').val());
+    $('#case-number-field').val(currentValue + 1);
+    updateTotal();
+  });
+
+  $('#btn-q-minus').click(function () {
+    var currentValue = parseInt($('#case-number-field').val());
+    if (currentValue > 1) {
+      $('#case-number-field').val(currentValue - 1);
+      updateTotal();
+    }
+  });
+
+  function updateTotal() {
+    var quantity = parseInt($('#case-number-field').val());
+    var pricePerItem = 350; // Assuming price per item is Rs 350
+    var total = quantity * pricePerItem;
+    $('#phone-total').text('Rs ' + total);
+    $('#subtotal-q').text('$ ' + total);
+  }
+});
