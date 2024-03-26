@@ -3846,10 +3846,23 @@ input[type="range"]::-moz-range-thumb {
     transition: color 0.3s, background-color 0.3s;
 }
 
+.editbtn-one {
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
 .editbtn1 {
     transition: color 0.3s, background-color 0.3s;
     cursor: pointer;
 }
+
+.editbtn-two {
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
 
 .editbtn2 {
     transition: color 0.3s, background-color 0.3s;
@@ -3860,6 +3873,13 @@ input[type="range"]::-moz-range-thumb {
     background-color: var(--secondary-color);
     color: white;
 }
+
+.editbtn-two:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
 
 .editbtn2:hover {
     background-color: var(--secondary-color);
@@ -4603,4 +4623,37 @@ button.contact_form_submit:hover {
 
 .get-it-touch textarea {
     border-radius: 8px;
+}
+
+
+#editAddressForm button {
+    width: 50%;
+    height: 40px;
+    background-color: var(--primary-color);
+    /* border-radius: 50%; */
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#editAddressForm button:hover {
+    width: 50%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#editShippingAddressForm button {
+    width: 50%;
+    height: 40px;
+    background-color: var(--primary-color);
+    /* border-radius: 50%; */
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#editShippingAddressForm button:hover {
+    width: 50%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: white;
 }

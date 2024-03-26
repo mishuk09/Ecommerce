@@ -1929,54 +1929,85 @@
                 <div class='address-div mt-6 md:flex  md:gap-3'>
 
                     <div class="w-full h-[full] border rounded-md">
-                        <div
-                            class="w-[100%] md:w-[100%]   relative h-[250px] md:h-[300px] lg:h-[250px] border   rounded">
+                        <div class="w-[100%] md:w-[100%] relative h-[250px] md:h-[300px] lg:h-[250px] border rounded">
                             <div class="w-full h-12 bg-slate-100 flex items-center px-6">
                                 Default addresses
                             </div>
-                            <div class=" px-6 pt-4 pb-4">
+                            <div class="address-details px-6 pt-4 pb-4">
                                 <p class="pt-1 font-semibold">Hasan Mahmud</p>
-                                <p class="pt-1">Atlas,Vomra,UNITED KINGDOM.</p>
+                                <p class="pt-1">Atlas, Vomra, UNITED KINGDOM.</p>
                                 <p class="pt-1">hasaninfo09@gmail.com</p>
-                                <p class="pt-1">Phone:+766 657637643</p>
+                                <p class="pt-1">Phone: +766 657637643</p>
                             </div>
                             <div class="flex editbtn w-full  gap-3 px-6">
                                 <div
-                                    class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
+                                    class="editbtn1 w-full flex items-center text-center justify-center bg-slate-100 border rounded-full h-10">
                                     EDIT
                                 </div>
-                                <!-- <div
-                                    class="w-full flex editbtn2 items-center text-center justify-center bg-slate-100 border  rounded-full h-10">
-                                    REMOVE
-                                </div> -->
-                            </div>
 
+                            </div>
                         </div>
                     </div>
+
                     <div class="w-full mt-4 md:mt-0 h-[full] border rounded-md">
-                        <div
-                            class="w-[100%] md:w-[100%] h-[250px]   md:h-[300px]  relative lg:h-[250px] border   rounded">
+                        <div class="w-[100%] md:w-[100%] h-[250px] md:h-[300px] relative lg:h-[250px] border rounded">
                             <div class="w-full h-12 bg-slate-100 flex items-center px-6">
                                 Shiping addresses
                             </div>
-                            <div class=" px-6 pt-4 pb-4">
+                            <div class="shipping-address-details px-6 pt-4 pb-4">
                                 <p class="pt-1 font-semibold">Hasan Mahmud</p>
-                                <p class="pt-1">Atlas,Vomra,UNITED KINGDOM.</p>
+                                <p class="pt-1">Atlas, Vomra, UNITED KINGDOM.</p>
                                 <p class="pt-1">hasaninfo09@gmail.com</p>
-                                <p class="pt-1">Phone:+766 657637643</p>
+                                <p class="pt-1">Phone: +766 657637643</p>
                             </div>
-                            <div class="flex editbtn w-full  gap-3 px-6">
+                            <div class="flex editbtn-one w-full gap-3 px-6">
                                 <div
-                                    class="w-full flex editbtn1 items-center text-center justify-center bg-slate-100 border rounded-full h-10">
+                                    class="editbtn-two w-full flex items-center text-center justify-center bg-slate-100 border rounded-full h-10">
                                     EDIT
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
 
                 </div>
+                <div class="edit-form w-full mt-6 " style="display: none;">
+                    <form id="editAddressForm">
+                        <input class="w-full h-10 px-2 text-[14px] outline-none  border rounded mt-2" type="text"
+                            name="name" placeholder="Name"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="text"
+                            name="address" placeholder="Address"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="email"
+                            name="email" placeholder="Email"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="text"
+                            name="phone" placeholder="Phone"><br>
+                        <button class="rounded-full mt-4" type="submit">Update</button>
+                    </form>
+                </div>
+
+
+                <div class="edit-shipping-form w-full mt-6 " style="display: none;">
+                    <form id="editShippingAddressForm">
+                        <input class="w-full h-10 px-2 text-[14px] outline-none  border rounded mt-2" type="text"
+                            name="name" placeholder="Name"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="text"
+                            name="address" placeholder="Address"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="email"
+                            name="email" placeholder="Email"><br>
+                        <input class="w-full h-10 px-2 text-[14px] outline-none border rounded mt-2" type="text"
+                            name="phone" placeholder="Phone"><br>
+                        <button class="rounded-full mt-4" type="submit">Update</button>
+                    </form>
+                </div>
+
+                <!-- <div class="edit-shipping-form" style="display: none;">
+                    <form id="editShippingAddressForm">
+                        <input type="text" name="name" placeholder="Name"><br>
+                        <input type="text" name="address" placeholder="Address"><br>
+                        <input type="email" name="email" placeholder="Email"><br>
+                        <input type="text" name="phone" placeholder="Phone"><br>
+                        <button type="submit">Update</button>
+                    </form>
+                </div> -->
 
 
             </div>

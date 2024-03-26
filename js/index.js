@@ -492,3 +492,82 @@ $(document).ready(function () {
   countAnimation('.count-down:eq(1)', 9.6);
   countAnimation('.count-down:eq(2)', 13);
 });
+
+
+
+
+$(document).ready(function () {
+  $('.editbtn1').click(function () {
+    // Get existing data
+    var name = $('.address-details p:nth-child(1)').text().trim();
+    var address = $('.address-details p:nth-child(2)').text().trim();
+    var email = $('.address-details p:nth-child(3)').text().trim();
+    var phone = $('.address-details p:nth-child(4)').text().trim().replace('Phone: ', '');
+
+    // Populate form fields
+    $('#editAddressForm input[name="name"]').val(name);
+    $('#editAddressForm input[name="address"]').val(address);
+    $('#editAddressForm input[name="email"]').val(email);
+    $('#editAddressForm input[name="phone"]').val(phone);
+
+    // Show the edit form
+    $('.edit-form').show();
+  });
+
+  // Submit form
+  $('#editAddressForm').submit(function (e) {
+    e.preventDefault();
+    var formData = $(this).serializeArray();
+
+    // Update address details with new values
+    $('.address-details p:nth-child(1)').text(formData[0].value);
+    $('.address-details p:nth-child(2)').text(formData[1].value);
+    $('.address-details p:nth-child(3)').text(formData[2].value);
+    $('.address-details p:nth-child(4)').text("Phone: " + formData[3].value);
+
+    // Hide the edit form
+    $('.edit-form').hide();
+  });
+});
+
+
+
+
+// shiping address  
+
+$(document).ready(function () {
+  $('.editbtn-two').click(function () {
+    // Get existing data
+    var name = $('.shipping-address-details p:nth-child(1)').text().trim();
+    var address = $('.shipping-address-details p:nth-child(2)').text().trim();
+    var email = $('.shipping-address-details p:nth-child(3)').text().trim();
+    var phone = $('.shipping-address-details p:nth-child(4)').text().trim().replace('Phone: ', '');
+
+    // Populate form fields
+    $('#editShippingAddressForm input[name="name"]').val(name);
+    $('#editShippingAddressForm input[name="address"]').val(address);
+    $('#editShippingAddressForm input[name="email"]').val(email);
+    $('#editShippingAddressForm input[name="phone"]').val(phone);
+
+    // Show the edit form
+    $('.edit-shipping-form').show();
+  });
+
+  // Submit form
+  $('#editShippingAddressForm').submit(function (e) {
+    e.preventDefault();
+    // Get form data
+    var formData = $(this).serializeArray();
+
+    // Update shipping address details with new values
+    $('.shipping-address-details p:nth-child(1)').text(formData[0].value);
+    $('.shipping-address-details p:nth-child(2)').text(formData[1].value);
+    $('.shipping-address-details p:nth-child(3)').text(formData[2].value);
+    $('.shipping-address-details p:nth-child(4)').text("Phone: " + formData[3].value);
+
+    // Hide the edit form
+    $('.edit-shipping-form').hide();
+  });
+});
+
+
