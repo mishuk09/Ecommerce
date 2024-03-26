@@ -4833,3 +4833,8 @@ button.contact_form_submit:hover {
     width: 0px;
     visibility: auto;
 }
+
+.q-buy-child-t::-webkit-scrollbar {
+    width: 0px;
+    visibility: auto;
+}
