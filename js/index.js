@@ -615,6 +615,6 @@ $(document).ready(function () {
     var pricePerItem = 350; // Assuming price per item is Rs 350
     var total = quantity * pricePerItem;
     $('#phone-total').text('Rs ' + total);
-    $('#subtotal-q').text('$ ' + total);
+    $('#subtotal-q').text('Rs ' + total);
   }
 });
