@@ -4753,6 +4753,18 @@ button.contact_form_submit:hover {
     /* Set max-width to prevent it from exceeding the viewport */
 }
 
+@media only screen and (max-width:768px) {
+    .popup {
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 90%;
+        position: relative;
+        transition: all 2s ease-in-out;
+        /* max-width: 500px; */
+        /* Set max-width to prevent it from exceeding the viewport */
+    }
+}
 
 
 .popup .close {
