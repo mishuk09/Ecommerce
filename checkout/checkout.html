@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Cart</title>
+
+
+
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
     <!-- Font import  -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,20 +19,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
 
-    <script src="/js/cart.js"></script>
 
 </head>
 
-<body>
-
-
-
-
-
-
-
+<body class="main-body">
 
 
     <header>
@@ -108,11 +105,13 @@
                     <div
                         class="logo w-[20%] lg:gap-4 xl:gap-7   gap-7 hidden lg:flex items-center text-end justify-end lg:justify-end lg:w-[25%]">
 
+                        <div class="hidden sm:hidden lg:hidden" onclick="toggleSearch()">
+                            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                        </div>
 
                         <a href="/auth/signin.html" class="flex items-center me-1 text-center justify-center">
                             <div>
                                 <img class="w-8 mx-auto" src="/images/user.png" alt="">
-                                <!-- <i class="fa-regular text-white text-xl fa-user"></i> -->
                             </div>
                             <div class="text-start hidden sm:block ms-1 text-white leading-4">
                                 <p class="text-[12px] text-gray-300">Log in</p>
@@ -120,7 +119,7 @@
                             </div>
                         </a>
 
-                        <a href="/wishlist/wishlist.html" class="flex items-center text-center justify-center">
+                        <a href="/cart/cart.html" class="flex items-center text-center justify-center">
                             <img class="w-6 pt-1 mx-auto" src="/images/love.png" alt="">
                         </a>
 
@@ -141,11 +140,9 @@
             </div>
             <hr class="text-gray-300 ">
 
-
-
-
-
             <!-- navbar dropdown  -->
+
+
 
 
             <header class="header custom-container">
@@ -1012,22 +1009,26 @@
                     </div>
                 </div>
             </header>
-
-
-
-
-
-
-
-
         </nav>
+
     </header>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     <!--#################################################
-####                                            ####
-####          Header section END              ####
+####                                                ####
+####          checkout section Start                 ####
 ####                                            ####
 ##################################################-->
 
@@ -1038,178 +1039,143 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####      Sidebar Dropdown section Start     ####
-####                                            ####
-##################################################-->
+
+    <section class="custom-container">
+
+        <div class="check-head">
+            <div class="w-[80%] mx-auto h-auto mt-6">
+                <div class="flex flex-col  items-center text-center justify-center">
+                    <h1>
+                        Express checkout
+                    </h1>
+                    <button class="check-btn-1 rounded mt-3">
+                        EMEPAY
+                    </button>
+
+                    <p class="mt-6 text-[14px]">OR</p>
+                </div>
+
+
+
+                <div class='faq-container '>
+                    <div class="faq border-b">
+                        <h3 class="faq-title text-gray-600">Account</h3>
+                        <p class="mt-2">hasan@gmail.com</p>
+                        <p class="faq-text mt-2"><button class="underline">Log out</button></p>
+                        <button class='faq-toggle'>
+
+
+                            <i class="fa-solid chevron fa-angle-down"></i>
+
+                            <i class="fa-solid close fa-angle-up"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="mt-6">
+                    <label>
+                        <p class="flex items-center">
+                            <input type="checkbox" class="me-2">Email me with news and offers
+                        </p>
+                    </label>
+                </div>
+
+                <p class="text-[18px] font-medium mt-8">Delivery
+                </p>
 
 
 
 
-    <section class="sidebar-main-wrapper inactive">
-        <div class="sidebar  bg-white w-[400px] h-full sidebar-content" id='sidebar'>
-            <div
-                class="w-full h-[60px] text-[14px] bg-primary flex items-center px-6  text-center justify-end close-sidebar cursor-pointer">
 
-                <img src="/images/close.png" width="15" />
+
+
+
+
+                
+
+                <div class="w-full mt-4">
+                    <div id="shipTab" class="w-full flex px-4 items-center h-12 rounded-t border">
+                        <p class="flex justify-between items-center">
+                            <input type="checkbox" class="me-2 rounded-full">
+                        <div class="flex w-full justify-between">
+                            <div>Ship</div>
+                            <div>
+                                <img class="w-6 h-6" src="/images/checkout/delivery-truck.png" alt="">
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div id="pickUpTab" class="w-full flex px-4 items-center h-12 rounded-b border-b border-l border-r">
+                        <p class="flex justify-between items-center">
+                            <input type="checkbox" class="me-2 rounded-full">
+                        <div class="flex w-full justify-between">
+                            <div>Pick up</div>
+                            <div>
+                                <img class="w-6 h-6" src="/images/checkout/location (1).png" alt="">
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="shipTabContent" class="tab-content">Ship Tab Content</div>
+                <div id="pickUpTabContent" class="tab-content">Pick up Tab Content</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p class="text-[18px] font-medium mt-8">Payment
+                </p>
+                <p class="text-[14px]   ">All transection are secure and encrypted
+                </p>
+
+
+                <div class="w-full flex rounded   flex-col  mt-4 bg-slate-100 text-[14px] h-[150px]">
+                    <div
+                        class="w-full   top-0 flex items-center justify-between border rounded-t border-black px-2 h-16">
+                        <div>IMEPAY</div>
+                        <div><img class="w-12 h-8" src="/images/footer/im.png" alt=""></div>
+                    </div>
+                    <div class="w-full h-full flex items-center text-center justify-center">
+                        After clicking "Pay with PayPal", you will be redirected to PayPal to complete your purchase
+                        securely.
+                    </div>
+
+
+
+                </div>
+
+                <button class="check-btn-1 rounded mt-8">
+                    Pay with EMEPAY
+                </button>
+
 
             </div>
 
 
-            <ul class="main-accordion-menu overflow-hidden overflow-y-auto">
 
-                <li class="relative" id="categoryDropdown1">
-                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">
-                        <p class="open">
-                            Men
-                        </p>
-                        <img src="/images/down.png" width="15" />
-
-                    </a>
-                    <ul class="ps-4 submenu rounded-md   hidden" id="dropdownMenu1">
-                        <!-- Dropdown menu items -->
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                    </ul>
-                </li>
-                <li class="relative" id="categoryDropdown1">
-                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">
-                        <p class="open">
-                            Women
-                        </p>
-                        <img src="/images/down.png" width="15" />
-
-                    </a>
-                    <ul class="ps-4 submenu rounded-md   hidden" id="dropdownMenu1">
-                        <!-- Dropdown menu items -->
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                    </ul>
-                </li>
-
-
-                <li class="relative" id="categoryDropdown2">
-                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">
-                        <p class="open">
-                            Products
-                        </p>
-                        <img src="/images/down.png" width="15" />
-
-                    </a>
-
-                    <ul class="ps-4 submenu  rounded-md shadow-md hidden" id="dropdownMenu3">
-                        <!-- Dropdown menu items -->
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Half Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                    </ul>
-                </li>
-                <li class="relative" id="categoryDropdown2">
-                    <a class="border-1   flex items-center w-full  justify-between border-solid border-gray-800 text-[14px] dropdown-toggle"
-                        href="#">
-                        <p class="open">
-                            Page
-                        </p>
-                        <img src="/images/down.png" width="15" />
-
-                    </a>
-                    <ul class="ps-4 submenu  rounded-md shadow-md hidden" id="dropdownMenu4">
-                        <!-- Dropdown menu items -->
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Page Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Full Width Banner</a>
-                        </li>
-                        <li><a class="border-1 border-solid border-gray-800 text-[12px]" href="#">Boxed Slider
-                                Banner</a></li>
-                    </ul>
-                </li>
-
-                <li><a class="  text-[14px]" href="">Blog</a></li>
-                <li><a class="  text-[14px]" href="">Sale</a></li>
-                <li><a class="  text-[14px]" href="">Buy Umino</a></li>
-                <li><a class="  text-[14px]" href=""><i class="fa-regular fa-clock me-2"></i> Recently Viewsd</a></li>
-                <li><a href="/wishlist/wishlist.html" class="  text-[14px]" href=""><i
-                            class="fa-regular fa-heart me-2"></i>Wishlist</a></li>
-                <li><a href="/auth/signin.html" class="  text-[14px]" href=""><i
-                            class="fa-regular fa-user me-2"></i>Login / Register</a></li>
-
-
-                <div class=" flex items-center text-center justify-center mt-10 mx-2 rounded bg-gray-100">
-                    <input placeholder="Search..." type="text" 
-                class=" outline-none h-10 text-gray-400 text-[14px] bg-gray-100 text-sm w-full pt-2 pb-2 px-2 rounded">
-                    <button class="flex items-center me-3 text-center justify-center bg-gray-100"> <i
-                            class="fa-solid fa-magnifying-glass text-gray-400"></i></button>
-                </div>
-
-                <div class=" flex gap-2 my-6 text-center items-center justify-center text-white">
-                    <i class="fa-brands text-2xl fa-square-facebook"></i>
-                    <i class="fa-brands text-2xl fa-square-twitter"></i>
-                    <i class="fa-brands text-2xl fa-square-instagram"></i>
-                </div>
-            </ul>
+            <div></div>
         </div>
     </section>
 
@@ -1219,11 +1185,6 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####      Sidebar Dropdown section END           ####
-####                                            ####
-##################################################-->
 
 
 
@@ -1232,410 +1193,14 @@
 
 
 
-
-
-    <div class="cart-head border-b h-[120px] sm:h-[220px] flex items-center text-center justify-center relative">
-        <div class="flex relative cart-h-text custom-container flex-col h-auto w-full text-center justify-center">
-            <p class="text-[20px]  sm:text-[26px] lg:text-[30px] font-bold">Cart</p>
-            <a href="#" class="text-center   text-[12px] cart-access lg:text-[14px]">
-                <span class=" ">Home /</span> Cart
-            </a>
-        </div>
-        <div class="overlay2"></div>
-    </div>
-    <div class="custom-container">
-
-
-
-
-        <div class="custom-container   mb-20 mx-0    text-slate-800  cart-details  ">
-
-
-            <div class=" flex flex-col gap-3  ">
-
-                <div class="w-full  h-10 px-4   cart-headline-two bg-slate-50">
-                    <div>PRODUCT</div>
-                    <div class="hidden sm:block">QUANTITY</div>
-                    <div class="hidden sm:block">TOTAL</div>
-
-                </div>
-                <div id="item1" class="cart-body-child relative  border  text-[14px]  ">
-
-                    <div
-                        class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
-                        <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
-                            src="/images/home/top/products_digital_9_1.webp" alt="">
-                    </div>
-                    <div class="  cart-body-child2">
-                        <div class=" w-[100%]  relative   flex  md:pt-6">
-
-                            <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
-
-                                <a href="/products/products.html" class="font-medium cart-p-title">
-                                    Apple iPhone 12 Pro Max 128GB-Unlocked
-                                </a>
-
-                                <div class="sm:flex hidden   items-center price-color   mt-2">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$2000.00</p>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class=" h-auto sm:h-[120px]  flex sm:items-center sm:text-center sm:justify-center">
-                            <div
-                                class="flex  mt-2 sm:mt-0  px-1  justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600 quantity-controls">
-                                <button id="btn-phone-minus"
-                                    class="decreaseQuantity text-xl sm:text-3xl flex items-center text-center justify-center">-</button>
-                                <input id="phone-number-field" type="number" min="0"
-                                    class="form-control outline-none  bg-slate-100 w-[40px] text-center" disabled
-                                    value="1">
-                                <button id="btn-phone-plus"
-                                    class="increaseQuantity text-sm sm:text-xl flex items-center text-center justify-center">+</button>
-                            </div>
-                        </div>
-                        <div
-                            class="  pb-2 sm:pb-0 h-auto sm:h-[120px]   flex    sm:items-center sm:text-center sm:justify-center">
-                            <div class="flex  items-center price-color   mt-2 sm:mt-0">
-                                <p id="phone-total"
-                                    class=" text-[12px] ps-1 sm:text-[14px] phone-total font-semibold  me-2 cursor-auto  ">
-                                    Rs
-                                    1200</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="  absolute cursor-pointer right-2 sm:right-4 md:right-10  top-[45%] sm:top-0  sm:h-[120px] flex     items-center text-center justify-center">
-                        <i class="fa-regular delete-icon text-gray-600 fa-trash-can"></i>
-                    </div>
-
-
-
-
-                </div>
-                <div id="item2" class="cart-body-child relative  border   text-[14px]  ">
-
-                    <div
-                        class="    w-[110px] md:w-[130px]   h-[100px] md:h-full overflow-hidden   flex  md:items-center md:text-center  md:justify-center ">
-                        <img class="w-[100px] h-[100px] pt-1 hover:scale-105 duration-300    "
-                            src="/images/home/top/products_digital_9_1.webp" alt="">
-                    </div>
-
-                    <div class="  cart-body-child2">
-
-                        <div class=" w-[100%]  relative   flex  md:pt-6">
-
-                            <div class="   ps-1 pe-2 pt-3 md:pt-0    duration-150   w-full">
-
-
-                                <a href="/products/products.html" class="font-medium cart-p-title">
-
-                                    Apple iPhone 12 Pro Max 128GB-Unlocked
-                                </a>
-
-                                <div class="sm:flex hidden  items-center price-color   mt-2">
-                                    <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$1000.00</p>
-
-                                </div>
-
-
-
-
-
-                            </div>
-
-                        </div>
-                        <div class=" h-auto sm:h-[120px]  flex sm:items-center sm:text-center sm:justify-center">
-                            <div
-                                class="flex  mt-2 sm:mt-0  px-1  justify-between items-center text-center rounded h-6 sm:h-[40px] w-[70px] sm:w-[110px] bg-slate-100 text-gray-600 quantity-controls">
-                                <button id="btn-case-minus"
-                                    class="decreaseQuantity text-xl sm:text-3xl flex items-center text-center justify-center">-</button>
-                                <input id="case-number-field" type="number" min="0"
-                                    class="form-control bg-slate-100 w-[40px] text-center" value="1">
-                                <button id="btn-case-plus"
-                                    class="increaseQuantity text-xl sm:text-xl flex items-center text-center justify-center">+</button>
-                            </div>
-                        </div>
-                        <div
-                            class="  pb-2 sm:pb-0 h-auto sm:h-[120px]   flex    sm:items-center sm:text-center sm:justify-center">
-                            <div class="flex  items-center price-color  mt-2 sm:mt-0">
-                                <span id="phone-total"
-                                    class=" text-[12px] ps-1 sm:text-[14px] phone-total font-semibold  me-2 cursor-auto  ">Rs
-                                    350</span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="  absolute cursor-pointer right-2 sm:right-4 md:right-10  top-[45%] sm:top-0  sm:h-[120px] flex     items-center text-center justify-center">
-                        <i class="fa-regular delete-icon text-gray-600 fa-trash-can"></i>
-                    </div>
-
-
-
-
-
-                </div>
-
-
-
-                <div class=" mt-8 items-center     text-[14px]">
-                    <input type="checkbox" name="field name" value="Initial value" class="w-[20px]"> Please wrap the
-                    product
-                    carefully. Fee is only <span class="font-bold">$5.00.</span> (You can choose or not)
-                </div>
-            </div>
-
-
-            <div class="flex  max-h-[1000px] mt-6 lg:mt-0   flex-col   rounded       w-full    ">
-                <p class="border-b-2 border-black text-[20px] font-semibold pb-4">ORDER SUMMARY</p>
-
-
-
-                <p class="mt-6 font-semibold text-[14px]">Coupon Code</p>
-                <input type="text" class="w-full h-10 outline-none border border-gray-300 rounded px-2 text-[14px] mt-3"
-                    placeholder="Enter Coupon Code">
-                <p class="text-[14px] mt-4 border-b pb-6">Coupon code will be applied on the checkout page
-
-                </p>
-                <div class="w-full border-b
-                 pb-3 mt-8 text-[16px] font-semibold flex items-center justify-between">
-                    <div>Subtotal</div>
-                    <div id="subtotal">1550</div>
-                </div>
-
-
-
-                <p class="text-[14px] mt-6"> Taxes and shipping calculated at checkout</p>
-                <div class=" mt-6 flex items-center terms-cart   text-[14px]">
-                    <input type="checkbox" name="field name" value="Initial value" class=" me-2"> I agree with <a
-                        href="#" class="underline font-normal">Terms &
-                        Conditions</a>
-
-                </div>
-                <button
-                    class="border border-slate-200 lg:mt-5 mt-6 login-btn font-semibold rounded w-full h-11 px-4 text-white outline-none text-[12px]"
-                    placeholder='d' type="text">CHECK OUT</button>
-                <button
-                    class="border border-slate-200 lg:mt-4 mt-6 shoping-cart-sbtn font-semibold rounded w-full h-11 px-4 text-black outline-none text-[12px]"
-                    placeholder='d' type="text"> CONTINUE SHOPPING</button>
-
-                <div>
-                    <div class="flex mt-10">
-                        <p><img class="w-5 me-2 " src="/images/secure.png" alt=""></p>
-                        <p class="text-[14px]">Secure Shopping Guarantee</p>
-                    </div>
-                    <div class="flex gap-3 mt-2  items-center text-start justify-start lg:justify-between">
-                        <img class=" w-14" src="/images/footer/es.png" alt="">
-                        <img class=" w-14" src="/images/footer/im.png" alt="">
-                        <img class=" w-14" src="/images/footer/kh.png" alt="">
-                        <img class=" w-8" src="/images/footer/un.png" alt="">
-                        <img class=" w-14" src="/images/footer/visa.png" alt="">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 
 
 
     <!--#################################################
-####                                            ####
-####      Rightbar  Dropdown section             ####
-####                                            ####
-##################################################-->
-
-
-
-
-
-    <div id="overlay"></div>
-
-
-    <div id="cart-div" class="bg-white right-bar-div    border     w-[400px]  ">
-        <div class="flex flex-col justify-between  pt-6 w-full rightbar-content">
-            <div class="flex mx-6 justify-between">
-                <div class="flex items-center">
-                    <p class="text-[18px] font-bold">Shopping Cart</p>
-                    <p class="text-[18px] ms-2">(0)</p>
-
-
-                </div>
-
-            </div>
-            <div
-                class="w-full ps-6 pe-2 cursor-pointer  mt-6 rightbar-cart overflow-hidden overflow-y-auto   h-[280px] 2xl:h-auto">
-                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
-                    <div class="w-[25%] overflow-hidden      "><img
-                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
-                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                    <div class="w-[75%] relative   flex items-center">
-                        <div class="absolute mt-2  top-0 right-4">
-                            <p>
-                                <i
-                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
-
-                            </p>
-
-                        </div>
-                        <div class="   ps-1 pe-2  grid  duration-150   w-full">
-
-                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                iPhone
-                                12 Pro Max 128GB-Unlocked
-                            </p>
-
-
-                            <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-
-                            </div>
-                            <div
-                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
-                                <button
-                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
-                                <span class="quantity text-[14px]">2</span>
-                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
-                    <div class="w-[25%] overflow-hidden      "><img
-                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
-                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                    <div class="w-[75%] relative   flex items-center">
-                        <div class="absolute mt-2  top-0 right-4">
-                            <p>
-                                <i
-                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
-
-                            </p>
-
-                        </div>
-                        <div class="  ps-1  pe-2  grid  duration-150   w-full">
-
-                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                iPhone
-                                12 Pro Max 128GB-Unlocked
-                            </p>
-
-
-                            <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-
-                            </div>
-                            <div
-                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
-                                <button
-                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
-                                <span class="quantity">1</span>
-                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="w-full flex  border-b-2 border-dotted h-[130px]       bg-white">
-                    <div class="w-[25%] overflow-hidden      "><img
-                            class="w-[30%] pt-1 hover:scale-105 duration-300   md:w-full"
-                            src="/images/home/top/products_digital_9_1.webp" alt=""></div>
-                    <div class="w-[75%] relative   flex items-center">
-                        <div class="absolute mt-2  top-0 right-4">
-                            <p>
-                                <i
-                                    class="fa-solid text-[14px] text-gray-600 hover:text-black duration-300 fa-xmark"></i>
-                            </p>
-
-                        </div>
-                        <div class=" ps-1  pe-2   grid  duration-150   w-full">
-
-                            <p class="  text-[14px]  text-gray-700   leading-5  block  ">Apple
-                                iPhone
-                                12 Pro Max 128GB-Unlocked
-                            </p>
-
-
-                            <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
-
-                            </div>
-                            <div
-                                class="flex px-1 mt-2 justify-between items-center text-center rounded h-[30px] w-[90px] bg-slate-100 text-black quantity-controls">
-                                <button
-                                    class="decreaseQuantity text-2xl flex items-center text-center justify-center">-</button>
-                                <span class="quantity">3</span>
-                                <button class="increaseQuantity flex items-center text-center justify-center">+</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-            <div>
-
-                <div class="flex border-t border-b   text-center items-center justify-center">
-                    <div class="w-[60%] flex justify-between h-12  items-center text-center">
-                        <p><img class="w-5" src="/images/icon/notes.png" alt=""></p>
-                        <p><img class="w-5" src="/images/icon/gift.png" alt=""></p>
-                        <p><img class="w-5" src="/images/icon/box.png" alt=""></p>
-
-                    </div>
-                </div>
-                <div class="bg-slate-100   p-6">
-
-                    <div class="flex   justify-between">
-                        <div class="flex items-center">
-                            <p class="text-[18px] font-bold">Shoping Cart</p>
-
-                        </div>
-                        <div class="items-center flex">
-                            <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">$210.00</p>
-                        </div>
-                    </div>
-                    <div class=" mt-6  flex items-center  text-[14px]">
-                        <input type="checkbox" class="text-[14px] me-2" name="field name" value="Initial value"
-                            class=""> I
-                        agree
-                        with
-                        <a href="" class="underline"> Terms &
-                            Conditions</a>
-                    </div>
-                    <div>
-                        <a href="cart.html"
-                            class="create-btn flex items-center text-center justify-center  w-full rounded-full h-11 mt-5  text-[12px] font-semibold">
-                            View Cart</a>
-                        <button
-                            class="border border-slate-200 mt-3 login-btn font-semibold rounded-full w-full h-11 px-4 text-white outline-none text-[12px]"
-                            placeholder='d' type="text">Check Out</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <!--#################################################
+####                                                ####
 ####          Footer section Start                 ####
+####                                            ####
 ##################################################-->
 
 
@@ -1741,53 +1306,34 @@
     </section>
 
 
+    <!--#################################################
+####                                            ####
+####          Footer section END                 ####
+####                                            ####
+##################################################-->
 
 
-
-
-
-
-
-
-    <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
-
-    <script src="/js/index.js"></script>
-    <script src="/js/cart-calculation.js"></script>
 
     <script>
 
-
-        // Get references to the cart menu button, X mark, overlay, and the cart div
-        const cartMenuButton = document.getElementById('cart-menu-button');
-        const cartCloseButton = document.querySelector('.fa-xmark');
-        const cartDiv = document.getElementById('cart-div');
-        const overlay = document.getElementById('overlay');
+        const buttons = document.querySelectorAll('.faq-toggle');
 
 
-        function openCart() {
-            cartDiv.classList.add('cart-open');
-            overlay.style.display = 'block';
-        }
-
-        function closeCart() {
-            cartDiv.classList.remove('cart-open');
-            overlay.style.display = 'none';
-        }
-
-        cartMenuButton.addEventListener('click', () => {
-            if (cartDiv.classList.contains('cart-open')) {
-                closeCart();
-            } else {
-                openCart();
-            }
-        });
-
-        cartCloseButton.addEventListener('click', closeCart);
-
-        overlay.addEventListener('click', closeCart);
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.parentNode.classList.toggle('active');
+            })
+        })
 
 
     </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 

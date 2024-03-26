@@ -153,10 +153,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartButtons = document.querySelectorAll('.add-to-cart');
+  var toast = document.getElementById('toast-two');
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var productId = this.id.replace('add-to-cart-btn-product4', '');
+
+      toast.classList.add('show'); // Add class to show toast
+
+      setTimeout(function () {
+        toast.classList.remove('show'); // Remove class to hide toast
+      }, 2000);
+    });
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var addToCartButtons = document.querySelectorAll('.add-to-cart-shop');
-  var toast = document.getElementById('toast-two');
+  var toast = document.getElementById('toast ');
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var productId = this.id.replace('add-to-cart-btn-product', '');
+
+      toast.classList.add('show'); // Add class to show toast
+
+      setTimeout(function () {
+        toast.classList.remove('show'); // Remove class to hide toast
+      }, 2000);
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartButtons = document.querySelectorAll('.add-to-cart-shop');
+  var toast = document.getElementById('toast ');
 
   addToCartButtons.forEach(function (button) {
     button.addEventListener('click', function (event) {
@@ -595,6 +630,24 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+// check out code 
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
   $('#btn-q-plus').click(function () {
     var currentValue = parseInt($('#case-number-field').val());
@@ -617,4 +670,26 @@ $(document).ready(function () {
     $('#phone-total').text('Rs ' + total);
     $('#subtotal-q').text('Rs ' + total);
   }
+});
+
+
+
+
+
+$(document).ready(function () {
+  // Handle click event for Ship tab
+  $('#shipTab').click(function () {
+    $('.tab-content').hide(); // Hide all tab contents
+    $('.tab-content').removeClass('active-tab'); // Remove active class from all tabs
+    $('#shipTabContent').show(); // Show Ship tab content
+    $('#shipTab').addClass('active-tab'); // Add active class to Ship tab
+  });
+
+  // Handle click event for Pick up tab
+  $('#pickUpTab').click(function () {
+    $('.tab-content').hide(); // Hide all tab contents
+    $('.tab-content').removeClass('active-tab'); // Remove active class from all tabs
+    $('#pickUpTabContent').show(); // Show Pick up tab content
+    $('#pickUpTab').addClass('active-tab'); // Add active class to Pick up tab
+  });
 });

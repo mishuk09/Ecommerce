@@ -4843,3 +4843,116 @@ button.contact_form_submit:hover {
 #popup1 {
     font-family: var(--primary-font-two);
 }
+
+
+
+
+
+/* Checkout div   */
+
+
+
+
+.check-head {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    
+}
+
+.check-btn-1{
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    transition: color 0.3s,background-color 0.3s;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+}
+.check-btn-1:hover{
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    transition: color 0.3s,background-color 0.3s;
+    border: 1px solid gray;
+   
+    color: white;
+    font-size: 14px;
+}
+
+
+
+ 
+
+ 
+  
+  .faq{
+    background-color: transparent;
+   font-size: 14px;
+    /* border-radius: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+  }
+  
+ 
+  
+  
+  .faq-text{
+    display: none;
+    /* margin: 30px 0 0; */
+  }
+  
+  .faq.active .faq-text{
+    display: block;
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .chevron, .close{
+    width: 12px;
+    height:12px;
+  }
+  
+  .faq-toggle .close{
+    display: none;
+  } 
+  
+  .faq.active .faq-toggle .close{
+    display: block;
+  }
+  
+  .faq.active .faq-toggle .chevron{
+    display: none;
+  }
+  
+ 
+
+
+
+
+
+
+  .tab-content {
+    display: none;
+}
+
+.active-tab {
+    background-color: #ccc; /* Change to your desired active tab color */
+}
