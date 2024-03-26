@@ -571,3 +571,24 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
+
+// $(document).ready(function () {
+//   $(".overlay-two").click(function (event) {
+//     // Prevent clicks on the popup from closing it
+//     event.stopPropagation();
+//   });
+
+//   $(document).click(function () {
+//     // Hide the popup when user clicks outside of it
+//     $(".overlay-two").hide();
+//   });
+
+//   $(".close").click(function () {
+//     // Hide the popup when user clicks on the close button
+//     $(".overlay-two").hide();
+//   });
+// });
