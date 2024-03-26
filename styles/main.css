@@ -403,13 +403,13 @@
     visibility: hidden;
 }
 
-/* @media(min-width: 992px) {
+@media(min-width: 992px) {
     .header .menu>ul>li.menu-item-has-children:hover .sub-menu {
         margin-top: 0;
         visibility: visible;
         opacity: 1;
     }
-} */
+}
 
 .header .menu>ul>li .sub-menu>ul>li {
     line-height: 1;
@@ -519,7 +519,7 @@
 
 /*responsive*/
 
- 
+
 
 
 @media(max-width: 1024px) {
