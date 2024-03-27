@@ -5081,3 +5081,41 @@ button.contact_form_submit:hover {
         max-width: 70%;
     }
 }
+
+@media only screen and (min-width:1800px) {
+    .checkout-head-w {
+
+        max-width: 65%;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    .checkout-head-w {
+
+        max-width: 60%;
+    }
+}
+
+
+
+
+@media only screen and (min-width:1536px) {
+    .checkout-head-wt {
+
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    .checkout-head-wt {
+
+        max-width: 65%;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    .checkout-head-wt {
+
+        max-width: 60%;
+    }
+}
