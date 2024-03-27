@@ -4870,7 +4870,7 @@ button.contact_form_submit:hover {
 
 .check-head {
     display: grid;
-    grid-template-columns: 0.9fr 0.7fr;
+    grid-template-columns: 1.3fr 1fr;
 
 }
 
