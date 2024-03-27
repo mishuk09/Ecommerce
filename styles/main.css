@@ -1117,11 +1117,22 @@ input[type=number] {
     }
 }
 
-.owl-nav {
+.main-slider .owl-nav {
     position: absolute;
     top: 50%;
     left: 30px;
     right: 60px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.new-carousel .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    right: -25px;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
@@ -1213,7 +1224,6 @@ input[type=number] {
 .owl-next {
     position: absolute;
     top: 50%;
-
     transform: translateY(-50%);
     color: #333;
     font-size: 24px;
@@ -1229,13 +1239,6 @@ input[type=number] {
 
 
 
-.owl-prev {
-    left: 0;
-}
-
-.owl-next {
-    right: 0;
-}
 
 
 
@@ -5190,6 +5193,7 @@ button.contact_form_submit:hover {
         flex-direction: column-reverse;
     }
 }
+
 @media only screen and (max-width:1024px) {
     .checkout-div-h {
         display: flex;
