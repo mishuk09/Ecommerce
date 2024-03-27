@@ -5177,3 +5177,22 @@ button.contact_form_submit:hover {
         max-width: 60%;
     }
 }
+
+.checkout-div-h {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column-reverse; */
+}
+
+@media only screen and (max-width:1024px) {
+    .checkout-div-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .checkout-div-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
