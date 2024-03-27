@@ -118,7 +118,7 @@ $(document).ready(function () {
   $(".new-carousel").owlCarousel({
     loop: true,
     margin: 20,
-    nav: true, // Show navigation
+    nav: true,  
     navText: [
       "<i class='fas icon-prev fa-chevron-left'></i>",
       "<i class='fas icon-next fa-chevron-right'></i>",
