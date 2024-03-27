@@ -5017,13 +5017,13 @@ button.contact_form_submit:hover {
     /* padding-top: 15px; */
 }
 
- 
+
 
 
 .ding {
     /* width: calc(80% - 1%); */
     padding-bottom: 15px;
-     
+
 }
 
 
@@ -5071,4 +5071,13 @@ button.contact_form_submit:hover {
 
 .custom-input {
     border-color: #d5d5d5;
+}
+
+
+
+@media only screen and (min-width:1536px) {
+    .checkout-head-w {
+
+        max-width: 70%;
+    }
 }
