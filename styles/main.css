@@ -2906,6 +2906,7 @@ input[type=number] {
     align-items: center;
     justify-content: center;
 }
+
 .wishlist-span-q {
     background: var(--secondary-color);
     width: 22px;
@@ -4869,7 +4870,7 @@ button.contact_form_submit:hover {
 
 .check-head {
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
+    grid-template-columns: 0.9fr 0.7fr;
 
 }
 
@@ -4977,14 +4978,13 @@ button.contact_form_submit:hover {
 
 .custom-tab-links li.active-tab #shipTab {
     background-color: #f1f5f9;
-    /* Change background color of active tab */
     border: 1px solid #616161;
-    /* Change border color of active tab */
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .custom-tab-links li.active-tab #pickUpTab {
     background-color: #f1f5f9;
-    /* Change background color of active tab */
+    transition: color 0.5s, background-color 0.5s;
     border: 1px solid #616161;
     /* Change border color of active tab */
 }
@@ -5014,22 +5014,16 @@ button.contact_form_submit:hover {
     /* font-weight: 500; */
     /* color: #777; */
     text-align: left;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
-.content a {
-    text-decoration: none;
-    color: #FFC41C;
-    letter-spacing: 0.2em;
-    text-transform: lowercase;
-    /* font-size: 15px; */
-}
+ 
 
 
 .ding {
     /* width: calc(80% - 1%); */
     padding-bottom: 15px;
-    flex-flow: ;
+     
 }
 
 
@@ -5064,7 +5058,17 @@ button.contact_form_submit:hover {
 
 
 
-.check-p-div{
+.check-p-div {
     display: grid;
-    grid-template-columns: 1fr 0.3fr  ;
+    grid-template-columns: 1fr 0.3fr;
+}
+
+
+
+.custom-input::placeholder {
+    color: gray;
+}
+
+.custom-input {
+    border-color: #d5d5d5;
 }

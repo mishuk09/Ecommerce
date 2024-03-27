@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  var addToCartButtons = document.querySelectorAll('.add-to-cart');
+  var addToCartButtons = document.querySelectorAll('.add-to-cart-w');
   var toast = document.getElementById('toast');
 
   addToCartButtons.forEach(function (button) {
@@ -190,8 +190,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
-  var addToCartButtons = document.querySelectorAll('.add-to-cart-shop');
-  var toast = document.getElementById('toast ');
+  var addToCartButtons = document.querySelectorAll('.add-to-cart-shop-w');
+  var toast = document.getElementById('toast-two ');
 
   addToCartButtons.forEach(function (button) {
     button.addEventListener('click', function (event) {
@@ -449,7 +449,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   // Add click event listener to all elements with class 'add-to-cart'
-  $('.add-to-cart').click(function (e) {
+  $('.add-to-cart-w').click(function (e) {
     e.preventDefault();
     $(this).closest('.parent-divv').remove();
   });
@@ -464,7 +464,7 @@ $(document).ready(function () {
   }
   // Initial count update
   updateCount();
-  $('.add-to-cart').click(function (event) {
+  $('.add-to-cart-w').click(function (event) {
     event.preventDefault();
     $(this).parents('.parent-divv').remove();
     updateCount();
