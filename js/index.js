@@ -84,32 +84,67 @@ $(document).ready(function () {
   });
 });
 
-$(".new-carousel").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: false,
-  dots: false,
-  navText: false,
-  responsive: {
-    0: {
-      items: 2,
+
+
+// $(".new-carousel").owlCarousel({
+//   loop: true,
+//   margin: 20,
+//   nav: false,
+//   dots: false,
+//   navText: false,
+//   responsive: {
+//     0: {
+//       items: 2,
+//     },
+//     500: {
+//       items: 3,
+//     },
+//     600: {
+//       items: 3,
+//     },
+//     800: {
+//       items: 4,
+//     },
+//     1000: {
+//       items: 7,
+//     },
+//   },
+// });
+
+
+
+$(document).ready(function () {
+
+  $(".new-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true, // Show navigation
+    navText: [
+      "<i class='fas icon-prev fa-chevron-left'></i>",
+      "<i class='fas icon-next fa-chevron-right'></i>",
+    ],
+    dots: false,
+    responsive: {
+      0: {
+        nav: false, // Hide navigation buttons below 768px
+        dots: true,
+        items: 2,
+      },
+      500: {
+        items: 3,
+      },
+      600: {
+        items: 3,
+      },
+      800: {
+        items: 4,
+      },
+      1000: {
+        items: 7,
+      },
     },
-    500: {
-      items: 3,
-    },
-    600: {
-      items: 3,
-    },
-    800: {
-      items: 4,
-    },
-    1000: {
-      items: 7,
-    },
-  },
+  });
 });
-
-
 
 
 // #################################################
