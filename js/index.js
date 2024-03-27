@@ -676,20 +676,5 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-  // Handle click event for Ship tab
-  $('#shipTab').click(function () {
-    $('.tab-content').hide(); // Hide all tab contents
-    $('.tab-content').removeClass('active-tab'); // Remove active class from all tabs
-    $('#shipTabContent').show(); // Show Ship tab content
-    $('#shipTab').addClass('active-tab'); // Add active class to Ship tab
-  });
 
-  // Handle click event for Pick up tab
-  $('#pickUpTab').click(function () {
-    $('.tab-content').hide(); // Hide all tab contents
-    $('.tab-content').removeClass('active-tab'); // Remove active class from all tabs
-    $('#pickUpTabContent').show(); // Show Pick up tab content
-    $('#pickUpTab').addClass('active-tab'); // Add active class to Pick up tab
-  });
-});
+
