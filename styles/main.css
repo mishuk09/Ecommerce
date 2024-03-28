@@ -5566,6 +5566,7 @@ button.contact_form_submit:hover {
 .check-span {
     color: var(--secondary-color);
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .check-child-w {
