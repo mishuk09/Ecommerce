@@ -5032,7 +5032,7 @@ button.contact_form_submit:hover {
     background-color: transparent;
     font-size: 14px;
     /* border-radius: 10px; */
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     margin: 20px 0;
     position: relative;
@@ -5485,4 +5485,54 @@ button.contact_form_submit:hover {
 
 .font-w-t {
     font-weight: 400;
+}
+
+
+
+.faq-title {
+    font-size: 16px;
+}
+
+.check-h {
+    background-color: white;
+    color: gray;
+
+}
+
+
+.con-t-s {
+    font-weight: 500;
+}
+
+.con-t-ss {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.con-t-sss {
+    font-weight: 500;
+    color: white;
+    width: 200px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+
+.name-ti {
+    font-weight: 500;
+}
+
+
+.pincode-div {
+    font-weight: 500;
+}
+
+.free-dle {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.check-prod-div {
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 1fr;
 }
