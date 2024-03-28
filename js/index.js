@@ -735,3 +735,9 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  $("section .track-your-order button").on("click", function () {
+    $(this).fadeOut();
+    $("section .track-your-order").fadeOut();
+  });
+});
