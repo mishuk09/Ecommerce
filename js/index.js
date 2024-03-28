@@ -118,7 +118,7 @@ $(document).ready(function () {
   $(".new-carousel").owlCarousel({
     loop: true,
     margin: 20,
-    nav: true,  
+    nav: true,
     navText: [
       "<i class='fas icon-prev fa-chevron-left'></i>",
       "<i class='fas icon-next fa-chevron-right'></i>",
@@ -735,9 +735,103 @@ $(document).ready(function () {
 
 
 
+
+// Track order  code 
+
+
+
+
+
+
+
+
 $(document).ready(function () {
   $("section .track-your-order button").on("click", function () {
     $(this).fadeOut();
     $("section .track-your-order").fadeOut();
+  });
+});
+
+
+
+
+
+
+
+// $(document).ready(function () {
+//   $('.faq-toggle').click(function () {
+//     var faq = $(this).closest('.faq');
+//     faq.toggleClass('active');
+//     if ($(this).index() === 1) { // For the second toggle
+//       if (!faq.hasClass('active')) {
+//         faq.addClass('active');
+//       }
+//     }
+//   });
+// });
+
+
+// $(document).ready(function () {
+//   $('.con-t-sss').click(function () {
+//     var name = $(this).closest('.faq-text').find('.name-ti').text().trim();
+//     $('.main-name').text(name);
+//     $(this).closest('.faq-text').toggle();
+//   });
+
+//   $('.faq-toggle').click(function () {
+//     var faq = $(this).closest('.faq');
+//     var faqText = faq.find('.faq-text');
+//     faqText.toggle();
+//   });
+// });
+
+
+$(document).ready(function () {
+  $('.con-t-sss').click(function () {
+    var name = $(this).prev().find('.name-ti').text().trim();
+    $('.main-name').text(name);
+    $(this).closest('.faq-text').toggle();
+  });
+
+  $('.faq-toggle').click(function () {
+    var faqText = $(this).siblings('.faq-text');
+    faqText.toggle();
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $('.product-remov').click(function () {
+    $(this).closest('.faq-text-child').remove(); // Remove the closest parent element with the class 'faq'
+  });
+});
+
+
+
+$(document).ready(function () {
+  // Decrease quantity
+  $('.decreaseQuantity').click(function () {
+    var quantityElement = $(this).siblings('.quantity');
+    var currentQuantity = parseInt(quantityElement.text());
+    if (currentQuantity > 1) {
+      quantityElement.text(currentQuantity - 1);
+    }
+  });
+
+  // Increase quantity
+  $('.increaseQuantity').click(function () {
+    var quantityElement = $(this).siblings('.quantity');
+    var currentQuantity = parseInt(quantityElement.text());
+    quantityElement.text(currentQuantity + 1);
   });
 });
