@@ -834,3 +834,10 @@ $(document).ready(function () {
     quantityElement.text(currentQuantity + 1);
   });
 });
+
+
+
+
+
+
+
