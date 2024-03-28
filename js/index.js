@@ -786,22 +786,21 @@ $(document).ready(function () {
 // });
 
 
-$(document).ready(function () {
-  $('.con-t-sss').click(function () {
-    var name = $(this).prev().find('.name-ti').text().trim();
-    $('.main-name').text(name);
-    $(this).closest('.faq-text').toggle();
-  });
+// $(document).ready(function () {
+//   // Hide all faq-text elements except the first one
+//   $('.faq-text').not(':first').hide();
 
-  $('.faq-toggle').click(function () {
-    var faqText = $(this).siblings('.faq-text');
-    faqText.toggle();
-  });
-});
+//   $('.con-t-sss').click(function () {
+//     var name = $(this).prev().find('.name-ti').text().trim();
+//     $('.main-name').text(name);
+//     $(this).closest('.faq-text').toggle();
+//   });
 
-
-
-
+//   $('.faq-toggle').click(function () {
+//     var faqText = $(this).siblings('.faq-text');
+//     faqText.toggle();
+//   });
+// });
 
 
 
