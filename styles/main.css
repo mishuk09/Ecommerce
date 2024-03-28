@@ -5318,7 +5318,7 @@ button.contact_form_submit:hover {
 
 
 
-section {
+.pick-trac-se {
     /* background: #eee; */
     /* padding: 5em 0; */
     /* border-bottom: 3px solid #ddd; */
@@ -5328,7 +5328,7 @@ section {
     /* height: 230px; */
 }
 
-section .track-your-order {
+.pick-trac-se .track-your-order {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -5338,25 +5338,25 @@ section .track-your-order {
     z-index: 999999;
 }
 
-section .track-your-order button {
+.pick-trac-se .track-your-order button {
     font-size: 2em !important;
     cursor: pointer;
 }
 
-section .container {
+.pick-trac-se .container {
     width: 100%;
     margin: auto;
     padding-left: 4em;
 }
 
-section .container .border-s {
+.pick-trac-se .container .border-s {
     width: 80%;
     border-bottom: 3px dashed #ddd;
     position: relative;
     top: 10px;
 }
 
-section .container .dashed {
+.pick-trac-se .container .dashed {
     width: 100%;
     margin: auto;
     border-bottom: 3px dashed transparent;
@@ -5364,7 +5364,7 @@ section .container .dashed {
     margin: auto;
 }
 
-section .container .dashed .circle {
+.pick-trac-se .container .dashed .circle {
     width: 20px;
     height: 20px;
     background-color: var(--secondary-color);
@@ -5373,7 +5373,7 @@ section .container .dashed .circle {
     position: relative;
 }
 
-section .container .dashed .circle:after {
+.pick-trac-se .container .dashed .circle:after {
     content: "";
     display: block;
     width: 300px;
@@ -5383,13 +5383,13 @@ section .container .dashed .circle:after {
     bottom: 8.5px;
 }
 
-section .container .dashed .circle-c {
+.pick-trac-se .container .dashed .circle-c {
     position: absolute;
     left: 18%;
     top: 1%;
 }
 
-section .container .dashed .special {
+.pick-trac-se .container .dashed .special {
     position: absolute;
     left: 40%;
     top: -90%;
@@ -5398,80 +5398,80 @@ section .container .dashed .special {
     background-color: #ddd;
 }
 
-section .container .dashed .special:after {
+.pick-trac-se .container .dashed .special:after {
     bottom: 22px;
     left: 100%;
     width: 0;
 }
 
-section .container .dashed .special .fa-male {
+.pick-trac-se .container .dashed .special .fa-male {
     text-align: center;
     width: 100%;
     padding-top: 9px;
 }
 
-section .container .dashed .sc {
+.pick-trac-se .container .dashed .sc {
     background-color: var(--secondary-color) !important;
 }
 
-section .container .dashed .special-o {
+.pick-trac-se .container .dashed .special-o {
     left: 58%;
 }
 
-section .container .dashed .special-o .fa-truck {
+.pick-trac-se .container .dashed .special-o .fa-truck {
     width: 100%;
     text-align: center;
     padding-top: 9px;
     padding-right: 4px;
 }
 
-section .container .dashed .specia-s {
+.pick-trac-se .container .dashed .specia-s {
     left: 500%;
     top: 0;
 }
 
-section .container .dashed .specia-s:after {
+.pick-trac-se .container .dashed .specia-s:after {
     width: 0;
 }
 
-section .container .dashed .specia-s .fa-shopping-bag {
+.pick-trac-se .container .dashed .specia-s .fa-shopping-bag {
     width: 100%;
     padding-top: 6px;
 }
 
-section .container .description {
+.pick-trac-se .container .description {
     width: 100%;
 }
 
-section .container .description .title p {
+.pick-trac-se .container .description .title p {
     font-weight: normal;
     float: left;
 }
 
-section .container .description .title p span {
+.pick-trac-se .container .description .title p span {
     font-size: 11px;
     text-align: center;
     color: #aaa;
 }
 
-section .container .description .title .title-i {
+.pick-trac-se .container .description .title .title-i {
     position: relative;
     left: -3.3%;
 }
 
-section .container .description .title .title-ii {
+.pick-trac-se .container .description .title .title-ii {
     padding-left: 0.2em;
 }
 
-section .container .description .title .title-iii {
+.pick-trac-se .container .description .title .title-iii {
     padding-left: 1.7em;
 }
 
-section .container .description .title .title-iiii {
+.pick-trac-se .container .description .title .title-iiii {
     padding-left: 2.8em;
 }
 
-section .container .description .title .title-iiiii {
+.pick-trac-se .container .description .title .title-iiiii {
     font-size: 13px;
     padding-left: 5.5em;
 }
