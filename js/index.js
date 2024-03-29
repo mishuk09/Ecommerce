@@ -927,3 +927,17 @@ $(document).ready(function () {
     $('#popup3').fadeOut();
   });
 });
+
+
+
+$(document).ready(function () {
+  $('.checkbox').change(function () {
+    $('.checkbox').not(this).prop('checked', false);
+  });
+});
+
+$(document).ready(function () {
+  $('.checkbox').change(function () {
+    $('.checkbox').not(this).prop('checked', false);
+  });
+});

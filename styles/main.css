@@ -5822,7 +5822,7 @@ button.contact_form_submit:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1001;
     width: 320px;
-    height: 350px;
+    height: 200px;
 }
 
 #popup3 h2 {
