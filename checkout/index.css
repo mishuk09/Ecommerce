@@ -18,7 +18,7 @@ html {
     width: 100%;
     height: 100%;
     color: #1a1a1a;
-    background: #f4f4f4
+    /* background: #f4f4f4 */
 }
 
 a,
@@ -1486,7 +1486,7 @@ textarea.fixAndroidKeyboard:focus {
 
 .container-v2 {
     width: 1188px;
-    background-color: #f4f4f4;
+    background-color: white;
     margin: 0 auto
 }
 
