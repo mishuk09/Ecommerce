@@ -4116,7 +4116,7 @@ textarea.fixAndroidKeyboard:focus {
     text-align: center
 }
 
-.place-order-btn {
+/* .place-order-btn {
     background: var(--primary-color);
     color: #fff;
     border-radius: 4px;
@@ -4124,16 +4124,16 @@ textarea.fixAndroidKeyboard:focus {
     height: 40px;
     text-align: center;
     transition: color 0.3s, background-color 0.3s;
-}
+} */
 
-.place-order-btn:hover {
+/* .place-order-btn:hover {
     background: var(--secondary-color);
     color: #fff;
     border-radius: 4px;
     width: 340px;
     height: 40px;
     text-align: center;
-}
+} */
 
 .tax-tip {
     font-size: 12px;
@@ -7215,29 +7215,10 @@ textarea.fixAndroidKeyboard:focus {
     text-decoration: none
 }
 
-.next-btn-normal {
-    border-style: solid;
-    background-color: #eff0f5;
-    border-color: #dadada
-}
 
-.next-btn-normal,
-.next-btn-normal.visited,
-.next-btn-normal:link,
-.next-btn-normal:visited {
-    color: #757575
-}
 
-.next-btn-normal.active,
-.next-btn-normal.hover,
-.next-btn-normal:active,
-.next-btn-normal:focus,
-.next-btn-normal:hover {
-    color: #757575;
-    background-color: #dadada;
-    border-color: transparent;
-    text-decoration: none
-}
+
+
 
 .next-btn-small {
     margin: 0;
@@ -7292,14 +7273,6 @@ textarea.fixAndroidKeyboard:focus {
     display: none
 }
 
-.next-btn-medium {
-    margin: 0;
-    height: 40px;
-    padding: 0 24px;
-    font-size: 12px;
-    line-height: 38px;
-    border-width: 1px
-}
 
 .next-btn-medium>.next-icon-first {
     margin-left: 0;
