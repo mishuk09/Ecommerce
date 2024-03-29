@@ -946,21 +946,43 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+  // Click event for Credit/Debit Card option
   $('.payment-i').click(function () {
-    // Hide all other forms
-    $('.payment-i').not(this).removeClass('active');
-    $('#creditCardForm').hide();
+    // Check if clicked element is Credit/Debit Card option
+    if ($(this).find('.payment-gate').text() === "Credit/Debit Card") {
+      // Hide all other forms
+      $('.payment-i').not(this).removeClass('active');
+      $('#creditCardForm').hide();
 
-    // Toggle active class for the selected option
-    $(this).toggleClass('active');
+      // Toggle active class for the selected option
+      $(this).toggleClass('active');
 
-    // If Credit/Debit Card option is clicked, show the form
-    if ($(this).hasClass('active')) {
-      $('#creditCardForm').show();
+      // If Credit/Debit Card option is clicked, show the form
+      if ($(this).hasClass('active')) {
+        $('#creditCardForm').show();
+      }
     }
   });
 
-  // Form submission handling
+  // Click event for Cash On Delivery option
+  $('.payment-i').click(function () {
+    // Check if clicked element is Cash On Delivery option
+    if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
+      // Hide all other forms
+      $('.payment-i').not(this).removeClass('active');
+      $('#cashOnDeliveryForm').hide();
+
+      // Toggle active class for the selected option
+      $(this).toggleClass('active');
+
+      // If Cash On Delivery option is clicked, show the form
+      if ($(this).hasClass('active')) {
+        $('#cashOnDeliveryForm').show();
+      }
+    }
+  });
+
+  // Form submission handling for Credit/Debit Card
   $('#creditCardDetails').submit(function (event) {
     // Prevent default form submission
     event.preventDefault();
@@ -973,4 +995,19 @@ $(document).ready(function () {
     // Example: Log form data to console
     console.log(formData);
   });
+
+  // Form submission handling for Cash On Delivery
+  $('#cashOnDeliveryDetails').submit(function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+
+    // Retrieve form data
+    var formData = $(this).serialize();
+
+    // Here, you can perform any further actions, such as AJAX request, form validation, etc.
+
+    // Example: Log form data to console
+    console.log(formData);
+  });
 });
+
