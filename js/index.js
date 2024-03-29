@@ -841,3 +841,89 @@ $(document).ready(function () {
 
 
 
+
+
+$(document).ready(function () {
+  // Open popup
+  $('#open').click(function () {
+    $('#overlay').fadeIn();
+    $('#popup').fadeIn();
+  });
+
+  // Close popup when clicking the overlay
+  $('#overlay').click(function () {
+    $('#overlay').fadeOut();
+    $('#popup').fadeOut();
+  });
+
+  // Prevent clicks on the popup from closing it
+  $('#popup').click(function (event) {
+    event.stopPropagation(); // Prevent the event from bubbling up to the overlay
+  });
+
+  // Close popup
+  $('#close').click(function () {
+    $('#overlay').fadeOut();
+    $('#popup').fadeOut();
+  });
+});
+
+$(document).ready(function () {
+  // Open popup
+  $('#open2').click(function () {
+    $('#overlay2').fadeIn();
+    $('#popup2').fadeIn();
+  });
+
+  // Close popup when clicking the overlay
+  $('#overlay2').click(function () {
+    $('#overlay2').fadeOut();
+    $('#popup2').fadeOut();
+  });
+
+  // Prevent clicks on the popup from closing it
+  $('#popup2').click(function (event) {
+    event.stopPropagation(); // Prevent the event from bubbling up to the overlay
+  });
+
+  // Close popup
+  $('#close2').click(function () {
+    $('#overlay2').fadeOut();
+    $('#popup2').fadeOut();
+  });
+});
+
+
+
+$(document).ready(function () {
+  // Open popup
+  $('#open3').click(function () {
+    $('#overlay3').fadeIn();
+    $('#popup3').fadeIn();
+
+    // Get the initial email value
+    var initialEmail = $('.editable-text-value').text().trim();
+
+    // Set the initial email value as the default value for the input field
+    $('#popup3 input[type="text"]').val(initialEmail);
+  });
+
+  // Close popup when clicking the overlay
+  $('#overlay3').click(function () {
+    $('#overlay3').fadeOut();
+    $('#popup3').fadeOut();
+  });
+
+  // Prevent clicks on the popup from closing it
+  $('#popup3').click(function (event) {
+    event.stopPropagation(); // Prevent the event from bubbling up to the overlay
+  });
+
+  // Close popup
+  $('.email-c-b').click(function () {
+    var newEmail = $('#popup3 input[type="text"]').val().trim();
+    $('.editable-text-value').text(newEmail);
+    $('#overlay3').fadeOut();
+    $('#popup3').fadeOut();
+  });
+});
