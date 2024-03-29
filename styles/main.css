@@ -5845,3 +5845,11 @@ button.contact_form_submit:hover {
     background-color: var(--secondary-color);
     color: white;
 }
+
+.payment-gate {
+    font-weight: 600;
+}
+
+.payment-gate-ch {
+    font-weight: 400;
+}
