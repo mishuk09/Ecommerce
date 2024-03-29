@@ -55,7 +55,7 @@ textarea.fixAndroidKeyboard:focus {
 
 .content-block-title {
     color: #1a1a1a;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: "14px";
     line-height: 20px
 }
@@ -1298,7 +1298,7 @@ textarea.fixAndroidKeyboard:focus {
 }
 
 .address-v2 .address-label {
-    font-weight: 500;
+    /* font-weight: 500; */
     margin-right: 8px
 }
 
@@ -1410,7 +1410,7 @@ textarea.fixAndroidKeyboard:focus {
 }
 
 .editable-label {
-    font-weight: 500;
+    /* font-wei ght: 500; */
     margin-right: 8px
 }
 

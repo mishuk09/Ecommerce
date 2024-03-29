@@ -944,70 +944,26 @@ $(document).ready(function () {
 
 
 
-
-
 $(document).ready(function () {
   // Click event for Payment options
   $('.payment-i').click(function () {
-    // Check if clicked element is Credit/Debit Card option
+    // Remove active class from all payment options
+    $('.payment-i').removeClass('active');
+    // Hide all forms
+    $('#creditCardForm, #cashOnDeliveryForm, #eSewaForm, #imePayForm').hide();
+
+    // Toggle active class for the clicked tab
+    $(this).addClass('active');
+
+    // Check which tab is active and show its corresponding form
     if ($(this).find('.payment-gate').text() === "Credit/Debit Card") {
-      // Hide other forms
-      $('#cashOnDeliveryForm, #eSewaForm, #imePayForm').hide();
-      // Toggle active class for the selected option
-      $(this).toggleClass('active');
-      // If Credit/Debit Card option is clicked, show the form
-      if ($(this).hasClass('active')) {
-        $('#creditCardForm').show();
-        // Remove active class from other options
-        $('.payment-i').not(this).removeClass('active');
-      } else {
-        $('#creditCardForm').hide();
-      }
-    }
-    // Check if clicked element is Cash On Delivery option
-    else if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
-      // Hide other forms
-      $('#creditCardForm, #eSewaForm, #imePayForm').hide();
-      // Toggle active class for the selected option
-      $(this).toggleClass('active');
-      // If Cash On Delivery option is clicked, show the form
-      if ($(this).hasClass('active')) {
-        $('#cashOnDeliveryForm').show();
-        // Remove active class from other options
-        $('.payment-i').not(this).removeClass('active');
-      } else {
-        $('#cashOnDeliveryForm').hide();
-      }
-    }
-    // Check if clicked element is eSewa option
-    else if ($(this).find('.payment-gate').text() === "eSewa Mobile Wallet") {
-      // Hide other forms
-      $('#creditCardForm, #cashOnDeliveryForm, #imePayForm').hide();
-      // Toggle active class for the selected option
-      $(this).toggleClass('active');
-      // If eSewa option is clicked, show the form
-      if ($(this).hasClass('active')) {
-        $('#eSewaForm').show();
-        // Remove active class from other options
-        $('.payment-i').not(this).removeClass('active');
-      } else {
-        $('#eSewaForm').hide();
-      }
-    }
-    // Check if clicked element is IME Pay option
-    else if ($(this).find('.payment-gate').text() === "IME Pay") {
-      // Hide other forms
-      $('#creditCardForm, #cashOnDeliveryForm, #eSewaForm').hide();
-      // Toggle active class for the selected option
-      $(this).toggleClass('active');
-      // If IME Pay option is clicked, show the form
-      if ($(this).hasClass('active')) {
-        $('#imePayForm').show();
-        // Remove active class from other options
-        $('.payment-i').not(this).removeClass('active');
-      } else {
-        $('#imePayForm').hide();
-      }
+      $('#creditCardForm').show();
+    } else if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
+      $('#cashOnDeliveryForm').show();
+    } else if ($(this).find('.payment-gate').text() === "eSewa Mobile Wallet") {
+      $('#eSewaForm').show();
+    } else if ($(this).find('.payment-gate').text() === "IME Pay") {
+      $('#imePayForm').show();
     }
   });
 

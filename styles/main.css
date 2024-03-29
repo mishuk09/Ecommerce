@@ -357,6 +357,7 @@
     width: 100%;
     position: relative;
     z-index: 99;
+    
     /* padding: 15px; */
 }
 
@@ -5822,7 +5823,7 @@ button.contact_form_submit:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1001;
     width: 320px;
-    height: 200px;
+    height: 250px;
 }
 
 #popup3 h2 {
@@ -5856,6 +5857,7 @@ button.contact_form_submit:hover {
 
 .payment-i {
     border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .12);
 }
 
 .card-btn-s {
@@ -5888,4 +5890,11 @@ button.contact_form_submit:hover {
     color: white !important;
     width: 100%;
     height: 40px;
+}
+
+
+.payment-i.active {
+    border: 1px solid var(--secondary-color);
+
+    /* Adjust border style as needed */
 }
