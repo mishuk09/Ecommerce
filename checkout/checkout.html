@@ -1662,7 +1662,8 @@
 
                                 <h1 class="font-semibold text-[22px] text-gray-700 mt-10">Select Payment Method</h1>
                                 <div class="flex gap-4 mt-6">
-                                    <div class="flex flex-col py-10 rounded w-full h-auto items-center bg-slate-100">
+                                    <div
+                                        class="flex cursor-pointer flex-col py-10 payment-i w-full h-auto items-center bg-slate-100">
 
                                         <img class="w-16" src="/images/checkout/TB1qIthr67nBKNjSZLeXXbxCFXa-80-80.png"
                                             alt="">
@@ -1670,23 +1671,23 @@
                                         <p class="text-[14px] mt-[3px]  payment-gate-ch text-gray-500">Credit/Debit Card
                                         </p>
                                     </div>
-                                    <div class="flex flex-col py-10 rounded w-full h-auto items-center bg-slate-100">
+                                    <div class="flex flex-col py-10 payment-i w-full h-auto items-center bg-slate-100">
 
-                                        <img class="w-16" src="/images/checkout/es.png" alt="">
+                                        <img class="w-16" src="/images/checkout/1.png" alt="">
                                         <p class="text-[16px] mt-3 payment-gate">eSewa Mobile Wallet</p>
                                         <p class="text-[14px] mt-[3px]  payment-gate-ch text-gray-500">eSewa Mobile
                                             Wallet
                                         </p>
                                     </div>
-                                    <div class="flex flex-col py-10 rounded w-full h-auto items-center bg-slate-100">
+                                    <div class="flex flex-col py-10 payment-i w-full h-auto items-center bg-slate-100">
 
-                                        <img class="w-16" src="/images/checkout/im.png" alt="">
+                                        <img class="w-16" src="/images/checkout/2.png" alt="">
                                         <p class="text-[16px] mt-3 payment-gate">IME Pay</p>
                                         <p class="text-[14px] mt-[3px]  payment-gate-ch text-gray-500">IME Pay Mobile
                                             Wallet
                                         </p>
                                     </div>
-                                    <div class="flex flex-col py-10 rounded w-full h-auto items-center bg-slate-100">
+                                    <div class="flex flex-col py-10 payment-i w-full h-auto items-center bg-slate-100">
 
                                         <img class="w-16" src="/images/checkout/TB1utb_r8jTBKNjSZFwXXcG4XXa-80-80.png"
                                             alt="">
@@ -1698,6 +1699,57 @@
                                 </div>
 
 
+
+
+
+
+
+
+
+
+
+                                <div id="creditCardForm" style="display: none;" class="text-gray-500 mt-10">
+                                    <div class="flex gap-4">
+                                        <div class="pt-1"><img class="w-14" src="/images/checkout/download.png" alt="">
+                                        </div>
+                                        <div><img class="w-12" src="/images/checkout/master.webp" alt=""></div>
+                                        <div><img class="w-12" src="/images/checkout/am.webp" alt=""></div>
+
+                                    </div>
+
+                                    <form id="creditCardDetails" class="mt-2">
+                                        <div class="flex flex-col">
+
+                                            <label for=""> * Card number</label>
+                                            <input class="w-full mt-1 h-12 border rounded outline-none px-2" type="text"
+                                                name="cardNumber" placeholder="Card Number"> <br>
+                                        </div>
+                                        <div class="flex flex-col mt-2">
+
+                                            <label for=""> * Name on Card</label>
+                                            <input class="w-full mt-1 h-12 border rounded outline-none px-2" type="text"
+                                                name="nameOnCard" placeholder="Name on Card"> <br>
+                                        </div>
+
+                                        <div class="flex w-full mt-2">
+                                            <div class="flex flex-row gap-4 w-full">
+                                                <div class="flex flex-col w-full">
+                                                    <label for="">* Expiration date</label>
+                                                    <input type="text" name="expirationDate"
+                                                        class="w-full mt-1 h-12 border rounded outline-none px-2"
+                                                        placeholder="MM/YY">
+                                                </div>
+                                                <div class="flex flex-col  w-full">
+                                                    <label for="">* CVV</label>
+                                                    <input type="text" name="cvv"
+                                                        class="w-full mt-1 h-12 border rounded outline-none px-2"
+                                                        placeholder="CVV">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="  card-btn-s mt-8  rounded" type="submit">Submit</button>
+                                    </form>
+                                </div>
 
 
 

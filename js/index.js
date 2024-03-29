@@ -941,3 +941,36 @@ $(document).ready(function () {
     $('.checkbox').not(this).prop('checked', false);
   });
 });
+
+
+
+
+$(document).ready(function () {
+  $('.payment-i').click(function () {
+    // Hide all other forms
+    $('.payment-i').not(this).removeClass('active');
+    $('#creditCardForm').hide();
+
+    // Toggle active class for the selected option
+    $(this).toggleClass('active');
+
+    // If Credit/Debit Card option is clicked, show the form
+    if ($(this).hasClass('active')) {
+      $('#creditCardForm').show();
+    }
+  });
+
+  // Form submission handling
+  $('#creditCardDetails').submit(function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+
+    // Retrieve form data
+    var formData = $(this).serialize();
+
+    // Here, you can perform any further actions, such as AJAX request, form validation, etc.
+
+    // Example: Log form data to console
+    console.log(formData);
+  });
+});
