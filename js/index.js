@@ -945,39 +945,68 @@ $(document).ready(function () {
 
 
 
+
 $(document).ready(function () {
-  // Click event for Credit/Debit Card option
+  // Click event for Payment options
   $('.payment-i').click(function () {
     // Check if clicked element is Credit/Debit Card option
     if ($(this).find('.payment-gate').text() === "Credit/Debit Card") {
-      // Hide all other forms
-      $('.payment-i').not(this).removeClass('active');
-      $('#creditCardForm').hide();
-
+      // Hide other forms
+      $('#cashOnDeliveryForm, #eSewaForm, #imePayForm').hide();
       // Toggle active class for the selected option
       $(this).toggleClass('active');
-
       // If Credit/Debit Card option is clicked, show the form
       if ($(this).hasClass('active')) {
         $('#creditCardForm').show();
+        // Remove active class from other options
+        $('.payment-i').not(this).removeClass('active');
+      } else {
+        $('#creditCardForm').hide();
       }
     }
-  });
-
-  // Click event for Cash On Delivery option
-  $('.payment-i').click(function () {
     // Check if clicked element is Cash On Delivery option
-    if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
-      // Hide all other forms
-      $('.payment-i').not(this).removeClass('active');
-      $('#cashOnDeliveryForm').hide();
-
+    else if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
+      // Hide other forms
+      $('#creditCardForm, #eSewaForm, #imePayForm').hide();
       // Toggle active class for the selected option
       $(this).toggleClass('active');
-
       // If Cash On Delivery option is clicked, show the form
       if ($(this).hasClass('active')) {
         $('#cashOnDeliveryForm').show();
+        // Remove active class from other options
+        $('.payment-i').not(this).removeClass('active');
+      } else {
+        $('#cashOnDeliveryForm').hide();
+      }
+    }
+    // Check if clicked element is eSewa option
+    else if ($(this).find('.payment-gate').text() === "eSewa Mobile Wallet") {
+      // Hide other forms
+      $('#creditCardForm, #cashOnDeliveryForm, #imePayForm').hide();
+      // Toggle active class for the selected option
+      $(this).toggleClass('active');
+      // If eSewa option is clicked, show the form
+      if ($(this).hasClass('active')) {
+        $('#eSewaForm').show();
+        // Remove active class from other options
+        $('.payment-i').not(this).removeClass('active');
+      } else {
+        $('#eSewaForm').hide();
+      }
+    }
+    // Check if clicked element is IME Pay option
+    else if ($(this).find('.payment-gate').text() === "IME Pay") {
+      // Hide other forms
+      $('#creditCardForm, #cashOnDeliveryForm, #eSewaForm').hide();
+      // Toggle active class for the selected option
+      $(this).toggleClass('active');
+      // If IME Pay option is clicked, show the form
+      if ($(this).hasClass('active')) {
+        $('#imePayForm').show();
+        // Remove active class from other options
+        $('.payment-i').not(this).removeClass('active');
+      } else {
+        $('#imePayForm').hide();
       }
     }
   });
@@ -986,12 +1015,9 @@ $(document).ready(function () {
   $('#creditCardDetails').submit(function (event) {
     // Prevent default form submission
     event.preventDefault();
-
     // Retrieve form data
     var formData = $(this).serialize();
-
     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
-
     // Example: Log form data to console
     console.log(formData);
   });
@@ -1000,14 +1026,32 @@ $(document).ready(function () {
   $('#cashOnDeliveryDetails').submit(function (event) {
     // Prevent default form submission
     event.preventDefault();
-
     // Retrieve form data
     var formData = $(this).serialize();
-
     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
+    // Example: Log form data to console
+    console.log(formData);
+  });
 
+  // Form submission handling for eSewa Mobile Wallet
+  $('#eSewaDetails').submit(function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+    // Retrieve form data
+    var formData = $(this).serialize();
+    // Here, you can perform any further actions, such as AJAX request, form validation, etc.
+    // Example: Log form data to console
+    console.log(formData);
+  });
+
+  // Form submission handling for IME Pay
+  $('#imePayDetails').submit(function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+    // Retrieve form data
+    var formData = $(this).serialize();
+    // Here, you can perform any further actions, such as AJAX request, form validation, etc.
     // Example: Log form data to console
     console.log(formData);
   });
 });
-

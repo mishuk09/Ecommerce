@@ -3785,7 +3785,7 @@ textarea.fixAndroidKeyboard:focus {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 24px
 }
 
