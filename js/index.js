@@ -306,6 +306,8 @@ $(document).ready(function () {
 });
 
 
+
+
 // Products details page video pause 
 
 
