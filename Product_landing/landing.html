@@ -19,9 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="/js/index.js"></script>
 
 
@@ -1001,7 +1000,7 @@
             <div
                 class="w-full h-[60px] text-[14px] bg-primary flex items-center px-6  text-center justify-end close-sidebar cursor-pointer">
 
-                <img src="./images/close.png" width="15" />
+                <img src="/images/close.png" width="15" />
 
             </div>
 
@@ -1014,7 +1013,7 @@
                         <p class="open">
                             Men
                         </p>
-                        <img src="./images/down.png" width="15" />
+                        <img src="/images/down.png" width="15" >
 
                     </a>
                     <ul class="ps-4 submenu rounded-md mb-6  hidden" id="dropdownMenu1">
@@ -1043,7 +1042,7 @@
                         <p class="open">
                             Women
                         </p>
-                        <img src="./images/down.png" width="15" />
+                        <img src="/images/down.png" width="15" />
 
                     </a>
                     <ul class="ps-4 submenu rounded-md   hidden" id="dropdownMenu1">
@@ -1074,7 +1073,7 @@
                         <p class="open">
                             Products
                         </p>
-                        <img src="./images/down.png" width="15" />
+                        <img src="/images/down.png" width="15" />
 
                     </a>
 
@@ -1108,7 +1107,7 @@
                         <p class="open">
                             Page
                         </p>
-                        <img src="./images/down.png" width="15" />
+                        <img src="/images/down.png" width="15" />
 
                     </a>
                     <ul class="ps-4 submenu  rounded-md shadow-md hidden" id="dropdownMenu4">
@@ -1950,18 +1949,13 @@
 ####                                            ####
 ##################################################-->
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
 
     <script>
 
 
-
-        // -----Country Code Selection
-        $("#mobile_code").intlTelInput({
-            initialCountry: "in",
-            separateDialCode: true,
-
-        });
 
         // Get references to the cart menu button, X mark, overlay, and the cart div
         const cartMenuButton = document.getElementById('cart-menu-button');
@@ -1993,54 +1987,6 @@
         overlay.addEventListener('click', closeCart);
 
 
-
-        // Get references to all the quantity control elements
-        const quantityControlContainers = document.querySelectorAll('.quantity-controls');
-
-        quantityControlContainers.forEach(container => {
-
-            const quantityElement = container.querySelector('.quantity');
-            const decreaseButton = container.querySelector('.decreaseQuantity');
-            const increaseButton = container.querySelector('.increaseQuantity');
-
-
-            decreaseButton.addEventListener('click', () => {
-
-                let currentQuantity = parseInt(quantityElement.textContent);
-                if (currentQuantity > 1) {
-                    currentQuantity--;
-                    quantityElement.textContent = currentQuantity;
-                }
-            });
-
-            // Add event listener to the increase button
-            increaseButton.addEventListener('click', () => {
-                let currentQuantity = parseInt(quantityElement.textContent);
-                currentQuantity++;
-                quantityElement.textContent = currentQuantity;
-            });
-        });
-
-
-
-
-        // Get reference to the timer button
-        const timerButton = document.getElementById('timer');
-        const endTime = new Date().getTime() + (3 * 60 * 60 * 1000); // 3 hours from now
-        const timerInterval = setInterval(updateTimer, 1000);
-
-        function updateTimer() {
-            const currentTime = new Date().getTime();
-            const remainingTime = endTime - currentTime;
-            const hours = String(Math.floor(remainingTime / (1000 * 60 * 60))).padStart(2, '0');
-            const minutes = String(Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-            const seconds = String(Math.floor((remainingTime % (1000 * 60)) / 1000)).padStart(2, '0');
-            timerButton.innerHTML = `Hurry up! Offer ends in: <span class="timer-hour">${hours}</span><span class="timer-minute">${minutes}</span><span class="timer-second">${seconds}</span>`;
-            if (remainingTime <= 0) {
-                clearInterval(timerInterval);
-                timerButton.textContent = 'Offer ended!';
-            }
-        }
 
 
 
@@ -2108,10 +2054,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/f4de1cba20.js" crossorigin="anonymous"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="/js/index.js"></script>
+
 
 </body>
 
