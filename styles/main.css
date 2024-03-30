@@ -5950,3 +5950,17 @@ button.contact_form_submit:hover {
     transition: 0.3s;
 
 } */
+
+.landing-head {
+    background-color: var(--primary-color);
+}
+
+
+.leading-demo {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100px;
+    height: 40px;
+ 
+   
+}
