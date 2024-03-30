@@ -5949,6 +5949,8 @@ button.contact_form_submit:hover {
     border-bottom: 2px solid var(--secondary-color);
     transition: 0.3s;
 
+
+
 } */
 
 .landing-head {
@@ -5963,4 +5965,145 @@ button.contact_form_submit:hover {
     height: 40px;
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/*------------*/
+.form-area {
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+    padding: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-area .form-inner {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px 19px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #475F7B;
+    background-color: #FFF;
+    border: 1px solid #DFE3E7;
+    border-radius: .267rem;
+    -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #475F7B;
+    background-color: #FFF;
+    border-color: #5A8DEE;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.intl-tel-input,
+.iti {
+    width: 100%;
+}
+
+
+
+
+
+.landing-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+
+}
+
+.landing-btn:hover {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+
+}
+
+
+
+
+
+.custom-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Styling for popup */
+.custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    width: 50%;
+    min-height: 500px;
 }
