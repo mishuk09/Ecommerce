@@ -6025,7 +6025,7 @@ a:hover {
     width: 100%;
 }
 
-.form-control {
+.form-control-l {
     display: block;
     width: 100%;
     height: auto;
@@ -6041,7 +6041,7 @@ a:hover {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.form-control:focus {
+.form-control-l:focus {
     color: #475F7B;
     background-color: #FFF;
     border-color: #5A8DEE;
