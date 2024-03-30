@@ -5901,3 +5901,51 @@ button.contact_form_submit:hover {
 
     /* Adjust border style as needed */
 }
+
+
+
+
+
+
+/* product leading page  */
+
+
+
+
+
+.section-div-4 {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.section-div-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/home/ll.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.section-div-4:hover::before {
+    transform: scale(1.1);
+}
+
+
+.shop-btn-4 {
+    /* border-bottom: 2px solid white; */
+    border-radius: 8px;
+}
+
+/* .shop-btn-4:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    transition: 0.3s;
+
+} */
