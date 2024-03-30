@@ -6094,7 +6094,7 @@ a:hover {
 
 /* Styling for popup */
 .custom-popup {
-    display: none;
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -6104,6 +6104,6 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1001;
-    width: 50%;
-    min-height: 500px;
+    width: 800px;
+    min-height: 400px;
 }

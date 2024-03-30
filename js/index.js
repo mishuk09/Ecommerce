@@ -1022,21 +1022,25 @@ $(document).ready(function () {
 
 
 
-
 $(document).ready(function () {
   // Toggle popup and overlay on button click
   $('#togglePopup').click(function () {
-    $('.custom-overlay, .custom-popup').toggle();
+    $('.custom-overlay').toggle();
+    $('.custom-popup').css('visibility', function (_, visibility) {
+      return visibility === 'visible' ? 'hidden' : 'visible';
+    });
   });
 
   // Close popup and overlay when close button is clicked
   $('#closePopup').click(function () {
-    $('.custom-overlay, .custom-popup').hide();
+    $('.custom-overlay').hide();
+    $('.custom-popup').css('visibility', 'hidden');
   });
 
   // Close popup and overlay when overlay is clicked
   $('.custom-overlay').click(function () {
-    $('.custom-overlay, .custom-popup').hide();
+    $('.custom-overlay').hide();
+    $('.custom-popup').css('visibility', 'hidden');
   });
 
   // Prevent propagation of click event from popup to overlay
@@ -1044,5 +1048,3 @@ $(document).ready(function () {
     event.stopPropagation();
   });
 });
-
-
