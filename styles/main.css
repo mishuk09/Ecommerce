@@ -28,7 +28,7 @@
     --primary-text: #225487;
     --primary-font: 'Roboto', sans-serif;
     --primary-font-two: 'Jost', sans-serif;
-    --primary-font-three: 'Roboto', Helvetica, Arial, Tahoma, sans-serif;
+    --primary-font-three: 'Helvetica', Arial, Tahoma, sans-serif;
 
     --input-color: rgb(85, 85, 85);
     --input-font-size: 14px;
@@ -41,7 +41,7 @@
 }
 
 .check-body {
-    font-family: var(--primary-font-two);
+    font-family: var(--primary-font-three);
     overflow-x: hidden;
     /* overflow: hidden; */
 }

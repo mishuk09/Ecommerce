@@ -1490,9 +1490,19 @@ textarea.fixAndroidKeyboard:focus {
 
 }
 
+
+#rightContainer_26 {
+    border-radius: 8px;
+    height: 300px;
+    padding: 24px 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .12);
+
+
+}
+
 #container_27 {
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 0.9fr 0.3fr;
     grid-gap: 20px;
 }
 
