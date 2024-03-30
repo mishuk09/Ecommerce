@@ -5952,7 +5952,7 @@ button.contact_form_submit:hover {
 } */
 
 .landing-head {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 
@@ -5961,6 +5961,6 @@ button.contact_form_submit:hover {
     color: white;
     width: 100px;
     height: 40px;
- 
-   
+
+
 }
