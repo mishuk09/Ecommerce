@@ -1806,6 +1806,114 @@
 
 
 
+    <div class="custom-container">
+        <div id="creditCardForm" style="display: none;" class="text-gray-500 mt-10">
+            <div class="flex gap-4">
+                <div class="pt-1"><img class="w-14" src="/images/checkout/download.png" alt="">
+                </div>
+                <div><img class="w-12" src="/images/checkout/master.webp" alt=""></div>
+                <div><img class="w-12" src="/images/checkout/am.webp" alt=""></div>
+
+            </div>
+
+            <form id="creditCardDetails" class="mt-2">
+                <div class="flex flex-col">
+
+                    <label for=""> * Card number</label>
+                    <input class="w-full mt-1 h-12 border rounded outline-none px-2" type="text" name="cardNumber"
+                        placeholder="Card Number"> <br>
+                </div>
+                <div class="flex flex-col mt-2">
+
+                    <label for=""> * Name on Card</label>
+                    <input class="w-full mt-1 h-12 border rounded outline-none px-2" type="text" name="nameOnCard"
+                        placeholder="Name on Card"> <br>
+                </div>
+
+                <div class="flex w-full mt-2">
+                    <div class="flex flex-row gap-4 w-full">
+                        <div class="flex flex-col w-full">
+                            <label for="">* Expiration date</label>
+                            <input type="text" name="expirationDate"
+                                class="w-full mt-1 h-12 border rounded outline-none px-2" placeholder="MM/YY">
+                        </div>
+                        <div class="flex flex-col  w-full">
+                            <label for="">* CVV</label>
+                            <input type="text" name="cvv" class="w-full mt-1 h-12 border rounded outline-none px-2"
+                                placeholder="CVV">
+                        </div>
+                    </div>
+                </div>
+                <button class="  card-btn-s mt-8  rounded" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div id="cashOnDeliveryForm" style="display: none;" class="mt-10">
+            <div class=" ">
+                <p>You can pay in cash to our courier when you receive the goods at your
+                    doorstep.</p>
+                <div class="w-full p-4 mt-2 flex  bg-slate-100 rounded text-blue-900">
+                    <div>
+                        <i class="fa-solid me-4 text-[16px] fa-circle-exclamation"></i>
+                    </div>
+                    <div>
+                        Cash Payment Fee of ৳ 10
+                        applies only to Cash on Delivery payment method. There is no extra fee
+                        when
+                        using other payment methods.
+                    </div>
+
+
+
+
+                </div>
+                <button class="  card-btn-s mt-6  rounded" type="submit">Confirm Order</button>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- eSewa Mobile Wallet Form -->
+        <div id="eSewaForm" style="display: none;" class="text-gray-700 mt-10">
+            <div class=" ">
+                <p>You will be redirected to your eSewa account to complete your payment:</p>
+                <p class="mt-3">1. Login to your eSewa account using your eSewa ID and your
+                    Password</p>
+                <p class="">2.Ensure your eSewa account is active and has sufficient balance
+                </p>
+                <p>3.Enter OTP (one time password) sent to your registered mobile number</p>
+
+                <p class="mt-3"> ***Login with your eSewa mobile and PASSWORD (not MPin)***
+                </p>
+
+                <button class="  card-btn-s mt-10  rounded" type="submit">Pay Now</button>
+
+            </div>
+        </div>
+
+        <!-- IME Pay Form -->
+        <div id="imePayForm" style="display: none;" class="text-gray-500 mt-10">
+            <div class=" ">
+                <p>You will be redirected to your IME Pay account to complete your payment:</p>
+                <p class="mt-3">1. Login to your IME Pay account using your eSewa ID and your
+                    Password</p>
+                <p class="">2.Ensure your IME Pay account is active and has sufficient balance
+                </p>
+                <p>3.Enter OTP (one time password) sent to your registered mobile number</p>
+
+                <p class="mt-3"> ***Login with your IME Pay mobile and PASSWORD (not MPin)***
+                </p>
+
+                <button class="  card-btn-s mt-10  rounded" type="submit">Pay Now</button>
+
+            </div>
+        </div>
+    </div>
+
+
 
 
 
