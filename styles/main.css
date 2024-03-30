@@ -5914,14 +5914,14 @@ button.contact_form_submit:hover {
 
 
 
-.section-div-4 {
+.section-div-6 {
     position: relative;
     overflow: hidden;
     font-family: var(--primary-font);
     font-weight: 700;
 }
 
-.section-div-4::before {
+.section-div-6::before {
     content: '';
     position: absolute;
     top: 0;
@@ -5935,17 +5935,17 @@ button.contact_form_submit:hover {
     transition: transform 0.3s ease;
 }
 
-.section-div-4:hover::before {
+.section-div-6:hover::before {
     transform: scale(1.1);
 }
 
 
-.shop-btn-4 {
+.shop-btn-6 {
     /* border-bottom: 2px solid white; */
     border-radius: 8px;
 }
 
-/* .shop-btn-4:hover {
+/* .shop-btn-6:hover {
     border-bottom: 2px solid var(--secondary-color);
     transition: 0.3s;
 
