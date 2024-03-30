@@ -1653,89 +1653,11 @@
 
     <script>
 
-
-        // #################################################
-        // ####          Quick view                   ####
-        // ##################################################
-
-        const modal = document.querySelector('.modal');
-        const modalWrapper = document.querySelector('.popup-overlay');
-        const modalContent = document.querySelector('.modal__content');
-        const close = document.querySelector('.modal__close');
-        const modalImg = document.querySelector('.modal__img');
-        const productList = document.querySelectorAll('.product__list');
-        const title = document.querySelector('.detail__title');
-        const cost = document.querySelector('.detail__price');
-
-        const productCost = ['£395', '£245', '£195', '£295', '£345', '£455'];
-
-        productList.forEach((list, index) => {
-            const view = list.querySelector('.product__viewBtn');
-            const productImg = list.querySelector('.product__img').getAttribute('src');
-
-            view.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent default anchor tag behavior
-                modal.classList.add('modal--bg');
-                modalWrapper.classList.add('active');
-                modalContent.classList.add('modal__content--show');
-                modalImg.setAttribute('src', productImg);
-                title.innerText = `product title ${index + 1}`;
-                cost.innerText = productCost[index];
-            });
-        });
-
-        close.addEventListener('click', () => {
-            closeModal();
-        });
-
-        modalWrapper.addEventListener('click', (event) => {
-            if (event.target === modalWrapper) {
-                closeModal();
-            }
-        });
-
-        modal.addEventListener('click', () => {
-            closeModal();
-        });
-
-        function closeModal() {
-            modal.classList.remove('modal--bg');
-            modalWrapper.classList.remove('active');
-            modalContent.classList.remove('modal__content--show');
-        }
+ 
 
 
 
-
-
-        // Get references to all the quantity control elements
-        const quantityControlContainers = document.querySelectorAll('.quantity-controls');
-
-        quantityControlContainers.forEach(container => {
-
-            const quantityElement = container.querySelector('.quantity');
-            const decreaseButton = container.querySelector('.decreaseQuantity');
-            const increaseButton = container.querySelector('.increaseQuantity');
-
-
-            decreaseButton.addEventListener('click', () => {
-
-                let currentQuantity = parseInt(quantityElement.textContent);
-                if (currentQuantity > 1) {
-                    currentQuantity--;
-                    quantityElement.textContent = currentQuantity;
-                }
-            });
-
-            // Add event listener to the increase button
-            increaseButton.addEventListener('click', () => {
-                let currentQuantity = parseInt(quantityElement.textContent);
-                currentQuantity++;
-                quantityElement.textContent = currentQuantity;
-            });
-        });
-
-
+ 
 
 
 
