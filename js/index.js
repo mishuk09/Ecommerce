@@ -1167,3 +1167,12 @@ $(document).ready(function () {
     event.stopPropagation();
   });
 });
+
+
+
+
+$(document).ready(function () {
+  $('.checkbox-item').change(function () {
+    $('.checkbox-item').not(this).prop('checked', false);
+  });
+});
