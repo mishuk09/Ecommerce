@@ -5368,7 +5368,7 @@ button.contact_form_submit:hover {
 .pick-trac-se .container {
     width: 100%;
     margin: auto;
-    padding-left: 4em;
+    padding-left: 10px;
 }
 
 .pick-trac-se .container .border-s {
@@ -5378,13 +5378,24 @@ button.contact_form_submit:hover {
     top: 10px;
 }
 
+
+@media only screen and (max-width:500px) {
+    .pick-trac-se .container .border-s {
+        width: 90%;
+        border-bottom: 3px dashed #ddd;
+        position: relative;
+        top: 10px;
+    }
+
+}
+
 .pick-trac-se .container .dashed {
     width: 100%;
-    /* margin: auto; */
     border-bottom: 3px dashed transparent;
     position: relative;
-    /* margin: auto; */
 }
+
+
 
 .pick-trac-se .container .dashed .circle {
     width: 20px;
@@ -5399,10 +5410,24 @@ button.contact_form_submit:hover {
     content: "";
     display: block;
     width: 300px;
+    /* width: 60%; */
     height: 6px;
     background-color: var(--secondary-color);
     position: absolute;
     bottom: 8.5px;
+}
+
+@media only screen and (max-width:500px) {
+    .pick-trac-se .container .dashed .circle:after {
+        content: "";
+        display: block;
+        width: 200px;
+        /* width: 60%; */
+        height: 6px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        bottom: 8.5px;
+    }
 }
 
 .pick-trac-se .container .dashed .circle-c {
@@ -5414,9 +5439,9 @@ button.contact_form_submit:hover {
 .pick-trac-se .container .dashed .special {
     position: absolute;
     left: 40%;
-    top: -90%;
-    width: 30px;
-    height: 30px;
+    top: -60%;
+    width: 25px;
+    height: 25px;
     background-color: #ddd;
 }
 
@@ -5430,6 +5455,7 @@ button.contact_form_submit:hover {
     text-align: center;
     width: 100%;
     padding-top: 9px;
+    font-size: 12px;
 }
 
 .pick-trac-se .container .dashed .sc {
@@ -5445,11 +5471,27 @@ button.contact_form_submit:hover {
     text-align: center;
     padding-top: 9px;
     padding-right: 4px;
+    font-size: 10px;
 }
 
 .pick-trac-se .container .dashed .specia-s {
     left: 500%;
     top: 0;
+}
+
+
+@media only screen and (max-width:500px) {
+    .pick-trac-se .container .dashed .specia-s {
+        left: 350%;
+        top: 0;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .pick-trac-se .container .dashed .specia-s {
+        left: 1000%;
+        top: 0;
+    }
 }
 
 .pick-trac-se .container .dashed .specia-s:after {
@@ -5458,7 +5500,11 @@ button.contact_form_submit:hover {
 
 .pick-trac-se .container .dashed .specia-s .fa-shopping-bag {
     width: 100%;
-    padding-top: 6px;
+    text-align: center;
+    padding-top: 8px;
+    padding-right: 4px;
+    font-size: 10px;
+
 }
 
 .pick-trac-se .container .description {
