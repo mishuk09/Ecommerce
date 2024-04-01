@@ -32,11 +32,7 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####          GO TO TOP start                ####
-####                                            ####
-##################################################-->
+
 
 
     <button id="goToTopButton" class="h-8 w-8">
@@ -46,19 +42,6 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####          Header section start              ####
-####                                            ####
-##################################################-->
-
-
-
-
-    <!--#################################################
-####          quick view section start              ####
-##################################################-->
-
 
     <div class="container-div-3     flex items-center text-center justify-center popup-overlay">
 
@@ -66,13 +49,13 @@
         </div>
         <div class="modal"></div>
         <div
-            class="modal__content w-[90%] max-h-[600px]  md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]  lg:max-w-[960px]   pt-2      rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto">
+            class="modal__content w-[90%] max-h-[600px] gap-2 quick-view-owl md:max-h-[600px] md:max-w-[600px] lg:max-h-[540px]  lg:max-w-[960px]   pt-2      rounded-md grid grid-cols-1 lg:grid-cols-2   overflow-y-auto">
 
             <i class="modal__close fa-solid text-gray-600 fa-xmark"></i>
 
             <div class="modal__left overflow-hidden">
 
-                <div class="owl-carousel main-slider flex items-center justify-center">
+                <div class="owl-carousel  main-slider flex items-center justify-center">
                     <div class="item p-4 flex items-center justify-center text-center">
                         <video id="videoPlayer" class="rounded w-full h-full mt-[100px] object-center object-cover"
                             controls>
@@ -101,10 +84,10 @@
 
 
             <div
-                class="modal__right pe-4 top-0 mt-4 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-auto lg:h-[430px] ">
+                class="modal__right p-4 top-0 mt-4 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-auto lg:h-[430px] ">
 
 
-                <div class="text-start top-0 w-full p-6 lg:p-0 lg:pe-6 mt-0 grid duration-150 rounded-b-xl md:w-full">
+                <div class="text-start top-0 w-full  lg:p-0 lg:pe-6 mt-0 grid duration-150 rounded-b-xl md:w-full">
 
                     <span class="text-gray-500 uppercase text-[12px]">UMINO</span>
                     <p
@@ -167,7 +150,7 @@
                     <p class="text-[14px] color-selected text-gray-700 mt-8 mb-2">Color: <span class="font-bold">Mattle
                             Black</span>
                     </p>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 flex-wrap">
                         <p
                             class="color-selection bg-gray-900 selected cursor-pointer border rounded-full   text-[14px]   flex items-center text-center justify-center w-8 h-8">
                             <span class="hidden">Mattle Black</span>
@@ -189,7 +172,7 @@
 
                     <p class="text-[14px] memory-size text-gray-700 mt-6 mb-2">Size: <span class="font-bold">64GB</span>
                     </p>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 flex-wrap">
                         <p
                             class="size-selection selected cursor-pointer border rounded   text-[14px] px-6 flex items-center text-center justify-center h-8">
                             64GB</p>
@@ -200,7 +183,7 @@
                             class="size-selection border rounded cursor-pointer px-6 text-[14px] flex items-center text-center justify-center h-8">
                             256 GB</p>
                     </div>
-                    <div class="flex gap-2 mt-6">
+                    <div class="flex gap-2 mt-6 items-center flex-wrap">
                         <div
                             class="flex px-4 justify-between items-center text-center rounded-full h-11 w-[90px] md:w-[140px] bg-slate-200 text-black">
                             <button
@@ -244,16 +227,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <header>
         <nav>
@@ -1191,11 +1164,6 @@
     </header>
 
 
-    <!--#################################################
-####                                            ####
-####          Header section END              ####
-####                                            ####
-##################################################-->
 
 
 
@@ -1204,11 +1172,10 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####      Sidebar Dropdown section Start     ####
-####                                            ####
-##################################################-->
+    <!-- 
+                                              
+       Sidebar Dropdown section Start      
+ -->
 
 
 
@@ -1386,12 +1353,7 @@
 
 
 
-
-    <!--#################################################
-####                                            ####
-####      Sidebar Dropdown section END           ####
-####                                            ####
-##################################################-->
+    <!-- Sidebar Dropdown section END  -->
 
 
 
@@ -1400,9 +1362,7 @@
 
 
 
-    <!--#################################################
-####          Right sidebar      start              ####
-##################################################-->
+    <!-- Right sidebar      start    -->
 
 
 
@@ -1599,36 +1559,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <!--#################################################
-####                                            ####
-####          Home section START                 ####
-####                                            ####
-##################################################-->
-
-
-
-
-
-
-
-
-
-    <!-- #################################################
-        ####      slider Portion of HOME                  ####
-        ##################################################  -->
-
-
     <div class="owl-carousel main-slider ">
         <div class="relative w-full h-full">
             <img src="/images/home/s1.webp" class="owl-images  block w-full h-[400px]   " alt="...">
@@ -1668,17 +1598,6 @@
 
 
     </div>
-
-
-
-
-
-
-    <!-- #################################################
-        ####      Section Portion of HOME                ####
-        ##################################################  -->
-
-
 
 
 
@@ -1727,9 +1646,6 @@
 
 
 
-    <!-- #################################################
-        ####      Flash sell of HOME                ####
-        ##################################################  -->
 
     <div id="toast" class="toast    ">
         <div class="flex">
@@ -1754,7 +1670,7 @@
 
 
 
-        <div class="owl-carousel new-carousel mt-4 sm:px-8 owl-theme ">
+        <div class="owl-carousel new-carousel mt-4   owl-theme ">
 
 
             <div
@@ -1770,7 +1686,7 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -1858,7 +1774,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -1947,7 +1864,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2036,7 +1954,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2125,7 +2044,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2213,7 +2133,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2302,7 +2223,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2391,7 +2313,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2491,7 +2414,7 @@
         </div>
 
 
-        <div class=" owl-carousel new-carousel mt-4 px-8 owl-theme ">
+        <div class=" owl-carousel new-carousel mt-4 owl-theme ">
 
 
             <div
@@ -2507,7 +2430,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2595,7 +2519,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2684,7 +2609,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2773,7 +2699,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2862,7 +2789,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -2950,7 +2878,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3039,7 +2968,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3128,7 +3058,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3294,7 +3225,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3351,7 +3283,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3408,7 +3341,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3465,7 +3399,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3522,7 +3457,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3579,7 +3515,8 @@
 
                             </span>
                             <div class="flex  items-center price-color sm:mt-3 mt-1">
-                                <p class="text-lg font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="lg:text-lg md:text-base text-sm font-semibold me-2 cursor-auto  ">$350.00
+                                </p>
                                 <del>
                                     <p class="text-sm text-gray-700 cursor-auto  ">$400.00</p>
                                 </del>
@@ -3615,7 +3552,7 @@
                     class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>
 
-        <div class=" owl-carousel new-carousel px-8 mt-4 owl-theme ">
+        <div class=" owl-carousel new-carousel  mt-4 owl-theme ">
 
 
             <div
@@ -3631,7 +3568,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3719,7 +3657,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3808,7 +3747,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3897,7 +3837,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -3986,7 +3927,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -4074,7 +4016,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -4163,7 +4106,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -4252,7 +4196,8 @@
                         <div
                             class="text-overlayy text-sm  product__list flex items-center justify-center    absolute       w-full h-full      bg-opacity-75 text-white">
                             <div
-                                class="flex items-center  gap-4 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+                                class="flex items-center  gap-1 text-center sm:text-start justify-center flex-row sm:flex-col product__list  sm:gap-1 mt-0 sm:mt-0">
+
                                 <p
                                     class="rounded-full w-8 h-8   bg-slate-100 flex items-center text-center justify-center  ">
                                     <img class="img-owl" src="/images/icon/heart.png" alt="">
@@ -4335,13 +4280,6 @@
 
 
 
-    <!-- #################################################
-        ####      Features of the products        ####
-        ##################################################  -->
-
-
-
-
 
     <div class="custom-container trending-product mt-10 mb-14">
         <div class="flex justify-between  items-center ">
@@ -4353,7 +4291,7 @@
 
 
 
-        <div class=" owl-carousel new-carousel px-8 mt-4 owl-theme ">
+        <div class=" owl-carousel new-carousel mt-4 owl-theme ">
 
 
             <div
@@ -5127,11 +5065,6 @@
 
 
 
-    <!-- #################################################
-        ####      Random Card section                         ####
-        ##################################################  -->
-
-
 
 
 
@@ -5164,9 +5097,6 @@
 
 
 
-    <!-- #################################################
-        ####     Best Product    Portion of HOME         ####
-        ##################################################  -->
 
 
 
@@ -5178,7 +5108,7 @@
         </div>
 
 
-        <div class=" owl-carousel new-carousel mt-4 px-8 owl-theme ">
+        <div class=" owl-carousel new-carousel mt-4 owl-theme ">
 
 
             <div
@@ -5948,9 +5878,6 @@
 
 
 
-    <!-- #################################################
-        ####          Recent View Products                ####
-        ##################################################  -->
 
     <div class="custom-container trending-product mt-10 mb-14">
         <div class="flex justify-between  items-center ">
@@ -5960,7 +5887,7 @@
         </div>
 
 
-        <div class=" owl-carousel mt-4 new-carousel px-8 owl-theme ">
+        <div class=" owl-carousel mt-4 new-carousel  owl-theme ">
 
 
             <div
@@ -6778,23 +6705,6 @@
 
 
 
-    <!--#################################################
-####                                            ####
-####          Home section END                 ####
-####                                            ####
-##################################################-->
-
-
-
-
-
-
-
-    <!--#################################################
-####                                                ####
-####          Footer section Start                 ####
-####                                            ####
-##################################################-->
 
 
     <section>
@@ -6899,20 +6809,13 @@
     </section>
 
 
-    <!--#################################################
-####                                            ####
-####          Footer section END                 ####
-####                                            ####
-##################################################-->
 
 
 
     <script>
 
 
-        // #################################################
         // ####          Quick view                   ####
-        // ##################################################
 
         const modal = document.querySelector('.modal');
         const modalWrapper = document.querySelector('.popup-overlay');
@@ -7079,9 +6982,8 @@
         });
 
 
-        // #################################################
+
         // ####          GO TO TOP js                   ####
-        // ##################################################
         document.addEventListener("DOMContentLoaded", function () {
             const goToTopButton = document.getElementById("goToTopButton");
 

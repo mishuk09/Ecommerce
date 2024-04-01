@@ -157,6 +157,18 @@
     z-index: 2;
 }
 
+.quick-view-owl .owl-nav .owl-prev:hover,
+.quick-view-owl .owl-nav .owl-next:hover {
+    background-color: transparent !important;
+}
+
+.quick-view-owl .owl-nav .owl-prev .icon-l,
+.quick-view-owl .owl-nav .owl-next .icon-r {
+    background-color: var(--primary-color) !important;
+    color: white;
+    pointer-events: none;
+}
+
 .modal__img {
     width: 80%;
     display: flex;
@@ -1821,6 +1833,9 @@ input[type=number] {
         height: 25px;
     }
 
+    .text-\[14px\] {
+        font-size: 12px !important;
+    }
 }
 
 @media only screen and (max-width:640px) {

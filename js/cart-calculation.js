@@ -52,12 +52,6 @@ $(document).ready(function () {
     calculateSubtotal();
   });
 
-  // Checkout button click
-  $(".login-btn").click(function () {
-    // Implement your checkout logic here
-    alert("Checkout button clicked!");
-  });
-
   // Initial update of totals
   updateTotals();
 });
