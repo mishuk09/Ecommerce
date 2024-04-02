@@ -130,7 +130,7 @@
                             </div>
                             <div class="text-start ms-2 text-white leading-4">
                                 <p class="text-[12px] text-gray-300">Cart</p>
-                                <p class="font-semibold text-[14px]">$0.00</p>
+                                <p class="font-semibold text-[14px]">Rs0.00</p>
                             </div>
                         </div>
                     </div>
@@ -1266,7 +1266,7 @@
 
 
                             <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Rs350.00</p>
 
                             </div>
                             <div
@@ -1304,7 +1304,7 @@
 
 
                             <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Rs350.00</p>
 
                             </div>
                             <div
@@ -1342,7 +1342,7 @@
 
 
                             <div class="flex  items-center price-color   mt-1">
-                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">$350.00</p>
+                                <p class="text-[14px] font-semibold  me-2 cursor-auto  ">Rs350.00</p>
 
                             </div>
                             <div
@@ -1383,7 +1383,7 @@
 
                         </div>
                         <div class="items-center flex">
-                            <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">$210.00</p>
+                            <p class="font-bold  text-gray-600 flex items-center text-[18px]  ">Rs210.00</p>
                         </div>
                     </div>
                     <div class=" mt-6  flex items-center  text-[14px]">
@@ -2043,7 +2043,7 @@
                                 <i class="fa-solid me-4 text-[16px] fa-circle-exclamation"></i>
                             </div>
                             <div>
-                                Cash Payment Fee of ৳ 10
+                                Cash Payment Fee of Rs 10
                                 applies only to Cash on Delivery payment method. There is no extra fee
                                 when
                                 using other payment methods.
@@ -2242,39 +2242,39 @@
     <script>
 
 
-        $(document).ready(function () {
+        Rs(document).ready(function () {
             // Function to calculate subtotal and total
             function calculateTotal() {
                 var subtotal = 0;
-                $('.check-price').each(function () {
-                    var priceStr = $(this).text().trim().substring(3); // Removing 'Rs ' from the price string
+                Rs('.check-price').each(function () {
+                    var priceStr = Rs(this).text().trim().substring(3); // Removing 'Rs ' from the price string
                     var price = parseFloat(priceStr.replace(',', '')); // Removing any commas and converting to float
                     subtotal += price;
                 });
-                $('#subtotal').text('Rs ' + subtotal.toFixed(2)); // Setting subtotal
+                Rs('#subtotal').text('Rs ' + subtotal.toFixed(2)); // Setting subtotal
                 var total = subtotal; // Assuming no additional charges for now
-                $('#total').text('Rs ' + total.toFixed(2)); // Setting total
+                Rs('#total').text('Rs ' + total.toFixed(2)); // Setting total
             }
 
             // Initial calculation
             calculateTotal();
 
             // Click event for removing product
-            $('.remove-product').click(function () {
-                $(this).closest('.product-container').remove(); // Remove the product container
+            Rs('.remove-product').click(function () {
+                Rs(this).closest('.product-container').remove(); // Remove the product container
                 calculateTotal(); // Recalculate subtotal and total
             });
         });
 
-        $(document).ready(function () {
-            $('.custom-tab-links a').on('click', function (e) {
-                var currentAttrValue = $(this).attr('href');
+        Rs(document).ready(function () {
+            Rs('.custom-tab-links a').on('click', function (e) {
+                var currentAttrValue = Rs(this).attr('href');
 
                 // Show/Hide Tabs
-                $('.custom-tab-content ' + currentAttrValue).show().siblings().hide();
+                Rs('.custom-tab-content ' + currentAttrValue).show().siblings().hide();
 
                 // Change/remove current tab to active
-                $(this).parent('li').addClass('active-tab').siblings().removeClass('active-tab');
+                Rs(this).parent('li').addClass('active-tab').siblings().removeClass('active-tab');
 
                 e.preventDefault();
             });
