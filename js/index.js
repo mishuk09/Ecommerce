@@ -620,23 +620,6 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $(".overlay-two").click(function (event) {
-//     // Prevent clicks on the popup from closing it
-//     event.stopPropagation();
-//   });
-
-//   $(document).click(function () {
-//     // Hide the popup when user clicks outside of it
-//     $(".overlay-two").hide();
-//   });
-
-//   $(".close").click(function () {
-//     // Hide the popup when user clicks on the close button
-//     $(".overlay-two").hide();
-//   });
-// });
-
 // check out code
 
 $(document).ready(function () {
@@ -671,48 +654,6 @@ $(document).ready(function () {
     $("section .track-your-order").fadeOut();
   });
 });
-
-// $(document).ready(function () {
-//   $('.faq-toggle').click(function () {
-//     var faq = $(this).closest('.faq');
-//     faq.toggleClass('active');
-//     if ($(this).index() === 1) { // For the second toggle
-//       if (!faq.hasClass('active')) {
-//         faq.addClass('active');
-//       }
-//     }
-//   });
-// });
-
-// $(document).ready(function () {
-//   $('.con-t-sss').click(function () {
-//     var name = $(this).closest('.faq-text').find('.name-ti').text().trim();
-//     $('.main-name').text(name);
-//     $(this).closest('.faq-text').toggle();
-//   });
-
-//   $('.faq-toggle').click(function () {
-//     var faq = $(this).closest('.faq');
-//     var faqText = faq.find('.faq-text');
-//     faqText.toggle();
-//   });
-// });
-
-// $(document).ready(function () {
-//   // Hide all faq-text elements except the first one
-//   $('.faq-text').not(':first').hide();
-
-//   $('.con-t-sss').click(function () {
-//     var name = $(this).prev().find('.name-ti').text().trim();
-//     $('.main-name').text(name);
-//     $(this).closest('.faq-text').toggle();
-//   });
-
-//   $('.faq-toggle').click(function () {
-//     var faqText = $(this).siblings('.faq-text');
-//     faqText.toggle();
-//   });
-// });
 
 $(document).ready(function () {
   $(".product-remov").click(function () {
@@ -833,73 +774,6 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   // Click event for Payment options
-//   $('.payment-i').click(function () {
-//     // Remove active class from all payment options
-//     $('.payment-i').removeClass('active');
-//     // Hide all forms
-//     $('#creditCardForm, #cashOnDeliveryForm, #eSewaForm, #imePayForm').hide();
-
-//     // Toggle active class for the clicked tab
-//     $(this).addClass('active');
-
-//     // Check which tab is active and show its corresponding form
-//     if ($(this).find('.payment-gate').text() === "Credit/Debit Card") {
-//       $('#creditCardForm').show();
-//     } else if ($(this).find('.payment-gate').text() === "Cash On Delivery") {
-//       $('#cashOnDeliveryForm').show();
-//     } else if ($(this).find('.payment-gate').text() === "eSewa Mobile Wallet") {
-//       $('#eSewaForm').show();
-//     } else if ($(this).find('.payment-gate').text() === "IME Pay") {
-//       $('#imePayForm').show();
-//     }
-//   });
-
-//   // Form submission handling for Credit/Debit Card
-//   $('#creditCardDetails').submit(function (event) {
-//     // Prevent default form submission
-//     event.preventDefault();
-//     // Retrieve form data
-//     var formData = $(this).serialize();
-//     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
-//     // Example: Log form data to console
-//     console.log(formData);
-//   });
-
-//   // Form submission handling for Cash On Delivery
-//   $('#cashOnDeliveryDetails').submit(function (event) {
-//     // Prevent default form submission
-//     event.preventDefault();
-//     // Retrieve form data
-//     var formData = $(this).serialize();
-//     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
-//     // Example: Log form data to console
-//     console.log(formData);
-//   });
-
-//   // Form submission handling for eSewa Mobile Wallet
-//   $('#eSewaDetails').submit(function (event) {
-//     // Prevent default form submission
-//     event.preventDefault();
-//     // Retrieve form data
-//     var formData = $(this).serialize();
-//     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
-//     // Example: Log form data to console
-//     console.log(formData);
-//   });
-
-//   // Form submission handling for IME Pay
-//   $('#imePayDetails').submit(function (event) {
-//     // Prevent default form submission
-//     event.preventDefault();
-//     // Retrieve form data
-//     var formData = $(this).serialize();
-//     // Here, you can perform any further actions, such as AJAX request, form validation, etc.
-//     // Example: Log form data to console
-//     console.log(formData);
-//   });
-// });
 $(document).ready(function () {
   // By default, show credit card form and hide other forms
   $("#creditCardForm").show();
@@ -1022,5 +896,55 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".checkbox-item").change(function () {
     $(".checkbox-item").not(this).prop("checked", false);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $(".tablinks-1").click(function () {
+    var tabName = $(this).data('tab');
+    $(".tab-container-qb-1 .tab-content-qb").removeClass("active-qb").hide();
+    $(".tab-container-qb-1").find("." + tabName).addClass("active-qb").show();
+
+    // Hide tab 2 content
+    $(".tab-container-qb-2 .tab-content-qb").removeClass("active-qb").hide();
+  });
+
+  $(".tablinks-2").click(function () {
+    var tabName = $(this).data('tab');
+    $(".tab-container-qb-2 .tab-content-qb").removeClass("active-qb").hide();
+    $(".tab-container-qb-2").find("." + tabName).addClass("active-qb").show();
+
+    // Hide tab 1 content
+    $(".tab-container-qb-1 .tab-content-qb").removeClass("active-qb").hide();
+  });
+
+  $(".close-btn").click(function () {
+    $(".tab-container-qb-2 .tab-content-qb.tab2").removeClass("active-qb").hide();
+    $(".tab-container-qb-1 .tab-content-qb.tab1").addClass("active-qb").show();
+  });
+
+  // Open the first tab by default
+  $(".tablinks-1:first").click();
+});
+
+
+
+$(document).ready(function () {
+  // When a checkbox within #container is clicked
+  $('#container input[type="checkbox"]').click(function () {
+    // Uncheck all other checkboxes within #container
+    $('#container input[type="checkbox"]').not(this).prop('checked', false);
   });
 });

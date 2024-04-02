@@ -2637,7 +2637,7 @@ input[type=number] {
 
 .d-add-btn {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
 
 }
 
@@ -4944,7 +4944,7 @@ button.contact_form_submit:hover {
 
 
 
-
+/* 
 .overlay-two {
     position: fixed;
     top: 0;
@@ -4970,11 +4970,8 @@ button.contact_form_submit:hover {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    /* width: 80%; */
     position: relative;
     transition: all 2s ease-in-out;
-    /* max-width: 500px; */
-    /* Set max-width to prevent it from exceeding the viewport */
 }
 
 @media only screen and (max-width:768px) {
@@ -4985,8 +4982,6 @@ button.contact_form_submit:hover {
         width: 90%;
         position: relative;
         transition: all 2s ease-in-out;
-        /* max-width: 500px; */
-        /* Set max-width to prevent it from exceeding the viewport */
     }
 }
 
@@ -5007,7 +5002,6 @@ button.contact_form_submit:hover {
     overflow: auto;
 }
 
-/* Close the popup when clicking outside of it */
 .overlay-two:target .popup {
     transform: scale(1);
     transition: all 0.3s ease-in-out;
@@ -5018,19 +5012,23 @@ button.contact_form_submit:hover {
     opacity: 1;
 }
 
-.overlay-two:target .popup {
-    /* Center the popup within the viewport */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-}
+ 
+
+
+
+
+
+
+
+
+
+ */
 
 
 .q-buy-input {
     width: 100%;
     height: 40px;
     outline: none;
-    /* border-radius: 8px; */
 
 
 }
@@ -5844,7 +5842,7 @@ button.contact_form_submit:hover {
     }
 
     .popup {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -7035,4 +7033,20 @@ a:hover {
     margin-top: 8px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+
+
+.tab-content-qb {
+    display: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.active-qb {
+    display: block;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: red;
 }
