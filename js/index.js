@@ -911,6 +911,43 @@ $(document).ready(function () {
 
 
 
+// $(document).ready(function () {
+//   $(".tablinks-1").click(function () {
+//     var tabName = $(this).data('tab');
+//     $(".tab-container-qb-1 .tab-content-qb").removeClass("active-qb").hide();
+//     $(".tab-container-qb-1").find("." + tabName).addClass("active-qb").show();
+
+//     // Hide tab 2 content
+//     $(".tab-container-qb-2 .tab-content-qb").removeClass("active-qb").hide();
+//   });
+
+//   $(".tablinks-2").click(function () {
+//     var tabName = $(this).data('tab');
+//     $(".tab-container-qb-2 .tab-content-qb").removeClass("active-qb").hide();
+//     $(".tab-container-qb-2").find("." + tabName).addClass("active-qb").show();
+
+//     // Hide tab 1 content
+//     $(".tab-container-qb-1 .tab-content-qb").removeClass("active-qb").hide();
+//   });
+
+//   $(".close-btn").click(function () {
+//     $(".tab-container-qb-2 .tab-content-qb.tab2").removeClass("active-qb").hide();
+//     $(".tab-container-qb-1 .tab-content-qb.tab1").addClass("active-qb").show();
+//   });
+
+//   // Open the first tab by default
+//   $(".tablinks-1:first").click();
+// });
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
   $(".tablinks-1").click(function () {
     var tabName = $(this).data('tab');
@@ -928,16 +965,31 @@ $(document).ready(function () {
 
     // Hide tab 1 content
     $(".tab-container-qb-1 .tab-content-qb").removeClass("active-qb").hide();
+
+    // Hide Quick Buy tabs
+    $(".tabs").hide();
   });
 
   $(".close-btn").click(function () {
     $(".tab-container-qb-2 .tab-content-qb.tab2").removeClass("active-qb").hide();
     $(".tab-container-qb-1 .tab-content-qb.tab1").addClass("active-qb").show();
+
+    // Show Quick Buy tabs
+    $(".tabs").show();
   });
 
   // Open the first tab by default
   $(".tablinks-1:first").click();
 });
+
+
+
+
+
+
+
+
+
 
 
 
