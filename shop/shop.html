@@ -4022,13 +4022,21 @@
     <script>
 
 
-
         $(document).ready(function () {
             $(".toggle-icons").click(function () {
                 var $parent = $(this).closest('.border-b');
                 var $content = $parent.find('.category-content, .category-content-2, .category-content-3,.category-content-4,.category-content-5,.category-content-6,.category-content-7,.category-content-8');
-                $content.toggleClass("visible");
-                $(this).find('i').toggleClass("fa-plus fa-minus");
+                var $icon = $(this).find('i');
+
+                if ($content.hasClass("visible")) {
+                    // Content is currently visible, hide it and rotate the icon
+                    $content.removeClass("visible").slideUp(400);
+                    $icon.removeClass("fa-minus").addClass("fa-plus");
+                } else {
+                    // Content is currently hidden, show it and rotate the icon
+                    $content.addClass("visible").slideDown(400);
+                    $icon.removeClass("fa-plus").addClass("fa-minus");
+                }
             });
         });
 
