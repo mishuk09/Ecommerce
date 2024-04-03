@@ -541,84 +541,88 @@ $(document).ready(function () {
   countAnimation(".count-down:eq(2)", 13);
 });
 
-$(document).ready(function () {
-  $(".editbtn1").click(function () {
-    // Get existing data
-    var name = $(".address-details p:nth-child(1)").text().trim();
-    var address = $(".address-details p:nth-child(2)").text().trim();
-    var email = $(".address-details p:nth-child(3)").text().trim();
-    var phone = $(".address-details p:nth-child(4)")
-      .text()
-      .trim()
-      .replace("Phone: ", "");
 
-    // Populate form fields
+
+
+
+
+
+$(document).ready(function () {
+  // Default Address Editing
+  $(".editbtn1").click(function () {
+    var name = $(".address-details p:nth-child(1)").text().trim();
+    var email = $(".address-details p:nth-child(2)").text().trim();
+    var address = $(".address-details p:nth-child(3)").text().trim();
+    var address2 = $(".address-details p:nth-child(4)").text().trim().replace("Address 2: ", "");
+    var phone = $(".address-details p:nth-child(5)").text().trim().replace("Phone: ", "");
+
     $('#editAddressForm input[name="name"]').val(name);
-    $('#editAddressForm input[name="address"]').val(address);
     $('#editAddressForm input[name="email"]').val(email);
+    $('#editAddressForm input[name="address"]').val(address);
+    $('#editAddressForm input[name="address2"]').val(address2);
     $('#editAddressForm input[name="phone"]').val(phone);
 
-    // Show the edit form
     $(".edit-form").show();
+    $(".edit-shipping-form").hide(); // Hide shipping address edit form if open
   });
 
-  // Submit form
+  // Submit Default Address Edit Form
   $("#editAddressForm").submit(function (e) {
     e.preventDefault();
     var formData = $(this).serializeArray();
 
-    // Update address details with new values
     $(".address-details p:nth-child(1)").text(formData[0].value);
     $(".address-details p:nth-child(2)").text(formData[1].value);
-    $(".address-details p:nth-child(3)").text(formData[2].value);
-    $(".address-details p:nth-child(4)").text("Phone: " + formData[3].value);
+    $(".address-details p:nth-child(3)").text("Address: " + formData[2].value);
+    $(".address-details p:nth-child(4)").text("Address 2: " + formData[3].value);
+    $(".address-details p:nth-child(5)").text("Phone: " + formData[4].value);
 
-    // Hide the edit form
     $(".edit-form").hide();
   });
-});
 
-// shiping address
-
-$(document).ready(function () {
+  // Shipping Address Editing
   $(".editbtn-two").click(function () {
-    // Get existing data
     var name = $(".shipping-address-details p:nth-child(1)").text().trim();
-    var address = $(".shipping-address-details p:nth-child(2)").text().trim();
-    var email = $(".shipping-address-details p:nth-child(3)").text().trim();
-    var phone = $(".shipping-address-details p:nth-child(4)")
-      .text()
-      .trim()
-      .replace("Phone: ", "");
+    var email = $(".shipping-address-details p:nth-child(2)").text().trim();
+    var address = $(".shipping-address-details p:nth-child(3)").text().trim();
+    var address2 = $(".shipping-address-details p:nth-child(4)").text().trim().replace("Address 2: ", "");
+    var phone = $(".shipping-address-details p:nth-child(5)").text().trim().replace("Phone: ", "");
 
-    // Populate form fields
     $('#editShippingAddressForm input[name="name"]').val(name);
-    $('#editShippingAddressForm input[name="address"]').val(address);
     $('#editShippingAddressForm input[name="email"]').val(email);
+    $('#editShippingAddressForm input[name="address"]').val(address);
+    $('#editShippingAddressForm input[name="address2"]').val(address2);
     $('#editShippingAddressForm input[name="phone"]').val(phone);
 
-    // Show the edit form
     $(".edit-shipping-form").show();
+    $(".edit-form").hide(); // Hide default address edit form if open
   });
 
-  // Submit form
+  // Submit Shipping Address Edit Form
   $("#editShippingAddressForm").submit(function (e) {
     e.preventDefault();
-    // Get form data
     var formData = $(this).serializeArray();
 
-    // Update shipping address details with new values
     $(".shipping-address-details p:nth-child(1)").text(formData[0].value);
     $(".shipping-address-details p:nth-child(2)").text(formData[1].value);
-    $(".shipping-address-details p:nth-child(3)").text(formData[2].value);
-    $(".shipping-address-details p:nth-child(4)").text(
-      "Phone: " + formData[3].value
-    );
+    $(".shipping-address-details p:nth-child(3)").text("Address: " + formData[2].value);
+    $(".shipping-address-details p:nth-child(4)").text("Address 2: " + formData[3].value);
+    $(".shipping-address-details p:nth-child(5)").text("Phone: " + formData[4].value);
 
-    // Hide the edit form
     $(".edit-shipping-form").hide();
   });
 });
+
+
+
+
+
+
+
+
+
+
+
 
 // check out code
 
@@ -1011,11 +1015,11 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  $("#threeColumns").click(function () {
-    $(".shop-div-p").css("grid-template-columns", "repeat(3, 1fr)");
-    resetOneColumnsStyles(); // Reset styles from oneColumns
-    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
-  });
+  // $("#threeColumns").click(function () {
+  //   $(".shop-div-p").css("grid-template-columns", "repeat(3, 1fr)");
+  //   resetOneColumnsStyles(); // Reset styles from oneColumns
+  //   $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  // });
 
   $("#fourColumns").click(function () {
     $(".shop-div-p").css("grid-template-columns", "repeat(4, 1fr)");
@@ -1023,11 +1027,11 @@ $(document).ready(function () {
     $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
   });
 
-  $("#twoColumns").click(function () {
-    $(".shop-div-p").css("grid-template-columns", "repeat(2, 1fr)");
-    resetOneColumnsStyles(); // Reset styles from oneColumns
-    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
-  });
+  // $("#twoColumns").click(function () {
+  //   $(".shop-div-p").css("grid-template-columns", "repeat(2, 1fr)");
+  //   resetOneColumnsStyles(); // Reset styles from oneColumns
+  //   $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  // });
 
   $("#oneColumns").click(function () {
     $(".shop-div-p").css("grid-template-columns", "repeat(1, 1fr)");
@@ -1050,7 +1054,7 @@ $(document).ready(function () {
       "padding-top": "10px"
     });
 
-    
+
 
     $(".text-overlayy").css({
       "opacity": "1",
