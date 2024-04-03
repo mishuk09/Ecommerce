@@ -3465,7 +3465,7 @@ input[type=number] {
     font-size: 16px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
 
 }
 
