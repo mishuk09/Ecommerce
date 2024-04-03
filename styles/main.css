@@ -3481,7 +3481,9 @@ input[type=number] {
     /* Adjust to a value greater than the expected height */
 }
 
-
+.toggle-icons {
+    cursor: pointer;
+}
 
 .toggle-icons i {
     transition: transform 0.6s ease;
