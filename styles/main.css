@@ -3411,6 +3411,14 @@ input[type=number] {
 
 
 
+
+
+.category-content.visible {
+    max-height: 500px;
+
+}
+
+
 .shop-div {
     margin-top: 3.5rem;
     display: grid;
@@ -3457,7 +3465,8 @@ input[type=number] {
     font-size: 16px;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.4s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
+
 }
 
 .category-content.visible,
@@ -3474,6 +3483,20 @@ input[type=number] {
 
 
 
+.toggle-icons i {
+    transition: transform 0.6s ease;
+    /* Add transition for the icon rotation */
+}
+
+.toggle-icons i.fa-plus {
+    transform: rotate(90deg);
+    /* Initial rotation for the plus icon */
+}
+
+.toggle-icons i.fa-minus {
+    transform: rotate(180deg);
+    /* Initial rotation for the minus icon */
+}
 
 
 
