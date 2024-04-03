@@ -1467,7 +1467,7 @@ input[type=number] {
         visibility: visible;
         height: 35px;
         width: 100%;
-       
+
     }
 }
 
@@ -3457,7 +3457,7 @@ input[type=number] {
     font-size: 16px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .category-content.visible,
