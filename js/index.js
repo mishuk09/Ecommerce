@@ -114,8 +114,8 @@ $(document).ready(function () {
     dots: false,
     responsive: {
       0: {
-        nav: false, // Hide navigation buttons below 768px
-        dots: true,
+        nav: false,  
+        dots: false,
         items: 2,
       },
       500: {
