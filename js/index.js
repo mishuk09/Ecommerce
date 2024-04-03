@@ -948,3 +948,84 @@ $(document).ready(function () {
     $('#container input[type="checkbox"]').not(this).prop('checked', false);
   });
 });
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $("#threeColumns").click(function () {
+    $(".shop-div-p").css("grid-template-columns", "repeat(3, 1fr)");
+    resetOneColumnsStyles(); // Reset styles from oneColumns
+    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  });
+
+  $("#fourColumns").click(function () {
+    $(".shop-div-p").css("grid-template-columns", "repeat(4, 1fr)");
+    resetOneColumnsStyles(); // Reset styles from oneColumns
+    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  });
+
+  $("#twoColumns").click(function () {
+    $(".shop-div-p").css("grid-template-columns", "repeat(2, 1fr)");
+    resetOneColumnsStyles(); // Reset styles from oneColumns
+    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  });
+
+  $("#oneColumns").click(function () {
+    $(".shop-div-p").css("grid-template-columns", "repeat(1, 1fr)");
+    $(".product-anchor").css("display", "flex");
+    $(".image-container-shop").css({
+      "height": "350px",
+      "width": "350px"
+    });
+    $(".p-name-s").css({
+      "font-size": "30px",
+      "font-weight": "500"
+    });
+    $(".details-container-s").css({
+      "padding": "20px"
+    });
+    $(".ratting-star").css({
+      "padding-top": "10px"
+    });
+    $(".price-color").css({
+      "padding-top": "10px"
+    });
+    $(".parent-divv").css({
+      "height": "300px",
+      "width": "100%"
+    });
+    $(this).addClass("grid-selected").siblings().removeClass("grid-selected");
+  });
+
+  function resetOneColumnsStyles() {
+    $(".product-anchor").css("display", ""); // Reset display property
+    $(".image-container-shop").css({
+      "height": "",
+      "width": ""
+    });
+    $(".p-name-s").css({
+      "font-size": "",
+      "font-weight": ""
+    });
+    $(".details-container-s").css({
+      "padding": ""
+    });
+    $(".ratting-star").css({
+      "padding-top": ""
+    });
+    $(".price-color").css({
+      "padding-top": ""
+    });
+    $(".parent-divv").css({
+      "height": "",
+      "width": ""
+    });
+  }
+});
