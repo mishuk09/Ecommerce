@@ -3465,7 +3465,6 @@ input[type=number] {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
-    /* Transition for content block visibility */
 }
 
 .category-content.visible,
@@ -3477,7 +3476,6 @@ input[type=number] {
 .category-content-7.visible,
 .category-content-8.visible {
     max-height: 1000px;
-    /* Adjust to a value greater than the expected height */
 }
 
 .toggle-icons {
@@ -3491,7 +3489,6 @@ input[type=number] {
 
 .category-content.visible {
     max-height: 1000px;
-    /* Adjust to a value greater than the expected height */
 }
 
 .toggle-icons {
@@ -3500,17 +3497,14 @@ input[type=number] {
 
 .toggle-icons i {
     transition: transform 0.4s ease;
-    /* Transition for icon rotation, same duration as content */
 }
 
 .toggle-icons i.fa-plus {
     transform: rotate(90deg);
-    /* Initial rotation for the plus icon */
 }
 
 .toggle-icons i.fa-minus {
     transform: rotate(180deg);
-    /* Initial rotation for the minus icon */
 }
 
 
