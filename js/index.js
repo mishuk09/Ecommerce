@@ -1149,3 +1149,6 @@ $(document).ready(function () {
   // Update total payment
   $('.sum-amount-t').text('Rs ' + totalPayment.toFixed(2));
 });
+
+
+ 

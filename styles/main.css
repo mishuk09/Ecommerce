@@ -6399,7 +6399,7 @@ a:hover {
 
 #rightContainer_26 {
     /* border-radius: 8px; */
-    height: 325px;
+    /* height: 325px; */
     /* padding: 24px 20px; */
     /* box-shadow: 0 6px 16px rgba(0, 0, 0, .12); */
 
@@ -7115,3 +7115,18 @@ a:hover {
     cursor: pointer;
     color: white;
 }
+
+
+
+
+.sticky-div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+
+}
+
+
+ 
