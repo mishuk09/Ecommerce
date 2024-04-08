@@ -114,7 +114,7 @@ $(document).ready(function () {
     dots: false,
     responsive: {
       0: {
-        nav: false,  
+        nav: false,
         dots: false,
         items: 2,
       },
@@ -1129,4 +1129,23 @@ $(document).ready(function () {
       "width": ""
     });
   }
+});
+
+
+
+
+
+$(document).ready(function () {
+  // Get the price from the card summary
+  var itemPrice = parseFloat($('.summary-qty').text().replace(/[^\d.]/g, ''));
+
+  // Update the item total
+  $('.sum-amount').text('Rs ' + itemPrice.toFixed(2));
+
+  // Calculate total payment
+  var deliveryFee = parseFloat($('.sum-amount-d').text().replace(/[^\d.]/g, ''));
+  var totalPayment = itemPrice + deliveryFee;
+
+  // Update total payment
+  $('.sum-amount-t').text('Rs ' + totalPayment.toFixed(2));
 });
