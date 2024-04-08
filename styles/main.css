@@ -41,7 +41,7 @@
 }
 
 .check-body {
-    font-family: var(--primary-font-three);
+    font-family: var(--primary-font-two);
     overflow-x: hidden;
     font-size: 14px;
 }
@@ -7119,14 +7119,31 @@ a:hover {
 
 
 
-.sticky-div {
+/* .sticky-div {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #ffffff;
 
+} */
+
+
+
+#sticky-div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+    background-color: white;
 }
 
 
- 
+#billing_form label{
+    font-weight: 500;
+}
+
+
+.shipping-form{
+    display: none;
+}

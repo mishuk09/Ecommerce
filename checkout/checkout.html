@@ -1455,11 +1455,11 @@
 
         <div>
 
-       
 
 
 
- 
+
+
         </div>
 
     </div>
@@ -1481,46 +1481,142 @@
 
                 <form id="billing_form">
                     <div class="w-full text-gray-600 text-sm">
-                        <h1 class="font-semibold text-[22px] text-gray-700  ">Billing Details</h1>
-
+                        <h1 class="font-semibold text-[22px] text-gray-700  ">Billing Address</h1>
+                        <div class="mt-6">
+                            <label for="email">Company Name </label> <br>
+                            <input id="email" class="bill-add" type="email" placeholder="Company Name" required>
+                        </div>
                         <div class="flex gap-6 mt-6">
                             <div class="w-full ">
                                 <label for="first_name">First name *</label> <br>
-                                <input id="first_name" class="bill-add" type="text" required>
+                                <input id="first_name" class="bill-add" type="text" placeholder="First Name" required>
                             </div>
                             <div class="w-full ">
                                 <label for="last_name">Last name *</label> <br>
-                                <input id="last_name" class="bill-add" type="text" required>
+                                <input id="last_name" class="bill-add" type="text" placeholder="Last Name" required>
                             </div>
                         </div>
-                        <div class="mt-4">
+                        <div class="mt-6">
                             <label for="email">Email *</label> <br>
-                            <input id="email" class="bill-add" type="email" required>
+                            <input id="email" class="bill-add" type="email" placeholder=" example@gmail.com" required>
+                        </div>
+                        <div class="mt-6">
+                            <label for="email">Street Address *</label> <br>
+                            <input id="email" class="bill-add" type="email" placeholder=" Street Address" required>
                         </div>
 
 
 
 
 
-                        <div class="mt-4">
+                        <div class="mt-6">
                             <label for="town_city">Town / City *</label> <br>
-                            <input id="town_city" class="bill-add" type="text" required>
+                            <input id="town_city" class="bill-add" type="text" placeholder=" Town / City" required>
                         </div>
 
 
                         <div class="flex gap-6 mt-6">
                             <div class="w-full ">
-                                <label for="state_zone">State / Zone *</label> <br>
-                                <input id="state_zone" class="bill-add" type="text" required>
+                                <label for="state_zone">Country *</label> <br>
+                                <input id="state_zone" class="bill-add" placeholder="Country" type="text" required>
                             </div>
                             <div class="w-full ">
-                                <label for="postcode_zip">Postcode / Zip (optional)</label> <br>
-                                <input id="postcode_zip" class="bill-add" type="text">
+                                <label for="postcode_zip">State *</label> <br>
+                                <input id="postcode_zip" class="bill-add" placeholder="State" type="text">
+                            </div>
+                        </div>
+                        <div class="flex gap-6 mt-6">
+                            <div class="w-full ">
+                                <label for="state_zone">City *</label> <br>
+                                <input id="state_zone" class="bill-add" placeholder="City" type="text" required>
+                            </div>
+                            <div class="w-full ">
+                                <label for="postcode_zip">Zip / Postcode</label> <br>
+                                <input id="postcode_zip" class="bill-add" placeholder="Zip / Postcode" type="text">
                             </div>
                         </div>
 
 
-                        <div class="mt-4">
+                        <div class="mt-6">
+                            <label for="phone">Phone *</label> <br>
+                            <input id="phone" class="bill-add" type="text" required>
+                        </div>
+
+                    </div>
+                    <!-- <button type="submit">Submit</button> -->
+                </form>
+            </div>
+
+            <div class="mt-6">
+                <label>
+                    <p class="flex items-center">
+                        <input type="checkbox" class="me-2" name="contact" checked>
+                        Use same address for shipping
+                    </p>
+                </label>
+            </div>
+
+            <div class="shipping-form mt-10">
+
+                <form id="billing_form">
+                    <div class="w-full text-gray-600 text-sm">
+                        <h1 class="font-semibold text-[22px] text-gray-700  ">Shiping Address</h1>
+                        <div class="mt-6">
+                            <label for="email">Company Name </label> <br>
+                            <input id="email" class="bill-add" type="email" placeholder="Company Name" required>
+                        </div>
+                        <div class="flex gap-6 mt-6">
+                            <div class="w-full ">
+                                <label for="first_name">First name *</label> <br>
+                                <input id="first_name" class="bill-add" type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="w-full ">
+                                <label for="last_name">Last name *</label> <br>
+                                <input id="last_name" class="bill-add" type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="email">Email *</label> <br>
+                            <input id="email" class="bill-add" type="email" placeholder=" example@gmail.com" required>
+                        </div>
+                        <div class="mt-6">
+                            <label for="email">Street Address *</label> <br>
+                            <input id="email" class="bill-add" type="email" placeholder=" Street Address" required>
+                        </div>
+
+
+
+
+
+                        <div class="mt-6">
+                            <label for="town_city">Town / City *</label> <br>
+                            <input id="town_city" class="bill-add" type="text" placeholder=" Town / City" required>
+                        </div>
+
+
+                        <div class="flex gap-6 mt-6">
+                            <div class="w-full ">
+                                <label for="state_zone">Country *</label> <br>
+                                <input id="state_zone" class="bill-add" placeholder="Country" type="text" required>
+                            </div>
+                            <div class="w-full ">
+                                <label for="postcode_zip">State *</label> <br>
+                                <input id="postcode_zip" class="bill-add" placeholder="State" type="text">
+                            </div>
+                        </div>
+                        <div class="flex gap-6 mt-6">
+                            <div class="w-full ">
+                                <label for="state_zone">City *</label> <br>
+                                <input id="state_zone" class="bill-add" placeholder="City" type="text" required>
+                            </div>
+                            <div class="w-full ">
+                                <label for="postcode_zip">Zip / Postcode</label> <br>
+                                <input id="postcode_zip" class="bill-add" placeholder="Zip / Postcode" type="text">
+                            </div>
+                        </div>
+
+
+                        <div class="mt-6">
                             <label for="phone">Phone *</label> <br>
                             <input id="phone" class="bill-add" type="text" required>
                         </div>
@@ -1538,10 +1634,10 @@
 
 
         <div class=" w-full  mb-20   ">
-            <div class=" w-[100%] xl:w-[100%] ">
+            <div class=" w-[100%] xl:w-[100%] " id="sticky-div">
 
 
-                <div class="sticky-div ">
+                <div class="">
 
 
 
@@ -1991,7 +2087,7 @@
         })
 
 
- 
+
 
 
 

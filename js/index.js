@@ -1151,4 +1151,21 @@ $(document).ready(function () {
 });
 
 
- 
+
+
+
+$(document).ready(function () {
+  // Initially hide the shipping form
+  $(".shipping-form").hide();
+
+  // Listen for change event on the checkbox
+  $("input[name='contact']").change(function () {
+    if ($(this).is(":checked")) {
+      // If the checkbox is checked, hide the shipping form
+      $(".shipping-form").slideUp();
+    } else {
+      // If the checkbox is unchecked, show the shipping form
+      $(".shipping-form").slideDown();
+    }
+  });
+});
