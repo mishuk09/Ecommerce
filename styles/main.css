@@ -3478,6 +3478,25 @@ input[type=number] {
     max-height: 1000px;
 }
 
+
+
+
+
+.category-content-10.visible {
+    max-height: 200px;
+}
+
+
+
+
+.category-content-10 {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+
 .toggle-icons {
     cursor: pointer;
 }
@@ -6388,7 +6407,7 @@ a:hover {
 }
 
 .shipping-order-block {
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     border-bottom: .5px solid #e5e5e5
 }
 
