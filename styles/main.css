@@ -6330,10 +6330,14 @@ a:hover {
     }
 }
 
+.tab-content {
+    display: none;
+}
 
 
-
-
+#card-content{
+    display: block;
+}
 
 /* checkout css  */
 
@@ -7139,11 +7143,11 @@ a:hover {
 }
 
 
-#billing_form label{
+#billing_form label {
     font-weight: 500;
 }
 
 
-.shipping-form{
+.shipping-form {
     display: none;
 }
